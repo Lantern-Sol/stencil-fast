@@ -1256,11 +1256,53 @@
             "image_fLx74p",
             "image_hgJkpW"
           ]
+        },
+        "text_P6Y6qL": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>StencilFast Exclusive. We are the only official authorized provider for these brands.</p>",
+            "mobile_text": "",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "height_mode": "auto",
+            "desktop_height": "",
+            "mobile_height": "",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "enable_custom_font_weight": false,
+            "weight": "400",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "custom_line_height": 1.5,
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "type_preset_mobile": "rte",
+            "mobile_font_size": "1rem",
+            "mobile_custom_line_height": 1.5,
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "use_mobile_padding": false,
+            "padding-block-start-mobile": 0,
+            "padding-block-end-mobile": 0,
+            "padding-inline-start-mobile": 0,
+            "padding-inline-end-mobile": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "text_7NKYBH",
-        "group_ygUPJV"
+        "group_ygUPJV",
+        "text_P6Y6qL"
       ],
       "name": "trusted by major brands",
       "settings": {
