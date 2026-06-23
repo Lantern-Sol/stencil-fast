@@ -308,9 +308,9 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "group_wErUQf": {
+        "group_6QtGig": {
           "type": "group",
-          "name": "Join our email list",
+          "name": "t:names.group",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -360,35 +360,27 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {
-            "text_pF6rVi": {
-              "type": "text",
-              "name": "Heading",
+            "image_UJjWCP": {
+              "type": "image",
+              "name": "t:names.image",
               "settings": {
-                "text": "<h2>Join our email list</h2>",
-                "mobile_text": "",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "height_mode": "auto",
-                "desktop_height": "",
-                "mobile_height": "",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "enable_custom_font_weight": false,
-                "weight": "400",
-                "font_size": "",
-                "line_height": "normal",
-                "custom_line_height": 1.5,
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "type_preset_mobile": "rte",
-                "mobile_font_size": "1rem",
-                "mobile_custom_line_height": 1.5,
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "image": "shopify://shop_images/Logos-white.svg",
+                "link": "",
+                "hide_on_mobile": false,
+                "hide_on_desktop": false,
+                "image_ratio": "adapt",
+                "custom_ratio": "1 / 1",
+                "image_fit": "cover",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -401,13 +393,13 @@
               },
               "blocks": {}
             },
-            "text_HafH7P": {
+            "text_mxTWjT": {
               "type": "text",
-              "name": "Text",
+              "name": "t:names.text",
               "settings": {
-                "text": "<p>Get exclusive deals and early access to new products.</p>",
+                "text": "<p>The pavement stencil experts since 1990. FAA, DOT, and parking lot stencils cut to spec, fast quotes, fast shipping, real support.</p>",
                 "mobile_text": "",
-                "width": "100%",
+                "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
                 "height_mode": "auto",
@@ -417,7 +409,7 @@
                 "font": "var(--font-body--family)",
                 "enable_custom_font_weight": false,
                 "weight": "400",
-                "font_size": "",
+                "font_size": "1rem",
                 "line_height": "normal",
                 "custom_line_height": 1.5,
                 "letter_spacing": "normal",
@@ -441,45 +433,11 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {}
-            },
-            "email-signup_HafH7P": {
-              "type": "email-signup",
-              "name": "Email Signup",
-              "settings": {
-                "width": "fill",
-                "custom_width": 100,
-                "heading": "",
-                "heading_text_color": "",
-                "heading_preset": "h3",
-                "border_style": "all",
-                "input_style": "custom",
-                "border_width": 1,
-                "border_radius": 100,
-                "input_background_color": "{{ settings.color_palette.color1 }}",
-                "input_text_color": "",
-                "input_border_color": "",
-                "input_type_preset": "paragraph",
-                "style_class": "button-secondary",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
-                "custom_button_text": "{{ settings.color_palette.background }}",
-                "custom_button_border": "{{ settings.color_palette.background }}",
-                "link_text_color": "",
-                "display_type": "text",
-                "label": "Sign up",
-                "integrated_button": false,
-                "button_type_preset": "paragraph",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_pF6rVi",
-            "text_HafH7P",
-            "email-signup_HafH7P"
+            "image_UJjWCP",
+            "text_mxTWjT"
           ]
         },
         "menu_footer": {
@@ -539,12 +497,42 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "menu_ChaaJC": {
+          "type": "menu",
+          "settings": {
+            "menu": "main-menu",
+            "heading": "",
+            "menu_spacing": 12,
+            "show_as_accordion": false,
+            "accordion_icon": "plus",
+            "accordion_dividers": false,
+            "background_color": "",
+            "text_color": "",
+            "heading_preset": "paragraph",
+            "heading_font": "var(--font-heading--family)",
+            "heading_enable_custom_font_weight": false,
+            "heading_weight": "600",
+            "heading_font_size": "1rem",
+            "heading_line_height": "normal",
+            "heading_custom_line_height": 1.2,
+            "heading_letter_spacing": "normal",
+            "heading_case": "none",
+            "heading_color": "var(--color-foreground-heading)",
+            "link_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "group_wErUQf",
+        "group_6QtGig",
         "menu_footer",
-        "menu_main"
+        "menu_main",
+        "menu_ChaaJC"
       ],
       "name": "t:names.footer",
       "settings": {
