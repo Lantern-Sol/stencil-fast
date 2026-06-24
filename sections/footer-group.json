@@ -264,7 +264,7 @@
         "section_height": "",
         "section_height_custom": 50,
         "background_media": "none",
-        "background_color": "#E94F37",
+        "background_color": "#e94f37",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
@@ -485,7 +485,7 @@
         "menu_footer": {
           "type": "menu",
           "settings": {
-            "menu": "footer",
+            "menu": "shop-by",
             "heading": "",
             "menu_spacing": 12,
             "show_as_accordion": false,
@@ -514,7 +514,7 @@
         "menu_main": {
           "type": "menu",
           "settings": {
-            "menu": "main-menu",
+            "menu": "about",
             "heading": "",
             "menu_spacing": 12,
             "show_as_accordion": false,
@@ -543,7 +543,7 @@
         "menu_ChaaJC": {
           "type": "menu",
           "settings": {
-            "menu": "main-menu",
+            "menu": "support",
             "heading": "",
             "menu_spacing": 12,
             "show_as_accordion": false,
