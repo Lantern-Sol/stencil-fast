@@ -608,6 +608,19 @@
           },
           "blocks": {}
         },
+        "payment_icons_XDpct7": {
+          "type": "payment-icons",
+          "name": "t:names.payment_icons",
+          "settings": {
+            "horizontal_alignment": "flex-start",
+            "gap": 10,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "copyright": {
           "type": "footer-copyright",
           "settings": {
@@ -621,6 +634,7 @@
       },
       "block_order": [
         "social_icons",
+        "payment_icons_XDpct7",
         "copyright"
       ],
       "settings": {
