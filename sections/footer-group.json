@@ -588,25 +588,6 @@
     "utilities": {
       "type": "footer-utilities",
       "blocks": {
-        "copyright": {
-          "type": "footer-copyright",
-          "settings": {
-            "show_powered_by": true,
-            "text_color": "",
-            "font_size": "0.75rem",
-            "case": "none"
-          },
-          "blocks": {}
-        },
-        "policy_list": {
-          "type": "footer-policy-list",
-          "settings": {
-            "text_color": "",
-            "font_size": "0.75rem",
-            "case": "none"
-          },
-          "blocks": {}
-        },
         "social_icons": {
           "type": "social-links",
           "settings": {
@@ -626,12 +607,31 @@
             "custom_url": ""
           },
           "blocks": {}
+        },
+        "copyright": {
+          "type": "footer-copyright",
+          "settings": {
+            "show_powered_by": true,
+            "text_color": "",
+            "font_size": "0.75rem",
+            "case": "none"
+          },
+          "blocks": {}
+        },
+        "policy_list": {
+          "type": "footer-policy-list",
+          "settings": {
+            "text_color": "",
+            "font_size": "0.75rem",
+            "case": "none"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
+        "social_icons",
         "copyright",
-        "policy_list",
-        "social_icons"
+        "policy_list"
       ],
       "settings": {
         "section_width": "page-width",
