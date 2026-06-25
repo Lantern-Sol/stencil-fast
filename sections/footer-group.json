@@ -617,21 +617,11 @@
             "case": "none"
           },
           "blocks": {}
-        },
-        "policy_list": {
-          "type": "footer-policy-list",
-          "settings": {
-            "text_color": "",
-            "font_size": "0.75rem",
-            "case": "none"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
         "social_icons",
-        "copyright",
-        "policy_list"
+        "copyright"
       ],
       "settings": {
         "section_width": "page-width",
