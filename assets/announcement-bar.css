@@ -2,5 +2,5 @@
 	font-weight: 500;
 }
 .announcement-bar__text strong {
-	color: red;
+ color: var(--secondary-color);
 }
