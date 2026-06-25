@@ -234,7 +234,8 @@
         "padding-block-end": 72,
         "use_mobile_padding": false,
         "padding-block-start-mobile": 0,
-        "padding-block-end-mobile": 0
+        "padding-block-end-mobile": 0,
+        "custom_class": "main-banner"
       }
     },
     "slideshow_cr9Uni": {
