@@ -10,6 +10,6 @@
     letter-spacing:0.5px;
     text-transform:uppercase;
 }
-.main-banner .hero__content-wrapper h2 strong {
+.main-banner .hero__content-wrapper h2 em {
 	color: var(--secondary-color);
 }
