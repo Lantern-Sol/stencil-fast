@@ -868,7 +868,7 @@
             "footer_copyright_Y66h8A": {
               "type": "footer-copyright",
               "settings": {
-                "show_powered_by": false,
+                "show_powered_by": true,
                 "text_color": "",
                 "font_size": "0.75rem",
                 "case": "none"
