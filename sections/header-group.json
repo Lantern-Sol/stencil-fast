@@ -18,7 +18,7 @@
           "type": "_announcement",
           "name": "t:names.announcement",
           "settings": {
-            "text": "The Industry Leader<strong> </strong>in Pavement Stencils",
+            "text": "The <strong>Industry Leader </strong>in Pavement Stencils",
             "link": "",
             "font": "var(--font-subheading--family)",
             "font_size": "1rem",
