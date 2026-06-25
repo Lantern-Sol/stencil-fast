@@ -16,5 +16,5 @@
 }
 .main-banner .hero__content-wrapper p {
 	max-width: 650px;
-    	color: var(--secondary-color);
+    	font-family: var(--secondary-font);
 }
