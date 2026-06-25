@@ -5429,4 +5429,5 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 
 :root {
   --secondary-color: #E94F37;
+  --secondary-font:"Nunito Sans", sans-serif;
 }
