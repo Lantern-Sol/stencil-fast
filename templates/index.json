@@ -78,7 +78,7 @@
             "type_preset_mobile": "rte",
             "mobile_font_size": "1rem",
             "mobile_custom_line_height": 1.5,
-            "text_color": "{{ settings.color_palette.background }}",
+            "text_color": "#FDFDFC",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
