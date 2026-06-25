@@ -12,11 +12,52 @@
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
+        "text_H47LAC": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h4>The Pavement Stencil Experts Since 1990</h4>",
+            "mobile_text": "",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "height_mode": "auto",
+            "desktop_height": "",
+            "mobile_height": "",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "enable_custom_font_weight": false,
+            "weight": "400",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "custom_line_height": 1.5,
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "type_preset_mobile": "rte",
+            "mobile_font_size": "1rem",
+            "mobile_custom_line_height": 1.5,
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "use_mobile_padding": false,
+            "padding-block-start-mobile": 0,
+            "padding-block-end-mobile": 0,
+            "padding-inline-start-mobile": 0,
+            "padding-inline-end-mobile": 0
+          },
+          "blocks": {}
+        },
         "text_YLPk4p": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>What makes us Fast?<br/><em>Everything!</em></p>",
+            "text": "<h2>What makes us Fast?<br/><em>Everything!</em></h2>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
@@ -192,6 +233,7 @@
         }
       },
       "block_order": [
+        "text_H47LAC",
         "text_YLPk4p",
         "text_aNXnYM",
         "group_pDdnbx"
