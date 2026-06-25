@@ -5428,7 +5428,5 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 
 
 :root {
-  --primary-color: #3498db;
-  --font-size: 16px;
-  --padding: 20px;
+  --secondary-color: #E94F37;
 }
