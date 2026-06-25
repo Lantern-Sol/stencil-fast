@@ -2,3 +2,7 @@
     font-weight: 500;
     letter-spacing: 0.5px;
 }
+#header-component .header__column.header__column--right svg {
+	width: 19px;
+	height: 19px;
+}
