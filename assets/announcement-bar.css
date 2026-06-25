@@ -1,3 +1,6 @@
 .announcement-bar__text {
 	font-weight: 500;
 }
+.announcement-bar__text strong {
+	color: red;
+}
