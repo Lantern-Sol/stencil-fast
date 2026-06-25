@@ -11,5 +11,5 @@
     text-transform:uppercase;
 }
 .main-banner .hero__content-wrapper h2 strong {
-	color:var()
+	color: var(--secondary-color);
 }
