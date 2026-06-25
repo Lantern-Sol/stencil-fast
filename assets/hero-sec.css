@@ -11,8 +11,5 @@
     text-transform:uppercase;
 }
 .main-banner .hero__content-wrapper h2 strong {
-	font-size: 56px;
-	font-weight: 500;
-    letter-spacing:0.5px;
-    text-transform:uppercase;
+	color:var()
 }
