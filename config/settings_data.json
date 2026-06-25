@@ -12,7 +12,7 @@
     "logo": "shopify://shop_images/Logos.svg",
     "logo_height": 36,
     "logo_height_mobile": 28,
-    "type_body_font": "ibm_plex_sans_n4",
+    "type_body_font": "nunito_sans_n4",
     "type_subheading_font": "ibm_plex_sans_n4",
     "type_heading_font": "ibm_plex_sans_n4",
     "type_accent_font": "ibm_plex_sans_n4",
