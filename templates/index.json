@@ -664,7 +664,13 @@
       ],
       "name": "t:names.collections_carousel",
       "settings": {
-        "collection_list": [],
+        "collection_list": [
+          "airports",
+          "parking-lot-stencils",
+          "highways",
+          "retail-chains",
+          "recreation"
+        ],
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "columns": 3,
