@@ -14,3 +14,6 @@
 .main-banner .hero__content-wrapper h2 em {
 	color: var(--secondary-color);
 }
+.main-banner .hero__content-wrapper p {
+	max-width: 650px;
+}
