@@ -384,7 +384,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>- Port Authority NY NJ</p>",
+                "text": "<h4>- Port Authority NY NJ</h4>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
