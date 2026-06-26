@@ -14,6 +14,9 @@
 .collection-list .collection-card__content {
 	justify-content: end;
 	align-items: center;
+	background: rgba(0,0,0,0.2);
+	border-top-left-radius: 80px;
+	border-bottom-right-radius: 80px;
 }
 .collection-list .collection-card__content .text-block {
 	border-radius: 8px;
