@@ -18,10 +18,6 @@ font-family:var(--secondary-font);
 	justify-content: center;
 	display: flex;
 }
-
-.about-sec .slideshow-controls__dots  li{
-	justify-content: center;
-	display: flex;
-} li::marker {
-  color: transparent;
+.about-sec .slideshow-controls__dots  li::marker{
+color:transparent;
 }
