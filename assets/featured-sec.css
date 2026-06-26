@@ -19,6 +19,8 @@
 }
 .best-seller-sec .product-form-buttons .button {
 	background: #393E41;
+	opacity: 1;
+	font-weight: 500;
 }
 .best-seller-sec .product-form-buttons .button:hover {
 	background: #f6f7eb;
