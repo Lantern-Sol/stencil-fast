@@ -5446,12 +5446,12 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 	background-size: 10px;
 	display: inline-block;
 }
-.button {
+.button-primary {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-body .button:hover{
+body .button-primary:hover{
   background:#393e41;
   color:#fff;
 }
