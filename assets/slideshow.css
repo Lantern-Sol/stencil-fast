@@ -32,5 +32,5 @@ display:none;
 	height: 2px;
 }
 .about-sec .slideshow-controls__dots li button[aria-selected="true"] {
-	background: #4f5153;
+	background: #FDFDFC;
 }
