@@ -70,3 +70,6 @@
 .collection-list slideshow-arrows .slideshow-control.slideshow-control--next {
 	right: 20px;
 }
+.collection-list slideshow-arrows .button::after {
+	background-position: center;
+}
