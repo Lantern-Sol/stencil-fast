@@ -756,7 +756,7 @@
               "name": "t:names.collection_card_image",
               "static": true,
               "settings": {
-                "image_ratio": "square",
+                "image_ratio": "portrait",
                 "image_ratio_mobile": "inherit",
                 "image_ratio_mobile_custom": "360 / 300",
                 "toggle_overlay": false,
@@ -791,7 +791,7 @@
         ],
         "layout_type": "carousel",
         "carousel_on_mobile": false,
-        "columns": 3,
+        "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
