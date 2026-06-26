@@ -4,3 +4,9 @@
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
+.stencilfast-sec h3 strong {
+	font-weight: 500;
+	color: #E94F37;
+	font-size: 48px;
+	font-style: italic;
+}
