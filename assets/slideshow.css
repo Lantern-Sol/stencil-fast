@@ -26,3 +26,8 @@ display:none;
 .about-sec {
 	background: red !important;
 }
+.about-sec .slideshow-controls__dots li button {
+	width: 70px;
+	background: #4f5153;
+	height: 2px;
+}
