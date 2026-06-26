@@ -1221,7 +1221,7 @@
           "settings": {
             "layout": "vertical",
             "horizontal_image_width": 96,
-            "product_card_gap": 4,
+            "product_card_gap": 10,
             "use_mobile_gap": false,
             "mobile_product_card_gap": 16,
             "background_color": "",
@@ -1461,7 +1461,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#E94F37",
+                "text_color": "#e94f37",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
