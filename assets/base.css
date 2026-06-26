@@ -5431,10 +5431,11 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   --secondary-color: #E94F37;
   --secondary-font:"Nunito Sans", sans-serif;
 }
-.product-badges__badge {
+body .product-badges__badge {
 	border-radius: 5px;
 	text-transform: uppercase;
 	color: #fff; 
+  background:var( --secondary-color);
   font-family:var( --secondary-font);
 }
 .button-secondary {
