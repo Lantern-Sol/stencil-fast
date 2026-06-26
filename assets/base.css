@@ -5437,7 +5437,8 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
       outline:unset;
       transition:ease 0.2s;
 }
-.main-banner .button {
+.main-banner .button,
+.stencilfast-sec .button {
     font-style: italic;
       outline:unset;
       transition:ease 0.2s;
@@ -5445,7 +5446,8 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
     align-items: center;
     gap: 8px;
 }
-.main-banner .button::after {
+.main-banner .button::after,
+.stencilfast-sec .button:after {
 	content: "";
 	background: url(/cdn/shop/files/button-arrow.svg?v=1782455872);
 	width: 19px;
@@ -5455,7 +5457,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 	display: inline-block;
 }
 
-.main-banner .button:hover{
+body .button-primary:hover{
   background:#393e41;
   color:#fff;
 }
