@@ -17,3 +17,10 @@
 .brand-sec p{
   	font-family: var( --secondary-font);  
 }
+.brand-sec p::before {
+	content: "";
+	background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/material-symbols_check.svg?v=1782494072');
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
