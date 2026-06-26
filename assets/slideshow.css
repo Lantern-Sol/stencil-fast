@@ -1,12 +1,13 @@
 .about-sec .image-block img {
 	max-width: 100px;
 }
-.about-sec .text-block p
-{font-size:16px;
-font-weight:500;
-color:#FDFDFC;
-max-width:720px;
-} 
+.about-sec .text-block p {
+	font-size: 16px;
+	font-weight: 500;
+	color: #FDFDFC;
+	max-width: 690px;
+	line-height: normal;
+}
 .about-sec .text-block h4
 {
 font-size:16px;
