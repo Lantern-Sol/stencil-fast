@@ -17,6 +17,8 @@ font-family:var(--secondary-font);
 .about-sec .slideshow-controls__dots {
 	justify-content: center;
 	display: flex;
+	padding: 0;
+	margin: 0;
 }
 .about-sec .slideshow-controls__dots  li button:after{
 display:none;
