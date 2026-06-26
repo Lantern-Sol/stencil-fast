@@ -79,7 +79,7 @@
   class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
 ></div>
 <div
-  class="slideshow-section spacing-style section {{ section_width_class }}{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %} disable-section-top-offset"
+  class=" {{ section.settings.custom_class }} slideshow-section spacing-style section {{ section_width_class }}{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %} disable-section-top-offset"
   style="{% render 'spacing-padding', settings: section.settings %}; --slideshow-gap: {{ section.settings.slideshow_gap }}px;{% if rounded_slide_corners %} --corner-radius: {{ section.settings.corner_radius }}px;{% endif %}"
 >
   <h2 class="visually-hidden">{{ 'accessibility.slideshow' | t }}</h2>
