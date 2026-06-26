@@ -666,7 +666,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h2>Shop by collection</h2>",
+                "text": "<h2>shop by type</h2>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -687,7 +687,7 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "#E94F37",
+                "text_color": "#e94f37",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -807,7 +807,8 @@
         "padding-block-end": 60,
         "use_mobile_padding": false,
         "padding-block-start-mobile": 0,
-        "padding-block-end-mobile": 0
+        "padding-block-end-mobile": 0,
+        "custom_class": ""
       }
     },
     "product_list_fa6P9H": {
