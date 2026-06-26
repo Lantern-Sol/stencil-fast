@@ -20,3 +20,6 @@
 .best-seller-sec .product-form-buttons .button {
 	background: #393E41;
 }
+.best-seller-sec .product-form-buttons .button:hover {
+	background: #f6f7eb;
+}
