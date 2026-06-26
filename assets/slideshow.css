@@ -34,3 +34,6 @@ display:none;
 .about-sec .slideshow-controls__dots li button[aria-selected="true"] {
 	background: #FDFDFC;
 }
+.about-sec .slideshow-controls__dots li {
+	color: transparent;
+}
