@@ -7,3 +7,10 @@
 	max-width: 900px;
 	margin: 10px auto;
 }
+.brand-sec .group-block-content .image-block img {
+	min-width: 150px;
+	min-height: unset;
+	object-fit: contain;
+	max-width: unset;
+	max-height: 70px;
+}
