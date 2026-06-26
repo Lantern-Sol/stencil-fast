@@ -21,3 +21,6 @@ font-family:var(--secondary-font);
 .about-sec .slideshow-controls__dots  li::marker{
 color:transparent;
 }
+.about-sec {
+	background: red !important;
+}
