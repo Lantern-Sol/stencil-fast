@@ -346,7 +346,7 @@
                 "text": "<p>Your infinity FAA compliant stencils are absolutely wonderful.The facility notices the difference in the crisp lines and uniformity of the glass bead distribution from when we use the stencils versus when we use pads.</p>",
                 "mobile_text": "",
                 "width": "100%",
-                "max_width": "narrow",
+                "max_width": "none",
                 "alignment": "center",
                 "height_mode": "auto",
                 "desktop_height": "",
