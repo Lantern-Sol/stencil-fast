@@ -5437,6 +5437,15 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
       outline:unset;
       transition:ease 0.2s;
 }
+.button:before {
+    content: "";
+    background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/button-arrow.svg?v=1782455872');
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    display: inline-block;
+}
 body .button:hover{
   background:#393e41;
   color:#fff;
