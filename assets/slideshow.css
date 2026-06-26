@@ -18,8 +18,8 @@ font-family:var(--secondary-font);
 	justify-content: center;
 	display: flex;
 }
-.about-sec .slideshow-controls__dots  li::marker{
-color:transparent;
+.about-sec .slideshow-controls__dots  li:after{
+display:none;
 }
 .about-sec {
 	background: red !important;
