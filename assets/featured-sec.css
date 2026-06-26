@@ -27,3 +27,12 @@
 	background: #f6f7eb;
     color:#393E41;
 }
+.brand-sec p::before {
+	content: "";
+	background: url(/cdn/shop/files/material-symbols_check.svg?v=1782494072);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 7px;
+}
