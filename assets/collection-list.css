@@ -19,6 +19,15 @@
 	border-radius: 8px;
 	padding: 15px 20px;
 }
+.collection-list .collection-card__content .text-block::after {
+	content: "";
+	background: url(/cdn/shop/files/button-arrow.svg?v=1782455872);
+	width: 19px;
+	height: 19px;
+	background-repeat: no-repeat;
+	background-size: 10px;
+	display: inline-block;
+}
 .collection-list .collection-card__content .text-block p {
 	font-size: 16px;
 	font-weight: 500;
