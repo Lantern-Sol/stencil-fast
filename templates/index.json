@@ -870,7 +870,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3>we are</h3><h2>stencilfast</h2>",
+                "text": "<h3>we are</h3><h3><strong>stencilfast</strong></h3>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
