@@ -25,7 +25,7 @@
 	flex-direction: row;
 	gap: 10px;
 }
-.collection-list .collection-card__content .text-block::after {
+.collection-list .collection-card__content .text-block p::after {
 	content: "";
 	background: url(/cdn/shop/files/button-arrow.svg?v=1782455872);
 	width: 19px;
