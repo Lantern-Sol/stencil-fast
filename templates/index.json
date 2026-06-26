@@ -364,7 +364,7 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "#FDFDFC",
+                "text_color": "#fdfdfc",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -509,7 +509,7 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "#FDFDFC",
+                "text_color": "#fdfdfc",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -603,7 +603,8 @@
         "autoplay": false,
         "autoplay_speed": 4,
         "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-end": 0,
+        "custom_class": "about-sec"
       }
     },
     "collection_list_Yh7R3D": {
