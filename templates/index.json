@@ -1504,7 +1504,7 @@
           "settings": {
             "layout": "vertical",
             "horizontal_image_width": 96,
-            "product_card_gap": 4,
+            "product_card_gap": 16,
             "use_mobile_gap": false,
             "mobile_product_card_gap": 16,
             "background_color": "",
