@@ -4,3 +4,6 @@
 	font-style: italic;
 	font-weight: 500;
 } 
+.collection-list .resource-list__carousel .resource-list__slide {
+	padding: 0 10px;
+}
