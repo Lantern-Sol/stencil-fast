@@ -20,4 +20,9 @@
     	border-bottom-right-radius: 80px;
 }
 
-.stencilfast-sec .button.deferred-media__poster-button
+.stencilfast-sec .button.deferred-media__poster-button:after{
+    display:none;
+}
+.stencilfast-sec .button.deferred-media__poster-button:hover{
+    background:none;
+}
