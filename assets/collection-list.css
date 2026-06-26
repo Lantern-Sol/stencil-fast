@@ -19,6 +19,8 @@
 	border-radius: 8px;
 	padding: 15px 20px;
 	position: relative;
+	width: 100%;
+	max-width: 90%;
 }
 .collection-list .collection-card__content .text-block::after {
 	content: "";
