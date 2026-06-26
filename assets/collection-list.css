@@ -72,11 +72,13 @@
 	right: 40px;
 }
 .collection-list slideshow-arrows .button::after {
-	background-position: center;
 	margin-top: 7px;
-	background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/slider-arrow.svg?v=1782477639');
-	background-size: 18px;
+	background: url(/cdn/shop/files/slider-arrow.svg?v=1782477639);
+	background-size: 23px;
 	background-repeat: no-repeat;
+	width: 22px;
+	height: 22px;
+	background-position: center;
 }
 .collection-list slideshow-arrows {
 	mix-blend-mode: unset;
