@@ -10,3 +10,6 @@
 	font-size: 48px;
 	font-style: italic;
 }
+.stencilfast-sec p {
+	max-width: 520px;
+}
