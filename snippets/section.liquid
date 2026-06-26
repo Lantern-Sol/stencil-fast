@@ -185,7 +185,7 @@
   {%- endif -%}
 
   <div
-    class="border-style custom-section-content"
+    class="border-style custom-section-content  {{ section.settings.custom_class }}"
     style="{% render 'border-override', settings: section.settings %}"
   >
     {% if section.settings.toggle_overlay %}
