@@ -1971,10 +1971,10 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>StencilFast Exclusive. We are the only official authorized provider for these brands.</p>",
+            "text": "<p><strong>StencilFast Exclusive</strong>. We are the only official authorized provider for these brands.</p>",
             "mobile_text": "",
             "width": "100%",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "center",
             "height_mode": "auto",
             "desktop_height": "",
