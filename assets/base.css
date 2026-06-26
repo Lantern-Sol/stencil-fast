@@ -5434,9 +5434,14 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 body .product-badges__badge {
 	border-radius: 5px;
 	text-transform: uppercase;
-	color: #fff; 
-  background:var( --secondary-color);
-  font-family:var( --secondary-font);
+	color: #fff;
+	background: var( --secondary-color);
+	font-family: var( --secondary-font);
+	font-size: 12px;
+	padding: 5px;
+	position: relative;
+	top: 5px;
+	left: 5px;
 }
 .button-secondary {
     font-style: italic;
