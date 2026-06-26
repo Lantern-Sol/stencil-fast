@@ -12,4 +12,5 @@
 }
 .stencilfast-sec p {
 	max-width: 520px;
+    font-family:var( --secondary-font);
 }
