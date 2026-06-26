@@ -14,3 +14,7 @@
 	max-width: 520px;
     font-family:var( --secondary-font);
 }
+.deferred-media__poster-image {
+	border-top-left-radius: 80px;
+    	border-bottom-right-radius: 80px;
+}
