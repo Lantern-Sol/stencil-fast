@@ -5439,6 +5439,11 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 body .button:hover{
   background:#393e41;
 }
+body .button-secondary {
+    color: #FDFDFC;
+    outline:unset;
+    border: 1px solid #FDFDFC ; 
+}
 body .button-secondary:hover {
     background:#fff;
     color:#393E41;
