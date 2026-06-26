@@ -18,6 +18,7 @@
 .collection-list .collection-card__content .text-block {
 	border-radius: 8px;
 	padding: 15px 20px;
+	position: relative;
 }
 .collection-list .collection-card__content .text-block::after {
 	content: "";
