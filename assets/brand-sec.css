@@ -3,3 +3,7 @@
 	font-weight: 500;
 	letter-spacing: 0.5px;
 }
+.brand-sec .group-block-content {
+	max-width: 900px;
+	margin: 10px auto;
+}
