@@ -346,29 +346,10 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {}
-            },
-            "button_HXimmp": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
-                "custom_button_text": "{{ settings.color_palette.background }}",
-                "custom_button_border": "{{ settings.color_palette.background }}",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_yzAJQ3",
-            "button_HXimmp"
+            "text_yzAJQ3"
           ]
         },
         "slide_gmxQWQ": {
@@ -475,30 +456,11 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {}
-            },
-            "button_ehrXGT": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
-                "custom_button_text": "{{ settings.color_palette.background }}",
-                "custom_button_border": "{{ settings.color_palette.background }}",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_Tma37X",
-            "text_xjG3dE",
-            "button_ehrXGT"
+            "text_xjG3dE"
           ]
         }
       },
