@@ -1586,7 +1586,7 @@
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
-                "text_color": "",
+                "text_color": "#393E41",
                 "type_preset_mobile": "",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
