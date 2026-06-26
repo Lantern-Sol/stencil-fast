@@ -15,3 +15,7 @@
 	justify-content: end;
 	align-items: center;
 }
+.collection-list .collection-card__content .text-block {
+	border-radius: 8px;
+	padding: 10px;
+}
