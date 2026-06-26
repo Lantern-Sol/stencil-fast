@@ -5437,14 +5437,14 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
       outline:unset;
       transition:ease 0.2s;
 }
-.button:after {
-    content: "";
-    background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/button-arrow.svg?v=1782455872');
-    width: 15px;
-    height: 15px;
-    background-repeat: no-repeat;
-    background-size: 10px;
-    display: inline-block;
+.button::after {
+	content: "";
+	background: url(/cdn/shop/files/button-arrow.svg?v=1782455872);
+	width: 19px;
+	height: 19px;
+	background-repeat: no-repeat;
+	background-size: 10px;
+	display: inline-block;
 }
 .button {
     display: flex;
