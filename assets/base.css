@@ -5437,7 +5437,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
       outline:unset;
       transition:ease 0.2s;
 }
-.button-primary::after {
+.main-banner .button::after {
 	content: "";
 	background: url(/cdn/shop/files/button-arrow.svg?v=1782455872);
 	width: 19px;
