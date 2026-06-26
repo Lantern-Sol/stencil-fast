@@ -18,7 +18,7 @@ font-family:var(--secondary-font);
 	justify-content: center;
 	display: flex;
 }
-.about-sec .slideshow-controls__dots  li:after{
+.about-sec .slideshow-controls__dots  li button:after{
 display:none;
 }
 .about-sec {
