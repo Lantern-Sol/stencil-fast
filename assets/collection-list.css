@@ -62,3 +62,9 @@
 .collection-list slideshow-arrows .slideshow-control span {
 	display: none;
 }
+.collection-list slideshow-arrows .slideshow-control.slideshow-control--previous {
+	right: 110px;
+}
+.collection-list slideshow-arrows .slideshow-control.slideshow-control--next {
+	right: 20px;
+}
