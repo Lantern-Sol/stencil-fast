@@ -73,3 +73,6 @@
 .collection-list slideshow-arrows .button::after {
 	background-position: center;
 }
+.collection-list slideshow-arrows {
+	mix-blend-mode: unset;
+}
