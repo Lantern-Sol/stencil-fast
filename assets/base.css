@@ -5454,9 +5454,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 	background-size: 10px;
 	display: inline-block;
 }
-.button-primary {
- 
-}
+
 body .button-primary:hover{
   background:#393e41;
   color:#fff;
