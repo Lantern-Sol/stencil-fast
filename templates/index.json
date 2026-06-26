@@ -756,7 +756,7 @@
               "name": "t:names.collection_card_image",
               "static": true,
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "square",
                 "image_ratio_mobile": "inherit",
                 "image_ratio_mobile_custom": "360 / 300",
                 "toggle_overlay": false,
