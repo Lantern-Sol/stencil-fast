@@ -307,10 +307,43 @@
             "padding-inline-end": 48
           },
           "blocks": {
+            "image_wfcm7F": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/star-icon.svg",
+                "link": "",
+                "hide_on_mobile": false,
+                "hide_on_desktop": false,
+                "image_ratio": "adapt",
+                "custom_ratio": "1 / 1",
+                "image_fit": "cover",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "use_mobile_padding": false,
+                "padding-block-start-mobile": 0,
+                "padding-block-end-mobile": 0,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
+              },
+              "blocks": {}
+            },
             "text_yzAJQ3": {
               "type": "text",
               "settings": {
-                "text": "<p>At the heart of every product lies a unique story, driven by our passion for quality and innovation. Each item enhances your everyday life and sparks joy.</p>",
+                "text": "<p>Your infinity FAA compliant stencils are absolutely wonderful.The facility notices the difference in the crisp lines and uniformity of the glass bead distribution from when we use the stencils versus when we use pads.</p>",
                 "mobile_text": "",
                 "width": "100%",
                 "max_width": "narrow",
@@ -319,6 +352,47 @@
                 "desktop_height": "",
                 "mobile_height": "",
                 "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "enable_custom_font_weight": false,
+                "weight": "400",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "custom_line_height": 1.5,
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "type_preset_mobile": "rte",
+                "mobile_font_size": "1rem",
+                "mobile_custom_line_height": 1.5,
+                "text_color": "#FDFDFC",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "use_mobile_padding": false,
+                "padding-block-start-mobile": 0,
+                "padding-block-end-mobile": 0,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
+              },
+              "blocks": {}
+            },
+            "text_m89Lad": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<p>- Port Authority NY NJ</p>",
+                "mobile_text": "",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "height_mode": "auto",
+                "desktop_height": "",
+                "mobile_height": "",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "enable_custom_font_weight": false,
                 "weight": "400",
@@ -349,10 +423,12 @@
             }
           },
           "block_order": [
-            "text_yzAJQ3"
+            "image_wfcm7F",
+            "text_yzAJQ3",
+            "text_m89Lad"
           ]
         },
-        "slide_gmxQWQ": {
+        "slide_7t9dtp": {
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
@@ -376,11 +452,84 @@
             "padding-inline-end": 48
           },
           "blocks": {
-            "text_Tma37X": {
+            "image_Rhjmhd": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/star-icon.svg",
+                "link": "",
+                "hide_on_mobile": false,
+                "hide_on_desktop": false,
+                "image_ratio": "adapt",
+                "custom_ratio": "1 / 1",
+                "image_fit": "cover",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "use_mobile_padding": false,
+                "padding-block-start-mobile": 0,
+                "padding-block-end-mobile": 0,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
+              },
+              "blocks": {}
+            },
+            "text_kpgfnW": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Your infinity FAA compliant stencils are absolutely wonderful.The facility notices the difference in the crisp lines and uniformity of the glass bead distribution from when we use the stencils versus when we use pads.</p>",
+                "mobile_text": "",
+                "width": "100%",
+                "max_width": "narrow",
+                "alignment": "center",
+                "height_mode": "auto",
+                "desktop_height": "",
+                "mobile_height": "",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "enable_custom_font_weight": false,
+                "weight": "400",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "custom_line_height": 1.5,
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "type_preset_mobile": "rte",
+                "mobile_font_size": "1rem",
+                "mobile_custom_line_height": 1.5,
+                "text_color": "#FDFDFC",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "use_mobile_padding": false,
+                "padding-block-start-mobile": 0,
+                "padding-block-end-mobile": 0,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
+              },
+              "blocks": {}
+            },
+            "text_HBezbG": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Bestsellers</h2>",
+                "text": "<p>- Port Authority NY NJ</p>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -416,57 +565,18 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {}
-            },
-            "text_xjG3dE": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Discover the bestsellers that have captured the hearts of our customers with their perfect blend of functionality and style.</p>",
-                "mobile_text": "",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "height_mode": "auto",
-                "desktop_height": "",
-                "mobile_height": "",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "enable_custom_font_weight": false,
-                "weight": "400",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "custom_line_height": 1.5,
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "type_preset_mobile": "rte",
-                "mobile_font_size": "1rem",
-                "mobile_custom_line_height": 1.5,
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 20,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "use_mobile_padding": false,
-                "padding-block-start-mobile": 0,
-                "padding-block-end-mobile": 0,
-                "padding-inline-start-mobile": 0,
-                "padding-inline-end-mobile": 0
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_Tma37X",
-            "text_xjG3dE"
+            "image_Rhjmhd",
+            "text_kpgfnW",
+            "text_HBezbG"
           ]
         }
       },
       "block_order": [
         "slide_3Uwkj8",
-        "slide_gmxQWQ"
+        "slide_7t9dtp"
       ],
       "name": "t:names.slideshow_full_frame",
       "settings": {
