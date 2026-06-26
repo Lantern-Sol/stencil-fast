@@ -5436,6 +5436,6 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
     font-style: italic;
 }
 body .button-secondary {
-    color: #fff;
-    border: 1px solid red ;
+    color: #FDFDFC;
+    border: 1px solid #FDFDFC ; 
 }
