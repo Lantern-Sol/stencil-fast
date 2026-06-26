@@ -5432,6 +5432,11 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   --secondary-font:"Nunito Sans", sans-serif;
 }
 
+ .button-secondary {
+    font-style: italic;
+      outline:unset;
+      transition:ease 0.2s;
+}
 .button-primary, .button-secondary {
     font-style: italic;
       outline:unset;
