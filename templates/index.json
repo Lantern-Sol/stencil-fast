@@ -873,7 +873,7 @@
                 "text": "<h3>we are</h3><h3><strong>stencilfast</strong></h3>",
                 "mobile_text": "",
                 "width": "fit-content",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "height_mode": "auto",
                 "desktop_height": "",
