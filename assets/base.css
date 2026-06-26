@@ -5434,7 +5434,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 .product-badges__badge {
 	border-radius: 5px;
 	text-transform: uppercase;
-	color: #fff;
+	color: #fff; 
   font-family:var( --secondary-font);
 }
 .button-secondary {
