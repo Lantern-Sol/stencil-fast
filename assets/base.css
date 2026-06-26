@@ -5432,12 +5432,12 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   --secondary-font:"Nunito Sans", sans-serif;
 }
 
-.button, .button-secondary {
+.button-primary, .button-secondary {
     font-style: italic;
       outline:unset;
       transition:ease 0.2s;
 }
-.button::after {
+.button-primary::after {
 	content: "";
 	background: url(/cdn/shop/files/button-arrow.svg?v=1782455872);
 	width: 19px;
@@ -5449,7 +5449,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 .button {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 }
 body .button:hover{
   background:#393e41;
