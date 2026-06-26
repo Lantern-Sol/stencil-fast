@@ -5436,6 +5436,9 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
     font-style: italic;
       outline:unset;
 }
+body .button:hover{
+  background:#393e41;
+}
 body .button-secondary {
     color: #FDFDFC;
     outline:unset;
