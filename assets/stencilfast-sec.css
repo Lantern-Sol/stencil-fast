@@ -14,7 +14,8 @@
 	max-width: 520px;
     font-family:var( --secondary-font);
 }
-.deferred-media__poster-image {
+.stencilfast-sec .deferred-media__poster-image,
+.stencilfast-sec video {
 	border-top-left-radius: 80px;
     	border-bottom-right-radius: 80px;
 }
