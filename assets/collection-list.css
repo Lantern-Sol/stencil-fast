@@ -65,10 +65,10 @@
 	display: none;
 }
 .collection-list slideshow-arrows .slideshow-control.slideshow-control--previous {
-	right: 110px;
+	right: 100px;
 }
 .collection-list slideshow-arrows .slideshow-control.slideshow-control--next {
-	right: 20px;
+	right: 40px;
 }
 .collection-list slideshow-arrows .button::after {
 	background-position: center;
