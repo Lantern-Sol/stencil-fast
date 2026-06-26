@@ -3,4 +3,6 @@
 	font-weight: 500;
 	letter-spacing: 0.5px;
 	font-style: italic;
+}.best-seller-sec .resource-list__slide .card-gallery {
+	border-radius: 16px;
 }
