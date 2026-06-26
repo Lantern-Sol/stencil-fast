@@ -716,7 +716,7 @@
             "placement": "on_image",
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
-            "collection_card_gap": 8,
+            "collection_card_gap": 20,
             "reveal_on_hover": false,
             "background_color": "",
             "border": "none",
