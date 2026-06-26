@@ -5432,15 +5432,18 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   --secondary-font:"Nunito Sans", sans-serif;
 }
 
- .button-secondary {
+.button-secondary {
     font-style: italic;
       outline:unset;
       transition:ease 0.2s;
 }
-.button-primary, .button-secondary {
+.main-banner .button {
     font-style: italic;
       outline:unset;
       transition:ease 0.2s;
+         display: flex;
+    align-items: center;
+    gap: 8px;
 }
 .main-banner .button::after {
 	content: "";
@@ -5452,9 +5455,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 	display: inline-block;
 }
 .button-primary {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+ 
 }
 body .button-primary:hover{
   background:#393e41;
