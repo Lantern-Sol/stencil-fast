@@ -5444,7 +5444,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
       transition:ease 0.2s;
          display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
 }
 .main-banner .button::after,
 .stencilfast-sec .button:after {
