@@ -15,4 +15,5 @@
 }
 .best-seller-sec .resource-list__slide .price__regular .price {
 	font-size: 15px;
+    font-family:var(--secondary-font);
 }
