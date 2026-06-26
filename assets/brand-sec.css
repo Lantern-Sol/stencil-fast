@@ -15,5 +15,5 @@
 	max-height: 70px;
 }
 .brand-sec p{
-    
+  	font-family: var( --secondary-font);  
 }
