@@ -128,4 +128,7 @@
 .collection-list h2 {
 	font-size: 32px;
 }
+.collection-list slideshow-arrows .slideshow-control.slideshow-control--previous {
+	right: 80px;
+}
 }
