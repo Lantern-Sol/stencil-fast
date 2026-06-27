@@ -99,4 +99,7 @@
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 }
+.collection-list .collection-card__content .text-block {
+	max-width: 100%;
+}
 }
