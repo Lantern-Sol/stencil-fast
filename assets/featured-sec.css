@@ -78,4 +78,7 @@
 .best-seller-sec .resource-list__slide {
 	padding: 0;
 }
+.best-seller-sec .resource-list__slide .card-gallery {
+	border-radius: 8px;
+}
 }
