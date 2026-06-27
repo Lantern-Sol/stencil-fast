@@ -81,4 +81,7 @@
 .best-seller-sec .resource-list__slide .card-gallery {
 	border-radius: 8px;
 }
+.best-seller-sec .resource-list__slide .h4 p {
+	font-size: 14px;
+}
 }
