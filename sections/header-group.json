@@ -117,7 +117,7 @@
             "menu_font_style": "inverse",
             "type_font_primary_link": "body",
             "type_case_primary_link": "uppercase",
-            "menu_style": "featured_collections",
+            "menu_style": "tabbed_mega_menu",
             "featured_products_aspect_ratio": "4 / 5",
             "featured_collections_aspect_ratio": "1 / 1",
             "feature_button_label": "SHOP NOW",
