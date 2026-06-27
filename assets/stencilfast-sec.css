@@ -32,8 +32,9 @@
 	border-bottom-right-radius: 50px;
 }
 }
-
+@media only screen and (max-width:991px){
 .stencilfast-sec .deferred-media__poster-image, .stencilfast-sec video {
-	border-top-left-radius: 50px;
-	border-bottom-right-radius: 50px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
 }
