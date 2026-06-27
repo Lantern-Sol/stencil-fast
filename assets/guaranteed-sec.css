@@ -16,9 +16,8 @@
 	font-family: var( --secondary-font);
 	line-height: normal;
 }
-
+@media only screen and (max-width:1300px){
 .guaranteed-sec .section-content-wrapper {
-	width: 100%;
 	max-width: 750px;
-	margin: auto;
+}
 }
