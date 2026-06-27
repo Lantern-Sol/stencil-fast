@@ -19,14 +19,7 @@ nav.menu-drawer__navigation ul.menu-drawer__menu .menu-drawer__menu-item-text {
 .header .menu-drawer__list-item--divider{
     border: none;
 }
-.header nav.menu-drawer__navigation ul.menu-drawer__menu span.svg-wrapper.icon-caret svg {
-    width: 17px;
-    height: 17px;
-}
-.header .menu-drawer__navigation ul.menu-drawer__menu span.svg-wrapper.icon-caret {
-    width: 17px;
-    height: 17px;
-}
+
 .header ul.menu-drawer__menu.menu-drawer__menu--childlist {
     display: flex;
     flex-wrap: nowrap;
