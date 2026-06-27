@@ -1410,8 +1410,8 @@
               "settings": {
                 "text": "<h2>guaranteed</h2><h2><em>to last</em><br/></h2>",
                 "mobile_text": "",
-                "width": "fit-content",
-                "max_width": "normal",
+                "width": "100%",
+                "max_width": "none",
                 "alignment": "left",
                 "height_mode": "auto",
                 "desktop_height": "",
