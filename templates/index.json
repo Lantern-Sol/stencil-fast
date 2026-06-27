@@ -1408,7 +1408,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>guaranteed</h2><h2><em>to last</em><br/></h2>",
+                "text": "<h3>guaranteed</h3><h3><em>to last</em><br/></h3>",
                 "mobile_text": "",
                 "width": "100%",
                 "max_width": "none",
