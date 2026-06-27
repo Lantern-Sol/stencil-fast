@@ -129,7 +129,7 @@
 	font-size: 32px;
 }
 .collection-list slideshow-arrows .slideshow-control.slideshow-control--previous {
-	right: 80px;
+	right: 70px;
 }
 .collection-list slideshow-arrows .slideshow-control.slideshow-control--next {
 	right: 20px;
@@ -139,6 +139,7 @@
 	height: 35px;
 	min-width: unset;
 	min-height: unset;
+	top: -60px;
 }
 .collection-list slideshow-arrows .slideshow-control.slideshow-control--previous ,
 .collection-list slideshow-arrows .slideshow-control.slideshow-control--next{
