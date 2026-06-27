@@ -40,4 +40,7 @@ nav.menu-drawer__navigation ul.menu-drawer__menu.menu-drawer__menu--childlist li
     font-size: 14px;
     color: #393E41;
 }
+.menu-drawer__menu--childlist:not(.menu-drawer__menu--grid) {
+    flex-grow: unset;
+}
 }
