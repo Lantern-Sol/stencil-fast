@@ -148,6 +148,15 @@
                   endif
                 %}
                 <div class="mega-menu section section--full-width-margin section--{{ section.settings.section_width }}">
+                  
+                  {% if menu_content_type == 'tabbed_mega_menu' %}
+                    {% render 'mega-menu-tabbed',
+                      parent_link: link,
+                      id: list_id,
+                      section: section,
+                      image_border_radius: image_border_radius
+                    %}
+                  {% else %}
                   <div
                     class="mega-menu__grid"
                     data-menu-grid-id="{{ list_id }}"
@@ -166,6 +175,7 @@
                       feature_button_style_class: block_settings.feature_button_style_class
                     %}
                   </div>
+                {% endif %}
                 </div>
               </div>
             </div>
