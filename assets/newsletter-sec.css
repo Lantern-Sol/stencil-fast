@@ -73,8 +73,8 @@
 	min-width: 160px;
 }
 }
-@media only screen and (max-width:1200px){
-.section-content-wrapper.section-content-wrapper {
+@media only screen and (max-width:991px){
+.newsletter-sec .section-content-wrapper.section-content-wrapper {
 	padding-left: 0;
 	padding-right: 0;
 }
