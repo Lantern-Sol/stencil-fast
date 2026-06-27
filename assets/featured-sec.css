@@ -109,7 +109,8 @@
 .best-seller-sec slideshow-arrows .slideshow-control {
     top: -58px;
 }
-.best-seller-sec .resource-list__slide .h4 p {
+.best-seller-sec .resource-list__slide .h4 p,
+.best-seller-sec .resource-list__slide .price__regular .price {
     font-size: 14px;
     min-height: 35px;
 }
