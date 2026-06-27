@@ -8,7 +8,8 @@
 }
 @media only screen and (max-width:991px){
 .header .menu-drawer__navigation,
-.header .menu-drawer {
+.header .menu-drawer,
+.header .menu-drawer__submenu {
     background: #F9FAF5;
 }
 nav.menu-drawer__navigation ul.menu-drawer__menu .menu-drawer__menu-item-text {
