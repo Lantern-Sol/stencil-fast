@@ -34,6 +34,7 @@ ul.menu-drawer__menu.menu-drawer__menu--childlist {
 }
 ul.menu-drawer__menu.menu-drawer__menu--childlist li  a {
     white-space: nowrap;
+    padding:0 10px;
 }
 nav.menu-drawer__navigation ul.menu-drawer__menu.menu-drawer__menu--childlist li a span {
     font-size: 14px;
