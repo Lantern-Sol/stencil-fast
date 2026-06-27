@@ -28,4 +28,8 @@
 .main-banner .hero__content-wrapper h4 {
 	font-size: 14px;
 }
+.main-banner .hero__content-wrapper h2 {
+	font-size: 48px;
+	line-height: 60px;
+}
 }
