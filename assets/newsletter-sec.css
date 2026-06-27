@@ -57,3 +57,9 @@
 .newsletter-sec .email-signup-block .svg-wrapper.icon-success {
 	color: #fff;
 }
+
+@media only screen and (max-width:1400px){
+.newsletter-sec h2 {
+	font-size: 33px;
+}
+}
