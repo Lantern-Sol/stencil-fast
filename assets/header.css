@@ -26,4 +26,8 @@ nav.menu-drawer__navigation ul.menu-drawer__menu span.svg-wrapper.icon-caret {
     width: 17px;
     height: 17px;
 }
+ul.menu-drawer__menu.menu-drawer__menu--childlist {
+    display: flex;
+    flex-wrap: nowrap;
+}
 }
