@@ -1,0 +1,484 @@
+{% comment %}
+  Renders a premium tabbed sidebar mega menu.
+  @param {object} parent_link - The level 1 link (e.g., "SHOP BY") containing Level 2 link items.
+  @param {string} id - Unique list ID
+  @param {object} [section] - The section object
+  @param {number} [image_border_radius] - Border radius for images
+{% endcomment %}
+
+<tabbed-mega-menu class="tabbed-mega-menu" data-menu-id="{{ id }}">
+  <!-- Left Sidebar (Tabs) -->
+  <div class="tabbed-mega-menu__sidebar">
+    <ul class="tabbed-mega-menu__tabs list-unstyled" role="tablist">
+      {% for link in parent_link.links %}
+        <li 
+          class="tabbed-mega-menu__tab-item" 
+          data-tab-index="{{ forloop.index0 }}" 
+          role="presentation"
+        >
+          <a 
+            href="{{ link.url }}" 
+            class="tabbed-mega-menu__tab-link {% if forloop.first %}is-active{% endif %}"
+            role="tab"
+            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+            aria-controls="{{ id }}-panel-{{ forloop.index0 }}"
+          >
+            <span class="tabbed-mega-menu__tab-title">{{ link.title }}</span>
+            <span class="tabbed-mega-menu__tab-arrow">
+              <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Content Panels -->
+  <div class="tabbed-mega-menu__content-panels">
+    {% for link in parent_link.links %}
+      <div 
+        id="{{ id }}-panel-{{ forloop.index0 }}"
+        class="tabbed-mega-menu__panel {% if forloop.first %}is-active{% endif %}" 
+        data-panel-index="{{ forloop.index0 }}"
+        role="tabpanel"
+      >
+        <!-- Middle Columns (Subcategories) -->
+        <div class="tabbed-mega-menu__subcategories">
+          {% liquid
+            # Try fetching a separate link list with matching handle for deeper nesting
+            assign tab_menu = linklists[link.handle]
+            if tab_menu == blank
+              assign tab_menu_handle = 'menu-' | append: link.handle
+              assign tab_menu = linklists[tab_menu_handle]
+            endif
+          %}
+          
+          {% if tab_menu != blank %}
+            {% for col_link in tab_menu.links %}
+              <div class="tabbed-mega-menu__column">
+                <h3 class="tabbed-mega-menu__column-title">{{ col_link.title }}</h3>
+                {% if col_link.links != blank %}
+                  <ul class="tabbed-mega-menu__column-links list-unstyled">
+                    {% for child_link in col_link.links %}
+                      <li>
+                        <a href="{{ child_link.url }}" class="tabbed-mega-menu__link">
+                          {{ child_link.title }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+                <a href="{{ col_link.url }}" class="tabbed-mega-menu__view-all">
+                  <span>VIEW ALL</span>
+                  <span class="arrow-icon">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            {% endfor %}
+          {% elsif link.links != blank %}
+            <!-- Fallback to standard nested links if separate menu list not found -->
+            {% for col_link in link.links %}
+              <div class="tabbed-mega-menu__column">
+                <h3 class="tabbed-mega-menu__column-title">{{ col_link.title }}</h3>
+                {% if col_link.links != blank %}
+                  <ul class="tabbed-mega-menu__column-links list-unstyled">
+                    {% for child_link in col_link.links %}
+                      <li>
+                        <a href="{{ child_link.url }}" class="tabbed-mega-menu__link">
+                          {{ child_link.title }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+                <a href="{{ col_link.url }}" class="tabbed-mega-menu__view-all">
+                  <span>VIEW ALL</span>
+                  <span class="arrow-icon">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            {% endfor %}
+          {% else %}
+            <div class="tabbed-mega-menu__column">
+              <h3 class="tabbed-mega-menu__column-title">{{ link.title }}</h3>
+              <a href="{{ link.url }}" class="tabbed-mega-menu__view-all">
+                <span>SHOP ALL {{ link.title | upcase }}</span>
+              </a>
+            </div>
+          {% endif %}
+        </div>
+
+        <!-- Right Featured Leaf Card -->
+        <div class="tabbed-mega-menu__featured">
+          {% liquid
+            assign featured_image = blank
+            if link.type == 'collection_link'
+              assign featured_image = link.object.featured_image
+            endif
+            if featured_image == blank and link.type == 'collection_link' and link.object.products.first != blank
+              assign featured_image = link.object.products.first.featured_image
+            endif
+          %}
+          <div class="tabbed-mega-menu__card">
+            <div class="tabbed-mega-menu__image-wrapper">
+              {% if featured_image != blank %}
+                {{ featured_image | image_url: width: 600 | image_tag: alt: link.title, class: 'tabbed-mega-menu__image', loading: 'lazy' }}
+              {% else %}
+                {{ 'image' | placeholder_svg_tag: 'tabbed-mega-menu__image tabbed-mega-menu__image--placeholder' }}
+              {% endif %}
+            </div>
+            <a href="{{ link.url }}" class="tabbed-mega-menu__card-button">
+              <span>SHOP ALL {{ link.title | upcase }}</span>
+              <span class="button-arrow">
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</tabbed-mega-menu>
+
+<style>
+  .tabbed-mega-menu {
+    display: flex;
+    margin-top: calc(-1 * var(--submenu-padding-block-start, 24px));
+    margin-bottom: calc(-1 * var(--submenu-padding-block-end, 24px));
+    margin-left: calc(-1 * var(--section-padding-inline, 24px));
+    margin-right: calc(-1 * var(--section-padding-inline, 24px));
+    width: calc(100% + 2 * var(--section-padding-inline, 24px));
+    min-height: 420px;
+    background-color: var(--color-submenu, #f7f5f0);
+    border-radius: var(--menu-image-border-radius, 0px);
+    overflow: hidden;
+  }
+
+  .tabbed-mega-menu__sidebar {
+    width: 250px;
+    background-color: #2b3034;
+    flex-shrink: 0;
+    padding-block: var(--padding-md, 16px);
+  }
+
+  .tabbed-mega-menu__tabs {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+  }
+
+  .tabbed-mega-menu__tab-item {
+    width: 100%;
+  }
+
+  .tabbed-mega-menu__tab-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    color: #a0a6ac;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    border-left: 4px solid transparent;
+  }
+
+  .tabbed-mega-menu__tab-link:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+
+  /* Active state styles for tabs */
+  .tabbed-mega-menu__tab-link.is-active {
+    background-color: #eb5740;
+    color: #ffffff;
+    border-left-color: #eb5740;
+  }
+
+  .tabbed-mega-menu__tab-arrow {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .tabbed-mega-menu__tab-link.is-active .tabbed-mega-menu__tab-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .tabbed-mega-menu__content-panels {
+    flex-grow: 1;
+    position: relative;
+    background-color: var(--color-submenu, #f7f5f0);
+  }
+
+  .tabbed-mega-menu__panel {
+    display: none;
+    grid-template-columns: 1fr 340px;
+    gap: var(--gap-2xl, 32px);
+    padding: 32px 40px;
+    height: 100%;
+    animation: tabbedMenuFadeIn 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .tabbed-mega-menu__panel.is-active {
+    display: grid;
+  }
+
+  @keyframes tabbedMenuFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .tabbed-mega-menu__subcategories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 32px;
+    align-content: start;
+  }
+
+  .tabbed-mega-menu__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabbed-mega-menu__column-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #767676;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+  }
+
+  .tabbed-mega-menu__column-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .tabbed-mega-menu__link {
+    font-size: 13px;
+    color: #2c3034;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-weight: 500;
+  }
+
+  .tabbed-mega-menu__link:hover {
+    color: #eb5740;
+  }
+
+  .tabbed-mega-menu__view-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #eb5740;
+    text-decoration: none;
+    margin-top: auto;
+    transition: gap 0.2s ease;
+  }
+
+  .tabbed-mega-menu__view-all:hover {
+    gap: 10px;
+  }
+
+  .tabbed-mega-menu__featured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tabbed-mega-menu__card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 320px;
+    overflow: hidden;
+    /* Custom Leaf-shaped border-radius: rounded top-left and bottom-right, sharp top-right and bottom-left */
+    border-radius: 64px 0px 64px 0px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .tabbed-mega-menu__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  .tabbed-mega-menu__image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tabbed-mega-menu__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  .tabbed-mega-menu__image--placeholder {
+    fill: #e8e8e8;
+    background-color: #f7f7f7;
+    padding: 40px;
+  }
+
+  .tabbed-mega-menu__card:hover .tabbed-mega-menu__image {
+    transform: scale(1.05);
+  }
+
+  .tabbed-mega-menu__card-button {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 48px);
+    background-color: #eb5740;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(235, 87, 64, 0.2);
+  }
+
+  .tabbed-mega-menu__card-button:hover {
+    background-color: #d8452f;
+    transform: translateX(-50%) translateY(-2px);
+  }
+
+  .tabbed-mega-menu__card-button .button-arrow {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+
+  .tabbed-mega-menu__card-button:hover .button-arrow {
+    transform: translateX(4px);
+  }
+
+  /* Pure CSS Hover Interaction using :has() for modern browsers */
+  {% for link in parent_link.links %}
+    .tabbed-mega-menu:has(.tabbed-mega-menu__tab-item[data-tab-index="{{ forloop.index0 }}"]:hover) {
+      .tabbed-mega-menu__tab-link {
+        background-color: transparent;
+        color: #a0a6ac;
+        border-left-color: transparent;
+      }
+      .tabbed-mega-menu__tab-link .tabbed-mega-menu__tab-arrow {
+        opacity: 0;
+        transform: translateX(-4px);
+      }
+      .tabbed-mega-menu__tab-item[data-tab-index="{{ forloop.index0 }}"] .tabbed-mega-menu__tab-link {
+        background-color: #eb5740;
+        color: #ffffff;
+        border-left-color: #eb5740;
+      }
+      .tabbed-mega-menu__tab-item[data-tab-index="{{ forloop.index0 }}"] .tabbed-mega-menu__tab-link .tabbed-mega-menu__tab-arrow {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .tabbed-mega-menu__panel {
+        display: none;
+      }
+      .tabbed-mega-menu__panel[data-panel-index="{{ forloop.index0 }}"] {
+        display: grid;
+      }
+    }
+  {% endfor %}
+</style>
+
+<script>
+  /**
+   * TabbedMegaMenu web component for fallbacks and touch compatibility
+   */
+  class TabbedMegaMenu extends HTMLElement {
+    connectedCallback() {
+      const tabs = this.querySelectorAll('.tabbed-mega-menu__tab-link');
+      const panels = this.querySelectorAll('.tabbed-mega-menu__panel');
+
+      tabs.forEach((tab) => {
+        // Support hover/pointerenter as the primary desktop interaction
+        tab.addEventListener('pointerenter', () => this.setActiveTab(tab, tabs, panels));
+        
+        // Support click for mobile/touch devices
+        tab.addEventListener('click', (e) => {
+          e.preventDefault();
+          this.setActiveTab(tab, tabs, panels);
+        });
+      });
+    }
+
+    setActiveTab(activeTab, allTabs, allPanels) {
+      const targetIndex = activeTab.closest('.tabbed-mega-menu__tab-item').dataset.tabIndex;
+
+      allTabs.forEach((tab) => {
+        tab.classList.remove('is-active');
+        tab.setAttribute('aria-selected', 'false');
+      });
+      allPanels.forEach((panel) => {
+        panel.classList.remove('is-active');
+      });
+
+      activeTab.classList.add('is-active');
+      activeTab.setAttribute('aria-selected', 'true');
+
+      const targetPanel = this.querySelector(`.tabbed-mega-menu__panel[data-panel-index="${targetIndex}"]`);
+      if (targetPanel) {
+        targetPanel.classList.add('is-active');
+      }
+    }
+  }
+
+  if (!customElements.get('tabbed-mega-menu')) {
+    customElements.define('tabbed-mega-menu', TabbedMegaMenu);
+  }
+</script>
