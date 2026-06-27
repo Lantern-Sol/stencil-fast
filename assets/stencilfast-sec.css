@@ -26,3 +26,8 @@
 .stencilfast-sec .button.deferred-media__poster-button:hover{
     background:none;
 }
+
+.stencilfast-sec .deferred-media__poster-image, .stencilfast-sec video {
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
