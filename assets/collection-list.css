@@ -120,4 +120,7 @@
 	font-size: 12px;
 	gap: 10px;
 }
+.collection-list .collection-card__content .text-block {
+	padding: 10px 5px;
+}
 }
