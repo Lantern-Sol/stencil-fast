@@ -15,3 +15,6 @@
 	font-family:var(--secondary-font);
     	letter-spacing: 0.5px;
 }
+.newsletter-sec .email-signup__input {
+	max-height: 48px;
+}
