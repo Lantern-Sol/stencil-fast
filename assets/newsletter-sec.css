@@ -20,3 +20,7 @@
 	max-height: 48px;
 	width: 70%;
 }
+.newsletter-sec .email-signup__button {
+	min-width: 220px;
+	max-height: 48px;
+}
