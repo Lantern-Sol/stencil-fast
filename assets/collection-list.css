@@ -102,4 +102,7 @@
 .collection-list .collection-card__content .text-block {
 	max-width: 100%;
 }
+.collection-list .collection-card__content .text-block p {
+	font-size: 13px;
+}
 }
