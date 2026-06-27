@@ -47,7 +47,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "type_preset_mobile": "custom",
-            "mobile_font_size": "1rem",
+            "mobile_font_size": "0.875rem",
             "mobile_custom_line_height": 1,
             "text_color": ""
           },
