@@ -21,3 +21,8 @@
 	max-width: 750px;
 }
 }
+@media only screen and (max-width:767px){
+.guaranteed-sec .section-content-wrapper h2 {
+    font-size: 32px;
+}
+}
