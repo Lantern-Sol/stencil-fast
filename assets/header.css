@@ -30,6 +30,7 @@ ul.menu-drawer__menu.menu-drawer__menu--childlist {
     display: flex;
     flex-wrap: nowrap;
     overflow-x:auto;
+     overflow-y:hidden;
 }
 ul.menu-drawer__menu.menu-drawer__menu--childlist li  a {
     white-space: nowrap;
