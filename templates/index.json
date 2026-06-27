@@ -1573,6 +1573,7 @@
         "background_color": "",
         "video_position": "cover",
         "background_image": "shopify://shop_images/guaranted-ng.jpg",
+        "background_image_mobile": "shopify://shop_images/guaranted-ng-m.png",
         "background_image_position": "cover",
         "toggle_overlay": false,
         "overlay_color": "#00000026",
