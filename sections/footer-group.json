@@ -538,6 +538,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/phn-icn.svg",
                     "width": 24,
                     "width-mobile": 24,
                     "link": "",
@@ -651,6 +652,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/mail-icn.svg",
                     "width": 24,
                     "width-mobile": 24,
                     "link": "",
@@ -663,7 +665,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>1-800-250-554</p>",
+                    "text": "<p>stencils@stencilfast.com</p>",
                     "mobile_text": "",
                     "width": "fit-content",
                     "max_width": "normal",
