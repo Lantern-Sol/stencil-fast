@@ -18,3 +18,8 @@
 	max-width: 650px;
     	font-family: var(--secondary-font);
 }
+
+.main-banner .hero__content-wrapper h2 {
+	font-size: 45px;
+	line-height: 50px;
+}
