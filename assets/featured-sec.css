@@ -70,3 +70,7 @@
 .best-seller-sec slideshow-arrows {
 	mix-blend-mode: unset;
 }
+
+.best-seller-sec .resource-list__slide .h4 p {
+	min-height: 50px;
+}
