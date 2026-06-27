@@ -1895,8 +1895,8 @@
         "horizontal_alignment": "flex-start",
         "gap": 28,
         "background_color": "",
-        "padding-block-start": 48,
-        "padding-block-end": 48,
+        "padding-block-start": 60,
+        "padding-block-end": 60,
         "custom_class": "best-seller-sec"
       }
     },
