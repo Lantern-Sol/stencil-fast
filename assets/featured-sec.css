@@ -98,16 +98,9 @@
      background-size: 18px;
 }
 .best-seller-sec slideshow-arrows .slideshow-control {
-    position: absolute;
-    top: -70px;
-    right: 0;
-    background: #e94f37;
     width: 35px;
     height: 35px;
-    display: block!important;
-    opacity: 1;
-    border-radius: 100%;
-    animation: unset!important;
-    box-shadow: 0 3px 5px #00000080;
+	min-width:unset;
+	min-width:unset;
 }
 }
