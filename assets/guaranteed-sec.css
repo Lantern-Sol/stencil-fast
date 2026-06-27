@@ -12,6 +12,7 @@
 .guaranteed-sec .section-content-wrapper h2 em {
 	color: #FDFDFC;
 }
-.guaranteed-sec .section-content-wrapper  p{
-    font-family:var( --secondary-font);
+.guaranteed-sec .section-content-wrapper p {
+	font-family: var( --secondary-font);
+	line-height: normal;
 }
