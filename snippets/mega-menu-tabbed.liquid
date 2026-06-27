@@ -413,6 +413,9 @@
 .header__row nav.menu-list li.menu-list__list-item span {
 	opacity: 1;
 }
+.menu-list__submenu {
+	box-shadow: 0 5px 5px 0px rgba(0,0,0,0.5);
+}
   /* Pure CSS Hover Interaction using :has() for modern browsers */
   {% for link in parent_link.links %} 
     .tabbed-mega-menu:has(.tabbed-mega-menu__tab-item[data-tab-index="{{ forloop.index0 }}"]:hover) {
