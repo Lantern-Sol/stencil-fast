@@ -30,7 +30,7 @@
 	margin-bottom: 15px;
 	transition:0.2s;
 }
-.collection-list .collection-card__content .text-block:hover{
+.collection-list .resource-list__item:hover .collection-card__content .text-block{
 	background:red;
 }
 .collection-list .collection-card__content .text-block p::after {
