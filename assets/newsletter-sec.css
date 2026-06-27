@@ -21,10 +21,7 @@
 	width: 70%;
 	outline: unset;
 }
-.newsletter-sec .email-signup__button {
-	min-width: 220px;
-	max-height: 48px;
-}
+
 .newsletter-sec .email-signup__button {
 	min-width: 220px;
 	max-height: 48px;
@@ -37,6 +34,7 @@
 	justify-content: center;
     cursor:pointer;
     transition:ease 0.2s;
+      outline: unset;
 }
 .newsletter-sec .email-signup__button:hover {
 	background:#f6f7eb;
