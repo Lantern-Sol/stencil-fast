@@ -4,3 +4,10 @@
 	font-weight: 500;
 	letter-spacing: 0.5px;
 }
+.newsletter-sec h2 {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 40px;
+	font-style: italic;
+	letter-spacing: 0.5px;
+}
