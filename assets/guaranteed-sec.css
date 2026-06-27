@@ -9,3 +9,6 @@
     letter-spacing:0.5px;
 	text-transform: uppercase;
 }
+.guaranteed-sec .section-content-wrapper h2 em {
+	color: red;
+}
