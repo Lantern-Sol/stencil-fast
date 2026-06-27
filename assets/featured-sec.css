@@ -88,3 +88,9 @@
 	padding: 10px;
 }
 }
+@media only screen and (max-width:991px){
+.best-seller-sec slideshow-arrows .slideshow-control.slideshow-control--previous {
+    right: 70px;
+    background-size: 18px;
+}
+}
