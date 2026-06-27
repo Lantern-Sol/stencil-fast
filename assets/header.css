@@ -6,3 +6,11 @@
 	width: 19px;
 	height: 19px;
 }
+
+.menu-drawer__navigation {
+    padding: 0;
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    background: red;
+}
