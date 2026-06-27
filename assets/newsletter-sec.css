@@ -35,6 +35,20 @@
 	gap: 10px;
 	justify-content: center;
     cursor:pointer;
+    transition:ease 0.2s;
+}
+.newsletter-sec .email-signup__button:hover {
+	min-width: 220px;
+	max-height: 48px;
+	font-style: italic;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+    cursor:pointer;
+    transition:ease 0.2s;
 }
 .newsletter-sec .email-signup__button::after {
 	content: "";
