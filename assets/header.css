@@ -29,5 +29,9 @@ nav.menu-drawer__navigation ul.menu-drawer__menu span.svg-wrapper.icon-caret {
 ul.menu-drawer__menu.menu-drawer__menu--childlist {
     display: flex;
     flex-wrap: nowrap;
+    overflow-x:auto;
+}
+ul.menu-drawer__menu.menu-drawer__menu--childlist li  a {
+    white-space: nowrap;
 }
 }
