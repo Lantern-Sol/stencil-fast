@@ -5446,7 +5446,7 @@ body .product-badges__badge {
 .button-secondary {
     font-style: italic;
       outline:unset;
-      transition:ease 0.2s;
+      transition:ease 0.2s;  font-weight:500;
 }
 .main-banner .button,
 .stencilfast-sec .button {
@@ -5456,6 +5456,7 @@ body .product-badges__badge {
          display: flex;
     align-items: center;
     gap: 12px;
+    font-weight:500;
 }
 .main-banner .button::after,
 .stencilfast-sec .button:after {
@@ -5481,13 +5482,4 @@ body .button-secondary {
 body .button-secondary:hover {
     background:#fff;
     color:#393E41;
-}
-
-body .menu-list:not(:has(.menu-list__list-item:hover)) .menu-list__link--active,
- body .menu-list .menu-list__list-item:where(:hover, :focus-within) .menu-list__link,
- body .menu-list .menu-list__list-item[slot="overflow"] .menu-list__link[aria-expanded="true"] {
-	color: #E94F37;
-}
-body .menu-list .menu-list__list-item:where(:hover, :focus-within) .menu-list__link .icon-chevron-down {
-	transform: rotate(180deg);
 }
