@@ -35,4 +35,8 @@
 .main-banner .hero__content-wrapper p {
 	font-size:16px ;
 }
+.main-banner .button {
+	width: 100%;
+	justify-content: center;
+}
 }
