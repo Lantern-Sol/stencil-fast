@@ -10,7 +10,7 @@
 	text-transform: uppercase;
 	font-weight: 500;
 }
-.footer-content  .menu .menu__heading__default {
+.footer-content  nav li  a{
 	font-size: 16px;
 	font-weight: 500;
 }
