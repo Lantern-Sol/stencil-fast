@@ -113,4 +113,7 @@
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 }
+.collection-list .resource-list__carousel .resource-list__slide {
+	padding: 0;
+}
 }
