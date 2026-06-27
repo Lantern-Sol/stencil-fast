@@ -15,7 +15,8 @@ nav.menu-drawer__navigation ul.menu-drawer__menu .menu-drawer__menu-item-text {
     font-weight: 500;
     color: #393E41;
 }
-.header .menu-drawer__menu-container--divider {
+.header .menu-drawer__menu-container--divider ,
+.header .menu-drawer__list-item--divider{
     border: none;
 }
 nav.menu-drawer__navigation ul.menu-drawer__menu span.svg-wrapper.icon-caret svg {
