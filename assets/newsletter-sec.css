@@ -41,6 +41,7 @@
 .newsletter-sec .email-signup__button:hover {
 	background:#f6f7eb;
     color:#393E41;
+  
 }
 .newsletter-sec .email-signup__button::after {
 	content: "";
