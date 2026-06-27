@@ -95,4 +95,9 @@
 .newsletter-sec p {
     font-size: 14px;
 }
+.newsletter-sec .email-signup__button {
+    max-width: 190px;
+    min-width: unset;
+    margin-right: auto;
+}
 }
