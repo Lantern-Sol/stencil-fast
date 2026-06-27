@@ -68,3 +68,8 @@
 	font-size: 26px;
 }
 }
+@media only screen and (max-width:1200px){
+.newsletter-sec .email-signup__button {
+	min-width: 160px;
+}
+}
