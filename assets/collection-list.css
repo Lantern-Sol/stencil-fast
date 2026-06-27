@@ -135,8 +135,10 @@
 	right: 20px;
 }
 .collection-list slideshow-arrows .slideshow-control {
-	width: 32px;
-	height: 32px;
+	width: 35px;
+	height: 35px;
+	min-width: unset;
+	min-height: unset;
 }
 .collection-list slideshow-arrows .slideshow-control.slideshow-control--previous ,
 .collection-list slideshow-arrows .slideshow-control.slideshow-control--next{
