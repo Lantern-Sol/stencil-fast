@@ -30,7 +30,12 @@
 	font-style: italic;
 	font-weight: 500;
 	letter-spacing: 0.5px;
-}.newsletter-sec .email-signup__button::after {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+}
+.newsletter-sec .email-signup__button::after {
 	content: "";
 	background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/button-arrow.svg?v=1782455872');
 	width: 20px;
