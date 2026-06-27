@@ -3,3 +3,8 @@
 	max-width: 900px;
 	margin: auto;
 }
+.guaranteed-sec .section-content-wrapper h2 {
+	margin: 0;
+    font-weight:500;
+	text-transform: uppercase;
+}
