@@ -406,7 +406,9 @@
   .tabbed-mega-menu__card-button:hover .button-arrow {
     transform: translateX(4px);
   }
-
+.tabbed-mega-menu__tab-arrow img {
+	width: 8px;
+}
   /* Pure CSS Hover Interaction using :has() for modern browsers */
   {% for link in parent_link.links %}
     .tabbed-mega-menu:has(.tabbed-mega-menu__tab-item[data-tab-index="{{ forloop.index0 }}"]:hover) {
