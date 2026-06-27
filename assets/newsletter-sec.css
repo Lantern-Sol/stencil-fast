@@ -63,3 +63,8 @@
 	font-size: 33px;
 }
 }
+@media only screen and (max-width:1300px){
+.newsletter-sec h2 {
+	font-size: 26px;
+}
+}
