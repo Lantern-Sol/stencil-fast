@@ -1481,7 +1481,7 @@
         "section_width": "page-width",
         "section_height": "small",
         "section_height_custom": 50,
-        "background_media": "none",
+        "background_media": "image",
         "background_color": "",
         "video_position": "cover",
         "background_image_position": "cover",
