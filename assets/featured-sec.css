@@ -84,4 +84,7 @@
 .best-seller-sec .resource-list__slide .h4 p {
 	font-size: 14px;
 }
+.best-seller-sec .product-form-buttons .button {
+	padding: 10px;
+}
 }
