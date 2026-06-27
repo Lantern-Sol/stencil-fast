@@ -5,3 +5,13 @@
 	font-size: 14px;
     	font-family: var( --secondary-font);
 }
+.footer-content  .menu .menu__heading__default {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.footer-content  .menu .menu__heading__default {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
