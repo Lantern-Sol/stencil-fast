@@ -7,9 +7,9 @@
 .newsletter-sec h2 {
 	text-transform: uppercase;
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 36px;
 	font-style: italic;
-	letter-spacing: 0.5px;
+	letter-spacing: .5px;
 }
 .newsletter-sec p {
 	font-family:var(--secondary-font);
