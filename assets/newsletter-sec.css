@@ -12,9 +12,5 @@
 	letter-spacing: 0.5px;
 }
 .newsletter-sec p {
-	text-transform: uppercase;
-	font-weight: 500;
-	font-size: 40px;
-	font-style: italic;
-	letter-spacing: 0.5px;
+	font-family:var(--secondary-font);
 }
