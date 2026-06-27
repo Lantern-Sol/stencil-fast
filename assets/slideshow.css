@@ -1,7 +1,4 @@
-.about-sec {
-	background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/bg-img_026bb05d-4c9a-4908-bc4b-2a4e5b1b1835.png?v=1782544473') !important;
-	background-size: cover !important;
-}
+
 .about-sec .image-block img {
 	max-width: 100px;
 }
@@ -28,7 +25,8 @@ font-family:var(--secondary-font);
 display:none;
 }
 .about-sec {
-	background: red !important;
+	background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/bg-img_026bb05d-4c9a-4908-bc4b-2a4e5b1b1835.png?v=1782544473') !important;
+	background-size: cover !important;
 }
 .about-sec .slideshow-controls__dots li button {
 	width: 70px;
