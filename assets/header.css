@@ -22,4 +22,8 @@ nav.menu-drawer__navigation ul.menu-drawer__menu span.svg-wrapper.icon-caret svg
     width: 17px;
     height: 17px;
 }
+nav.menu-drawer__navigation ul.menu-drawer__menu span.svg-wrapper.icon-caret {
+    width: 17px;
+    height: 17px;
+}
 }
