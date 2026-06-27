@@ -82,15 +82,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.collection-list slideshow-arrows .button::after {
-	margin-top: 7px;
-	background: url(/cdn/shop/files/slider-arrow.svg?v=1782477639);
-	background-size: 23px;
-	background-repeat: no-repeat;
-	width: 22px;
-	height: 22px;
-	background-position: center;
-}
+
 .collection-list slideshow-arrows {
 	mix-blend-mode: unset;
 }
