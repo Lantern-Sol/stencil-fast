@@ -145,4 +145,9 @@
 .collection-list slideshow-arrows .slideshow-control.slideshow-control--next{
 	background-size: 18px;
 }
+.collection-list .resource-list__carousel .resource-list__slide .collection-card__image,
+.collection-list .collection-card__content {
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
 }
