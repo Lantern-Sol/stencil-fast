@@ -90,10 +90,8 @@
 .collection-list slideshow-arrows {
 	mix-blend-mode: unset;
 }
-
+@media only screen and (max-width:1200px){
 .collection-list h2 {
-	text-transform: uppercase;
 	font-size: 38px;
-	font-style: italic;
-	font-weight: 500;
+}
 }
