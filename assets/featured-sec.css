@@ -74,3 +74,8 @@
 .best-seller-sec .resource-list__slide .h4 p {
 	min-height: 50px;
 }
+@media only screen and (max-width:991px){
+.best-seller-sec .resource-list__slide {
+	padding: 0;
+}
+}
