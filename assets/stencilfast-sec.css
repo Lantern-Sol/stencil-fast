@@ -38,3 +38,8 @@
 	border-bottom-right-radius: 25px;
 }
 }
+@media only screen and (max-width:767px){
+.stencilfast-sec h3 {
+    font-size: 24px;
+}
+}
