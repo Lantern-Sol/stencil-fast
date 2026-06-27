@@ -91,3 +91,8 @@
 	outline: unset;
 }
 }
+@media only screen and (max-width:767px){
+.newsletter-sec p {
+    font-size: 14px;
+}
+}
