@@ -149,4 +149,7 @@
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
+.collection-list .resource-list__carousel .resource-list__slide {
+    padding: 0 5px;
+}
 }
