@@ -19,29 +19,29 @@ nav.menu-drawer__navigation ul.menu-drawer__menu .menu-drawer__menu-item-text {
 .header .menu-drawer__list-item--divider{
     border: none;
 }
-nav.menu-drawer__navigation ul.menu-drawer__menu span.svg-wrapper.icon-caret svg {
+.header nav.menu-drawer__navigation ul.menu-drawer__menu span.svg-wrapper.icon-caret svg {
     width: 17px;
     height: 17px;
 }
-nav.menu-drawer__navigation ul.menu-drawer__menu span.svg-wrapper.icon-caret {
+.header .menu-drawer__navigation ul.menu-drawer__menu span.svg-wrapper.icon-caret {
     width: 17px;
     height: 17px;
 }
-ul.menu-drawer__menu.menu-drawer__menu--childlist {
+.header ul.menu-drawer__menu.menu-drawer__menu--childlist {
     display: flex;
     flex-wrap: nowrap;
     overflow-x:auto;
      overflow-y:hidden;
 }
-ul.menu-drawer__menu.menu-drawer__menu--childlist li  a {
+.header ul.menu-drawer__menu.menu-drawer__menu--childlist li  a {
     white-space: nowrap;
     padding:0 10px;
 }
-nav.menu-drawer__navigation ul.menu-drawer__menu.menu-drawer__menu--childlist li a span {
+.header nav.menu-drawer__navigation ul.menu-drawer__menu.menu-drawer__menu--childlist li a span {
     font-size: 14px;
     color: #393E41;
 }
-.menu-drawer__menu--childlist:not(.menu-drawer__menu--grid) {
+.header .menu-drawer__menu--childlist:not(.menu-drawer__menu--grid) {
     flex-grow: unset;
 }
 }
