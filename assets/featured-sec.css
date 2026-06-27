@@ -106,4 +106,7 @@
 .best-seller-sec h2 {
     font-size: 32px;
 }
+.best-seller-sec slideshow-arrows .slideshow-control {
+    top: -58px;
+}
 }
