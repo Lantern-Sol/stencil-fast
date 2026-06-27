@@ -116,4 +116,8 @@
 .collection-list .resource-list__carousel .resource-list__slide {
 	padding: 0;
 }
+.collection-list .collection-card__content .text-block p {
+	font-size: 12px;
+	gap: 10px;
+}
 }
