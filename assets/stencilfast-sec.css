@@ -45,4 +45,8 @@
 .stencilfast-sec h3 strong {
     font-size: 32px;
 }
+.stencilfast-sec .deferred-media__poster-image, .stencilfast-sec video {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
 }
