@@ -24,3 +24,10 @@
 	min-width: 220px;
 	max-height: 48px;
 }
+.newsletter-sec .email-signup__button {
+	min-width: 220px;
+	max-height: 48px;
+	font-style: italic;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
