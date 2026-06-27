@@ -5482,3 +5482,7 @@ body .button-secondary:hover {
     background:#fff;
     color:#393E41;
 }
+
+.menu-list:not(:has(.menu-list__list-item:hover)) .menu-list__link--active, .menu-list .menu-list__list-item:where(:hover, :focus-within) .menu-list__link, .menu-list .menu-list__list-item[slot="overflow"] .menu-list__link[aria-expanded="true"] {
+	color: red;
+}
