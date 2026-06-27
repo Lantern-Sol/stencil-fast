@@ -4,7 +4,7 @@
 	margin: auto;
 }
 .guaranteed-sec .section-content-wrapper h2 {
-	margin: 0;
+	margin: 0 0 10px 0;
     font-weight:500;
     letter-spacing:0.5px;
 	text-transform: uppercase;
