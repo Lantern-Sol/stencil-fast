@@ -31,7 +31,7 @@
 	transition:0.2s;
 }
 .collection-list .resource-list__item:hover .collection-card__content .text-block{
-	background:red;
+	background:#393e41;
 }
 .collection-list .collection-card__content .text-block p::after {
 	content: "";
