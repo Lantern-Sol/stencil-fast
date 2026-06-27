@@ -10,4 +10,9 @@
 .header .menu-drawer__navigation {
     background: #F9FAF5;
 }
+nav.menu-drawer__navigation ul.menu-drawer__menu .menu-drawer__menu-item-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #393E41;
+}
 }
