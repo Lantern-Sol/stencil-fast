@@ -90,3 +90,10 @@
 .collection-list slideshow-arrows {
 	mix-blend-mode: unset;
 }
+
+.collection-list h2 {
+	text-transform: uppercase;
+	font-size: 38px;
+	font-style: italic;
+	font-weight: 500;
+}
