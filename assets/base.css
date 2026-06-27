@@ -5482,3 +5482,8 @@ body .button-secondary:hover {
     background:#fff;
     color:#393E41;
 }
+/*mega-menu-css*/
+.tabbed-mega-menu {
+	margin-left: -50px;
+	margin-right: -50px;
+}
