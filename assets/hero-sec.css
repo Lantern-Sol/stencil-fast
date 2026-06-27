@@ -18,8 +18,9 @@
 	max-width: 650px;
     	font-family: var(--secondary-font);
 }
-
+@media only screen and (max-width:991px){
 .main-banner .hero__content-wrapper h2 {
 	font-size: 45px;
 	line-height: 50px;
+}
 }
