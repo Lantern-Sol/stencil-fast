@@ -104,5 +104,6 @@
 }
 .collection-list .collection-card__content .text-block p {
 	font-size: 13px;
+	gap: 10px;
 }
 }
