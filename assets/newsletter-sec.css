@@ -43,7 +43,15 @@
 }
 .newsletter-sec .email-signup__button::after {
 	content: "";
-	background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/button-arrow.svg?v=1782455872');
+	background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/btn-arrow-w.png?v=1782550501');
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-size: 11px;
+}
+.newsletter-sec .email-signup__button:hover::after {
+	content: "";
+	background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/btn-arrow-b.png?v=1782550506');
 	width: 20px;
 	height: 20px;
 	background-repeat: no-repeat;
