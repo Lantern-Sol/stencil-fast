@@ -16,5 +16,7 @@
     	letter-spacing: 0.5px;
 }
 .newsletter-sec .email-signup__input {
+	min-width: unset;
 	max-height: 48px;
+	width: 70%;
 }
