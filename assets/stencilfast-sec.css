@@ -49,4 +49,7 @@
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
+.stencilfast-sec  deferred-media {
+    min-height: 250px;
+}
 }
