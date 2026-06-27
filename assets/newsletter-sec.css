@@ -13,4 +13,5 @@
 }
 .newsletter-sec p {
 	font-family:var(--secondary-font);
+    	letter-spacing: 0.5px;
 }
