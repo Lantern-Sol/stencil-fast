@@ -131,4 +131,7 @@
 .collection-list slideshow-arrows .slideshow-control.slideshow-control--previous {
 	right: 80px;
 }
+.collection-list slideshow-arrows .slideshow-control.slideshow-control--next {
+	right: 20px;
+}
 }
