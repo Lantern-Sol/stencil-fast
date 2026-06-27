@@ -81,4 +81,13 @@
 .newsletter-sec .email-signup__input-group {
 	flex-direction: column;
 }
+.newsletter-sec .email-signup__button {
+	min-width: 100%;
+}
+.newsletter-sec .email-signup__input {
+	min-width: unset;
+	max-height: 48px;
+	width: 100%;
+	outline: unset;
+}
 }
