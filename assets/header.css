@@ -35,4 +35,8 @@ ul.menu-drawer__menu.menu-drawer__menu--childlist {
 ul.menu-drawer__menu.menu-drawer__menu--childlist li  a {
     white-space: nowrap;
 }
+nav.menu-drawer__navigation ul.menu-drawer__menu.menu-drawer__menu--childlist li a span {
+    font-size: 14px;
+    color: #393E41;
+}
 }
