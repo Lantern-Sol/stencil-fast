@@ -31,4 +31,7 @@
 .guaranteed-sec .background-image-container:before {
     background: none;
 }
+.custom-section-background:has(+ .custom-section-content.guaranteed-sec) .background-image-container:before {
+    opacity: 0;
+}
 }
