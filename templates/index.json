@@ -1993,7 +1993,7 @@
             "enable_slider_mobile": true,
             "slides_to_show_desktop": 3,
             "slides_to_scroll_desktop": 1,
-            "mobile_slides_to_show": 1,
+            "mobile_slides_to_show": 3,
             "mobile_slides_to_scroll": 1,
             "show_dots_desktop": false,
             "show_dots_mobile": true,
