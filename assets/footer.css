@@ -26,3 +26,8 @@ width:100%;
 .footer-content  .social-icons__wrapper{
     width: 33%;
 }
+.footer-content .footer-utilities__group-copyright {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+}
