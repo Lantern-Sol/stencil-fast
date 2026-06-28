@@ -1,5 +1,6 @@
 .footer-content {
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+display:block;
+width:100%;
 }
 .footer-content .group-block-content p {
 	font-size: 14px;
