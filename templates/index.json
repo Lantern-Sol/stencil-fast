@@ -283,6 +283,44 @@
         "custom_class": "main-banner"
       }
     },
+    "testimonials_KXhLzf": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_TeBMXB": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Your infinity FAA compliant stencils are absolutely wonderful. The facility notices the difference in the crisp lines and uniformity of the glass bead distribution from when we use the stencils versus when we use pads.",
+            "author": "Port Authority NY NJ"
+          }
+        },
+        "testimonial_wcxgCR": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Excellent stencils that hold up to heavy use in airport runway marking projects. The alignment tabs make runway painting quick and accurate.",
+            "author": "FAA Field Maintenance Crew"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_TeBMXB",
+        "testimonial_wcxgCR"
+      ],
+      "name": "Testimonials Slider",
+      "settings": {
+        "background_color": "#222529",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "star_color": "#eb5740",
+        "text_color": "#ffffff",
+        "author_color": "#a0a6ac",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "padding-block-start": 60,
+        "padding-block-end": 60
+      }
+    },
     "slideshow_cr9Uni": {
       "type": "slideshow",
       "blocks": {
@@ -2280,6 +2318,7 @@
   },
   "order": [
     "hero_jVaWmY",
+    "testimonials_KXhLzf",
     "slideshow_cr9Uni",
     "collection_list_Yh7R3D",
     "section_XbChk9",
