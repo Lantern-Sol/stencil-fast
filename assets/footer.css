@@ -22,6 +22,7 @@ width:100%;
     color: #FDFDFC;
 }
 .footer-content  .payment-icons,
-.footer-content  .footer-utilities__group-copyright{
+.footer-content  .footer-utilities__group-copyright,
+.footer-content  .social-icons__wrapper{
     width: 33%;
 }
