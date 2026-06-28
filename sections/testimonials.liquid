@@ -1,0 +1,497 @@
+{{ 'testimonial-sec.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  # Spacing and alignment variables
+  assign background_color = section.settings.background_color | default: '#222529'
+  assign text_color = section.settings.text_color | default: '#ffffff'
+  assign star_color = section.settings.star_color | default: '#eb5740'
+  assign author_color = section.settings.author_color | default: '#a0a6ac'
+  
+  if section.settings.image != blank
+    assign bg_image = section.settings.image | image_url: width: 1920
+  endif
+-%}
+
+<div
+  id="Testimonials-{{ section.id }}"
+  class="testimonials-section spacing-style"
+  style="
+    --testimonials-bg-color: {{ background_color }};
+    --testimonials-text-color: {{ text_color }};
+    --testimonials-star-color: {{ star_color }};
+    --testimonials-author-color: {{ author_color }};
+    --testimonials-overlay-color: {{ section.settings.overlay_color | default: '#000000' }};
+    --testimonials-overlay-opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+    --padding-block-start: {{ section.settings.padding-block-start }}px;
+    --padding-block-end: {{ section.settings.padding-block-end }}px;
+    {% if bg_image != blank %}
+      background-image: url('{{ bg_image }}');
+    {% endif %}
+  ;"
+  {% if request.visual_preview_mode %}
+    data-shopify-visual-preview
+  {% endif %}
+>
+  <!-- Background Overlay -->
+  <div class="testimonials-section__overlay"></div>
+
+  <!-- Content Container -->
+  <div class="testimonials-section__container section section--page-width">
+    {% if section.blocks.size > 0 %}
+      <testimonials-slider 
+        class="testimonials-slider" 
+        data-autoplay="{{ section.settings.autoplay }}" 
+        data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 }}"
+        data-total-slides="{{ section.blocks.size }}"
+      >
+        <!-- Slides List -->
+        <div class="testimonials-slider__slides" ref="slidesContainer">
+          {% for block in section.blocks %}
+            <div 
+              class="testimonials-slider__slide {% if forloop.first %}is-active{% endif %}" 
+              data-index="{{ forloop.index0 }}"
+              {{ block.shopify_attributes }}
+            >
+              <!-- Star Rating -->
+              {% if block.settings.stars > 0 %}
+                <div class="testimonials-slider__stars" aria-label="{{ block.settings.stars }} out of 5 stars">
+                  {% for i in (1..block.settings.stars) %}
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
+                    </svg>
+                  {% endfor %}
+                </div>
+              {% endif %}
+
+              <!-- Testimonial Quote -->
+              {% if block.settings.text != blank %}
+                <blockquote class="testimonials-slider__quote">
+                  <p class="testimonials-slider__quote-text">
+                    {{ block.settings.text | escape }}
+                  </p>
+                </blockquote>
+              {% endif %}
+
+              <!-- Author -->
+              {% if block.settings.author != blank %}
+                <cite class="testimonials-slider__author">
+                  - {{ block.settings.author | escape }}
+                </cite>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+
+        <!-- Slider Progress Indicator (Bottom Navigation) -->
+        {% if section.blocks.size > 1 %}
+          <div class="testimonials-slider__navigation">
+            <div class="testimonials-slider__progress-track" aria-label="Slideshow progress">
+              <div 
+                class="testimonials-slider__progress-bar" 
+                ref="progressBar"
+                style="width: calc(100% / {{ section.blocks.size }}); transform: translateX(0%);"
+              ></div>
+            </div>
+          </div>
+        {% endif %}
+      </testimonials-slider>
+    {% else %}
+      <div class="testimonials-section__empty text-center">
+        <p>Add testimonial blocks to showcase customer reviews.</p>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .testimonials-section {
+    position: relative;
+    background-color: var(--testimonials-bg-color);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: var(--testimonials-text-color);
+    padding-block-start: var(--padding-block-start, 60px);
+    padding-block-end: var(--padding-block-end, 60px);
+    overflow: hidden;
+  }
+
+  .testimonials-section__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--testimonials-overlay-color);
+    opacity: var(--testimonials-overlay-opacity, 0.4);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .testimonials-section__container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .testimonials-slider {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .testimonials-slider__slides {
+    position: relative;
+    min-height: 180px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+  .testimonials-slider__slide {
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonials-slider__slide.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    position: relative;
+    z-index: 3;
+  }
+
+  .testimonials-slider__stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: var(--padding-md, 20px);
+    color: var(--testimonials-star-color);
+  }
+
+  .testimonials-slider__quote {
+    margin: 0;
+    padding: 0;
+    margin-bottom: var(--padding-md, 20px);
+    max-width: 640px;
+  }
+
+  .testimonials-slider__quote-text {
+    font-size: clamp(14px, 2.5vw, 18px);
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .testimonials-slider__author {
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--testimonials-author-color);
+    margin-bottom: 24px;
+  }
+
+  /* Progress Track Navigation */
+  .testimonials-slider__navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .testimonials-slider__progress-track {
+    position: relative;
+    width: 80px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .testimonials-slider__progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--testimonials-star-color, #eb5740);
+    border-radius: 2px;
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+</style>
+
+<script>
+  /**
+   * TestimonialsSlider custom element for auto-rotation and swiping
+   */
+  class TestimonialsSlider extends HTMLElement {
+    constructor() {
+      super();
+      this.currentSlide = 0;
+      this.autoplayTimer = null;
+      this.touchStartX = 0;
+      this.touchEndX = 0;
+    }
+
+    connectedCallback() {
+      this.totalSlides = parseInt(this.dataset.totalSlides) || 0;
+      this.autoplay = this.dataset.autoplay === 'true';
+      this.autoplaySpeed = parseInt(this.dataset.autoplaySpeed) || 5000;
+      
+      this.slides = this.querySelectorAll('.testimonials-slider__slide');
+      this.progressBar = this.querySelector('.testimonials-slider__progress-bar');
+      this.track = this.querySelector('.testimonials-slider__progress-track');
+
+      if (this.totalSlides <= 1) return;
+
+      // Start Autoplay
+      this.startAutoplay();
+
+      // Swipe support
+      this.addEventListener('touchstart', (e) => {
+        this.touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      this.addEventListener('touchend', (e) => {
+        this.touchEndX = e.changedTouches[0].screenX;
+        this.handleSwipe();
+      }, { passive: true });
+
+      // Click to progress track to go to next slide
+      if (this.track) {
+        this.track.addEventListener('click', (e) => {
+          const rect = this.track.getBoundingClientRect();
+          const clickX = e.clientX - rect.left;
+          const nextIndex = Math.floor((clickX / rect.width) * this.totalSlides);
+          this.goToSlide(nextIndex);
+        });
+      }
+
+      // Pause autoplay on mouse enter and resume on leave
+      this.addEventListener('mouseenter', () => this.stopAutoplay());
+      this.addEventListener('mouseleave', () => this.startAutoplay());
+    }
+
+    disconnectedCallback() {
+      this.stopAutoplay();
+    }
+
+    startAutoplay() {
+      if (!this.autoplay) return;
+      this.stopAutoplay();
+      this.autoplayTimer = setInterval(() => {
+        this.nextSlide();
+      }, this.autoplaySpeed);
+    }
+
+    stopAutoplay() {
+      if (this.autoplayTimer) {
+        clearInterval(this.autoplayTimer);
+        this.autoplayTimer = null;
+      }
+    }
+
+    nextSlide() {
+      const nextIndex = (this.currentSlide + 1) % this.totalSlides;
+      this.goToSlide(nextIndex);
+    }
+
+    prevSlide() {
+      const prevIndex = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+      this.goToSlide(prevIndex);
+    }
+
+    goToSlide(index) {
+      if (index === this.currentSlide || index < 0 || index >= this.totalSlides) return;
+
+      // Deactivate current slide
+      this.slides[this.currentSlide].classList.remove('is-active');
+      
+      // Update index
+      this.currentSlide = index;
+
+      // Activate new slide
+      this.slides[this.currentSlide].classList.add('is-active');
+
+      // Update progress bar position
+      if (this.progressBar) {
+        this.progressBar.style.transform = `translateX(${this.currentSlide * 100}%)`;
+      }
+    }
+
+    handleSwipe() {
+      const swipeDistance = this.touchEndX - this.touchStartX;
+      const swipeThreshold = 50; // pixels
+
+      if (swipeDistance > swipeThreshold) {
+        this.prevSlide();
+        this.startAutoplay(); // Reset autoplay timer
+      } else if (swipeDistance < -swipeThreshold) {
+        this.nextSlide();
+        this.startAutoplay(); // Reset autoplay timer
+      }
+    }
+  }
+
+  if (!customElements.get('testimonials-slider')) {
+    customElements.define('testimonials-slider', TestimonialsSlider);
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Testimonials Slider",
+  "tag": "section",
+  "class": "testimonials-slider-section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#222529"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay Opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Star Rating Color",
+      "default": "#eb5740"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Quote Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "author_color",
+      "label": "Author Text Color",
+      "default": "#a0a6ac"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Auto-Rotate Slides",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Rotation Speed (Seconds)",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "range",
+          "id": "stars",
+          "label": "Star Rating",
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Quote",
+          "default": "Your infinity FAA compliant stencils are absolutely wonderful. The facility notices the difference in the crisp lines and uniformity of the glass bead distribution from when we use the stencils versus when we use pads."
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author / Source",
+          "default": "Port Authority NY NJ"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials Slider",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Your infinity FAA compliant stencils are absolutely wonderful. The facility notices the difference in the crisp lines and uniformity of the glass bead distribution from when we use the stencils versus when we use pads.",
+            "author": "Port Authority NY NJ"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "text": "Excellent stencils that hold up to heavy use in airport runway marking projects. The alignment tabs make runway painting quick and accurate.",
+            "author": "FAA Field Maintenance Crew"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
