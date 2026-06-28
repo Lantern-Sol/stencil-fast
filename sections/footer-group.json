@@ -921,7 +921,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/footer-logo1.svg",
+                "image": "shopify://shop_images/footer-logo1.png",
                 "link": "",
                 "hide_on_mobile": false,
                 "hide_on_desktop": false,
@@ -954,7 +954,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/footer-logo1.svg",
+                "image": "shopify://shop_images/footer-logo2.png",
                 "link": "",
                 "hide_on_mobile": false,
                 "hide_on_desktop": false,
@@ -987,7 +987,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/footer-logo1.svg",
+                "image": "shopify://shop_images/footer-logo3.png",
                 "link": "",
                 "hide_on_mobile": false,
                 "hide_on_desktop": false,
@@ -1020,7 +1020,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/footer-logo1.svg",
+                "image": "shopify://shop_images/footer-logo4.png",
                 "link": "",
                 "hide_on_mobile": false,
                 "hide_on_desktop": false,
@@ -1053,7 +1053,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/footer-logo1.svg",
+                "image": "shopify://shop_images/footer-logo5.png",
                 "link": "",
                 "hide_on_mobile": false,
                 "hide_on_desktop": false,
@@ -1086,7 +1086,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/footer-logo1.svg",
+                "image": "shopify://shop_images/footer-logo6.png",
                 "link": "",
                 "hide_on_mobile": false,
                 "hide_on_desktop": false,
@@ -1119,7 +1119,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/footer-logo1.svg",
+                "image": "shopify://shop_images/footer-logo7.png",
                 "link": "",
                 "hide_on_mobile": false,
                 "hide_on_desktop": false,
