@@ -21,7 +21,7 @@ width:100%;
 	font-family: var( --secondary-font);
     color: #FDFDFC;
 }
-.payment-icons,
-.footer-utilities__group-copyright{
+.footer-content  .payment-icons,
+.footer-content  .footer-utilities__group-copyright{
     width: 33%;
 }
