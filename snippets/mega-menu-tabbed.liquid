@@ -52,7 +52,7 @@
               assign tab_menu = linklists[tab_menu_handle]
             endif
           %}
-          {{ tab_menu }}
+          {{ link.handle }}
           {% if tab_menu != blank %}
             {% for col_link in tab_menu.links %}
               <div class="tabbed-mega-menu__column">
