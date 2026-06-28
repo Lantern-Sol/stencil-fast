@@ -309,9 +309,10 @@
       ],
       "name": "Testimonials Slider",
       "settings": {
+        "image": "shopify://shop_images/bg-img_affdc775-27d6-47b8-a6cf-1b0d2001dd07.png",
         "background_color": "#222529",
         "overlay_color": "#000000",
-        "overlay_opacity": 50,
+        "overlay_opacity": 0,
         "star_color": "#eb5740",
         "text_color": "#ffffff",
         "author_color": "#a0a6ac",
@@ -617,6 +618,7 @@
         "slide_3Uwkj8",
         "slide_7t9dtp"
       ],
+      "disabled": true,
       "name": "t:names.slideshow_full_frame",
       "settings": {
         "display_mode": "full_frame",
