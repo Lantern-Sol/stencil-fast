@@ -920,6 +920,7 @@
             "group_slider_raQarG": {
               "type": "group-slider",
               "name": "Group slider",
+              "disabled": true,
               "settings": {
                 "enable_slider_desktop": false,
                 "enable_slider_mobile": true,
