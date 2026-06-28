@@ -21,3 +21,6 @@ width:100%;
 	font-family: var( --secondary-font);
     color: #FDFDFC;
 }
+.payment-icons {
+    width: 33%;
+}
