@@ -864,6 +864,19 @@
             "menu_CJxcBP"
           ]
         },
+        "divider_badJHx": {
+          "type": "_divider",
+          "name": "t:names.divider",
+          "settings": {
+            "thickness": 1,
+            "corner_radius": "square",
+            "divider_color": "",
+            "width_percent": 100,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {}
+        },
         "group_kmBxLP": {
           "type": "group",
           "name": "t:names.group",
@@ -1324,6 +1337,7 @@
       },
       "block_order": [
         "group_FFbk7i",
+        "divider_badJHx",
         "group_kmBxLP",
         "group_h3KiPT"
       ],
