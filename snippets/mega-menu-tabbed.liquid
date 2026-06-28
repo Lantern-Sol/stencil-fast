@@ -46,7 +46,7 @@
         <div class="tabbed-mega-menu__subcategories">
           {% liquid
             # Try fetching a separate link list with matching handle for deeper nesting
-            assign tab_menu = linklists[link.handle]
+            assign tab_menu = linklists['parking-lot']
             if tab_menu == blank
               assign tab_menu_handle = 'menu-' | append: link.handle
               assign tab_menu = linklists[tab_menu_handle]
