@@ -158,7 +158,7 @@
                             </span>
                           </button>
                         </div>
-                    {%- if block_settings.menu_style == 'tabbed_mega_menu' -%}
+                    {%- if block_settings.menu_style == 'tabbed_mega_menu' and link.title =='SHOP BY' -%}
                       {% render 'mega-menu-tabbed-mobile',
                         parent_link: link,
                         id: link.handle
