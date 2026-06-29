@@ -87,4 +87,8 @@ width:100%;
     font-weight: 500;
     text-transform: uppercase;
 }
+.footer-content nav li a {
+    font-size: 14px;
+
+}
 }
