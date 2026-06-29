@@ -429,6 +429,10 @@
     font-family:var(--font-paragraph--family);
     font-weight: 500;
 }
+.header__row nav.menu-list li.menu-list__list-item .tabbed-mega-menu__view-all  svg {
+    width: 15px;
+    height: 15px;
+}
   /* Pure CSS Hover Interaction using :has() for modern browsers */
   {% for link in parent_link.links %} 
     .tabbed-mega-menu:has(.tabbed-mega-menu__tab-item[data-tab-index="{{ forloop.index0 }}"]:hover) {
