@@ -50,4 +50,7 @@
 .brand-sec ol.slideshow-controls__dots {
     display: none;
 }
+.brand-sec slideshow-slide img {
+    max-height: 60px;
+}
 }
