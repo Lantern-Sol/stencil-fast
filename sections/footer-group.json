@@ -1215,13 +1215,13 @@
             "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "use_mobile_padding": false,
+            "padding-inline-start": 60,
+            "padding-inline-end": 60,
+            "use_mobile_padding": true,
             "padding-block-start-mobile": 0,
             "padding-block-end-mobile": 0,
-            "padding-inline-start-mobile": 0,
-            "padding-inline-end-mobile": 0,
+            "padding-inline-start-mobile": 20,
+            "padding-inline-end-mobile": 20,
             "custom_class": ""
           },
           "blocks": {
