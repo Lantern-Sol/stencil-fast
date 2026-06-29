@@ -136,4 +136,8 @@ width:100%;
 .footer-menu-sec summary.menu__heading:focus span.menu__heading__accordion .icon-caret {
    transform:rotate(180deg);
 }
+.footer-menu-sec summary.menu__heading:hover span.menu__heading__accordion .icon-caret path,
+.footer-menu-sec summary.menu__heading:focus span.menu__heading__accordion .icon-caret path {
+      color: #E94F37;;
+}
 }
