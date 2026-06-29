@@ -56,4 +56,9 @@ width:100%;
     gap: 0;
     flex-direction: column;
 }
+.footer-utilities__group-copyright span.footer-utilities__text, .footer-utilities__group-copyright span.ooter-utilities-designby {
+    font-size: 13px;
+    font-family: var( --secondary-font);
+    color: #fdfdfc;
+}
 }
