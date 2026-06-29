@@ -12,6 +12,7 @@
     "logo": "shopify://shop_images/Logos.svg",
     "logo_height": 36,
     "logo_height_mobile": 28,
+    "favicon": "shopify://shop_images/logo-element-1.svg",
     "page_text_color": "#393E41",
     "type_body_font": "ibm_plex_sans_n4",
     "type_subheading_font": "ibm_plex_sans_n4",
