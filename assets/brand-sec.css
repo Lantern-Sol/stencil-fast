@@ -30,6 +30,10 @@
     margin: auto;
     width: 100%;
 }
+.brand-sec slideshow-slide img {
+    max-height: 100px;
+    object-fit: contain;
+}
 @media only screen and (max-width:991px){
 .brand-sec .group-block-content .image-block img {
 	min-width: 100px;
