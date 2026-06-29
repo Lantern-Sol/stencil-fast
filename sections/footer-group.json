@@ -396,8 +396,8 @@
             "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
-            "padding-inline-start": 60,
-            "padding-inline-end": 60,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20,
             "use_mobile_padding": false,
             "padding-block-start-mobile": 0,
             "padding-block-end-mobile": 0,
@@ -1268,8 +1268,8 @@
                 "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
-                "padding-inline-start": 60,
-                "padding-inline-end": 60,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20,
                 "use_mobile_padding": false,
                 "padding-block-start-mobile": 0,
                 "padding-block-end-mobile": 0,
@@ -1347,8 +1347,8 @@
         "gap": 50,
         "background_color": "",
         "background_image": "shopify://shop_images/footer-bg.png",
-        "padding-block-start": 50,
-        "padding-block-end": 50
+        "padding-block-start": 30,
+        "padding-block-end": 30
       }
     },
     "utilities": {
