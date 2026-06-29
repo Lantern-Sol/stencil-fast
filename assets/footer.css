@@ -52,6 +52,9 @@ width:100%;
     border-radius: 100%;
 }
 .footer-content nav li a:hover{text-decoration:underline;}
+.footer-content .social-icons__wrapper svg path {
+    fill: #FFFFFF26;
+}
 @media only screen and (max-width:1200px){
 .footer-content .footer-utilities__group-copyright {
     gap: 0;
