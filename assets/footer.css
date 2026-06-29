@@ -71,7 +71,8 @@ width:100%;
     gap: 10px;
     justify-content: center;
 }
-.footer-menu-sec {
+.footer-menu-sec,
+.policy-sec {
     padding-left: 30px;
     padding-right: 30px;
 }
