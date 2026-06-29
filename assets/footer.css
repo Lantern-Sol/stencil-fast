@@ -35,12 +35,12 @@ width:100%;
     max-width: 850px;
     margin: 30px auto;
     display: flex;
-    gap: 30px;
+    gap: 50px;
 }
 .footer-content .footer-logo img.image-block__image {
-    min-height: 100px;
+    min-height: 50px;
     object-fit: contain;
     min-width: 100px;
-    max-height: 100px;
+    max-height: 50px;
     max-width: 100px;
 }
