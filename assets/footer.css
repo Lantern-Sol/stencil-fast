@@ -67,4 +67,8 @@ width:100%;
     max-height: 40px;
     max-width: 70px;
 }
+.footer-content .footer-logo {
+    margin: 30px auto;
+    justify-content: center;
+}
 }
