@@ -870,9 +870,9 @@
           "settings": {
             "thickness": 1,
             "corner_radius": "square",
-            "divider_color": "",
+            "divider_color": "#8F969A",
             "width_percent": 100,
-            "padding-block-start": 0,
+            "padding-block-start": 30,
             "padding-block-end": 0
           },
           "blocks": {}
@@ -1343,7 +1343,7 @@
       ],
       "name": "t:names.footer",
       "settings": {
-        "section_width": "page-width",
+        "section_width": "full-width",
         "gap": 50,
         "background_color": "{{ settings.color_palette.color1 }}",
         "padding-block-start": 50,
