@@ -47,4 +47,7 @@
 .brand-sec p {
     font-size: 14px;
 }
+.brand-sec ol.slideshow-controls__dots {
+    display: none;
+}
 }
