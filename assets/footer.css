@@ -82,4 +82,9 @@ width:100%;
 .footer-menu-sec summary.menu__heading {
     padding: 0;
 }
+.footer-menu-sec summary.menu__heading span.menu__heading__accordion {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 }
