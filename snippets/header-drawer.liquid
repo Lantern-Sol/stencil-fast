@@ -158,6 +158,13 @@
                             </span>
                           </button>
                         </div>
+                        {%- if block_settings.menu_style == 'tabbed_mega_menu' -%}
+                          {% render 'mega-menu-tabbed-mobile',
+                            parent_link: link,
+                            id: link.handle
+                          %}
+                        {%- else -%}
+
                         {% liquid
                           assign render_link_image = false
                           if block_settings.menu_style == 'collection_images'
@@ -420,6 +427,7 @@
                             </ul>
                           </div>
                         {% endif %}
+                         {%- endif -%}
                       </div>
                     </div>
                   </details>
