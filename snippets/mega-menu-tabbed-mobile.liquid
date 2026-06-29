@@ -30,7 +30,8 @@
     {% for link in parent_link.links %}
       {% liquid
         # Fetch the separate menu for this tab using handle lookup
-        assign tab_menu = linklists[link.handle]
+         assign parent_menu = link.handle | replace: ' ', ''
+        assign tab_menu = linklists[parent_menu]
         if tab_menu == blank
           assign tab_menu_handle = 'menu-' | append: link.handle
           assign tab_menu = linklists[tab_menu_handle]
