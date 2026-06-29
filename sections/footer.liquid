@@ -6,7 +6,7 @@
 %}
 
 <div
-  class="tes section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+  class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
    {% if section.settings.background_image != blank %}
     style="background-image: url('{{ section.settings.background_image | image_url: width: 1920 }}'); background-size: cover; background-position: center center;"
   {% endif %}
