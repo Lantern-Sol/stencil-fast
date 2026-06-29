@@ -95,4 +95,10 @@ width:100%;
     padding-top: 10px;
     display: block;
 }
+.footer-content .footer-logo img.image-block__image {
+    min-height: 60px;
+    min-width: 70px;
+    max-height: 40px;
+    max-width: 80px;
+}
 }
