@@ -68,7 +68,11 @@ width:100%;
     max-width: 70px;
 }
 .footer-content .footer-logo {
-    margin: 30px auto;
+    gap: 10px;
     justify-content: center;
+}
+.footer-menu-sec {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 }
