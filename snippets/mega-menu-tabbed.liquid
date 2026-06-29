@@ -433,6 +433,13 @@
     width: 15px;
     height: 15px;
 }
+
+@media only screen and (max-width:991px){
+.mobile-tabbed-menu__tab {
+    font-size: 14px;
+    font-weight: 500;
+}
+}
   /* Pure CSS Hover Interaction using :has() for modern browsers */
   {% for link in parent_link.links %} 
     .tabbed-mega-menu:has(.tabbed-mega-menu__tab-item[data-tab-index="{{ forloop.index0 }}"]:hover) {
