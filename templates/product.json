@@ -87,6 +87,10 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "judge_me_reviews_preview_badge_aQzntt": {
+              "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+              "settings": {}
+            },
             "group_icgrde": {
               "type": "group",
               "name": "Header",
@@ -594,6 +598,7 @@
             }
           },
           "block_order": [
+            "judge_me_reviews_preview_badge_aQzntt",
             "group_icgrde",
             "divider_VJhene",
             "text_ekMcQ6",
