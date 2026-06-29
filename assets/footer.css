@@ -117,4 +117,7 @@ width:100%;
 .policy-sec .payment-icons {
     order: 3;
 }
+.policy-sec .social-icons__wrapper {
+    order: 1;
+}
 }
