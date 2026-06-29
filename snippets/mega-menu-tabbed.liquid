@@ -423,6 +423,11 @@
     	font-family: var( --secondary-font);
     font-weight: normal;
 }
+.tabbed-mega-menu__subcategories a.tabbed-mega-menu__view-all span {
+    color: #E94F37;
+    font-style: italic;
+    font-weight: 500;
+}
   /* Pure CSS Hover Interaction using :has() for modern browsers */
   {% for link in parent_link.links %} 
     .tabbed-mega-menu:has(.tabbed-mega-menu__tab-item[data-tab-index="{{ forloop.index0 }}"]:hover) {
