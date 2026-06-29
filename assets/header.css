@@ -53,3 +53,8 @@ nav.menu-drawer__navigation ul.menu-drawer__menu .menu-drawer__menu-item-text {
     width: 19px;
 }
 }
+@media only screen and (max-width:767px){
+.menu-drawer__nav-buttons .button.menu-drawer__back-button {
+	background: none;
+}
+}
