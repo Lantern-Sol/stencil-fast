@@ -396,8 +396,8 @@
             "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
-            "padding-inline-start": 20,
-            "padding-inline-end": 20,
+            "padding-inline-start": 60,
+            "padding-inline-end": 60,
             "use_mobile_padding": false,
             "padding-block-start-mobile": 0,
             "padding-block-end-mobile": 0,
@@ -1281,7 +1281,7 @@
                 "social_links_DV8kj9": {
                   "type": "social-links",
                   "settings": {
-                    "icon_color": "#FDFDFC",
+                    "icon_color": "#fdfdfc",
                     "facebook_url": "https://www.facebook.com",
                     "instagram_url": "https://www.instagram.com/stencilfast/",
                     "youtube_url": "https://www.youtube.com/@stencilfast",
