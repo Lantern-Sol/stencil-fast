@@ -11,6 +11,10 @@
  #header-component  .menu-list .menu-list__list-item[slot=overflow] .menu-list__link[aria-expanded=true] {
     color: #e94f37;
 }
+#header-component .menu-list:not(:has(.menu-list__list-item:hover)) .menu-list__link--active,
+ #header-component .menu-list .menu-list__list-item:where(:hover,:focus-within) .menu-list__link{
+    
+ }
 @media only screen and (max-width:991px){
 .header .menu-drawer__navigation,
 .header .menu-drawer,
