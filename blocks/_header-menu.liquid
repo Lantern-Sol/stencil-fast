@@ -149,7 +149,7 @@
                 %}
                 <div class="mega-menu section section--full-width-margin section--{{ section.settings.section_width }}">
                   {{link.title }}
-                  {% if menu_content_type == 'tabbed_mega_menu' %}
+                  {% if menu_content_type == 'tabbed_mega_menu' and link.title =='SHOP BY' %}
                     {% render 'mega-menu-tabbed',
                       parent_link: link,
                       id: list_id,
