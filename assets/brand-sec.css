@@ -55,4 +55,7 @@
     object-fit: contain;
     min-height: 70px;
 }
+#header-component[data-menu-style=drawer] .header__columns .search-action {
+    margin-right: 7px;
+}
 }
