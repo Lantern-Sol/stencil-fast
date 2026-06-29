@@ -111,4 +111,10 @@ width:100%;
 .footer-content .payment-icons__list {
 	margin: 15px 0;
 }
+.policy-sec .footer-utilities__group-copyright {
+    order: 2;
+}
+.policy-sec .payment-icons {
+    order: 3;
+}
 }
