@@ -124,12 +124,15 @@ width:100%;
 .policy-sec .social-icons__wrapper {
     order: 1;
 }
+.footer-menu-sec summary.menu__heading span.menu__heading__accordion .icon-caret{
+    
+}
 .footer-menu-sec summary.menu__heading:hover span.menu__heading__accordion,
 .footer-menu-sec summary.menu__heading:focus span.menu__heading__accordion {
     color: #E94F37;
 }
 .footer-menu-sec summary.menu__heading:hover span.menu__heading__accordion .icon-caret,
 .footer-menu-sec summary.menu__heading:focus span.menu__heading__accordion .icon-caret {
-    color: #E94F37;
+   transform:rotate(180deg);
 }
 }
