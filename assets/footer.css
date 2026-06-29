@@ -127,17 +127,14 @@ width:100%;
 .footer-menu-sec summary.menu__heading span.menu__heading__accordion .icon-caret{
     transition:ease 0.2s;
 }
-.footer-menu-sec summary.menu__heading:hover span.menu__heading__accordion,
-.footer-menu-sec summary.menu__heading:focus span.menu__heading__accordion {
+.footer-menu-sec summary.menu__heading:hover span.menu__heading__accordion {
     color: #E94F37;
 }
 
-.footer-menu-sec summary.menu__heading:hover span.menu__heading__accordion .icon-caret,
-.footer-menu-sec summary.menu__heading:focus span.menu__heading__accordion .icon-caret {
+.footer-menu-sec summary.menu__heading:hover span.menu__heading__accordion .icon-caret {
    transform:rotate(180deg);
 }
-.footer-menu-sec summary.menu__heading:hover span.menu__heading__accordion .icon-caret path,
-.footer-menu-sec summary.menu__heading:focus span.menu__heading__accordion .icon-caret path {
+.footer-menu-sec summary.menu__heading:hover span.menu__heading__accordion .icon-caret path {
       fill: #E94F37;;
 }
 }
