@@ -1,0 +1,265 @@
+{% comment %}
+  Renders a mobile-friendly tabbed mega menu.
+  Horizontal scrollable category tabs at top, subcategory links listed below.
+
+  @param {object} parent_link - The top-level link (e.g. "SHOP BY") whose children are the tabs
+  @param {string} id - Unique ID prefix for this menu instance
+{% endcomment %}
+
+<mobile-tabbed-menu class="mobile-tabbed-menu" data-menu-id="{{ id }}">
+
+  {%- comment -%} Tab bar: horizontally scrollable pill tabs {%- endcomment -%}
+  <div class="mobile-tabbed-menu__tab-bar" role="tablist" aria-label="{{ parent_link.title | escape }} categories">
+    {% for link in parent_link.links %}
+      <button
+        class="mobile-tabbed-menu__tab{% if forloop.first %} is-active{% endif %}"
+        role="tab"
+        data-tab-index="{{ forloop.index0 }}"
+        aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+        aria-controls="mobile-tabpanel-{{ id }}-{{ forloop.index0 }}"
+        id="mobile-tab-{{ id }}-{{ forloop.index0 }}"
+        type="button"
+      >
+        {{ link.title | escape }}
+      </button>
+    {% endfor %}
+  </div>
+
+  {%- comment -%} Tab panels: one per category {%- endcomment -%}
+  <div class="mobile-tabbed-menu__panels">
+    {% for link in parent_link.links %}
+      {% liquid
+        # Fetch the separate menu for this tab using handle lookup
+        assign tab_menu = linklists[link.handle]
+        if tab_menu == blank
+          assign tab_menu_handle = 'menu-' | append: link.handle
+          assign tab_menu = linklists[tab_menu_handle]
+        endif
+      %}
+      <div
+        id="mobile-tabpanel-{{ id }}-{{ forloop.index0 }}"
+        class="mobile-tabbed-menu__panel{% if forloop.first %} is-active{% endif %}"
+        role="tabpanel"
+        aria-labelledby="mobile-tab-{{ id }}-{{ forloop.index0 }}"
+        data-panel-index="{{ forloop.index0 }}"
+      >
+        {% if tab_menu != blank %}
+          {% for col_link in tab_menu.links %}
+            {%- comment -%} Section heading {%- endcomment -%}
+            <div class="mobile-tabbed-menu__group">
+              <p class="mobile-tabbed-menu__group-heading">{{ col_link.title | escape }}</p>
+              {% if col_link.links != blank %}
+                <ul class="mobile-tabbed-menu__link-list list-unstyled">
+                  {% for child_link in col_link.links %}
+                    <li>
+                      <a href="{{ child_link.url }}" class="mobile-tabbed-menu__link">
+                        {{ child_link.title | escape }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+              <a href="{{ col_link.url }}" class="mobile-tabbed-menu__view-all">
+                VIEW ALL
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          {% endfor %}
+        {% elsif link.links != blank %}
+          {%- comment -%} Fallback: render direct children as a flat group {%- endcomment -%}
+          <div class="mobile-tabbed-menu__group">
+            <ul class="mobile-tabbed-menu__link-list list-unstyled">
+              {% for child_link in link.links %}
+                <li>
+                  <a href="{{ child_link.url }}" class="mobile-tabbed-menu__link">
+                    {{ child_link.title | escape }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+            <a href="{{ link.url }}" class="mobile-tabbed-menu__view-all">
+              VIEW ALL
+              <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        {% else %}
+          <div class="mobile-tabbed-menu__group">
+            <a href="{{ link.url }}" class="mobile-tabbed-menu__view-all">
+              SHOP ALL {{ link.title | upcase }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</mobile-tabbed-menu>
+
+<style>
+  /* ─── Tab Bar ──────────────────────────────────────────────── */
+  .mobile-tabbed-menu {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-tabbed-menu__tab-bar {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.08);
+    padding-inline: 16px;
+    padding-block-start: 4px;
+    padding-block-end: 0;
+    background: transparent;
+  }
+
+  .mobile-tabbed-menu__tab-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-tabbed-menu__tab {
+    flex-shrink: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2.5px solid transparent;
+    padding: 10px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #767676;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    margin-bottom: -1.5px;
+    white-space: nowrap;
+    outline: none;
+  }
+
+  .mobile-tabbed-menu__tab.is-active {
+    color: #eb5740;
+    border-bottom-color: #eb5740;
+  }
+
+  .mobile-tabbed-menu__tab:focus-visible {
+    color: #eb5740;
+  }
+
+  /* ─── Panels ───────────────────────────────────────────────── */
+  .mobile-tabbed-menu__panels {
+    padding: 16px 0 8px;
+  }
+
+  .mobile-tabbed-menu__panel {
+    display: none;
+    animation: mobileTabFadeIn 0.2s ease;
+  }
+
+  .mobile-tabbed-menu__panel.is-active {
+    display: block;
+  }
+
+  @keyframes mobileTabFadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ─── Groups & Links ───────────────────────────────────────── */
+  .mobile-tabbed-menu__group {
+    margin-bottom: 20px;
+  }
+
+  .mobile-tabbed-menu__group-heading {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #767676;
+    margin: 0 0 8px;
+    padding: 0 16px;
+  }
+
+  .mobile-tabbed-menu__link-list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 6px;
+  }
+
+  .mobile-tabbed-menu__link-list li {
+    list-style: none;
+  }
+
+  .mobile-tabbed-menu__link {
+    display: block;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-foreground, #2c3034);
+    text-decoration: none;
+    transition: color 0.15s ease, padding-left 0.15s ease;
+  }
+
+  .mobile-tabbed-menu__link:hover,
+  .mobile-tabbed-menu__link:focus {
+    color: #eb5740;
+    padding-left: 20px;
+  }
+
+  .mobile-tabbed-menu__view-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #eb5740;
+    text-decoration: none;
+    transition: gap 0.2s ease;
+  }
+
+  .mobile-tabbed-menu__view-all:hover {
+    gap: 10px;
+  }
+</style>
+
+<script>
+  class MobileTabbedMenu extends HTMLElement {
+    connectedCallback() {
+      this._tabs   = this.querySelectorAll('.mobile-tabbed-menu__tab');
+      this._panels = this.querySelectorAll('.mobile-tabbed-menu__panel');
+
+      this._tabs.forEach((tab) => {
+        tab.addEventListener('click', () => this._activate(tab));
+      });
+    }
+
+    _activate(activeTab) {
+      const idx = activeTab.dataset.tabIndex;
+
+      this._tabs.forEach((t) => {
+        t.classList.remove('is-active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      this._panels.forEach((p) => p.classList.remove('is-active'));
+
+      activeTab.classList.add('is-active');
+      activeTab.setAttribute('aria-selected', 'true');
+
+      // Scroll active tab into view within the bar
+      activeTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+      const panel = this.querySelector(`.mobile-tabbed-menu__panel[data-panel-index="${idx}"]`);
+      if (panel) panel.classList.add('is-active');
+    }
+  }
+
+  if (!customElements.get('mobile-tabbed-menu')) {
+    customElements.define('mobile-tabbed-menu', MobileTabbedMenu);
+  }
+</script>
