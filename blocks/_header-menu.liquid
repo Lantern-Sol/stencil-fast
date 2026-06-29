@@ -907,21 +907,20 @@
     display: flex;
   }
 
-  .compact-menu__link {
+.compact-menu__link {
     display: inline-flex;
     padding: 4px;
     font-family: var(--menu-child-font-family, inherit);
-    font-size: 1rem; /* 16px */
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
-    /* Keep each link on one line so the panel sizes to it (no overflow/wrap) */
     white-space: nowrap;
-    /* Figma shows title case (e.g. "About Us"), not the menu's uppercase styling */
     text-transform: none;
-    color: #393e41; /* Neutrals-Dark/500 (Text/default) */
+    color: #393e41;
     text-decoration: none;
-    transition: color var(--submenu-animation-speed, 0.2s) var(--animation-easing, ease);
-  }
+    transition: color var(--submenu-animation-speed, .2s) var(--animation-easing, ease);
+    letter-spacing: 0;
+}
 
   .compact-menu__link:hover,
   .compact-menu__link:focus-visible {
