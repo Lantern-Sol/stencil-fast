@@ -138,6 +138,6 @@ width:100%;
 }
 .footer-menu-sec summary.menu__heading:hover span.menu__heading__accordion .icon-caret path,
 .footer-menu-sec summary.menu__heading:focus span.menu__heading__accordion .icon-caret path {
-      color: #E94F37;;
+      fill: #E94F37;;
 }
 }
