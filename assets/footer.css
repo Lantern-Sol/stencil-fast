@@ -104,4 +104,8 @@ width:100%;
 .footer-content .payment-icons, .footer-content .footer-utilities__group-copyright, .footer-content .social-icons__wrapper {
     width: 100%;
 }
+.footer-utilities__group-copyright span.footer-utilities__text, .footer-utilities__group-copyright span.ooter-utilities-designby {
+	font-size: 14px;
+	text-align: center;
+}
 }
