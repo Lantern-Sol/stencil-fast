@@ -76,4 +76,10 @@ width:100%;
     padding-left: 30px;
     padding-right: 30px;
 }
+
+}
+@media only screen and (max-width:767px){
+.footer-menu-sec summary.menu__heading {
+    padding: 0;
+}
 }
