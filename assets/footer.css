@@ -124,4 +124,7 @@ width:100%;
 .policy-sec .social-icons__wrapper {
     order: 1;
 }
+.footer-menu-sec summary.menu__heading span.menu__heading__accordion {
+    color: #FFFFFF;
+}
 }
