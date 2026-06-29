@@ -104,9 +104,26 @@
 
     {% capture children %}
       {% for link in block_settings.menu.links %}
+        {%- liquid
+          # LS: render a compact dropdown (instead of the full-width mega menu)
+          # for specific nav items. Matches Figma node 5161:15780.
+          # Match on handle/title (case-insensitive) so "About", "ABOUT",
+          # "About Us", "about-us", "Support", "Innovations", etc. all resolve to
+          # the compact dropdown. Add a keyword below to extend it to more items.
+          assign is_compact_menu = false
+          assign compact_menu_keywords = 'about,support,innovation' | split: ','
+          assign compact_handle = link.handle | downcase
+          assign compact_title = link.title | downcase | strip
+          for compact_keyword in compact_menu_keywords
+            if compact_handle contains compact_keyword or compact_title contains compact_keyword
+              assign is_compact_menu = true
+              break
+            endif
+          endfor
+        -%}
         <li
           role="presentation"
-          class="menu-list__list-item"
+          class="menu-list__list-item{% if is_compact_menu %} menu-list__list-item--compact{% endif %}"
           on:focus="/activate"
           on:blur="/deactivate"
           on:pointerenter="/activate"
@@ -131,7 +148,32 @@
               {% render 'icon-chevron-down' %}
             {%- endif -%}
           </a>
-          {%- if link.links != blank -%}
+          {%- if link.links != blank and is_compact_menu -%}
+            {%- comment -%} LS: compact dropdown (About / Support / Innovations) — Figma node 5161:15780 {%- endcomment -%}
+            <div class="menu-list__submenu menu-list__submenu--compact{{ background_color_classes }}" ref="submenu[]">
+              <div
+                id="submenu-{{ forloop.index }}"
+                class="menu-list__submenu-inner menu-list__submenu-inner--compact"
+                style="{% render 'submenu-font-styles', settings: block_settings %}"
+              >
+                <div class="compact-menu">
+                  <ul class="compact-menu__list list-unstyled">
+                    {% for child_link in link.links %}
+                      <li class="compact-menu__item">
+                        <a
+                          href="{{ child_link.url }}"
+                          class="compact-menu__link"
+                          {% if child_link.current %}aria-current="page"{% endif %}
+                        >
+                          <span class="wrap-text">{{- child_link.title -}}</span>
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          {%- elsif link.links != blank -%}
             <div class="menu-list__submenu{{ background_color_classes }}" ref="submenu[]">
               <div
                 id="submenu-{{ forloop.index }}"
@@ -812,6 +854,93 @@
   /* Hide product cards in collapsed submenus from the IntersectionObserver that fires product view events */
   .menu-list__list-item:not(:has([aria-expanded='true'])) > .menu-list__submenu product-component {
     display: none;
+  }
+
+  /* --------------------------------------------------------------------------
+     LS: Compact dropdown (About / Support / Innovations) — Figma node 5161:15780.
+     A narrow panel anchored to the nav item instead of the full-width mega
+     menu. Scoped to .menu-list__list-item--compact so every other menu item
+     keeps its full-width submenu untouched.
+  -------------------------------------------------------------------------- */
+  .menu-list__list-item--compact {
+    /* Anchor the absolute dropdown to this item rather than the full header row */
+    position: relative;
+  }
+
+  /* Override the full-width submenu positioning for the compact item only */
+  .menu-list__list-item--compact:not([slot='overflow']) > .menu-list__submenu--compact {
+    width: max-content;
+    left: 0;
+    right: auto;
+    top: 100%;
+    padding-inline: 0;
+    clip-path: none;
+  }
+
+  .menu-list__submenu-inner--compact {
+    display: block;
+    padding: 0;
+    transform: none;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .compact-menu {
+    box-sizing: border-box;
+    /* Grow to fit the longest link so the background always covers it,
+       but never narrower than the Figma width (182px). */
+    width: max-content;
+    min-width: 182px;
+    padding: 24px;
+    background-color: #f9faf5; /* Neutrals-Light/200 (Background/brand-subtle) */
+    border-top: 2px solid #e94f37; /* Primary/500 (Background/brand) */
+    box-shadow: 0 4px 2px rgb(0 0 0 / 10%);
+  }
+
+  .compact-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .compact-menu__item {
+    display: flex;
+  }
+
+  .compact-menu__link {
+    display: inline-flex;
+    padding: 4px;
+    font-family: var(--menu-child-font-family, inherit);
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    line-height: 1.2;
+    /* Keep each link on one line so the panel sizes to it (no overflow/wrap) */
+    white-space: nowrap;
+    /* Figma shows title case (e.g. "About Us"), not the menu's uppercase styling */
+    text-transform: none;
+    color: #393e41; /* Neutrals-Dark/500 (Text/default) */
+    text-decoration: none;
+    transition: color var(--submenu-animation-speed, 0.2s) var(--animation-easing, ease);
+  }
+
+  .compact-menu__link:hover,
+  .compact-menu__link:focus-visible {
+    color: #e94f37;
+  }
+
+  /* When a compact dropdown (About / Support / Innovations) is open, the header
+     normally expands its
+     full-width underlay (the white backdrop + popover shadow seen behind a mega
+     menu). The compact panel carries its own background and shadow, so clamp the
+     underlay back to the header height — this hides the full-width white box on
+     either side of the dropdown. Scoped via :has() to the compact item only, so
+     every other menu item keeps its full-width backdrop. */
+  #header-component:has(.menu-list__list-item--compact .menu-list__link[aria-expanded='true']) .header__underlay-open {
+    height: var(--header-height);
+  }
+
+  #header-component:has(.menu-list__list-item--compact .menu-list__link[aria-expanded='true']) .header__underlay-open::after {
+    box-shadow: none;
   }
 {% endstylesheet %}
 

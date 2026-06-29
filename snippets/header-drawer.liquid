@@ -107,11 +107,57 @@
             {% assign animation_index = 0 %}
             {%- for link in linklist.links -%}
               {% assign animation_index = animation_index | plus: 1 %}
+              {%- liquid
+                # LS: render these nav items as an inline accordion (instead of the
+                # default slide-in submenu) on mobile. Matches Figma node 5080:17801.
+                # Same items as the desktop compact dropdown — match handle/title
+                # (case-insensitive). Add a keyword to extend to more items.
+                assign is_compact_menu = false
+                assign compact_menu_keywords = 'about,support,innovation' | split: ','
+                assign compact_handle = link.handle | downcase
+                assign compact_title = link.title | downcase | strip
+                for compact_keyword in compact_menu_keywords
+                  if compact_handle contains compact_keyword or compact_title contains compact_keyword
+                    assign is_compact_menu = true
+                    break
+                  endif
+                endfor
+              -%}
               <li
                 class="menu-drawer__list-item"
                 style="--menu-drawer-animation-index: {{ animation_index }};"
               >
-                {%- if link.links != blank -%}
+                {%- if is_compact_menu and link.links != blank -%}
+                  {%- comment -%} LS: mobile accordion (About / Support / Innovations) — Figma node 5080:17801 {%- endcomment -%}
+                  <details
+                    id="Details-menu-drawer-menu-item-{{ forloop.index }}"
+                    class="menu-drawer__menu-container menu-drawer__compact-details{% if block_settings.drawer_dividers %} menu-drawer__menu-container--divider{% endif %}"
+                  >
+                    <summary
+                      id="HeaderDrawer-{{ link.handle }}"
+                      class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element menu-drawer__compact-summary focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}"
+                    >
+                      <span class="menu-drawer__menu-item-text wrap-text">{{ link.title | escape }}</span>
+                      <span class="svg-wrapper icon-caret menu-drawer__compact-caret">
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </span>
+                    </summary>
+                    <ul class="menu-drawer__compact-list list-unstyled" role="list">
+                      {%- for childlink in link.links -%}
+                        <li class="menu-drawer__compact-item">
+                          <a
+                            id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
+                            href="{{ childlink.url }}"
+                            class="menu-drawer__compact-link focus-inset{% if childlink.current %} menu-drawer__compact-link--active{% endif %}"
+                            {% if childlink.current %}aria-current="page"{% endif %}
+                          >
+                            <span class="wrap-text">{{- childlink.title | escape -}}</span>
+                          </a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </details>
+                {%- elsif link.links != blank -%}
                   {%- comment -%}
                     Regardless of the Accordion setting, in menus with 3 levels of links, we use a details element to handle the top level of the menu for links that have children.
                   {%- endcomment -%}
@@ -1389,5 +1435,56 @@
 
   .drawer-localization .language-selector .svg-wrapper.icon-caret svg {
     transform: none;
+  }
+
+  /* --------------------------------------------------------------------------
+     LS: Mobile accordion (About / Support / Innovations) — Figma node 5080:17801.
+     These items expand their children inline (accordion) instead of the default
+     slide-in submenu. Uses a native <details> toggle — no slide JS is attached
+     to the summary, so it opens/closes in place. Scoped to .menu-drawer__compact-*
+     so every other drawer item keeps its slide-in submenu.
+  -------------------------------------------------------------------------- */
+  .menu-drawer__compact-summary {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .menu-drawer__compact-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Down chevron at rest; flips up when the accordion is open */
+  .menu-drawer__compact-details[open] > .menu-drawer__compact-summary .menu-drawer__compact-caret svg {
+    transform: rotate(180deg);
+  }
+
+  .menu-drawer__compact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding-block: var(--padding-sm) var(--padding-md);
+    padding-inline: var(--padding-sm) 0;
+  }
+
+  .menu-drawer__compact-item {
+    display: flex;
+  }
+
+  .menu-drawer__compact-link {
+    display: inline-flex;
+    padding: 4px;
+    font-family: var(--menu-child-font-family, var(--font-body--family));
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: none;
+    color: #393e41; /* Neutrals-Dark/500 (Text/default) */
+    text-decoration: none;
+  }
+
+  .menu-drawer__compact-link:hover,
+  .menu-drawer__compact-link--active {
+    color: #e94f37; /* Primary/500 */
   }
 {% endstylesheet %}
