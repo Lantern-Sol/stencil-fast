@@ -91,4 +91,8 @@ width:100%;
     font-size: 14px;
 
 }
+.footer-menu-sec nav.details-content {
+    padding-top: 10px;
+    display: block;
+}
 }
