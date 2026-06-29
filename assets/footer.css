@@ -108,4 +108,7 @@ width:100%;
 	font-size: 14px;
 	text-align: center;
 }
+.footer-content .payment-icons__list {
+	margin: 15px 0;
+}
 }
