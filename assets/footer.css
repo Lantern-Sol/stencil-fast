@@ -31,3 +31,7 @@ width:100%;
     display: flex;
     justify-content: space-between;
 }
+.footer-content .footer-logo {
+    max-width: 850px;
+    margin: 30px auto;
+}
