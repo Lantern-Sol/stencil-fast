@@ -34,4 +34,6 @@ width:100%;
 .footer-content .footer-logo {
     max-width: 850px;
     margin: 30px auto;
+    display: flex;
+    gap: 30px;
 }
