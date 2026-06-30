@@ -280,7 +280,7 @@
   {%- endif -%}
 </span>
 
-{% if block_settings.show_pickup_availability %}
+{% if block_settings.show_pickup_availability and show_choose_options == false %}
   <script
     src="{{ 'local-pickup.js' | asset_url }}"
     type="module"
