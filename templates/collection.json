@@ -165,7 +165,7 @@
           "static": true,
           "settings": {
             "enable_filtering": true,
-            "use_drawer_on_desktop": true,
+            "use_drawer_on_desktop": false,
             "filter_style": "vertical",
             "filter_width": "centered",
             "text_label_case": "default",
