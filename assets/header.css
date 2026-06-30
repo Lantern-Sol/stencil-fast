@@ -15,7 +15,9 @@
  #header-component .menu-list .menu-list__list-item:where(:hover) .menu-list__link  svg.icon-chevron-down{
    transform: rotate(180deg);
  }
-
+.menu-list__list-item:where(:not([slot="overflow"])) > .menu-list__submenu {
+	box-shadow: none;
+}
 @media only screen and (max-width:991px){
 .header .menu-drawer__navigation,
 .header .menu-drawer,
