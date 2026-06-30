@@ -103,7 +103,7 @@
             endif
           -%}
 
-          {%- if has_quantity_rules -%}
+          {%- if has_quantity_rules and show_choose_options == false -%}
             {%- assign cart_quantity = cart | item_count_for_variant: variant.id -%}
             <div
               class="quantity-label"
