@@ -3,4 +3,5 @@ nav.breadcrumbs__nav li a, nav.breadcrumbs__nav li span {
     font-size: 12px;
     opacity: 1;
     font-family: var( --secondary-font);
+    font-weight: 400;
 }
