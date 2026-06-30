@@ -232,6 +232,20 @@
               </div>
             </volume-pricing>
           {%- endif -%}
+          {%- if show_choose_options -%}
+            {%- comment -%}
+              Multi-variant product with nothing selected yet (e.g. on a
+              collection/featured-product card): link to the product page
+              to choose options instead of submitting the add-to-cart form.
+            {%- endcomment -%}
+            <a
+              href="{{ product.url }}"
+              class="button{% if block_settings.style_class %} {{ block_settings.style_class }}{% endif %}"
+              ref="chooseOptionsButton"
+            >
+              {{ add_to_cart_text }}
+            </a>
+          {%- else -%}
           {% content_for 'block',
             type: 'add-to-cart',
             id: 'add-to-cart',
@@ -245,6 +259,7 @@
             can_add_to_cart: can_add_to_cart,
             form_obj: form
           %}
+           {%- endif -%}
         </div>
         {%- if block_settings.gift_card_form and product.gift_card? -%}
           </span>
