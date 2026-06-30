@@ -4,3 +4,6 @@
     font-style: italic;
     letter-spacing: 0.5px;
 }
+.inner-banner .text-block p {
+    max-width: 550px;	font-family: var( --secondary-font);
+}
