@@ -119,9 +119,11 @@
             </div>
           {%- endif -%}
 
-          {% content_for 'block', type: 'quantity', id: 'quantity' %}
+          {%- unless show_choose_options -%}
+            {% content_for 'block', type: 'quantity', id: 'quantity' %}
+          {%- endunless -%}
 
-          {%- if has_quantity_rules -%}
+          {%- if has_quantity_rules and show_choose_options == false -%}
             <div
               class="quantity-rules"
               ref="quantityRules"
