@@ -5,11 +5,8 @@
     assign home_label = 'Home'
   endif
 -%}
-
-{% render 'contrast-override', background_color: block.settings.background_color, section_id: block.id %}
-<div class="section-background{% if section.settings.background_color != blank %} color-custom-{{ block.id }}{% endif %}"></div>
 <div
-  class="section section--{{ block.settings.section_width }} spacing-style breadcrumbs{% if block.settings.background_color != blank %} color-custom-{{ block.id }}{% endif %}"
+  class="spacing-style breadcrumbs"
   style="
     {%- render 'spacing-style', settings: block.settings -%}
     --breadcrumbs-separator: '{{ separator }}';
@@ -205,22 +202,6 @@
         { "value": "–", "label": "Dash (–)" }
       ],
       "default": "/"
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "t:settings.background_color",
-      "placeholder": "t:settings.default"
-    },
-    {
-      "type": "select",
-      "id": "section_width",
-      "label": "t:settings.width",
-      "options": [
-        { "value": "page-width", "label": "t:options.page" },
-        { "value": "full-width", "label": "t:options.full" }
-      ],
-      "default": "page-width"
     },
     {
       "type": "header",
