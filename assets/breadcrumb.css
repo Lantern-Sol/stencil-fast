@@ -5,6 +5,13 @@ nav.breadcrumbs__nav li a, nav.breadcrumbs__nav li span {
     font-family: var( --secondary-font);
     font-weight: 400;
 }
-nav.breadcrumbs__nav li:before {
+
+nav.breadcrumbs__nav li.breadcrumbs__item:before {
     color: #F9FAF5;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/btn-arrow-w.png?v=1782550501');
+    background-size: 15px;
+    background-repeat: no-repeat;
 }
