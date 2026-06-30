@@ -31,47 +31,6 @@
           },
           "blocks": {}
         },
-        "text_tqQTNE": {
-          "type": "text",
-          "name": "Title",
-          "settings": {
-            "text": "<h1>{{ closest.collection.title }}</h1>",
-            "mobile_text": "",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "height_mode": "auto",
-            "desktop_height": "",
-            "mobile_height": "",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "enable_custom_font_weight": false,
-            "weight": "400",
-            "font_size": "",
-            "line_height": "normal",
-            "custom_line_height": 1.5,
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "type_preset_mobile": "rte",
-            "mobile_font_size": "1rem",
-            "mobile_custom_line_height": 1.5,
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "use_mobile_padding": false,
-            "padding-block-start-mobile": 0,
-            "padding-block-end-mobile": 0,
-            "padding-inline-start-mobile": 0,
-            "padding-inline-end-mobile": 0
-          },
-          "blocks": {}
-        },
         "text_twGGkJ": {
           "type": "text",
           "name": "Description",
@@ -112,12 +71,53 @@
             "padding-inline-end-mobile": 0
           },
           "blocks": {}
+        },
+        "text_tqQTNE": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<h1>{{ closest.collection.title }}</h1>",
+            "mobile_text": "",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "height_mode": "auto",
+            "desktop_height": "",
+            "mobile_height": "",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "enable_custom_font_weight": false,
+            "weight": "400",
+            "font_size": "",
+            "line_height": "normal",
+            "custom_line_height": 1.5,
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "type_preset_mobile": "rte",
+            "mobile_font_size": "1rem",
+            "mobile_custom_line_height": 1.5,
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "use_mobile_padding": false,
+            "padding-block-start-mobile": 0,
+            "padding-block-end-mobile": 0,
+            "padding-inline-start-mobile": 0,
+            "padding-inline-end-mobile": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "breadcrumbs_w74eyM",
-        "text_tqQTNE",
-        "text_twGGkJ"
+        "text_twGGkJ",
+        "text_tqQTNE"
       ],
       "name": "Collection heading",
       "settings": {
@@ -176,7 +176,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": ""
+        "custom_class": "inner-banner"
       }
     },
     "main": {
