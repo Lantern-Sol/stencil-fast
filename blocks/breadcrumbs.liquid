@@ -285,7 +285,7 @@
       "step": 1,
       "unit": "px",
       "default": 16,
-      "visible_if": "{{ section.settings.use_mobile_padding }}"
+      "visible_if": "{{ block.settings.use_mobile_padding }}"
     },
     {
       "type": "range",
@@ -296,7 +296,7 @@
       "step": 1,
       "unit": "px",
       "default": 16,
-      "visible_if": "{{ section.settings.use_mobile_padding }}"
+      "visible_if": "{{ block.settings.use_mobile_padding }}"
     },
     {
       "type": "range",
@@ -307,7 +307,7 @@
       "step": 1,
       "unit": "px",
       "default": 0,
-      "visible_if": "{{ section.settings.use_mobile_padding }}"
+      "visible_if": "{{ block.settings.use_mobile_padding }}"
     },
     {
       "type": "range",
@@ -318,13 +318,12 @@
       "step": 1,
       "unit": "px",
       "default": 0,
-      "visible_if": "{{ section.settings.use_mobile_padding }}"
+      "visible_if": "{{ block.settings.use_mobile_padding }}"
     }
   ],
   "presets": [
     {
-      "name": "Breadcrumbs",
-      "category": "t:categories.other_sections"
+      "name": "Breadcrumbs"
     }
   ]
 }
