@@ -9,7 +9,7 @@
 {% render 'contrast-override', background_color: block.settings.background_color, section_id: block.id %}
 <div class="section-background{% if section.settings.background_color != blank %} color-custom-{{ block.id }}{% endif %}"></div>
 <div
-  class="section section--{{ block.settings.section_width }} spacing-style breadcrumbs{% if block.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+  class="section section--{{ block.settings.section_width }} spacing-style breadcrumbs{% if block.settings.background_color != blank %} color-custom-{{ block.id }}{% endif %}"
   style="
     {%- render 'spacing-style', settings: block.settings -%}
     --breadcrumbs-separator: '{{ separator }}';
@@ -34,7 +34,7 @@
           {%- liquid
             assign category_label = ''
             assign category_url = ''
-            assign source = section.settings.product_category_source
+            assign source = block.settings.product_category_source
 
             if source == 'category'
               assign category_label = product.category.name
