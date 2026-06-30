@@ -5,3 +5,6 @@ nav.breadcrumbs__nav li a, nav.breadcrumbs__nav li span {
     font-family: var( --secondary-font);
     font-weight: 400;
 }
+nav.breadcrumbs__nav li:before {
+    color: #F9FAF5;
+}
