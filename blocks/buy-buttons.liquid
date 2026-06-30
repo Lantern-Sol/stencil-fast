@@ -17,7 +17,17 @@
   assign can_add_to_cart = false
   assign add_to_cart_text = 'products.product.unavailable' | t
   assign show_choose_options = false
-  if variant
+  ##
+  # If the product has more than one variant and no variant is currently
+  # selected (e.g. on a collection/featured-product card before the customer
+  # has picked options), show "Choose options" instead of "Add to cart" and
+  # send them to the product page to pick options rather than submitting the
+  # form directly.
+  ##
+  if product.has_only_default_variant == false and closest.product.selected_variant == blank
+    assign show_choose_options = true
+    assign add_to_cart_text = 'products.product.choose_options' | t
+  elsif variant
     if variant.quantity_rule.min > variant.inventory_quantity and inventory_managed and inventory_policy == 'deny'
       assign quantity_rule_soldout = true
     endif
