@@ -1,17 +1,17 @@
 {%- liquid
-  assign separator = section.settings.separator
-  assign home_label = section.settings.home_label
+  assign separator = block.settings.separator
+  assign home_label = block.settings.home_label
   if home_label == blank
     assign home_label = 'Home'
   endif
 -%}
 
-{% render 'contrast-override', background_color: section.settings.background_color, section_id: section.id %}
-<div class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"></div>
+{% render 'contrast-override', background_color: block.settings.background_color, section_id: block.id %}
+<div class="section-background{% if section.settings.background_color != blank %} color-custom-{{ block.id }}{% endif %}"></div>
 <div
-  class="section section--{{ section.settings.section_width }} spacing-style breadcrumbs{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+  class="section section--{{ block.settings.section_width }} spacing-style breadcrumbs{% if block.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
   style="
-    {%- render 'spacing-style', settings: section.settings -%}
+    {%- render 'spacing-style', settings: block.settings -%}
     --breadcrumbs-separator: '{{ separator }}';
   "
 >
