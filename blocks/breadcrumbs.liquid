@@ -5,7 +5,7 @@
     assign home_label = 'Home'
   endif
 -%}
-
+{{ separator }}
 {% render 'contrast-override', background_color: block.settings.background_color, section_id: block.id %}
 <div class="section-background{% if section.settings.background_color != blank %} color-custom-{{ block.id }}{% endif %}"></div>
 <div
