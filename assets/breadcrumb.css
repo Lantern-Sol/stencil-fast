@@ -2,4 +2,5 @@ nav.breadcrumbs__nav li a, nav.breadcrumbs__nav li span {
     color: #F9FAF5;
     font-size: 12px;
     opacity: 1;
+    font-family: var( --secondary-font);
 }
