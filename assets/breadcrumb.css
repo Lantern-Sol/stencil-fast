@@ -6,7 +6,7 @@ nav.breadcrumbs__nav li a, nav.breadcrumbs__nav li span {
     font-weight: 400;
 }
 
-nav.breadcrumbs__nav li.breadcrumbs__item:before {
+nav.breadcrumbs__nav .breadcrumbs__item+.breadcrumbs__item:before {
     color: #F9FAF5;
     content: "";
     width: 15px;
