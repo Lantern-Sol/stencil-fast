@@ -16,3 +16,8 @@
 .facets__filters-wrapper accordion-custom.facets__item:nth-child(1):before {
     opacity: 0;
 }
+.facets__filters-wrapper accordion-custom.facets__item span.facets__label {
+    font-size: 14px;
+    	font-family: var( --secondary-font);
+    color: #8F969A;
+}
