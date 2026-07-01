@@ -110,4 +110,11 @@ results-list.section.product-grid-container {
 	width: 30px;
 	height: 30px;
 }
+.facets__form .theme-drawer__header .theme-drawer__close-button {
+	box-shadow: none;
+	border: none;
+	color: #393E41;
+	width: auto;
+	padding: 0;
+}
 }
