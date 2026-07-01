@@ -5499,17 +5499,7 @@ body .button-secondary:hover {
 	background: #393E41;
 	color: #FDFDFC;
 }
-.pagination__list::before {
-	content: "";
-	z-index: -1;
-	position: absolute;
-	width: calc(var(--pagination-size) - (2 * var(--pagination-inset)));
-	aspect-ratio: 1;
-	pointer-events: none;
-	opacity: 0;
-	border-radius: calc(var(--pagination-radius) * 1px);
-	background: rgb(var(--color-foreground-rgb) / var(--opacity-10));
-	transition: left var(--hover-transition-duration) var(--hover-transition-timing),top var(--hover-transition-duration) var(--hover-transition-timing);
+body .pagination__list::before {
 	background: none;
 }
 @media only screen and (max-width:767px){
