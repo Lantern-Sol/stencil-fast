@@ -5484,7 +5484,8 @@ body .button-secondary:hover {
     color:#393E41;
 }
 
-.pagination li.pagination__item span {
+.pagination li.pagination__item span,
+.pagination li.pagination__item a {
     border: 1px solid #D7D9DA;
     border-radius: 0;
     	font-family: var( --secondary-font);
