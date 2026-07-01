@@ -25,9 +25,10 @@
     border-radius: 20px;
 }
 .main-collection-grid product-card .product-card__content .text-block p {
-    font-weight: 500;
-    color: #3D3A35;
-    letter-spacing: 0.2px;
+	font-weight: 500;
+	color: #3d3a35;
+	letter-spacing: .2px;
+	line-height: normal;
 }
 .main-collection-grid product-card .product-card__content .price__regular span {
     color: #393E41;
