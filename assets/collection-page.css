@@ -57,3 +57,7 @@ sorting-filter-component.sorting-filter summary.facets__summary {
     position: absolute;
     left: 0;
 }
+.facets sorting-filter-component.sorting-filter {
+    position: absolute;
+    right: 0;
+}
