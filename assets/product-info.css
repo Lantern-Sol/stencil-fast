@@ -83,3 +83,7 @@
 .product-details .mw-option--type-button .mw-option__container {
     margin-top: 0;
 }
+.product-details .mw-option--type-button .mw-option__control:checked+.mw-option__button {
+    border-color: #393E41;
+    box-shadow: none;
+}
