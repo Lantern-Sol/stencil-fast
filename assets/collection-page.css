@@ -115,6 +115,7 @@ results-list.section.product-grid-container {
 	border: none;
 	color: #393E41;
 	width: auto;
+    background:none;
 	padding: 0;
 }
 }
