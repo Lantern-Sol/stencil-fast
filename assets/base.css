@@ -5492,3 +5492,6 @@ body .button-secondary:hover {
     color: #393E41;
     font-size: 14px;
 }
+.pagination__list li.pagination__item {
+    margin: 0 5px;
+}
