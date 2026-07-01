@@ -44,3 +44,7 @@
     border-radius: 8px;
     padding: 0;
 }
+.product-details .mw-option__value.mw-option__value--selected .mw-stack__item .mw-option__swatch-media.mw-option__swatch-media--swatch-custom-style {
+    border: 2px solid #393E41;
+    border-radius: 8px;
+}
