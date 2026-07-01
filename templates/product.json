@@ -958,7 +958,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h2>{{ closest.collection.title }}</h2>",
+                "text": "<p>MORE ALPHABET</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
