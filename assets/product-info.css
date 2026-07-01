@@ -60,3 +60,6 @@
     width: 70px;
     height: 70px;
 }
+.product-details  .mw-apo-container .mw-option--type-choicetile .mw-option__container .mw-option__value label.mw-label.mw-label__card-wrapper {
+    background: #F9FAF5;
+}
