@@ -36,3 +36,8 @@
     color: #3D3A35;
     letter-spacing: 0.2px;
 }
+.main-collection-grid product-card .product-card__content .price__regular span {
+    color: #393E41;
+    font-size: 14px;
+    	font-family: var( --secondary-font);
+}
