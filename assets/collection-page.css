@@ -126,6 +126,7 @@ results-list.section.product-grid-container {
 	font-style: italic;
 }
 #filters-drawer .facets__drawer-actions {
-box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 -3px 11px #00000014;
+	padding-top: 15px;
 }
 }
