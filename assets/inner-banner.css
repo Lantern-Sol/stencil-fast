@@ -21,3 +21,6 @@
     	font-family: var( --secondary-font);
     color: #8F969A;
 }
+.facets__filters-wrapper accordion-custom.facets__item label.checkbox__label span.checkbox__label-text {
+    color: #393E41;
+}
