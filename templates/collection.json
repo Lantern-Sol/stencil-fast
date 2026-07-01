@@ -228,7 +228,7 @@
             "use_mobile_padding": false,
             "padding-block-start-mobile": 0,
             "padding-block-end-mobile": 0,
-            "padding-inline-start-mobile": 0,
+            "padding-inline-start-mobile": 15,
             "padding-inline-end-mobile": 0
           },
           "blocks": {
@@ -313,7 +313,7 @@
               "name": "t:names.product_buy_buttons",
               "settings": {
                 "stacking": false,
-                "text_color": "#FDFDFC",
+                "text_color": "#fdfdfc",
                 "show_pickup_availability": false,
                 "gift_card_form": false,
                 "recipient_button_style": "default",
