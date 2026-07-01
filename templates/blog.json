@@ -35,7 +35,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>News</h2>",
+            "text": "<p>{{ closest.blog.title }}</p>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
