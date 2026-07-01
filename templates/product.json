@@ -633,7 +633,7 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
-            "text": "<p>YOU MAY ALSO NEED</p>",
+            "text": "<p>YOU MAY ALSO NEED </p>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
