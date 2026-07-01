@@ -42,6 +42,7 @@
 .main-collection-grid product-card .product-card__content  a.button:hover{
     background:#f6f7eb;  color: #393E41;
 }
-.facets .products-count-wrapper span {
-    color: red;
+.facets .products-count-wrapper span,
+sorting-filter-component.sorting-filter summary.facets__summary {
+    color: #393E41;	font-family: var( --secondary-font);
 }
