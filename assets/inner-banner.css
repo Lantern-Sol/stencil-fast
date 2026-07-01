@@ -13,3 +13,6 @@
     font-weight: 500;
     letter-spacing: 0.5px;
 }
+.facets__filters-wrapper accordion-custom.facets__item:nth-child(1):before {
+    opacity: 0;
+}
