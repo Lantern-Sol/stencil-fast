@@ -105,3 +105,9 @@
     font-weight: 500;
     letter-spacing: 0.5px;
 }
+.product-details .accordion--caret summary.details__header {
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    color: #393E41;
+    font-weight: 500;
+}
