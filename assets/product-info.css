@@ -37,3 +37,6 @@
     width: 45px !important;
     height: 45px;
 }
+.product-details .mw-option__value .mw-stack__item  .mw-stack__item.mw-stack__item-swatch {
+    padding: 0;
+}
