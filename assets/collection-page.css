@@ -82,4 +82,7 @@ results-list.section.product-grid-container {
 	padding: 10px;
 	min-height: 48px;
 }
+.main-collection-grid product-card .product-card__content .product-media img {
+    border-radius: 8px;
+}
 }
