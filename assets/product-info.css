@@ -111,3 +111,6 @@
     color: #393E41;
     font-weight: 500;
 }
+.product-details .accordion--caret details.details {
+    border: none;
+}
