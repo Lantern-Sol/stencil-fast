@@ -313,7 +313,7 @@
               "name": "t:names.product_buy_buttons",
               "settings": {
                 "stacking": false,
-                "text_color": "",
+                "text_color": "#FDFDFC",
                 "show_pickup_availability": false,
                 "gift_card_form": false,
                 "recipient_button_style": "default",
