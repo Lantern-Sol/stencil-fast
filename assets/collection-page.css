@@ -63,4 +63,6 @@ sorting-filter-component.sorting-filter summary.facets__summary {
 }
 results-list.section.product-grid-container {
     margin-top: 20px;
+}.facets {
+    margin-bottom: 15px;
 }
