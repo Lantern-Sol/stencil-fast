@@ -40,5 +40,5 @@
     transition:ease 0.2s;
 }
 .main-collection-grid product-card .product-card__content  a.button:hover{
-    background:#f6f7eb;
+    background:#f6f7eb;  color: #393E41;
 }
