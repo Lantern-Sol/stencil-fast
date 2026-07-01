@@ -73,4 +73,9 @@ results-list.section.product-grid-container {
 .main-collection-grid {
 	padding: 0 20px;
 }
+.main-collection-grid product-card .product-card__content a.button {
+	font-size: 14px;
+	padding: 10px;
+	min-height: 48px;
+}
 }
