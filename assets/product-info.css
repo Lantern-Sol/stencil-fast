@@ -40,3 +40,7 @@
 .product-details .mw-option__value .mw-stack__item  .mw-stack__item.mw-stack__item-swatch {
     padding: 0;
 }
+.product-details .mw-option__value .mw-option__swatch-image--padding {
+    border-radius: 8px;
+    padding: 0;
+}
