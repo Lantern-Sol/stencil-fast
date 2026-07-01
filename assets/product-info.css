@@ -63,3 +63,12 @@
 .product-details  .mw-apo-container .mw-option--type-choicetile .mw-option__container .mw-option__value label.mw-label.mw-label__card-wrapper {
     background: #F9FAF5;
 }
+.product-details .mw-apo-container .mw-option--type-choicetile .mw-option__container .mw-option__value .mw-stack--card__title {
+    justify-content: center;
+}
+.product-details .mw-apo-container .mw-option--type-choicetile .mw-option__container .mw-option__value .mw-stack--card__title .mw-stack--card__title {
+    font-size: 14px;
+    font-weight: normal;
+      font-family: var( --secondary-font);
+    color: #393E41;
+}
