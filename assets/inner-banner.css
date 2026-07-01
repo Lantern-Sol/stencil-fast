@@ -28,6 +28,6 @@
     background-color: #E94F37;
     border-color: #E94F37;
 }
-.main-collection-grid product-card .product-card__content {
+.main-collection-grid product-card .product-card__content .product-media {
     border-radius: 20px;
 }
