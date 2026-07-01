@@ -69,7 +69,8 @@ results-list.section.product-grid-container {
 .facets .facets-remove.facets-remove--mobile-and-vertical {
     margin-top: 20px;
 }
-
+@media only screen and (max-width:767px){
 .main-collection-grid {
 	padding: 0 20px;
+}
 }
