@@ -77,6 +77,10 @@ results-list.section.product-grid-container {
 	position: relative;
 	padding-bottom: 70px;
 }
+.main-collection-grid .product-grid li .buy-buttons-block {
+	position: absolute;
+	bottom: 0;
+}
 @media only screen and (max-width:767px){
 .main-collection-grid {
 	padding: 0 20px;
