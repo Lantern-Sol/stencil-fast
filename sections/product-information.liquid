@@ -1,7 +1,7 @@
 <script type="application/ld+json">
   {{ closest.product | structured_data }}
 </script>
-
+{{ 'product-info.css' | asset_url | stylesheet_tag }}
 {% capture media_gallery %}
   {%- content_for 'block',
     type: '_product-media-gallery',
