@@ -48,6 +48,9 @@
     border: 2px solid #393E41;
     border-radius: 8px;
 }
-.product-details .mw-option__value .mw-stack>.mw-stack__item {
+.product-details .mw-stack>.mw-stack__item {
     margin-top: 4px;
+}
+.product-details  .mw-option--type-swatch .mw-option__container {
+    margin-top: 0;
 }
