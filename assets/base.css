@@ -5495,3 +5495,9 @@ body .button-secondary:hover {
 .pagination__list li.pagination__item {
     margin: 0 5px;
 }
+
+@media only screen and (max-width:767px){
+.pagination__list li.pagination__item {
+	width: 36px;
+}
+}
