@@ -5483,3 +5483,11 @@ body .button-secondary:hover {
     background:#fff;
     color:#393E41;
 }
+
+.pagination li.pagination__item span {
+    border: 1px solid #D7D9DA;
+    border-radius: 0;
+    	font-family: var( --secondary-font);
+    color: #393E41;
+    font-size: 14px;
+}
