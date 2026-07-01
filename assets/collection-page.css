@@ -104,4 +104,10 @@ results-list.section.product-grid-container {
 	position: relative;
 	top: 30px;
 }
+.facets #filters-drawer-heading #filters-drawer-bubble {
+	font-size: 14px;
+	background: #ececec;
+	width: 30px;
+	height: 30px;
+}
 }
