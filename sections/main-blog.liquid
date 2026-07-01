@@ -92,8 +92,10 @@
               assign is_horizontal = false
               assign is_featured = false
               assign items_on_page = paginated_articles.size
-
-              if layout_type == 'featured-grid'
+              if layout_type == 'grid'
+                assign col_span = 1
+                assign scale = 0.8
+              elsif layout_type == 'featured-grid'
                 if forloop.first
                   assign col_span = columns
                   assign scale = 1
