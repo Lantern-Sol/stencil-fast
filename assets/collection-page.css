@@ -129,8 +129,8 @@ results-list.section.product-grid-container {
 	box-shadow: 0 -3px 11px #00000014;
 	padding-top: 15px;
 }
-.facets {
-	margin-bottom: 15px;
-	/* background: #f9faf5; */
+.facets, #filters-drawer .facets__drawer-actions {
+	background: #f9faf5;
+	margin: 0;
 }
 }
