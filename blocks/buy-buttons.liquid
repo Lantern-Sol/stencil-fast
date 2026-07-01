@@ -24,7 +24,7 @@
   # send them to the product page to pick options rather than submitting the
   # form directly.
   ##
-  if product.has_only_default_variant == false and closest.product.selected_variant == blank
+  if product.has_only_default_variant == false and closest.product.selected_variant == blank and template.name != 'product'
     assign show_choose_options = true
     assign add_to_cart_text = 'products.product.choose_options' | t
   elsif variant
