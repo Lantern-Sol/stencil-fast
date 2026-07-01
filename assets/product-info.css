@@ -80,3 +80,6 @@
     font-size: 12px;
     text-align: center;
 }
+.product-details .mw-option--type-button .mw-option__container {
+    margin-top: 0;
+}
