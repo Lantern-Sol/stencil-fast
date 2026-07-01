@@ -321,15 +321,15 @@
    * Featured-grid layout: first article spans full width as a horizontal hero,
    * remaining articles fill a uniform N-column grid below.
    */
-  .blog-posts--featured-grid .blog-posts-container,.blog-posts--grid .blog-posts-container {
+  .blog-posts--featured-grid .blog-posts-container, .blog-posts--grid .blog-posts-container {
     grid-template-columns: repeat(var(--blog-posts-columns, 3), 1fr);
   }
 
-  .blog-posts--featured-grid .blog-post-item--featured {
+  .blog-posts--featured-grid .blog-post-item--featured, .blog-posts--grid .blog-post-item--featured {
     grid-column: 1 / -1;
   }
 
-  .blog-posts--featured-grid .blog-post-item--featured {
+  .blog-posts--featured-grid .blog-post-item--featured, .blog-posts--grid .blog-post-item--featured {
     position: relative;
     isolation: isolate;
     margin-bottom: 1rem;
