@@ -1,0 +1,44 @@
+.facets  h4.facets--filters-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.facets__filters-wrapper accordion-custom.facets__item:nth-child(1):before {
+    opacity: 0;
+}
+.facets__filters-wrapper accordion-custom.facets__item span.facets__label {
+    font-size: 14px;
+    	font-family: var( --secondary-font);
+    color: #8F969A;
+}
+.facets__filters-wrapper accordion-custom.facets__item label.checkbox__label span.checkbox__label-text {
+    color: #393E41;
+}
+.facets__filters-wrapper accordion-custom.facets__item  .checkbox__input:checked+.checkbox__label .icon-checkmark {
+    background-color: #E94F37;
+    border-color: #E94F37;
+}
+.main-collection-grid product-card .product-card__content .product-media img {
+    border-radius: 20px;
+}
+.main-collection-grid product-card .product-card__content .text-block p {
+    font-weight: 500;
+    color: #3D3A35;
+    letter-spacing: 0.2px;
+}
+.main-collection-grid product-card .product-card__content .price__regular span {
+    color: #393E41;
+    font-size: 14px;
+    	font-family: var( --secondary-font);
+}
+.main-collection-grid product-card .product-card__content  a.button {
+    font-weight: 500;
+    font-style: italic;
+    background: #393E41;
+    letter-spacing: 0.5px;
+    transition:ease 0.2s;
+}
+.main-collection-grid product-card .product-card__content  a.button:hover{
+    
+}
