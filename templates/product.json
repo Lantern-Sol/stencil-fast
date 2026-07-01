@@ -430,7 +430,7 @@
                 "accordion_row_K8jJtg": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Return policy",
+                    "heading": "What's in the Set?",
                     "open_by_default": true,
                     "icon": "none",
                     "width": 20
@@ -484,7 +484,7 @@
                 "accordion_row_L3kUWB": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Shipping",
+                    "heading": "Product Specifications",
                     "open_by_default": false,
                     "icon": "none",
                     "width": 20
@@ -538,7 +538,7 @@
                 "accordion_row_mQ6fMX": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Manufacturing",
+                    "heading": "Interlock System",
                     "open_by_default": false,
                     "icon": "none",
                     "width": 20
