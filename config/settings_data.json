@@ -97,6 +97,13 @@
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {}
+      },
+      "14656832010101544780": {
+        "type": "shopify://apps/apo-product-options/blocks/app-embed-block/a1199153-7462-4b5b-8a80-f0eefba85e99",
+        "disabled": false,
+        "settings": {
+          "load_on_product_only": false
+        }
       }
     },
     "color_palette": {
