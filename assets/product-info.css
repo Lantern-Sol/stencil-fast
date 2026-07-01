@@ -12,7 +12,8 @@
 }
 .classfication-bx .text-block p {
     font-size: 12px;
-    	font-family: var( --secondary-font);
+    font-family: var( --secondary-font);
+    white-space: nowrap;
 }
 .classfication-bx .group-block {
     border: 1px solid #E94F37;
