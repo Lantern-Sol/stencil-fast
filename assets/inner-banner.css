@@ -24,3 +24,7 @@
 .facets__filters-wrapper accordion-custom.facets__item label.checkbox__label span.checkbox__label-text {
     color: #393E41;
 }
+.facets__filters-wrapper accordion-custom.facets__item  .checkbox__input:checked+.checkbox__label .icon-checkmark {
+    background-color: #E94F37;
+    border-color: #E94F37;
+}
