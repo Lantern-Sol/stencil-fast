@@ -5515,9 +5515,11 @@ body .button-secondary:hover {
 .breadcrumbs__nav li a {
     font-size: 12px;
     color: #8F969A;
+    	font-family: var( --secondary-font);
 }
 .breadcrumbs__nav li span {
     font-size: 12px;
+    	font-family: var( --secondary-font);
     color: #393E41;
 }
 @media only screen and (max-width:767px){
