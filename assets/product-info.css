@@ -54,3 +54,9 @@
 .product-details  .mw-option--type-swatch .mw-option__container {
     margin-top: 0;
 }
+.product-details .mw-apo-container .mw-option--type-choicetile .mw-option__container .mw-option__value {
+    flex: unset !important;
+    max-width: 100% !important;
+    width: 70px;
+    height: 70px;
+}
