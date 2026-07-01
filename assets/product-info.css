@@ -14,3 +14,9 @@
     font-size: 12px;
     	font-family: var( --secondary-font);
 }
+.classfication-bx .group-block {
+    border: 1px solid #E94F37;
+    border-radius: 4px;
+    padding: 5px;
+    width: auto;
+}
