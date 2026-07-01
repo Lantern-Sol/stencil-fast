@@ -114,3 +114,6 @@
 .product-details .accordion--caret details.details {
     border: none;
 }
+.product-information {
+    margin-bottom: 50px;
+}
