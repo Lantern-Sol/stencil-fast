@@ -53,3 +53,7 @@ sorting-filter-component.sorting-filter summary.facets__summary {
 .facets__filters-wrapper {
     margin-top: 20px;
 }
+.facets .products-count-wrapper {
+    position: absolute;
+    left: 0;
+}
