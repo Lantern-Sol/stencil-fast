@@ -48,3 +48,6 @@
     border: 2px solid #393E41;
     border-radius: 8px;
 }
+.product-details .mw-option__value .mw-stack>.mw-stack__item {
+    margin-top: 4px;
+}
