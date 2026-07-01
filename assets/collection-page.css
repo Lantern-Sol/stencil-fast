@@ -118,4 +118,7 @@ results-list.section.product-grid-container {
     background:none;
 	padding: 0;
 }
+.product-grid-container .facets-toggle__wrapper .button .svg-wrapper img {
+	max-height: 14px;
+}
 }
