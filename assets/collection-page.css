@@ -121,4 +121,8 @@ results-list.section.product-grid-container {
 .product-grid-container .facets-toggle__wrapper .button .svg-wrapper img {
 	max-height: 14px;
 }
+#filters-drawer .button.facets__see-results {
+	font-weight: 500;
+	font-style: italic;
+}
 }
