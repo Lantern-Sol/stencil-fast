@@ -80,6 +80,9 @@ results-list.section.product-grid-container {
 .main-collection-grid .product-grid li .buy-buttons-block {
 	position: absolute;
 	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
 }
 @media only screen and (max-width:767px){
 .main-collection-grid {
