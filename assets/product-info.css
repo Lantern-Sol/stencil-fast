@@ -33,3 +33,7 @@
     font-weight: 500;
     color: #3D3A35;
 }
+.product-details .mw-apo-container .mw-option__swatch-media {
+    width: 45px !important;
+    height: 45px;
+}
