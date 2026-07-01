@@ -125,4 +125,7 @@ results-list.section.product-grid-container {
 	font-weight: 500;
 	font-style: italic;
 }
+#filters-drawer .facets__drawer-actions {
+	box-shadow: 3px 4px -27px 15px red;
+}
 }
