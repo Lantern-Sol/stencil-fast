@@ -5522,6 +5522,16 @@ body .button-secondary:hover {
     	font-family: var( --secondary-font);
     color: #393E41;
 }
+.breadcrumbs__item+.breadcrumbs__item:before {
+    content: "";
+    opacity: 1;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/breadcrumb-arrow.svg?v=1782906003');
+    background-repeat: no-repeat;
+    background-position: center;
+}
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
 	width: 36px;
