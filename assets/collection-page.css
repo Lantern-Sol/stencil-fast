@@ -50,3 +50,6 @@ sorting-filter-component.sorting-filter summary.facets__summary {
 .facets .products-count-wrapper span {
     color: #8F969A;	font-size:12px;
 }
+.facets__filters-wrapper {
+    margin-top: 20px;
+}
