@@ -75,3 +75,8 @@
 .product-details .mw-apo-container .mw-option--type-choicetile .mw-option__container .mw-option__value .mw-stack.mw-stack--card {
     gap: 0;
 }
+.product-details .mw-apo-container .mw-option--type-choicetile .mw-option__container .mw-option__value .mw-stack.mw-stack--card .mw-stack--card__description {
+    color: #8F969A; font-family: var( --secondary-font);
+    font-size: 12px;
+    text-align: center;
+}
