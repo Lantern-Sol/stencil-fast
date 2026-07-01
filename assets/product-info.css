@@ -100,3 +100,8 @@
     background: none;
     color: #3D3A35;
 }
+.product-details .product-form-buttons button.button.add-to-cart-button span {
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
