@@ -61,3 +61,6 @@ sorting-filter-component.sorting-filter summary.facets__summary {
     position: absolute;
     right: 0;
 }
+results-list.section.product-grid-container {
+    margin-top: 20px;
+}
