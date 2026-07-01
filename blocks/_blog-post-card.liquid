@@ -38,7 +38,12 @@
         href="{{ blog.url }}/tagged/{{ first_tag | handleize }}"
       >{{ first_tag }}</a>
     {%- endif -%}
-
+ {% content_for 'block',
+      id: 'blog-post-details',
+      type: '_blog-post-info-text',
+      alignment: block_settings.alignment,
+      article: article
+    %}
     <a
       class="blog-post-card__title-link"
       href="{{ article.url }}"
@@ -47,12 +52,7 @@
       {%- content_for 'block', id: 'heading', type: '_heading', text: article.title -%}
     </a>
 
-    {% content_for 'block',
-      id: 'blog-post-details',
-      type: '_blog-post-info-text',
-      alignment: block_settings.alignment,
-      article: article
-    %}
+   
 
     {% content_for 'block',
       id: 'content',
