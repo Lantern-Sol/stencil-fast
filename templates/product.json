@@ -1102,7 +1102,7 @@
         "mobile_gap": 16,
         "enable_sticky_add_to_cart": true,
         "background_color": "",
-        "padding-block-start": 0,
+        "padding-block-start": 30,
         "padding-block-end": 0
       }
     },
