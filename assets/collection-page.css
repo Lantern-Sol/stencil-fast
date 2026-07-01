@@ -34,12 +34,13 @@
     font-size: 14px;
     	font-family: var( --secondary-font);
 }
-.main-collection-grid product-card .product-card__content  a.button {
-    font-weight: 500;
-    font-style: italic;
-    background: #393E41;
-    letter-spacing: 0.5px;
-    transition:ease 0.2s;
+.main-collection-grid product-card .product-card__content a.button {
+	font-weight: 500;
+	font-style: italic;
+	background: #393e41;
+	letter-spacing: .5px;
+	transition: ease .2s;
+	width: 100%;
 }
 .main-collection-grid product-card .product-card__content  a.button:hover{
     background:#f6f7eb;  color: #393E41;
