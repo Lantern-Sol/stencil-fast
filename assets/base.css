@@ -5512,17 +5512,17 @@ body .button-secondary:hover {
 	transition: left var(--hover-transition-duration) var(--hover-transition-timing),top var(--hover-transition-duration) var(--hover-transition-timing);
 	background: none;
 }
-.breadcrumbs__nav li a {
+body .breadcrumbs__nav li a {
     font-size: 12px;
     color: #8F969A;
     	font-family: var( --secondary-font);
 }
-.breadcrumbs__nav li span {
+body .breadcrumbs__nav li span {
     font-size: 12px;
     	font-family: var( --secondary-font);
     color: #393E41;
 }
-.breadcrumbs__item+.breadcrumbs__item:before {
+body .breadcrumbs__item+.breadcrumbs__item:before {
     content: "";
     opacity: 1;
     display: inline-block;
