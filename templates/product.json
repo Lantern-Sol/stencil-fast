@@ -14,7 +14,7 @@
       "name": "Breadcrumbs",
       "settings": {
         "home_label": "Home",
-        "product_category_source": "auto",
+        "product_category_source": "collection",
         "separator": ">",
         "background_color": "",
         "section_width": "page-width",
