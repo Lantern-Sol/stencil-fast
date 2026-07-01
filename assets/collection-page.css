@@ -73,6 +73,10 @@ results-list.section.product-grid-container {
 	background: none;
 	color: #393E41;
 }
+.main-collection-grid .product-grid li .product-card__content {
+	position: relative;
+	padding-bottom: 70px;
+}
 @media only screen and (max-width:767px){
 .main-collection-grid {
 	padding: 0 20px;
