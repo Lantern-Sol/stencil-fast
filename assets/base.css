@@ -5516,9 +5516,9 @@ body .button-secondary:hover {
     font-size: 12px;
     color: #8F969A;
 }
-.breadcrumbs__nav li a {
+.breadcrumbs__nav li span {
     font-size: 12px;
-    color: #8F969A;
+    color: #393E41;
 }
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
