@@ -3,7 +3,7 @@
   type="module"
   fetchpriority="low"
 ></script>
-
+{{ 'slideshow.css' | asset_url | stylesheet_tag }}
 {% liquid
   case section.settings.layout_type
     when 'grid'
