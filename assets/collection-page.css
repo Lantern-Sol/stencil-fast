@@ -34,7 +34,7 @@
     font-size: 14px;
     	font-family: var( --secondary-font);
 }
-.main-collection-grid product-card .product-card__content a.button {
+.main-collection-grid product-card .product-card__content .button {
 	font-weight: 500;
 	font-style: italic;
 	background: #393e41;
@@ -42,7 +42,7 @@
 	transition: ease .2s;
 	width: 100%;
 }
-.main-collection-grid product-card .product-card__content  a.button:hover{
+.main-collection-grid product-card .product-card__content  .button:hover{
     background:#f6f7eb;  color: #393E41;
 }
 sorting-filter-component.sorting-filter summary.facets__summary {
