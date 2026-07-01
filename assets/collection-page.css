@@ -97,5 +97,11 @@ results-list.section.product-grid-container {
 .main-collection-grid product-card .product-card__content .product-media img {
     border-radius: 8px;
 }
-
+.facets #filters-drawer-heading {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+	position: relative;
+	top: 30px;
+}
 }
