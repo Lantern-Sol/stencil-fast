@@ -50,6 +50,7 @@
 }
 .product-details .mw-stack>.mw-stack__item {
     margin-top: 4px;
+    position:relative;
 }
 .product-details  .mw-option--type-swatch .mw-option__container {
     margin-top: 0;
