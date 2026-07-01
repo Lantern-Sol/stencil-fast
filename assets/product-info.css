@@ -88,3 +88,11 @@
     border-color: #393E41;
     box-shadow: none;
 }
+.product-details .product-form-buttons .quantity-selector-wrapper quantity-selector-component.quantity-selector {
+    min-width: 160px;
+    border-color: #393E41;
+}
+.product-details .product-form-buttons .quantity-selector-wrapper quantity-selector-component.quantity-selector  input[type="number"] {
+    font-style: italic;
+    font-size: 18px;
+}
