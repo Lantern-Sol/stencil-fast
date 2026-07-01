@@ -72,3 +72,6 @@
       font-family: var( --secondary-font);
     color: #393E41;
 }
+.product-details .mw-apo-container .mw-option--type-choicetile .mw-option__container .mw-option__value .mw-stack.mw-stack--card {
+    gap: 0;
+}
