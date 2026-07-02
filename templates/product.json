@@ -695,6 +695,10 @@
               },
               "blocks": {}
             },
+            "apo_product_options_app_block_7LYbtU": {
+              "type": "shopify://apps/apo-product-options/blocks/app-block/a1199153-7462-4b5b-8a80-f0eefba85e99",
+              "settings": {}
+            },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
               "settings": {
@@ -1106,6 +1110,7 @@
             "divider_VJhene",
             "text_ekMcQ6",
             "variant_picker_R3rGDr",
+            "apo_product_options_app_block_7LYbtU",
             "buy_buttons_eYQEYi",
             "text_aEtTtq",
             "accordion_ezjJdJ"
