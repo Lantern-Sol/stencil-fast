@@ -1,0 +1,162 @@
+{%- assign share_url = request.origin | append: article.url -%}
+{%- assign share_title = article.title | escape -%}
+{%- assign share_excerpt = article.excerpt | strip_newlines | escape -%}
+<style>
+.article-share { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+.article-share button, .article-share a {
+  display:inline-flex; gap:8px; align-items:center;
+  padding:8px 12px; border-radius:8px; border:1px solid #ddd;
+  background:#fff; cursor:pointer; text-decoration:none; color:inherit;
+  font-size:14px;
+}
+.article-share button:focus, .article-share a:focus { outline:3px solid rgba(0,0,0,0.12); }
+.article-share .copied { background:#e8f5e9; border-color:#c8e6c9; }
+.article-share svg { width:16px; height:16px; flex-shrink:0; }
+</style>
+<div class="blog_social">
+  <h2>
+{{  block.settings.text }}
+  </h2>
+<div class="article-share" role="group" aria-label="Share this article"
+     data-share-url="{{ share_url }}" data-share-title="{{ share_title }}" data-share-text="{{ share_excerpt }}">
+  <!-- Facebook -->
+  <button type="button" class="share-btn share-facebook" aria-label="Share on Facebook">
+    <!-- facebook svg -->
+   <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.4248 0C16.1826 0 20.8506 4.66727 20.8506 10.4248C20.8504 16.1822 16.1825 20.8496 10.4248 20.8496C4.66729 20.8494 0.000146309 16.1821 0 10.4248C0 4.66741 4.6672 0.000224197 10.4248 0ZM11.6367 4.03516C9.82965 4.03516 8.59187 5.13802 8.5918 7.16309V8.90918H6.54883V11.2764H8.5918V17.3486H11.0361V11.2764H13.0742L13.3799 8.90918H11.0361V7.39746C11.0362 6.71244 11.2264 6.24609 12.21 6.24609L13.4619 6.24512V4.12793C13.2452 4.09978 12.5019 4.03517 11.6367 4.03516Z" fill="#A8A8AB"/>
+</svg>
+
+  </button>
+ <!-- Instagram (fallback) -->
+  <button type="button" class="share-btn share-instagram" aria-label="Share on Instagram">
+    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.20703 1.08594H3.79036C2.29459 1.08594 1.08203 2.2985 1.08203 3.79427V9.21094C1.08203 10.7067 2.29459 11.9193 3.79036 11.9193H9.20703C10.7028 11.9193 11.9154 10.7067 11.9154 9.21094V3.79427C11.9154 2.2985 10.7028 1.08594 9.20703 1.08594Z" stroke="#39B4E7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.66732 6.16135C8.73417 6.61215 8.65717 7.07255 8.44727 7.47707C8.23738 7.88159 7.90528 8.20962 7.4982 8.41451C7.09113 8.6194 6.62981 8.69072 6.17987 8.61832C5.72993 8.54592 5.31428 8.33348 4.99203 8.01123C4.66978 7.68898 4.45734 7.27333 4.38494 6.82339C4.31254 6.37345 4.38386 5.91213 4.58875 5.50506C4.79364 5.09798 5.12167 4.76588 5.52619 4.55599C5.9307 4.34609 6.39111 4.26909 6.84191 4.33594C7.30174 4.40413 7.72745 4.6184 8.05616 4.9471C8.38486 5.27581 8.59913 5.70152 8.66732 6.16135Z" stroke="#39B4E7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.48047 3.52344H9.48589" stroke="#39B4E7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+  
+  </button>
+  <!-- Twitter -->
+  <button type="button" class="share-btn share-twitter" aria-label="Share on Twitter">
+   <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4961 0.5047C12.4961 0.5047 12.0762 1.76429 11.2965 2.54404C12.2562 8.54208 5.65832 12.9207 0.5 9.50177C1.81957 9.56175 3.13914 9.14189 4.09883 8.30216C1.0998 7.40245 -0.399707 3.86361 1.0998 1.1045C2.41938 2.664 4.45871 3.5637 6.49805 3.50372C5.95822 0.984544 8.89727 -0.454988 10.6967 1.22447C11.3565 1.22447 12.4961 0.5047 12.4961 0.5047Z" stroke="#39B4E7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+  
+  </button>
+
+ 
+</div>
+</div>
+<script>
+(function () {
+  const container = document.querySelector('.article-share');
+  if (!container) return;
+
+  const shareUrl = container.dataset.shareUrl;
+  const shareTitle = container.dataset.shareTitle;
+  const shareText = container.dataset.shareText || '';
+
+  const popupCenter = (url, title, w = 600, h = 500) => {
+    const dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : screen.left;
+    const dualScreenTop = window.screenTop !== undefined ? window.screenTop : screen.top;
+    const width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    const height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+    const left = ((width / 2) - (w / 2)) + dualScreenLeft;
+    const top = ((height / 2) - (h / 2)) + dualScreenTop;
+    const newWindow = window.open(url, title, `scrollbars=yes, width=${w}, height=${h}, top=${top}, left=${left}`);
+    if (newWindow && newWindow.focus) newWindow.focus();
+    return newWindow;
+  };
+
+  // helpers
+  const encode = encodeURIComponent;
+  const facebookBtn = container.querySelector('.share-facebook');
+  const twitterBtn = container.querySelector('.share-twitter');
+  const instagramBtn = container.querySelector('.share-instagram');
+  const gmailLink = container.querySelector('.share-gmail');
+  const copyBtn = container.querySelector('.share-copy');
+
+  // Facebook
+  if (facebookBtn) {
+    facebookBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      const u = encode(shareUrl);
+      const url = `https://www.facebook.com/sharer/sharer.php?u=${u}`;
+      popupCenter(url, 'Share to Facebook', 640, 450);
+    });
+  }
+
+  // Twitter
+  if (twitterBtn) {
+    twitterBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      const url = `https://twitter.com/intent/tweet?url=${encode(shareUrl)}&text=${encode(shareTitle)}`;
+      popupCenter(url, 'Share to Twitter', 640, 450);
+    });
+  }
+
+  // Instagram (web limitations) — attempt Web Share API first; otherwise copy link + open instagram.com
+  if (instagramBtn) {
+    instagramBtn.addEventListener('click', async function (e) {
+      e.preventDefault();
+
+      // Try native Web Share API (mobile)
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: shareTitle,
+            text: shareText,
+            url: shareUrl
+          });
+          return;
+        } catch (err) {
+          // user canceled or not supported — continue to fallback
+        }
+      }
+
+      // Fallback: copy link and open Instagram homepage (so user can paste into story/post)
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        // open instagram main page in new tab so user can paste (can't prefill a post)
+        const instagramWindow = window.open('https://www.instagram.com/', '_blank', 'noopener');
+        // show a quick inline confirmation (change button text briefly)
+        const orig = instagramBtn.innerHTML;
+        instagramBtn.classList.add('copied');
+        instagramBtn.innerHTML = 'Link copied — open Instagram';
+        setTimeout(() => { instagramBtn.innerHTML = orig; instagramBtn.classList.remove('copied'); }, 2500);
+      } catch (err) {
+        // fallback to simple alert
+        alert('Copy this link to share on Instagram: ' + shareUrl);
+      }
+    });
+  }
+
+
+  // Optional: Use navigator.share for the whole container on mobile (long-press or dedicated mobile "Share" button)
+  // Example: if you want a mobile-only share:
+  // if (navigator.share) { create a "Share" button that calls navigator.share({title, text, url}) }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Blog Share",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Social Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Share",
+      "category": "Custom: article"
+    }
+  ]
+}
+{% endschema %}
