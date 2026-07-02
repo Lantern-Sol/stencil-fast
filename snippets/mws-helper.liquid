@@ -1,157 +1,149 @@
-
 <script>
-function mwApoCustom() {
-  window.mwApoInit = window.mwApoInit || {};
+  function mwApoCustom() {
+    window.mwApoInit = window.mwApoInit || {};
 
-  const isVisible = (element) => {
-    if (!element) return false;
+    const isVisible = (element) => {
+      if (!element) return false;
 
-    let current = element;
+      let current = element;
 
-    while (current && current !== document.documentElement) {
-      const styles = window.getComputedStyle(current);
+      while (current && current !== document.documentElement) {
+        const styles = window.getComputedStyle(current);
 
-      if (
-        styles.display === "none" ||
-        styles.visibility === "hidden" ||
-        current.classList.contains("mw-hidden")
-      ) {
-        return false;
+        if (styles.display === 'none' || styles.visibility === 'hidden' || current.classList.contains('mw-hidden')) {
+          return false;
+        }
+
+        current = current.parentElement;
       }
 
-      current = current.parentElement;
-    }
+      return !!(element.offsetWidth || element.offsetHeight || element.getClientRects().length);
+    };
 
-    return !!(element.offsetWidth || element.offsetHeight || element.getClientRects().length);
-  };
+    const optionIsSelected = (option) => {
+      const selectedValue = option.querySelector(
+        ".mw-selected:not(.selectCustom-option--default), [aria-selected='true']"
+      );
 
-  const optionIsSelected = (option) => {
-    const selectedValue = option.querySelector(
-      ".mw-selected:not(.selectCustom-option--default), [aria-selected='true']"
-    );
-
-    if (selectedValue && isVisible(selectedValue)) {
-      return true;
-    }
-
-    const selects = option.querySelectorAll("select.mw-option__control, select");
-
-    for (const select of selects) {
-      if (select.disabled || !isVisible(select)) continue;
-
-      const selectedOptions = Array.from(select.selectedOptions || []).filter((selectedOption) => {
-        return selectedOption.value && !selectedOption.disabled && !selectedOption.hidden;
-      });
-
-      if (selectedOptions.length) {
+      if (selectedValue && isVisible(selectedValue)) {
         return true;
       }
-    }
 
-    const checkedInputs = option.querySelectorAll(
-      "input[type='radio']:checked, input[type='checkbox']:checked"
-    );
+      const selects = option.querySelectorAll('select.mw-option__control, select');
 
-    for (const input of checkedInputs) {
-      if (!input.disabled && isVisible(input)) {
-        return true;
-      }
-    }
+      for (const select of selects) {
+        if (select.disabled || !isVisible(select)) continue;
 
-    const valueControls = option.querySelectorAll(
-      "input.mw-option__control:not([type='radio']):not([type='checkbox']), textarea.mw-option__control"
-    );
+        const selectedOptions = Array.from(select.selectedOptions || []).filter((selectedOption) => {
+          return selectedOption.value && !selectedOption.disabled && !selectedOption.hidden;
+        });
 
-    for (const control of valueControls) {
-      if (control.disabled || !isVisible(control)) continue;
-
-      if (control.type === "file") {
-        if ((control.files && control.files.length) || control.value) {
+        if (selectedOptions.length) {
           return true;
         }
-      } else if ((control.value || "").trim() !== "") {
-        return true;
       }
-    }
 
-    return false;
-  };
+      const checkedInputs = option.querySelectorAll("input[type='radio']:checked, input[type='checkbox']:checked");
 
-  const updateAddToCartVisibility = () => {
-    const requiredOptions = Array.from(document.querySelectorAll(".mw-option--required")).filter(isVisible);
-    const allRequiredSelected = requiredOptions.every(optionIsSelected);
+      for (const input of checkedInputs) {
+        if (!input.disabled && isVisible(input)) {
+          return true;
+        }
+      }
 
-    document
-      .querySelectorAll(".mw-apo-add-to-cart-cloned, .mw-apo-sticky-add-to-cart-cloned")
-      .forEach((button) => {
-        button.classList.toggle("mw-apo-required-atc-hidden", !allRequiredSelected);
+      const valueControls = option.querySelectorAll(
+        "input.mw-option__control:not([type='radio']):not([type='checkbox']), textarea.mw-option__control"
+      );
+
+      for (const control of valueControls) {
+        if (control.disabled || !isVisible(control)) continue;
+
+        if (control.type === 'file') {
+          if ((control.files && control.files.length) || control.value) {
+            return true;
+          }
+        } else if ((control.value || '').trim() !== '') {
+          return true;
+        }
+      }
+
+      return false;
+    };
+
+    const updateAddToCartVisibility = () => {
+      const requiredOptions = Array.from(document.querySelectorAll('.mw-option--required')).filter(isVisible);
+      const allRequiredSelected = requiredOptions.every(optionIsSelected);
+
+      document.querySelectorAll('.mw-apo-add-to-cart-cloned, .mw-apo-sticky-add-to-cart-cloned').forEach((button) => {
+        button.classList.toggle('mw-apo-required-atc-hidden', !allRequiredSelected);
       });
-  };
+    };
 
-  const addOptionNumbers = () => {
-    const visibleOptions = Array.from(document.querySelectorAll(".mw-option")).filter(isVisible);
+    const addOptionNumbers = () => {
+      const visibleOptions = Array.from(document.querySelectorAll('.mw-option')).filter(isVisible);
 
-    visibleOptions.forEach((option, index) => {
-      const labelText = option.querySelector(".mw-label .mw-text--style-strong");
+      visibleOptions.forEach((option, index) => {
+        const labelText = option.querySelector('.mw-label .mw-text--style-strong');
 
-      if (!labelText || labelText.classList.contains("mw-hidden")) return;
+        if (!labelText || labelText.classList.contains('mw-hidden')) return;
 
-      let number = labelText.parentElement.querySelector(".mw-apo-option-number");
+        let number = labelText.parentElement.querySelector('.mw-apo-option-number');
 
-      if (!number) {
-        number = document.createElement("span");
-        number.className = "mw-apo-option-number";
-        labelText.parentElement.insertBefore(number, labelText);
+        if (!number) {
+          number = document.createElement('span');
+          number.className = 'mw-apo-option-number';
+          labelText.parentElement.insertBefore(number, labelText);
+        }
+
+        number.textContent = index + 1;
+      });
+    };
+
+    const refresh = () => {
+      window.requestAnimationFrame(() => {
+        addOptionNumbers();
+        updateAddToCartVisibility();
+      });
+    };
+
+    window.mwApoInit.onEvent = function (event, args) {
+      if (event == 'init::finish') {
+        refresh();
       }
 
-      number.textContent = index + 1;
-    });
-  };
+      if (event == 'mwApo::ON_CHANGE_OPTION') {
+        refresh();
+      }
+    };
 
-  const refresh = () => {
-    window.requestAnimationFrame(() => {
-      addOptionNumbers();
-      updateAddToCartVisibility();
-    });
-  };
-
-  window.mwApoInit.onEvent = function (event, args) {
-    if (event == "init::finish") {
-      refresh();
-    }
-
-    if (event == "mwApo::ON_CHANGE_OPTION") {
-      refresh();
-    }
-  };
-
-  window.mwApoInit.onCallback = function (event, data) {
-    if (event == "applyAttributeStateToHtml::price") {
-    }
-    return data;
-  };
-}
+    window.mwApoInit.onCallback = function (event, data) {
+      if (event == 'applyAttributeStateToHtml::price') {
+      }
+      return data;
+    };
+  }
 </script>
 
 <style>
-  .mw-apo-required-atc-hidden {
-    display: none !important;
-  }
+    .mw-apo-required-atc-hidden {
+      display: none !important;
+    }
 
-  .mw-apo-option-number {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 22px;
-    height: 22px;
-    min-width: 22px;
-    margin-right: 8px;
-    border-radius: 50%;
-    background: #E94F37;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    vertical-align: middle;
+    .mw-apo-option-number {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      top: -2px;
+      margin-right: 5px;
+      border-radius: 50%;
+      background: #E94F37;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1;
+      vertical-align: middle;
   }
 </style>
