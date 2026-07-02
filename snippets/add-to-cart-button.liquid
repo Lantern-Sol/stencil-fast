@@ -19,7 +19,7 @@
     assign product_variant_media = product.featured_media.preview_image | image_url: width: 100
   endif
   assign style_class = style_class | default: 'button'
-  if show_icon == nil
+  if show_icon == null
     assign show_icon = true
   endif
 -%}
@@ -48,15 +48,15 @@
     <span
       class="add-to-cart-text"
     >
-      {% comment %} 
-      {% if can_add_to_cart and show_icon %}
-        <span
-          aria-hidden="true"
-          class="svg-wrapper add-to-cart-icon"
-        >
-          {{- 'icon-add-to-cart.svg' | inline_asset_content -}}
-        </span>
-      {% endif %}
+      {% comment %}
+        {% if can_add_to_cart and show_icon %}
+          <span
+            aria-hidden="true"
+            class="svg-wrapper add-to-cart-icon"
+          >
+            {{- 'icon-add-to-cart.svg' | inline_asset_content -}}
+          </span>
+        {% endif %}
       {% endcomment %}
       <span class="add-to-cart-text__content{% if icon_only_on_mobile %} is-visually-hidden-mobile{% endif %}">
         <span>
@@ -68,9 +68,12 @@
     </span>
 
     <span class="productPrice">
-      {{ product.selected_or_first_available_variant.price | money }}
+      <span class="productPrice__separator">•</span>
+      <span class="productPrice__value">
+        {{ product.selected_or_first_available_variant.price | money }}
+      </span>
     </span>
-    
+
     {% comment %} checkmark burst markup {% endcomment %}
     <span class="add-to-cart__added">
       <span class="svg-wrapper add-to-cart__added-icon">
