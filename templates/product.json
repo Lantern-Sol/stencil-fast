@@ -631,7 +631,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                "text": "{{ closest.product.metafields.custom.short_description | metafield_tag }}",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "none",
@@ -694,10 +694,6 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {}
-            },
-            "apo_product_options_app_block_7LYbtU": {
-              "type": "shopify://apps/apo-product-options/blocks/app-block/a1199153-7462-4b5b-8a80-f0eefba85e99",
-              "settings": {}
             },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
@@ -1110,7 +1106,6 @@
             "divider_VJhene",
             "text_ekMcQ6",
             "variant_picker_R3rGDr",
-            "apo_product_options_app_block_7LYbtU",
             "buy_buttons_eYQEYi",
             "text_aEtTtq",
             "accordion_ezjJdJ"
