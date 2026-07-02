@@ -1433,6 +1433,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_mC8bXr"
       ],
+      "name": "Review",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
