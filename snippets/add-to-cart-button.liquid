@@ -69,12 +69,14 @@
       </span>
     </span>
 
-    <span class="productPrice">
-      <span class="productPrice__separator">•</span>
-      <span class="productPrice__value">
-        {{ product.selected_or_first_available_variant.price | money }}
-      </span>
+    {% if show_price %}
+  <span class="productPrice">
+    <span class="productPrice__separator">•</span>
+    <span class="productPrice__value">
+      {{ product.selected_or_first_available_variant.price | money }}
     </span>
+  </span>
+{% endif %}
 
     {% comment %} checkmark burst markup {% endcomment %}
     <span class="add-to-cart__added">
