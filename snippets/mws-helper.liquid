@@ -91,7 +91,14 @@
       const allRequiredSelected = requiredOptions.every(optionIsSelected);
 
       document.querySelectorAll('.mw-apo-add-to-cart-cloned, .mw-apo-sticky-add-to-cart-cloned').forEach((button) => {
-        button.classList.toggle('mw-apo-required-atc-hidden', !allRequiredSelected);
+        button.disabled = !allRequiredSelected;
+        button.setAttribute('aria-disabled', String(!allRequiredSelected));
+
+        if (!allRequiredSelected) {
+          button.classList.add('mw-apo-required-atc-disabled');
+        } else {
+          button.classList.remove('mw-apo-required-atc-disabled');
+        }
       });
     };
 
