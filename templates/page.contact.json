@@ -257,7 +257,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                "text": "<p>We’d love to hear from you! Please use this form to contact us.<br/>If requesting a custom stencil quote, please provide as much information as possible, and feel free to upload artwork / photos.<br/><br/></p>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
