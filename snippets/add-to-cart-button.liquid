@@ -66,6 +66,11 @@
         </span>
       </span>
     </span>
+
+    <span class="productPrice">
+      {{ product.selected_or_first_available_variant.price | money }}
+    </span>
+    
     {% comment %} checkmark burst markup {% endcomment %}
     <span class="add-to-cart__added">
       <span class="svg-wrapper add-to-cart__added-icon">
