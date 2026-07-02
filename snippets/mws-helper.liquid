@@ -2,6 +2,22 @@
   function mwApoCustom() {
     window.mwApoInit = window.mwApoInit || {};
 
+    const syncClonedButtonPrice = () => {
+      requestAnimationFrame(() => {
+        const sourcePrice = document.querySelector(
+          '.shopify-product-form .mw-apo-add-to-cart-hide .productPrice__value.mws-price, .shopify-product-form button:not(.mw-apo-add-to-cart-cloned) .productPrice__value.mws-price'
+        );
+
+        const clonedPrice = document.querySelector(
+          '.shopify-product-form .mw-apo-add-to-cart-cloned .productPrice__value.mws-price'
+        );
+
+        if (!sourcePrice || !clonedPrice) return;
+
+        clonedPrice.textContent = sourcePrice.textContent;
+      });
+    };
+
     const isVisible = (element) => {
       if (!element) return false;
 
@@ -109,15 +125,18 @@
     window.mwApoInit.onEvent = function (event, args) {
       if (event == 'init::finish') {
         refresh();
+        syncClonedButtonPrice();
       }
 
       if (event == 'mwApo::ON_CHANGE_OPTION') {
         refresh();
+        syncClonedButtonPrice();
       }
     };
 
     window.mwApoInit.onCallback = function (event, data) {
       if (event == 'applyAttributeStateToHtml::price') {
+        syncClonedButtonPrice();
       }
       return data;
     };
