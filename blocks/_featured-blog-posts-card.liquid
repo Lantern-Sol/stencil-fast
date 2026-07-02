@@ -43,11 +43,6 @@
     parent_block_id: block.id
   %}
 {% endcapture %}
-
-{% capture title %}
-  {% content_for 'block', id: 'title', type: '_heading', text: display_title %}
-{% endcapture %}
-
 {% capture details %}
   {% content_for 'block',
     id: 'blog-post-info-text',
@@ -57,6 +52,11 @@
     date: display_date
   %}
 {% endcapture %}
+{% capture title %}
+  {% content_for 'block', id: 'title', type: '_heading', text: display_title %}
+{% endcapture %}
+
+
 
 {% capture description %}
   {% content_for 'block',
