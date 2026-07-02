@@ -1,133 +1,127 @@
+
 <script>
 function mwApoCustom() {
   window.mwApoInit = window.mwApoInit || {};
 
-  window.mwApoInit.onEvent = function (event, args) {
-    if (event == "init::finish") {
-      const isVisible = (element) => {
-        if (!element) return false;
+  const isVisible = (element) => {
+    if (!element) return false;
 
-        let current = element;
+    let current = element;
 
-        while (current && current !== document.documentElement) {
-          const styles = window.getComputedStyle(current);
+    while (current && current !== document.documentElement) {
+      const styles = window.getComputedStyle(current);
 
-          if (
-            styles.display === "none" ||
-            styles.visibility === "hidden" ||
-            current.classList.contains("mw-hidden")
-          ) {
-            return false;
-          }
+      if (
+        styles.display === "none" ||
+        styles.visibility === "hidden" ||
+        current.classList.contains("mw-hidden")
+      ) {
+        return false;
+      }
 
-          current = current.parentElement;
-        }
+      current = current.parentElement;
+    }
 
-        return !!(element.offsetWidth || element.offsetHeight || element.getClientRects().length);
-      };
+    return !!(element.offsetWidth || element.offsetHeight || element.getClientRects().length);
+  };
 
-      const optionIsSelected = (option) => {
-        const selectedValue = option.querySelector(
-          ".mw-selected:not(.selectCustom-option--default), [aria-selected='true']"
-        );
+  const optionIsSelected = (option) => {
+    const selectedValue = option.querySelector(
+      ".mw-selected:not(.selectCustom-option--default), [aria-selected='true']"
+    );
 
-        if (selectedValue && isVisible(selectedValue)) {
+    if (selectedValue && isVisible(selectedValue)) {
+      return true;
+    }
+
+    const selects = option.querySelectorAll("select.mw-option__control, select");
+
+    for (const select of selects) {
+      if (select.disabled || !isVisible(select)) continue;
+
+      const selectedOptions = Array.from(select.selectedOptions || []).filter((selectedOption) => {
+        return selectedOption.value && !selectedOption.disabled && !selectedOption.hidden;
+      });
+
+      if (selectedOptions.length) {
+        return true;
+      }
+    }
+
+    const checkedInputs = option.querySelectorAll(
+      "input[type='radio']:checked, input[type='checkbox']:checked"
+    );
+
+    for (const input of checkedInputs) {
+      if (!input.disabled && isVisible(input)) {
+        return true;
+      }
+    }
+
+    const valueControls = option.querySelectorAll(
+      "input.mw-option__control:not([type='radio']):not([type='checkbox']), textarea.mw-option__control"
+    );
+
+    for (const control of valueControls) {
+      if (control.disabled || !isVisible(control)) continue;
+
+      if (control.type === "file") {
+        if ((control.files && control.files.length) || control.value) {
           return true;
         }
+      } else if ((control.value || "").trim() !== "") {
+        return true;
+      }
+    }
 
-        const selects = option.querySelectorAll("select.mw-option__control, select");
+    return false;
+  };
 
-        for (const select of selects) {
-          if (select.disabled || !isVisible(select)) continue;
+  const updateAddToCartVisibility = () => {
+    const requiredOptions = Array.from(document.querySelectorAll(".mw-option--required")).filter(isVisible);
+    const allRequiredSelected = requiredOptions.every(optionIsSelected);
 
-          const selectedOptions = Array.from(select.selectedOptions || []).filter((selectedOption) => {
-            return selectedOption.value && !selectedOption.disabled && !selectedOption.hidden;
-          });
-
-          if (selectedOptions.length) {
-            return true;
-          }
-        }
-
-        const checkedInputs = option.querySelectorAll(
-          "input[type='radio']:checked, input[type='checkbox']:checked"
-        );
-
-        for (const input of checkedInputs) {
-          if (!input.disabled && isVisible(input)) {
-            return true;
-          }
-        }
-
-        const valueControls = option.querySelectorAll(
-          "input.mw-option__control:not([type='radio']):not([type='checkbox']), textarea.mw-option__control"
-        );
-
-        for (const control of valueControls) {
-          if (control.disabled || !isVisible(control)) continue;
-
-          if (control.type === "file") {
-            if ((control.files && control.files.length) || control.value) {
-              return true;
-            }
-          } else if ((control.value || "").trim() !== "") {
-            return true;
-          }
-        }
-
-        return false;
-      };
-
-      const updateAddToCartVisibility = () => {
-        const requiredOptions = Array.from(document.querySelectorAll(".mw-option--required")).filter(isVisible);
-        const allRequiredSelected = requiredOptions.every(optionIsSelected);
-
-        document
-          .querySelectorAll(".mw-apo-add-to-cart-cloned, .mw-apo-sticky-add-to-cart-cloned")
-          .forEach((button) => {
-            button.classList.toggle("mw-apo-required-atc-hidden", !allRequiredSelected);
-          });
-      };
-
-      const addOptionNumbers = () => {
-        const visibleOptions = Array.from(document.querySelectorAll(".mw-option")).filter(isVisible);
-
-        visibleOptions.forEach((option, index) => {
-          const labelText = option.querySelector(".mw-label .mw-text--style-strong");
-
-          if (!labelText || labelText.classList.contains("mw-hidden")) return;
-
-          let number = labelText.parentElement.querySelector(".mw-apo-option-number");
-
-          if (!number) {
-            number = document.createElement("span");
-            number.className = "mw-apo-option-number";
-            labelText.parentElement.insertBefore(number, labelText);
-          }
-
-          number.textContent = index + 1;
-        });
-      };
-
-      const refresh = () => {
-        window.requestAnimationFrame(() => {
-          addOptionNumbers();
-          updateAddToCartVisibility();
-        });
-      };
-
-      refresh();
-
-      document.addEventListener("change", refresh, true);
-      document.addEventListener("input", refresh, true);
-      document.addEventListener("click", refresh, true);
-
-      new MutationObserver(refresh).observe(document.body, {
-        subtree: true,
-        childList: true,
-        attributes: true,
-        attributeFilter: ["class", "style", "disabled", "hidden", "selected", "checked"],
+    document
+      .querySelectorAll(".mw-apo-add-to-cart-cloned, .mw-apo-sticky-add-to-cart-cloned")
+      .forEach((button) => {
+        button.classList.toggle("mw-apo-required-atc-hidden", !allRequiredSelected);
       });
+  };
+
+  const addOptionNumbers = () => {
+    const visibleOptions = Array.from(document.querySelectorAll(".mw-option")).filter(isVisible);
+
+    visibleOptions.forEach((option, index) => {
+      const labelText = option.querySelector(".mw-label .mw-text--style-strong");
+
+      if (!labelText || labelText.classList.contains("mw-hidden")) return;
+
+      let number = labelText.parentElement.querySelector(".mw-apo-option-number");
+
+      if (!number) {
+        number = document.createElement("span");
+        number.className = "mw-apo-option-number";
+        labelText.parentElement.insertBefore(number, labelText);
+      }
+
+      number.textContent = index + 1;
+    });
+  };
+
+  const refresh = () => {
+    window.requestAnimationFrame(() => {
+      addOptionNumbers();
+      updateAddToCartVisibility();
+    });
+  };
+
+  window.mwApoInit.onEvent = function (event, args) {
+    if (event == "init::finish") {
+      refresh();
+    }
+
+    if (event == "mwApo::ON_CHANGE_OPTION") {
+      refresh();
     }
   };
 
