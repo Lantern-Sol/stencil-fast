@@ -6,6 +6,7 @@
       href="{{ blog.url }}/tagged/{{ first_tag | handleize }}"
     >{{ first_tag }}</a>
   {% endif %}
+  <span class="article-meta-info__date">{{ article.published_at | time_tag: format: 'date' }}</span>
 {% endcapture %}
 {%  liquid 
   case block.settings.content_source 
