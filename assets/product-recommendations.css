@@ -83,12 +83,15 @@ body .product-recommendations>* {
     font-weight: 500;
     letter-spacing: 0.5px;
 }
+@media only screen and (max-width:1300px){
 .product-recommendations .product-form-buttons .button {
-	background: #393e41;
-	opacity: 1;
-	align-items: center;
-	font-weight: 500;
 	padding: 10px;
+}
+}
+@media only screen and (max-width:1200px){
+.product-recommendations .resource-list__slide .h4 p {
+	min-height: 50px;
+}
 }
 @media only screen and (max-width:991px){
 .product-recommendations .resource-list__slide {
