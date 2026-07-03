@@ -22,6 +22,7 @@
 	background: #393E41;
 	opacity: 1;
 	font-weight: 500;
+	align-items:center;
 }
 .best-seller-sec .product-form-buttons .button:hover {
 	background: #f6f7eb;
