@@ -170,3 +170,8 @@
 	white-space: unset;
 }
 }
+@media only screen and (max-width:991px){
+.product-information .product-information__media .product-media img {
+	border-radius: 15px;
+}
+}
