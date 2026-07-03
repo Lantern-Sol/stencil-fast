@@ -225,26 +225,6 @@
             "article_products_PUMtGt"
           ]
         },
-        "blog-post-details": {
-          "type": "_blog-post-info-text",
-          "name": "Details",
-          "settings": {
-            "show_date": true,
-            "show_author": false,
-            "type_preset": "",
-            "alignment": "center",
-            "text_color": "",
-            "show_alignment": true,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "use_mobile_padding": false,
-            "padding-block-start-mobile": 24,
-            "padding-block-end-mobile": 0
-          },
-          "blocks": {}
-        },
         "group_6LQRMU": {
           "type": "group",
           "name": "t:names.group",
@@ -374,7 +354,6 @@
       },
       "block_order": [
         "group_gPQaHq",
-        "blog-post-details",
         "group_6LQRMU"
       ],
       "settings": {
