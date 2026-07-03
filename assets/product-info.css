@@ -22,6 +22,11 @@
     width: auto;
     flex: unset;
 }
+.classfication-bx .group-block p {
+	margin: 0;
+	color: #E94F37;
+	font-size: 12px;
+}
 .product-details .text-block p,
 .product-details li  {
     font-size: 14px;
