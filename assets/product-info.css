@@ -174,4 +174,7 @@
 .product-information .product-information__media .product-media img {
 	border-radius: 15px;
 }
+.product-details .text-block h1 {
+	font-size: 25px;
+}
 }
