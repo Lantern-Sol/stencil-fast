@@ -288,7 +288,7 @@
         "all_tab_label": "All",
         "tabs_alignment": "center",
         "background_color": "",
-        "padding-block-start": 48,
+        "padding-block-start": 0,
         "padding-block-end": 48,
         "use_mobile_padding": false,
         "padding-block-start-mobile": 0,
