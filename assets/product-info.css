@@ -157,8 +157,8 @@
 .product-information .slideshow-controls__thumbnails-container .slideshow-controls__thumbnails img {
     border-radius: 5px;
 }
-.product-information__grid .product__media-wrapper,
- .product-information__grid  .product-information__media {
+.product__media-wrapper,
+ .product-information__media {
     position: -webkit-sticky;
     position: sticky;
     top: 20px; /* Adjust this value depending on your header height */
