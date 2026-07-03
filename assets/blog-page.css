@@ -28,3 +28,8 @@ nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
     font-family: var( --secondary-font);
     margin: 0;
 }
+.blog-posts-container .blog-post-item .blog-post-card__content time {
+    font-size: 12px;
+     font-family: var( --secondary-font);
+    color: #8F969A;
+}
