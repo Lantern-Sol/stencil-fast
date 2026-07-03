@@ -70,6 +70,9 @@ body .product-recommendations>* {
 .product-recommendations .resource-list__slide .h4 p {
 	min-height: 35px;
 }
+.product-recommendations  .section-resource-list__content {
+    gap: 10px;
+}
 @media only screen and (max-width:991px){
 .product-recommendations .resource-list__slide {
 	padding: 0;
