@@ -140,3 +140,7 @@
 .product-details .interlock-option-box .mw-stack>.mw-stack__item .mw-option__value .mw-stack__item + .mw-stack__item {
     margin-left: 22px;
 }
+.product-details .interlock-option-box .mw-stack>.mw-stack__item .mw-option__value .mw-option__control {
+    position: relative;
+    top: 10px;
+}
