@@ -38,24 +38,7 @@
   <div
     class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
   ></div>
-  <div
-    class="
-      section
-      {% if section.settings.background_color != blank %}color-custom-{{ section.id }}{% endif %}
-      blog-posts
-      blog-posts--{{ layout_type }}
-      spacing-style
-      size-style
-    "
-    data-testid="blog-posts"
-    style="
-      {% render 'spacing-style', settings: section.settings %}
-      --blog-posts-columns: {{ columns }};
-    "
-  >
-    {% content_for 'blocks' %}
-
-    {%- if show_category_tabs -%}
+  {%- if show_category_tabs -%}
       <nav
         class="blog-category-tabs blog-category-tabs--{{ tabs_alignment }}"
         aria-label="Article categories"
@@ -80,6 +63,24 @@
         </ul>
       </nav>
     {%- endif -%}
+  <div
+    class="
+      section
+      {% if section.settings.background_color != blank %}color-custom-{{ section.id }}{% endif %}
+      blog-posts
+      blog-posts--{{ layout_type }}
+      spacing-style
+      size-style
+    "
+    data-testid="blog-posts"
+    style="
+      {% render 'spacing-style', settings: section.settings %}
+      --blog-posts-columns: {{ columns }};
+    "
+  >
+    {% content_for 'blocks' %}
+
+    
 
     {%- if show_pagination -%}
       {% paginate blog.articles by posts_per_page %}
