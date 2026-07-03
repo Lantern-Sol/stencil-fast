@@ -1,8 +1,11 @@
 {% capture details %}
-        <a
-          class="blog-post-card__tag"
-          href="{{ blog.url }}/tagged/{{ first_tag | handleize }}"
-        >{{ first_tag }}</a>
+  {% if article.tags.size > 0 %}
+    {% assign first_tag = article.tags | first %}
+    <a
+      class="blog-post-card__tag"
+      href="{{ blog.url }}/tagged/{{ first_tag | handleize }}"
+    >{{ first_tag }}</a>
+  {% endif %}
 {% endcapture %}
 {%  liquid 
   case block.settings.content_source 
