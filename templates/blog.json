@@ -76,10 +76,10 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+            "text": "<p>Industry updates, company stories, and everything pavement — straight from the team that's been stenciling America since 1990.</p>",
             "mobile_text": "",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "left",
             "height_mode": "auto",
             "desktop_height": "",
