@@ -16,3 +16,6 @@ nav.blog-category-tabs li.blog-category-tabs__item a {
 nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
     color: #E94F37;
 }
+.blog-posts-container .blog-post-item .blog-post-card__image-container img {
+    border-radius: 16px;
+}
