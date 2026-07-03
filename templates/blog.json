@@ -35,7 +35,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>{{ closest.blog.title }}</p>",
+            "text": "<h1>{{ closest.blog.title }}</h1>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
