@@ -5539,7 +5539,8 @@ body .breadcrumbs__item+.breadcrumbs__item:before {
     font-style: italic;
     letter-spacing: 0.5px;
 }
-.jm-review-widget__header-and-body  button.jm-button.jm-button--secondary.jm-custom-answer-filter.jm-custom-answer-filter--compact {
+.jm-review-widget__header-and-body  button.jm-button.jm-button--secondary.jm-custom-answer-filter.jm-custom-answer-filter--compact ,
+.jm-review-widget__header-and-body .jm-sort-filter__icon.jm-sort-filter__icon--chevron{
     min-height: 48px;
     min-width: 50px;
 }
