@@ -149,3 +149,6 @@
 .interlock-option-box {
     margin-bottom: 25px;
 }
+.product-information .slideshow-controls__thumbnails-container .slideshow-controls__thumbnails img {
+    border-radius: 5px;
+}
