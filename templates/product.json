@@ -324,7 +324,7 @@
                         "icon": "price_tag",
                         "image_upload": "shopify://shop_images/Vector.svg",
                         "width": 18,
-                        "width-mobile": 18,
+                        "width-mobile": 12,
                         "link": "",
                         "open_in_new_tab": false,
                         "icon_color": ""
@@ -438,7 +438,7 @@
                         "icon": "price_tag",
                         "image_upload": "shopify://shop_images/Group.svg",
                         "width": 18,
-                        "width-mobile": 18,
+                        "width-mobile": 12,
                         "link": "",
                         "open_in_new_tab": false,
                         "icon_color": ""
@@ -552,7 +552,7 @@
                         "icon": "price_tag",
                         "image_upload": "shopify://shop_images/certified.svg",
                         "width": 20,
-                        "width-mobile": 20,
+                        "width-mobile": 12,
                         "link": "",
                         "open_in_new_tab": false,
                         "icon_color": ""
