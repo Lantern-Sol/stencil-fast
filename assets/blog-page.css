@@ -63,3 +63,7 @@ nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
     background-repeat: no-repeat;
     background-position: center;
 }
+.blog-posts .blog-post-item {
+    border: none;
+    padding: 0;
+}
