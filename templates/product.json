@@ -1839,7 +1839,7 @@
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
-        "background_color": "",
+        "background_color": "#F9FAF5",
         "padding-block-start": 60,
         "padding-block-end": 60,
         "custom_class": "best-seller-sec"
