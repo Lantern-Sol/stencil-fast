@@ -22,7 +22,8 @@
     width: auto;
     flex: unset;
 }
-.product-details .text-block p {
+.product-details .text-block p,
+.product-details li  {
     font-size: 14px;
     color: #393E41;
      font-family: var( --secondary-font);
