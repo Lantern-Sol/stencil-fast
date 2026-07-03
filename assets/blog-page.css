@@ -67,3 +67,9 @@ nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
     border: none;
     padding: 0;
 }
+
+.blog-posts-container .blog-post-item .blog-post-card__image-container img {
+	border-radius: 16px;
+	min-height: 180px;
+	max-height: 180px;
+}
