@@ -42,14 +42,16 @@ nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
     margin: 0;
     letter-spacing: 0.5px;
 }
-.blog-posts-container .blog-post-item .blog-post-card__content  a.blog-post-card__button.button.button--primary {
+.blog-posts-container .blog-post-item .blog-post-card__content a.blog-post-card__button.button.button--primary {
     background: none;
     padding: 0;
     margin: 0;
-    color: #E94F37;
+    color: #e94f37;
     font-weight: 500;
-    letter-spacing: 0.2px;
+    letter-spacing: .2px;
     font-style: italic;
+    display: flex;
+    align-items: center;
 }
 .blog-posts-container .blog-post-item .blog-post-card__content a.blog-post-card__button.button.button--primary:after {
     content: "";
