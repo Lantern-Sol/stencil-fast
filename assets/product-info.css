@@ -119,3 +119,8 @@
 .product-information {
     margin-bottom: 50px;
 }
+.product-information span.jdgm-prev-badge__text {
+    font-size: 14px;
+    color: #393E41;
+     font-family: var( --secondary-font);
+}
