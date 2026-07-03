@@ -79,6 +79,11 @@
     font-weight: 500;
     letter-spacing: .5px;
 }
+.best-seller-sec  .text-block h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
 @media only screen and (max-width:991px){
 .best-seller-sec .resource-list__slide {
 	padding: 0;
