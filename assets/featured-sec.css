@@ -84,12 +84,15 @@
     font-weight: 500;
     letter-spacing: .5px;
 }
+@media only screen and (max-width:1300px){
 .best-seller-sec .product-form-buttons .button {
-	background: #393e41;
-	opacity: 1;
-	font-weight: 500;
-	align-items: center;
 	padding: 10px;
+}
+}
+@media only screen and (max-width:1200px){
+.best-seller-sec .resource-list__slide .h4 p {
+	min-height: 50px;
+}
 }
 @media only screen and (max-width:991px){
 .best-seller-sec .resource-list__slide {
