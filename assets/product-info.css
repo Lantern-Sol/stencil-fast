@@ -179,5 +179,7 @@
 }
 }
 @media only screen and (max-width:767px){
-
+.product-details .mw-apo-container .mw-stack__item span.mw-text {
+    font-size: 14px;
+}
 }
