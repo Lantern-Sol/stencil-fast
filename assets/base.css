@@ -5532,6 +5532,13 @@ body .breadcrumbs__item+.breadcrumbs__item:before {
     background-repeat: no-repeat;
     background-position: center;
 }
+.jm-review-widget__header-and-body button.jm-button.jm-button--primary {
+    min-height: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
 	width: 36px;
