@@ -2,10 +2,6 @@
   if section.settings.background_color != blank
     render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
   endif
-   assign recommended_products = article.metafields.custom.recommended_products.value
-  if recommended_products == blank
-    assign recommended_products = article.metafields.custom.recommended_products
-  endif
 %}
 
 <div
