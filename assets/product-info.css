@@ -130,3 +130,6 @@
     background: #f9faf5;
     border-radius: 5px;
 }
+.product-details .interlock-option-box .mw-stack>.mw-stack__item .mw-option__value .mw-option__value-title {
+ font-family: var( --secondary-font);
+}
