@@ -5547,6 +5547,13 @@ body .breadcrumbs__item+.breadcrumbs__item:before {
 .jm-review-widget__header-and-body span.jm-text.jm-reviewer-info__name {
     font-weight: 500;
 }
+.jm-review-widget__header-and-body p.jm-text.jm-review-widget-minimal-header__title {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #393E41;
+}
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
 	width: 36px;
