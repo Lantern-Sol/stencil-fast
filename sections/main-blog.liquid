@@ -33,12 +33,7 @@
     render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
   endif
 %}
-
-<blog-posts-list section-id="{{ section.id }}">
-  <div
-    class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
-  ></div>
-  {%- if show_category_tabs -%}
+{%- if show_category_tabs -%}
       <nav
         class="blog-category-tabs blog-category-tabs--{{ tabs_alignment }}"
         aria-label="Article categories"
@@ -63,6 +58,10 @@
         </ul>
       </nav>
     {%- endif -%}
+<blog-posts-list section-id="{{ section.id }}">
+  <div
+    class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+  ></div>
   <div
     class="
       section
