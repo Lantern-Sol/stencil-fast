@@ -157,6 +157,14 @@
 .product-information .slideshow-controls__thumbnails-container .slideshow-controls__thumbnails img {
     border-radius: 5px;
 }
+.product__media-wrapper,
+  .product-information__media {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px; /* Adjust this value depending on your header height */
+    z-index: 1;
+    height: fit-content;
+  }
 @media only screen and (max-width:1300px){
 .product-details .classfication-bx .group-block p {
 	font-size: 10px;

@@ -5565,11 +5565,4 @@ body .breadcrumbs__item+.breadcrumbs__item:before {
 .jm-review-widget__header-and-body p.jm-text.jm-review-widget-minimal-header__title {
     font-size: 24px;
 }
-}.product__media-wrapper,
-  .product-information__media {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 20px; /* Adjust this value depending on your header height */
-    z-index: 1;
-    height: fit-content;
-  }
+}
