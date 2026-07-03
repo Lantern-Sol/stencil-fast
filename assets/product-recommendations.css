@@ -25,6 +25,7 @@ body .product-recommendations>* {
 .product-recommendations .product-form-buttons .button {
 	background: #393E41;
 	opacity: 1;
+	align-items: center;
 	font-weight: 500;
 }
 .product-recommendations .product-form-buttons .button:hover {
