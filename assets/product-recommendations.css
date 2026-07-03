@@ -78,6 +78,10 @@ body .product-recommendations>* {
     font-weight: 500;
     letter-spacing: 0.5px;
 }
+.product-recommendations .text-block h2 {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
 @media only screen and (max-width:991px){
 .product-recommendations .resource-list__slide {
 	padding: 0;
