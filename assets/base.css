@@ -5544,6 +5544,9 @@ body .breadcrumbs__item+.breadcrumbs__item:before {
     min-height: 48px;
     min-width: 50px;
 }
+.jm-review-widget__header-and-body span.jm-text.jm-reviewer-info__name {
+    font-weight: 500;
+}
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
 	width: 36px;
