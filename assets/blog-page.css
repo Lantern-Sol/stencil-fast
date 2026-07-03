@@ -69,7 +69,7 @@ nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
 }
 @media only screen and (max-width:991px){
 .blog-posts-container .blog-post-item .blog-post-card__image-container img {
-	min-height: 180px;
-	max-height: 180px;
+	min-height: 160px;
+	max-height: 160px;
 }
 }
