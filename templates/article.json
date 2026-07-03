@@ -113,11 +113,20 @@
                 "text": ""
               },
               "blocks": {}
+            },
+            "article_products_PUMtGt": {
+              "type": "article-products",
+              "name": "Article Products",
+              "settings": {
+                "heading": "RECOMMENDED FOR YOU"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_q7BiNm",
-            "article_share_xxCfXa"
+            "article_share_xxCfXa",
+            "article_products_PUMtGt"
           ]
         },
         "blog-post-details": {
