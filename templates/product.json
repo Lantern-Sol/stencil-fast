@@ -1177,7 +1177,7 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
-            "text": "<h2><em>YOU MAY ALSO NEED</em></h2>",
+            "text": "<p><em><strong>YOU MAY ALSO NEED</strong></em></p>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
