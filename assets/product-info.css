@@ -158,7 +158,7 @@
     border-radius: 5px;
 }
 .product__media-wrapper,
-  .product-information__media {
+ .product-information__media {
     position: -webkit-sticky;
     position: sticky;
     top: 20px; /* Adjust this value depending on your header height */
