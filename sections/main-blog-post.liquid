@@ -26,58 +26,7 @@
     "
   >
     {% content_for 'blocks' %}
-{%- if recommended_products != blank -%}
-        <!-- Recommended Widget -->
-          <div class="recommended-widget-card">
-            <h3 class="recommended-widget-card__heading">RECOMMENDED FOR YOU</h3>
-            <div class="recommended-widget-card__items">
-              {%- for prod in recommended_products -%}
-                <div class="recommended-product-item">
-                  <!-- Product Image with Sale badge -->
-                  <div class="recommended-product-item__image-container">
-                    <a href="{{ prod.url }}">
-                      {%- if prod.featured_media -%}
-                        {{ prod.featured_media | image_url: width: 240 | image_tag: class: 'recommended-product-item__image', loading: 'lazy' }}
-                      {%- else -%}
-                        {{ 'product-1' | placeholder_svg_tag: 'recommended-product-item__image recommended-product-item__image--placeholder' }}
-                      {%- endif -%}
-                    </a>
-                    {%- if prod.compare_at_price > prod.price -%}
-                      {%- assign saved_amount = prod.compare_at_price | minus: prod.price -%}
-                      {%- assign saved_percent = saved_amount | times: 100 | divided_by: prod.compare_at_price -%}
-                      <div class="recommended-product-item__sale-badge">{{ saved_percent }}% OFF</div>
-                    {%- endif -%}
-                  </div>
-                  <!-- Product details and CTA button -->
-                  <div class="recommended-product-item__details">
-                    <h4 class="recommended-product-item__title">
-                      <a href="{{ prod.url }}">{{ prod.title | escape }}</a>
-                    </h4>
-                    
-                    <div class="recommended-product-item__price-container">
-                      {%- if prod.compare_at_price > prod.price -%}
-                        <span class="recommended-product-item__price-compare">{{ prod.compare_at_price | money }}</span>
-                        <span class="recommended-product-item__price-sale">{{ prod.price | money }}</span>
-                      {%- else -%}
-                        <span class="recommended-product-item__price">
-                          {%- if prod.price_varies -%}
-                            From {{ prod.price_min | money }}
-                          {%- else -%}
-                            {{ prod.price | money }}
-                          {%- endif -%}
-                        </span>
-                      {%- endif -%}
-                    </div>
-                    <!-- Quick Add component -->
-                    <div class="recommended-product-item__cta">
-                      {% render 'quick-add', product: prod, section_id: section.id %}
-                    </div>
-                  </div>
-                </div>
-              {%- endfor -%}
-            </div>
-          </div>
-        {% endif %}  
+ 
     {% if blog.comments_enabled? %}
       <div class="blog-post-comments-container">
         <h2 class="h3">{{- 'blogs.article.comments_heading' | t: count: article.comments_count -}}</h2>
