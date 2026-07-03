@@ -175,9 +175,9 @@
 	border-radius: 15px;
 }
 .product-details .text-block h1 {
-	font-size: 25px;
+	font-size: 24px;
 }
 }
-.product-details .text-block h1 {
-    font-size: 24px;
+@media only screen and (max-width:767px){
+
 }
