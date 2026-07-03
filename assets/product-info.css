@@ -157,6 +157,9 @@
 .product-information .slideshow-controls__thumbnails-container .slideshow-controls__thumbnails img {
     border-radius: 5px;
 }
+.product-details .interlock-option-box .mw-stack>.mw-stack__item .mw-option__value.mw-option__value--selected {
+    border-color: #393E41;
+}
 @media only screen and (min-width:768px){
 .product__media-wrapper,
  .product-information__media {
