@@ -124,3 +124,9 @@
     color: #393E41;
      font-family: var( --secondary-font);
 }
+.product-details .interlock-option-box .mw-stack>.mw-stack__item .mw-option__value {
+    border: 1px solid #C9CCCF;
+    padding: 10px;
+    background: #f9faf5;
+    border-radius: 5px;
+}
