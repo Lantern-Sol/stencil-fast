@@ -28,6 +28,7 @@
     color: #393E41;
      font-family: var( --secondary-font);
     line-height: normal;
+    margin-bottom:3px;
 }
 .product-details .mw-apo-container .mw-stack__item span.mw-text {
     font-size: 16px;
