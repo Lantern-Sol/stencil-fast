@@ -33,3 +33,12 @@ nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
      font-family: var( --secondary-font);
     color: #8F969A;
 }
+.blog-posts-container .blog-post-item .blog-post-card__content a.blog-post-card__title-link .text-block {
+    color: #3D3A35;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
