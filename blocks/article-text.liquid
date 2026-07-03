@@ -1,3 +1,9 @@
+{% capture details %}
+        <a
+          class="blog-post-card__tag"
+          href="{{ blog.url }}/tagged/{{ first_tag | handleize }}"
+        >{{ first_tag }}</a>
+{% endcapture %}
 {%  liquid 
   case block.settings.content_source 
     when 'excerpt'
