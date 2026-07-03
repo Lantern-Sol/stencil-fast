@@ -84,6 +84,13 @@
     font-weight: 500;
     letter-spacing: .5px;
 }
+.best-seller-sec .product-form-buttons .button {
+	background: #393e41;
+	opacity: 1;
+	font-weight: 500;
+	align-items: center;
+	padding: 10px;
+}
 @media only screen and (max-width:991px){
 .best-seller-sec .resource-list__slide {
 	padding: 0;
