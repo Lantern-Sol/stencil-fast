@@ -106,6 +106,9 @@ body .product-recommendations>* {
 .product-recommendations .product-form-buttons .button {
 	padding: 10px;
 }
+.product-recommendations .text-block h3 {
+	font-size: 25px;
+}
 }
 @media only screen and (max-width:767px){
 .product-recommendations slideshow-arrows .slideshow-control.slideshow-control--previous {
