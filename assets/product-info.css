@@ -133,6 +133,7 @@
 .product-details .interlock-option-box .mw-stack>.mw-stack__item .mw-option__value .mw-option__value-title {
  font-family: var( --secondary-font);
 }
-.product-details .interlock-option-box .mw-stack>.mw-stack__item  .mw-stack__item {
+.product-details .interlock-option-box .mw-stack>.mw-stack__item  .mw-stack__item .mw-stack__item{
     color: #7c7c7c;
+       font-family: var( --secondary-font);
 }
