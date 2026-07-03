@@ -21,3 +21,9 @@ nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
     min-height: 260px;
     max-height: 260px;
 }
+.blog-posts-container .blog-post-item .blog-post-card__content a.blog-post-card__tag {
+    font-size: 12px;
+    color: #8F969A;
+    font-weight: normal;
+    margin: 0;
+}
