@@ -157,10 +157,11 @@
 .product-information .slideshow-controls__thumbnails-container .slideshow-controls__thumbnails img {
     border-radius: 5px;
 }
-
+@media only screen and (max-width:1300px){
 .product-details .classfication-bx .group-block p {
 	font-size: 10px;
 	min-height: 20px;
 	display: flex;
 	align-items: center;
+}
 }
