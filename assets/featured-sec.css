@@ -75,6 +75,10 @@
 .best-seller-sec .resource-list__slide .h4 p {
 	min-height: 35px;
 }
+.best-seller-sec .text-block h2 {
+    font-weight: 500;
+    letter-spacing: .5px;
+}
 @media only screen and (max-width:991px){
 .best-seller-sec .resource-list__slide {
 	padding: 0;
