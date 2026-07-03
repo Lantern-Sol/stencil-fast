@@ -12,3 +12,6 @@ nav.blog-category-tabs li.blog-category-tabs__item a {
     letter-spacing: 0.5px;
     opacity: 1;
 }
+nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
+    color: #E94F37;
+}
