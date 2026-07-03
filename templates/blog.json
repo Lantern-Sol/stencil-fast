@@ -43,7 +43,7 @@
             "height_mode": "auto",
             "desktop_height": "",
             "mobile_height": "",
-            "type_preset": "h1",
+            "type_preset": "h2",
             "font": "var(--font-body--family)",
             "enable_custom_font_weight": false,
             "weight": "400",
