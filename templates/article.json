@@ -70,7 +70,7 @@
               "name": "t:names.text",
               "settings": {
                 "article": "{{ closest.article }}",
-                "content_source": "title",
+                "content_source": "date",
                 "link_to_article": false,
                 "width": "fit-content",
                 "max_width": "normal",
