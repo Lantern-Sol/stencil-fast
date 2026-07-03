@@ -19,7 +19,7 @@ body .product-recommendations>* {
 	min-height: 34px;
 }
 .product-recommendations .resource-list__slide .price__regular .price {
-	font-size: 15px;
+	font-size: 14px;
     font-family:var(--secondary-font);
 }
 .product-recommendations .product-form-buttons .button {
