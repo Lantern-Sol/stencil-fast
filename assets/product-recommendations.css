@@ -135,4 +135,7 @@ body .product-recommendations>* {
     font-size: 14px;
     min-height: 35px;
 }
+.product-recommendations .text-block h3 {
+    font-size: 24px;
+}
 }
