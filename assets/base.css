@@ -5555,7 +5555,8 @@ body .breadcrumbs__item+.breadcrumbs__item:before {
     color: #393E41;
 }
 .jm-review-widget__header-and-body button.jm-button.jm-button--primary:hover {
-    background: #393E41;
+    background: #393e41;
+    border-color: #393e41;
 }
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
