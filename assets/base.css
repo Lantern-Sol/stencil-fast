@@ -5512,6 +5512,9 @@ body .button-secondary:hover {
 	transition: left var(--hover-transition-duration) var(--hover-transition-timing),top var(--hover-transition-duration) var(--hover-transition-timing);
 	background: none;
 }
+.pagination__list:has(.pagination__link:is(:hover, :focus-visible):not(.pagination__link--gap, .pagination__link--disabled))::before {
+	display:none;
+}
 body .breadcrumbs__nav li a {
     font-size: 12px;
     color: #8F969A;
