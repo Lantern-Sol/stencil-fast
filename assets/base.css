@@ -5540,7 +5540,7 @@ body .breadcrumbs__item+.breadcrumbs__item:before {
     letter-spacing: 0.5px;
 }
 .jm-review-widget__header-and-body  button.jm-button.jm-button--secondary.jm-custom-answer-filter.jm-custom-answer-filter--compact ,
-.jm-review-widget__header-and-body .jm-sort-filter__icon.jm-sort-filter__icon--chevron{
+.jm-review-widget__header-and-body .jm-sort-filter.jm-sort-filter--compact .jm-sort-filter__select{
     min-height: 48px;
     min-width: 50px;
 }
