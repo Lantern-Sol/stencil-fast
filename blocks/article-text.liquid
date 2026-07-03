@@ -16,7 +16,7 @@
     when 'location'
       assign fallback_text = block.settings.article.metafields.blogs.location
     when 'date'
-      assign fallback_text = block.settings.article.metafields.custom.date
+      assign fallback_text = details
     else
       assign fallback_text = ''
   endcase
