@@ -48,7 +48,8 @@
                     </div>
                     <!-- Quick Add component -->
                     <div class="recommended-product-item__cta">
-                      {% render 'quick-add', product: prod, section_id: section.id %}
+                        {% content_for 'blocks', closest.product: prod %}
+                      
                     </div>
                   </div>
                 </div>
@@ -60,6 +61,26 @@
 {% schema %}
 {
   "name": "Article Products",
+  "blocks": [
+    {
+      "type": "_product-card-group"
+    },
+    {
+      "type": "text"
+    },
+    {
+      "type": "image"
+    },
+    {
+      "type": "buy-buttons"
+    },
+    {
+      "type": "price"
+    },
+    {
+      "type": "@app"
+    }
+  ],
   "settings": [
     {
       "type": "text",
