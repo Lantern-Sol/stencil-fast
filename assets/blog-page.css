@@ -3,3 +3,12 @@ nav.blog-category-tabs {
     margin: 0 0 50px 0;
     padding: 15px 0;
 }
+nav.blog-category-tabs li.blog-category-tabs__item a {
+    font-size: 16px;
+    color: #8F969A;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    opacity: 1;
+}
