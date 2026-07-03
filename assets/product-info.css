@@ -165,3 +165,12 @@
 	align-items: center;
 }
 }
+@media only screen and (max-width:1200px){
+.product-details .classfication-bx .group-block p {
+	font-size: 10px;
+	min-height: 20px;
+	display: flex;
+	align-items: center;
+	white-space: unset;
+}
+}
