@@ -1,7 +1,7 @@
 {%- if recommended_products != blank -%}
         <!-- Recommended Widget -->
           <div class="recommended-widget-card">
-            <h3 class="recommended-widget-card__heading">RECOMMENDED FOR YOU</h3>
+            <h3 class="recommended-widget-card__heading">{{ block.settings.heading }}</h3>
             <div class="recommended-widget-card__items">
               {%- for prod in recommended_products -%}
                 <div class="recommended-product-item">
