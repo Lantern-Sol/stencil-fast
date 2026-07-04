@@ -157,3 +157,9 @@
 .blog-left-sec {
     margin-top: 50px;
 }
+
+@media only screen and (max-width:991px){
+.blog-main-sec {
+	max-width: 100%;
+}
+}

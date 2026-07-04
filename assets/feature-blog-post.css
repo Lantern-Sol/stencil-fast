@@ -112,8 +112,3 @@
 	max-height: 190px;
 }
 }
-@media only screen and (max-width:991px){
-.blog-main-sec {
-	max-width: 100%;
-}
-}
