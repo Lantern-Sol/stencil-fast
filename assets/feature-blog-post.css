@@ -88,3 +88,8 @@
 .featured-blog-posts slideshow-arrows {
 	mix-blend-mode: unset;
 }
+.fe-tag {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
