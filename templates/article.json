@@ -191,7 +191,7 @@
                   "type": "article-share",
                   "name": "Blog Share",
                   "settings": {
-                    "text": ""
+                    "text": "Share"
                   },
                   "blocks": {}
                 },
