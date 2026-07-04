@@ -1,4 +1,5 @@
 {% capture details %}
+  <div class="article-tage">
   {% if article.tags.size > 0 %}
     {% assign first_tag = article.tags | first %}
     <a
@@ -6,6 +7,7 @@
       href="{{ blog.url }}/tagged/{{ first_tag | handleize }}"
     >{{ first_tag }}</a>
   {% endif %}
+  </div>
   <span class="article-meta-info__date">{{ article.published_at | time_tag: format: 'date' }}</span>
 {% endcapture %}
 {%  liquid 
