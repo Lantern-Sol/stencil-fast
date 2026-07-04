@@ -98,4 +98,6 @@
 .contact-right-sec .gfb__footer.wizard__footer .next.submit:hover:after {
     background: url(/cdn/shop/files/btn-arrow-b.png?v=1782550506);
     background-repeat: no-repeat;
+    background-size: 11px;
+    background-position: center;
 }
