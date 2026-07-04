@@ -51,3 +51,6 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.featured-blog-posts-card__content .blog-post-card__button-wrapper {
+    margin: 0;
+}
