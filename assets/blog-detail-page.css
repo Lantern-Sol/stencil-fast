@@ -123,8 +123,8 @@
     justify-content: center;
     color: #FDFDFC;
 }
-.recommended-widget-card .recommended-product-item a.button,
- .recommended-widget-card .recommended-product-item .button {
+.recommended-widget-card .recommended-product-item a.button:hover,
+ .recommended-widget-card .recommended-product-item .button:hover{
       background: #f6f7eb;
     color: #393e41;
  }
