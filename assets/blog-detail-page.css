@@ -95,4 +95,5 @@
     color: #393E41;
     margin-bottom: 5px;
     display: block;
+     font-family: var( --secondary-font);
 }
