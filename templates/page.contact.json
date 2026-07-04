@@ -268,6 +268,12 @@
               },
               "blocks": {}
             },
+            "powerful_form_builder_app_block_FyqBxp": {
+              "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+              "settings": {
+                "shortcode": ""
+              }
+            },
             "contact_form_dCQVUE": {
               "type": "contact-form",
               "settings": {
@@ -311,6 +317,7 @@
           "block_order": [
             "text_YtdHLf",
             "text_DtNqEK",
+            "powerful_form_builder_app_block_FyqBxp",
             "contact_form_dCQVUE"
           ]
         }
