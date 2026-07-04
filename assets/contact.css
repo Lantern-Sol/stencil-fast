@@ -18,3 +18,7 @@
     padding-right: 100px;
 }
 .contact-text p{  font-size:16px;}
+.contact-right-sec .globo-form-app {
+    margin: 0;
+    max-width: 100% !important;
+}
