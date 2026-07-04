@@ -116,21 +116,21 @@
 .featured-blog-posts h3 {
 	font-size: 24px;
 }
-.collection-list slideshow-arrows .slideshow-control.slideshow-control--previous {
+.featured-blog-posts slideshow-arrows .slideshow-control.slideshow-control--previous {
 	right: 70px;
 }
-.collection-list slideshow-arrows .slideshow-control.slideshow-control--next {
+.featured-blog-posts slideshow-arrows .slideshow-control.slideshow-control--next {
 	right: 20px;
 }
-.collection-list slideshow-arrows .slideshow-control {
+.featured-blog-posts slideshow-arrows .slideshow-control {
 	width: 35px;
 	height: 35px;
 	min-width: unset;
 	min-height: unset;
 	top: -60px;
 }
-.collection-list slideshow-arrows .slideshow-control.slideshow-control--previous ,
-.collection-list slideshow-arrows .slideshow-control.slideshow-control--next{
+.featured-blog-posts slideshow-arrows .slideshow-control.slideshow-control--previous ,
+.featured-blog-posts slideshow-arrows .slideshow-control.slideshow-control--next{
 	background-size: 18px;
 }
 }
