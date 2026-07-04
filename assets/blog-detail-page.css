@@ -7,6 +7,11 @@
     display: flex;
     align-items: center;
 }
+.article-tag a.blog-post-card__tag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .article-tag a.blog-post-card__tag ,
 .article-tag .article-meta-info__date time{
     color: #8F969A;
