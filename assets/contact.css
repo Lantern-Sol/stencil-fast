@@ -2,3 +2,8 @@
     position: relative;
     top: -51px;
 }
+.contact-right-sec h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
