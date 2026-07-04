@@ -75,3 +75,10 @@
 .recommended-widget-card .recommended-product-item .recommended-product-item__image-container {
     width: 130px;
 }
+.recommended-widget-card .recommended-product-item .recommended-product-item__image-container img.recommended-product-item__image {
+    min-width: 130px;
+    max-width: 100%;
+    border-radius: 6px;
+    min-height: 130px;
+    max-height: 130px;
+}
