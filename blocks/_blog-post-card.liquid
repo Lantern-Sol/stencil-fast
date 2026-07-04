@@ -32,6 +32,7 @@
   {% endif %}
 
   <div class="blog-post-card__content">
+    <div class="blog-tag">
     {%- if show_tag and first_tag != blank -%}
       <a
         class="blog-post-card__tag"
@@ -44,6 +45,7 @@
       alignment: block_settings.alignment,
       article: article
     %}
+    </div>
     <a
       class="blog-post-card__title-link"
       href="{{ article.url }}"
