@@ -48,3 +48,6 @@
 .contact-right-sec  .gfb-style-material_filled [data-type=file2] .globo-label{
      margin-left: -0;
 }
+.contact-right-sec  .gfb__dropzone button.gfb__dropzone--placeholder--button {
+    display: none;
+}
