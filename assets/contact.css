@@ -90,10 +90,11 @@
     content: "";
     width: 20px;
     height: 20px;
-    background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/angle-right-solid.svg?v=1783182644');
+    background: url(/cdn/shop/files/angle-right-solid.svg?v=1783182644);
     display: block;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 1px;
 }
 .contact-right-sec .gfb__footer.wizard__footer .next.submit:hover:after {
     background: url(/cdn/shop/files/btn-arrow-b.png?v=1782550506);
