@@ -1,0 +1,767 @@
+{%- liquid
+  assign background_color = section.settings.background_color | default: '#F9FAF5'
+  assign heading_color = section.settings.heading_color | default: '#393E41'
+  assign accent_color = section.settings.accent_color | default: '#E94F37'
+  assign muted_color = section.settings.muted_color | default: '#8F969A'
+  assign line_color = section.settings.line_color | default: '#D7D9DA'
+  assign text_color = section.settings.text_color | default: '#393E41'
+
+  assign milestone_blocks = section.blocks | where: 'type', 'milestone'
+  assign image_blocks = section.blocks | where: 'type', 'image'
+-%}
+
+<div
+  id="HistoryTimeline-{{ section.id }}"
+  class="history-timeline"
+  style="
+    --ht-bg: {{ background_color }};
+    --ht-heading: {{ heading_color }};
+    --ht-accent: {{ accent_color }};
+    --ht-muted: {{ muted_color }};
+    --ht-line: {{ line_color }};
+    --ht-text: {{ text_color }};
+    --ht-count: {{ milestone_blocks.size | at_least: 1 }};
+    --padding-block-start: {{ section.settings.padding-block-start }}px;
+    --padding-block-end: {{ section.settings.padding-block-end }}px;
+  "
+  {% if request.visual_preview_mode %}
+    data-shopify-visual-preview
+  {% endif %}
+>
+  <div class="history-timeline__container">
+    <!-- Heading -->
+    <div class="history-timeline__header">
+      {% if section.settings.eyebrow != blank %}
+        <p class="history-timeline__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+      {% endif %}
+      {% if section.settings.heading != blank %}
+        <h2 class="history-timeline__heading">{{ section.settings.heading | escape }}</h2>
+      {% endif %}
+      {% if section.settings.description != blank %}
+        <div class="history-timeline__description">{{ section.settings.description }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Timeline -->
+    {% if milestone_blocks.size > 0 %}
+      <history-timeline
+        class="history-timeline__items"
+        data-stacking="{{ section.settings.enable_mobile_stacking }}"
+      >
+        {% for block in milestone_blocks %}
+          <div
+            class="history-timeline__item{% if block.settings.highlight %} history-timeline__item--highlight{% endif %}"
+            style="--ht-index: {{ forloop.index0 }};"
+            {{ block.shopify_attributes }}
+          >
+            <span class="history-timeline__dot" aria-hidden="true"></span>
+            <div class="history-timeline__item-content">
+              {% if block.settings.year != blank %}
+                <h3 class="history-timeline__year">{{ block.settings.year | escape }}</h3>
+              {% endif %}
+              {% if block.settings.label != blank %}
+                <p class="history-timeline__label">{{ block.settings.label | escape }}</p>
+              {% endif %}
+              {% if block.settings.text != blank %}
+                <p class="history-timeline__text">{{ block.settings.text | escape }}</p>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </history-timeline>
+    {% endif %}
+
+    <!-- Images -->
+    {% if image_blocks.size > 0 %}
+      <history-timeline-gallery class="history-timeline__images">
+        {% for block in image_blocks %}
+          <div class="history-timeline__image" {{ block.shopify_attributes }}>
+            {% if block.settings.image != blank %}
+              {{
+                block.settings.image
+                | image_url: width: 720
+                | image_tag: widths: '360, 540, 720', alt: block.settings.image.alt, loading: 'lazy'
+              }}
+            {% else %}
+              {{ 'image' | placeholder_svg_tag: 'history-timeline__placeholder' }}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </history-timeline-gallery>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .history-timeline {
+    background-color: var(--ht-bg);
+    padding-block-start: var(--padding-block-start, 56px);
+    padding-block-end: var(--padding-block-end, 56px);
+    overflow: clip;
+  }
+
+  .history-timeline__container {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    max-width: var(--page-width, 1500px);
+    margin-inline: auto;
+    padding-inline: var(--page-margin, 40px);
+  }
+
+  /* ---------- Heading ---------- */
+  .history-timeline__header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .history-timeline__eyebrow {
+    margin: 0;
+    color: var(--ht-heading);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+  }
+
+  .history-timeline__heading {
+    margin: 0;
+    margin-block-start: -12px;
+    color: var(--ht-accent);
+    font-size: 48px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.2;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+  }
+
+  .history-timeline__description {
+    max-width: 720px;
+    color: var(--ht-text);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .history-timeline__description p {
+    margin: 0;
+  }
+
+  /* ---------- Timeline (desktop) ---------- */
+  .history-timeline__items {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(var(--ht-count, 4), 1fr);
+    gap: 44px;
+    padding-block-start: 30px;
+  }
+
+  /* Horizontal line */
+  .history-timeline__items::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    right: 0;
+    height: 2px;
+    background-color: var(--ht-line);
+  }
+
+  /* Line end cap */
+  .history-timeline__items::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--ht-line);
+  }
+
+  .history-timeline__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .history-timeline__dot {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--ht-muted);
+  }
+
+  .history-timeline__item--highlight .history-timeline__dot {
+    background-color: var(--ht-accent);
+  }
+
+  .history-timeline__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .history-timeline__year {
+    margin: 0;
+    color: var(--ht-muted);
+    font-size: 32px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+  }
+
+  .history-timeline__item--highlight .history-timeline__year {
+    color: var(--ht-accent);
+  }
+
+  .history-timeline__label {
+    margin: 0;
+    color: var(--ht-muted);
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .history-timeline__text {
+    margin: 0;
+    max-width: 296px;
+    color: var(--ht-text);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /* ---------- Images ---------- */
+  .history-timeline__images {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    padding-block-end: 8px;
+    cursor: grab;
+  }
+
+  .history-timeline__images.is-dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+    cursor: grabbing;
+  }
+
+  .history-timeline__images::-webkit-scrollbar {
+    display: none;
+  }
+
+  .history-timeline__image:first-child {
+    margin-inline-start: auto;
+  }
+
+  .history-timeline__image:last-child {
+    margin-inline-end: auto;
+  }
+
+  .history-timeline__image {
+    flex-shrink: 0;
+    width: 356px;
+    height: 420px;
+    border-radius: 80px 0 80px 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    scroll-snap-align: center;
+  }
+
+  .history-timeline__image img,
+  .history-timeline__image svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+  }
+
+  /* ---------- Mobile ---------- */
+  @media only screen and (max-width: 749px) {
+    .history-timeline {
+      padding-block-start: var(--padding-block-start-mobile, 48px);
+      padding-block-end: var(--padding-block-end-mobile, 48px);
+    }
+
+    .history-timeline__container {
+      gap: 24px;
+    }
+
+    .history-timeline__eyebrow {
+      font-size: 24px;
+      letter-spacing: 0.48px;
+    }
+
+    .history-timeline__heading {
+      margin-block-start: -8px;
+      font-size: 32px;
+      letter-spacing: 0.64px;
+    }
+
+    /* Vertical timeline */
+    .history-timeline__items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-block-start: 0;
+    }
+
+    .history-timeline__items::before,
+    .history-timeline__items::after {
+      display: none;
+    }
+
+    .history-timeline__item {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 8px;
+      align-items: start;
+    }
+
+    .history-timeline__dot {
+      position: static;
+      margin-block-start: 2px;
+    }
+
+    /* Vertical connector line */
+    .history-timeline__item::before {
+      content: '';
+      position: absolute;
+      top: 30px;
+      bottom: -22px;
+      left: 10px;
+      width: 2px;
+      background-color: var(--ht-line);
+    }
+
+    .history-timeline__item:last-child::before {
+      display: none;
+    }
+
+    .history-timeline__year {
+      font-size: 20px;
+      letter-spacing: 0.4px;
+    }
+
+    .history-timeline__text {
+      max-width: none;
+    }
+
+    /* Stacking parallax cards */
+    .history-timeline__items[data-stacking='true'] .history-timeline__item {
+      position: sticky;
+      top: calc(90px + var(--ht-index, 0) * 10px);
+      padding: 16px;
+      border-radius: 12px;
+      background-color: var(--ht-bg);
+      box-shadow: 0 -6px 16px 0 rgba(0, 0, 0, 0.06);
+      transform-origin: center top;
+      will-change: transform;
+    }
+
+    .history-timeline__items[data-stacking='true'] .history-timeline__item::before {
+      top: 46px;
+      bottom: -32px;
+      left: 26px;
+    }
+
+    .history-timeline__images {
+      gap: 16px;
+      margin-inline: calc(-1 * var(--page-margin, 16px));
+      padding-inline: var(--page-margin, 16px);
+      scroll-padding-inline: var(--page-margin, 16px);
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .history-timeline__image {
+      scroll-snap-align: start;
+    }
+
+    .history-timeline__image:first-child {
+      margin-inline-start: 0;
+    }
+
+    .history-timeline__image:last-child {
+      margin-inline-end: 0;
+    }
+
+    .history-timeline__image {
+      width: 300px;
+      height: 380px;
+      border-radius: 60px 0 60px 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .history-timeline__items[data-stacking='true'] .history-timeline__item {
+      position: relative;
+      top: auto;
+      transform: none !important;
+    }
+  }
+</style>
+
+<script>
+  /**
+   * HistoryTimeline custom element
+   * Mobile-only stacking parallax: as each card scrolls up and sticks,
+   * the next card slides over it while the covered card scales down.
+   */
+  class HistoryTimeline extends HTMLElement {
+    constructor() {
+      super();
+      this.onScroll = this.onScroll.bind(this);
+      this.setup = this.setup.bind(this);
+      this.ticking = false;
+    }
+
+    connectedCallback() {
+      if (this.dataset.stacking !== 'true') return;
+
+      this.items = Array.from(this.querySelectorAll('.history-timeline__item'));
+      if (this.items.length < 2) return;
+
+      this.mobileQuery = window.matchMedia('(max-width: 749px)');
+      this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+      this.mobileQuery.addEventListener('change', this.setup);
+      this.reducedMotion.addEventListener('change', this.setup);
+      this.setup();
+    }
+
+    disconnectedCallback() {
+      window.removeEventListener('scroll', this.onScroll);
+      if (this.mobileQuery) this.mobileQuery.removeEventListener('change', this.setup);
+      if (this.reducedMotion) this.reducedMotion.removeEventListener('change', this.setup);
+    }
+
+    setup() {
+      if (this.mobileQuery.matches && !this.reducedMotion.matches) {
+        window.addEventListener('scroll', this.onScroll, { passive: true });
+        this.onScroll();
+      } else {
+        window.removeEventListener('scroll', this.onScroll);
+        this.items.forEach((item) => {
+          item.style.transform = '';
+          item.style.opacity = '';
+        });
+      }
+    }
+
+    onScroll() {
+      if (this.ticking) return;
+      this.ticking = true;
+
+      requestAnimationFrame(() => {
+        this.items.forEach((item, index) => {
+          const next = this.items[index + 1];
+          if (!next) return;
+
+          const rect = item.getBoundingClientRect();
+          const nextRect = next.getBoundingClientRect();
+
+          // How far the next card has travelled over this one (0 to 1)
+          const overlap = rect.bottom - nextRect.top;
+          const progress = Math.min(Math.max(overlap / rect.height, 0), 1);
+
+          const scale = 1 - progress * 0.06;
+          item.style.transform = 'scale(' + scale.toFixed(4) + ')';
+          item.style.opacity = (1 - progress * 0.35).toFixed(3);
+        });
+
+        this.ticking = false;
+      });
+    }
+  }
+
+  if (!customElements.get('history-timeline')) {
+    customElements.define('history-timeline', HistoryTimeline);
+  }
+
+  /**
+   * HistoryTimelineGallery custom element
+   * Adds mouse drag-to-scroll on top of native touch scrolling.
+   */
+  class HistoryTimelineGallery extends HTMLElement {
+    constructor() {
+      super();
+      this.isDown = false;
+      this.hasDragged = false;
+      this.startX = 0;
+      this.startScrollLeft = 0;
+    }
+
+    connectedCallback() {
+      this.addEventListener('pointerdown', (e) => {
+        if (e.pointerType !== 'mouse') return;
+        this.isDown = true;
+        this.hasDragged = false;
+        this.startX = e.clientX;
+        this.startScrollLeft = this.scrollLeft;
+      });
+
+      this.addEventListener('pointermove', (e) => {
+        if (!this.isDown || e.pointerType !== 'mouse') return;
+        const delta = e.clientX - this.startX;
+        if (Math.abs(delta) > 3) {
+          this.hasDragged = true;
+          this.classList.add('is-dragging');
+        }
+        this.scrollLeft = this.startScrollLeft - delta;
+      });
+
+      const endDrag = (e) => {
+        if (!this.isDown) return;
+        this.isDown = false;
+        this.classList.remove('is-dragging');
+        if (this.hasDragged) {
+          e.preventDefault();
+        }
+      };
+
+      this.addEventListener('pointerup', endDrag);
+      this.addEventListener('pointerleave', endDrag);
+      this.addEventListener('pointercancel', endDrag);
+
+      this.addEventListener('click', (e) => {
+        if (this.hasDragged) {
+          e.preventDefault();
+          e.stopPropagation();
+          this.hasDragged = false;
+        }
+      }, true);
+
+      this.addEventListener('dragstart', (e) => e.preventDefault());
+    }
+  }
+
+  if (!customElements.get('history-timeline-gallery')) {
+    customElements.define('history-timeline-gallery', HistoryTimelineGallery);
+  }
+</script>
+
+{% schema %}
+{
+  "name": "History Timeline",
+  "tag": "section",
+  "class": "history-timeline-section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow Text",
+      "default": "A history of"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Leading the industry"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>StencilFast (formerly Pavement Stencil) began in our founder’s garage. Our commitment to quality and innovation got us into our bigger, more tech-equipped Roanoke, VA facilities a decade later. Those values continue to drive our work every single day.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#F9FAF5"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Eyebrow Color",
+      "default": "#393E41"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#E94F37"
+    },
+    {
+      "type": "color",
+      "id": "muted_color",
+      "label": "Muted Text Color",
+      "default": "#8F969A"
+    },
+    {
+      "type": "color",
+      "id": "line_color",
+      "label": "Timeline Line Color",
+      "default": "#D7D9DA"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#393E41"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_mobile_stacking",
+      "label": "Enable Stacking Parallax Effect",
+      "info": "Timeline entries stack over each other while scrolling on mobile.",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 56
+    }
+  ],
+  "blocks": [
+    {
+      "type": "milestone",
+      "name": "Milestone",
+      "settings": [
+        {
+          "type": "text",
+          "id": "year",
+          "label": "Year",
+          "default": "1990"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "FOUNDED"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Paul Woods starts Pavement Stencil Company out of his garage in Roanoke, VA."
+        },
+        {
+          "type": "checkbox",
+          "id": "highlight",
+          "label": "Highlight",
+          "info": "Shows the dot and year in the accent color.",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "History Timeline",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "milestone",
+          "settings": {
+            "year": "1990",
+            "label": "FOUNDED",
+            "text": "Paul Woods starts Pavement Stencil Company out of his garage in Roanoke, VA.",
+            "highlight": false
+          }
+        },
+        {
+          "type": "milestone",
+          "settings": {
+            "year": "2000",
+            "label": "GROWTH",
+            "text": "Commitment to quality drives a move to a larger, technology-equipped facility.",
+            "highlight": false
+          }
+        },
+        {
+          "type": "milestone",
+          "settings": {
+            "year": "2010",
+            "label": "EVOLUTION",
+            "text": "Beth and Calvin Bell guide the company through transformation and expansion.",
+            "highlight": false
+          }
+        },
+        {
+          "type": "milestone",
+          "settings": {
+            "year": "TODAY",
+            "label": "STENCILFAST",
+            "text": "Under CEO John McNeely, StencilFast leads the SMT family of road marking companies.",
+            "highlight": true
+          }
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
