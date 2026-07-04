@@ -78,6 +78,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    transition:ease 0.2s;
 }
 .contact-right-sec .gfb__footer.wizard__footer .next.submit:hover {
     background:#f6f7eb
