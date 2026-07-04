@@ -163,3 +163,8 @@
 	max-width: 100%;
 }
 }
+@media only screen and (max-width:767px){
+.blog-left-sec {
+	margin-top: 0;
+}
+}
