@@ -103,6 +103,8 @@
     background-size: 11px;
     background-position: center;
 }
+@media only screen and (max-width:991px){
 .contact-right-sec {
 	padding-right: 20px;
+}
 }
