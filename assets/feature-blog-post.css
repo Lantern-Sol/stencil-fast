@@ -16,7 +16,8 @@
 .featured-blog-posts .resource-image {
     max-height: 260px;
 }
-.featured-blog-posts .featured-blog-posts-card__content a.blog-post-card__tag {
+.featured-blog-posts .featured-blog-posts-card__content a.blog-post-card__tag,
+.featured-blog-posts .featured-blog-posts-card__content time {
     font-size: 12px;
     color: #8F969A;
     	font-family: var( --secondary-font);
