@@ -170,4 +170,7 @@
 .blog-left-sec .text-block h3 {
 	font-size: 24px;
 }
+.recommended-widget-card {
+	display: none;
+}
 }
