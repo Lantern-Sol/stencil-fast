@@ -136,4 +136,7 @@
 .featured-blog-posts .featured-blog-posts-card__content .blog-post-card__button-wrapper .button {
 	justify-content: start;
 }
+.featured-blog-posts .featured-blog-posts-card__inner img.resource-image__image, .featured-blog-posts .resource-image {
+	max-height: 160px;
+}
 }
