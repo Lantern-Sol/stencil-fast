@@ -38,3 +38,13 @@
     letter-spacing: 0.5px;
     font-style: italic;
 }
+.featured-blog-posts-card__content .blog-post-card__button-wrapper .button:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(/cdn/shop/files/read-more-icn.svg?v=1783095734);
+    background-size: 10px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
