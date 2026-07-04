@@ -67,6 +67,10 @@ nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
     border: none;
     padding: 0;
 }
+.blog-tag {
+    display: flex;
+    gap: 10px;
+}
 @media only screen and (max-width:991px){
 .blog-posts-container .blog-post-item .blog-post-card__image-container img {
 	min-height: 160px;
