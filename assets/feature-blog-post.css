@@ -4,3 +4,8 @@
     letter-spacing: 0.5px;
     margin: 0;
 }
+.featured-blog-posts h3 strong {
+    font-weight: 500;
+    color: #E94F37;
+    font-style: italic;
+}
