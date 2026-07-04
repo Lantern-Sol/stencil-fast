@@ -93,3 +93,6 @@
     align-items: center;
     gap: 15px;
 }
+.fe-tag a.blog-post-card__tag {
+    margin: 0;
+}
