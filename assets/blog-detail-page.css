@@ -40,3 +40,12 @@
     font-family: var( --secondary-font);
     margin-bottom: 10px;
 }
+.blog_social button.share-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-color: #8F969A;
+}
