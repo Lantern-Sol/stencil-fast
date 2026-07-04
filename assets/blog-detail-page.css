@@ -112,3 +112,6 @@
     width: 100%;
     transition:ease 0.2s;
 }
+.recommended-widget-card .recommended-product-item .recommended-product-item__details {
+    width: 100%;
+}
