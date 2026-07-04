@@ -96,3 +96,10 @@
 .fe-tag a.blog-post-card__tag {
     margin: 0;
 }
+.fe-tag a.blog-post-card__tag:after {
+    content: "";
+    height: 10px;
+    width: 1px;
+    background: red;
+    display: block;
+}
