@@ -23,10 +23,13 @@ nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
 }
 .blog-posts-container .blog-post-item .blog-post-card__content a.blog-post-card__tag {
     font-size: 12px;
-    color: #8F969A;
-    font-weight: normal;
+    color: #8f969a;
+    font-weight: 400;
     font-family: var( --secondary-font);
     margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .blog-posts-container .blog-post-item .blog-post-card__content time {
     font-size: 12px;
