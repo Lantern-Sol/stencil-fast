@@ -23,5 +23,10 @@
     max-width: 100% !important;
 }
 .contact-right-sec .globo-form-control label {
-    position: static !important;
+    position: relative !important;
+    margin-left: -20px;
+    top: -10px !important;
+    	font-family: var( --secondary-font);
+    font-size: 14px !important;
+    color: #393E41 !important;
 }
