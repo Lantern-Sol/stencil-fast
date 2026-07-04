@@ -69,25 +69,14 @@
       </span>
     </span>
 
-    {% comment %} {% if show_price %}
+   {% if show_price %}
   <span class="productPrice">
     <span class="productPrice__separator">•</span>
     <span class="productPrice__value mws-price">
       {{ product.selected_or_first_available_variant.price | money }}
     </span>
   </span>
-{% endif %} {% endcomment %}
- 
-{% unless product.tags contains 'apo-hide-collection-price' %}
-  {% if show_price %}
-    <span class="productPrice">
-      <span class="productPrice__separator">•</span>
-      <span class="productPrice__value mws-price">
-        {{ product.selected_or_first_available_variant.price | money }}
-      </span>
-    </span>
-  {% endif %}
-{% endunless %}
+{% endif %}
 
     {% comment %} checkmark burst markup {% endcomment %}
     <span class="add-to-cart__added">
