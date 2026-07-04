@@ -107,7 +107,8 @@
     display: block;
      font-family: var( --secondary-font);
 }
-.recommended-widget-card .recommended-product-item a.button {
+.recommended-widget-card .recommended-product-item a.button,
+.recommended-widget-card .recommended-product-item .button {
     background: #393E41;
     min-height: 48px;
     max-height: 48px;
