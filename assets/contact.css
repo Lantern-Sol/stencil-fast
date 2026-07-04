@@ -23,5 +23,5 @@
     max-width: 100% !important;
 }
 .contact-right-sec .globo-form-control label {
-    position: sti;
+    position: static;
 }
