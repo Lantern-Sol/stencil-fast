@@ -150,7 +150,7 @@
                   "type": "text",
                   "name": "Title",
                   "settings": {
-                    "text": "<h1>{{ article.title }}</h1>",
+                    "text": "<h3>{{ article.title }}</h3>",
                     "mobile_text": "",
                     "width": "100%",
                     "max_width": "normal",
