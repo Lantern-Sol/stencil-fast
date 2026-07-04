@@ -74,27 +74,21 @@
 
       <label
         class="visually-hidden"
-        for="ContactForm-email"
+        for="ContactForm-name"
       >
-        {{- 'blocks.contact_form.email' | t -}}
-        <span aria-hidden="true">*</span></label
-      >
+        Phone Number
+      </label>
       <input
-        type="email"
-        id="ContactForm-email"
+        type="text"
+        id="ContactForm-name"
         class="contact-form__input"
-        autocomplete="email"
-        name="contact[email]"
-        spellcheck="false"
-        autocapitalize="off"
-        value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-        aria-required="true"
-        {% if form.errors contains 'email' and form_matches %}
-          aria-invalid="true"
-          aria-describedby="ContactForm-email-error"
-        {% endif %}
-        placeholder="{{ 'blocks.contact_form.email' | t }}"
+        autocomplete="name"
+        name="contact[phone]"
+        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+        placeholder="Phone Number"
       >
+
+      
     </div>
 
     <label
