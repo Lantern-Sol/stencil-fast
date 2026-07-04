@@ -34,6 +34,11 @@
 .contact-right-sec .globo-form-control label span.text-danger.text-smaller {
     color: red;
 }
+.contact-right-sec .gfb__dropzone {
+    min-height: 51px !important;
+    max-height: 51px;
+    background: #F9FAF5 !important;
+}
 .contact-right-sec  .globo-form-input input ,
 .contact-right-sec  .globo-form-input textarea{
     background: #F9FAF5 !important;
