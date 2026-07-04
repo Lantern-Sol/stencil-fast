@@ -49,3 +49,9 @@
     align-items: center;
     border-color: #8F969A;
 }
+.blog_social button.share-btn svg path {
+    stroke: #393E41;
+}
+.blog_social button.share-btn.share-facebook svg path {
+    stroke: #393E41;
+}
