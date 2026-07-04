@@ -71,6 +71,13 @@ nav.blog-category-tabs li.blog-category-tabs__item a.is-active {
     display: flex;
     gap: 10px;
 }
+.blog-posts-container .blog-post-item .blog-post-card__content a.blog-post-card__tag:after {
+    content: "";
+    height: 10px;
+    width: 1px;
+    background: #8f969a;
+    display: block;
+}
 @media only screen and (max-width:991px){
 .blog-posts-container .blog-post-item .blog-post-card__image-container img {
 	min-height: 160px;
