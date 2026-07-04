@@ -79,6 +79,9 @@
     border-bottom: 1px solid #D7D9DA;
     padding-bottom: 10px;
 }
+.recommended-widget-card__items .recommended-product-item:last-child {
+    border: none;
+}
 .recommended-widget-card .recommended-product-item .recommended-product-item__image-container {
     width: 130px;
 }
