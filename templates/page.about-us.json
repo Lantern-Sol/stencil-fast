@@ -562,15 +562,21 @@
         },
         "image_HLqAbc": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/214387c453ef0a109df91bd534ce0eb20ed56a8a.png"
+          }
         },
         "image_6GVBqd": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/92339c329d53151fc4ec1fbbddf5ab04d2d465c7.png"
+          }
         },
         "image_rwHgMJ": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/62fa1807d272162567731fa1433adb1841438225.png"
+          }
         }
       },
       "block_order": [
@@ -587,12 +593,12 @@
         "eyebrow": "A history of",
         "heading": "Leading the industry",
         "description": "<p>StencilFast (formerly Pavement Stencil) began in our founder’s garage. Our commitment to quality and innovation got us into our bigger, more tech-equipped Roanoke, VA facilities a decade later. Those values continue to drive our work every single day.</p>",
-        "background_color": "#F9FAF5",
-        "heading_color": "#393E41",
-        "accent_color": "#E94F37",
-        "muted_color": "#8F969A",
-        "line_color": "#D7D9DA",
-        "text_color": "#393E41",
+        "background_color": "#f9faf5",
+        "heading_color": "#393e41",
+        "accent_color": "#e94f37",
+        "muted_color": "#8f969a",
+        "line_color": "#d7d9da",
+        "text_color": "#393e41",
         "enable_mobile_stacking": true,
         "padding-block-start": 56,
         "padding-block-end": 56
@@ -636,12 +642,12 @@
         "eyebrow": "Three principles,",
         "heading": "no exceptions.",
         "description": "<p>Our core values drive us to evolve our product and customer experience. A culture of constant improvement is our day-to-day. It’s been like that since day one.</p>",
-        "background_color": "#FDFDFC",
-        "card_color": "#F9FAF5",
-        "heading_color": "#393E41",
-        "accent_color": "#E94F37",
-        "icon_color": "#FFFFFF",
-        "text_color": "#393E41",
+        "background_color": "#fdfdfc",
+        "card_color": "#f9faf5",
+        "heading_color": "#393e41",
+        "accent_color": "#e94f37",
+        "icon_color": "#ffffff",
+        "text_color": "#393e41",
         "enable_mobile_stacking": true,
         "padding-block-start": 56,
         "padding-block-end": 56
