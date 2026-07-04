@@ -82,3 +82,11 @@
     min-height: 130px;
     max-height: 130px;
 }
+.recommended-widget-card .recommended-product-item h4.recommended-product-item__title {
+    color: #3D3A35;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0  5px 0;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
