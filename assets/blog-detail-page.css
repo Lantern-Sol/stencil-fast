@@ -173,4 +173,8 @@
 .recommended-widget-card {
 	display: none;
 }
+.blog-right-sec img {
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
 }
