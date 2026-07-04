@@ -16,3 +16,8 @@
 .featured-blog-posts .resource-image {
     max-height: 260px;
 }
+.featured-blog-posts-card__content a.blog-post-card__tag {
+    font-size: 12px;
+    color: #8F969A;
+    font-weight: normal;
+}
