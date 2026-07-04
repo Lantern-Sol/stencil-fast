@@ -53,5 +53,5 @@
     stroke: #393E41;
 }
 .blog_social button.share-btn.share-facebook svg path {
-    stroke: unset;
+    stroke: unset; fill:#393E41;
 }
