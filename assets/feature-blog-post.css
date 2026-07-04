@@ -9,3 +9,7 @@
     color: #E94F37;
     font-style: italic;
 }
+.featured-blog-posts .featured-blog-posts-card__inner img.resource-image__image {
+    max-height: 260px;
+    border-radius: 16px;
+}
