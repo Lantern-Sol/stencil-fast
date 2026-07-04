@@ -276,7 +276,7 @@
                 "text": "<p>If requesting a custom stencil quote, please provide as much information as possible, and feel free to upload artwork / photos.</p>",
                 "mobile_text": "",
                 "width": "fit-content",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "height_mode": "auto",
                 "desktop_height": "",
