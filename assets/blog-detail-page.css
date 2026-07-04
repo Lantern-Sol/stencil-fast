@@ -108,16 +108,20 @@
      font-family: var( --secondary-font);
 }
 .recommended-widget-card .recommended-product-item a.button,
-.recommended-widget-card .recommended-product-item .button {
-    background: #393E41;
+ .recommended-widget-card .recommended-product-item .button {
+    background: #393e41;
     min-height: 48px;
     max-height: 48px;
     font-size: 14px;
     font-weight: 500;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
     font-style: italic;
     width: 100%;
-    transition:ease 0.2s;
+    transition: ease .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FDFDFC;
 }
 .recommended-widget-card .recommended-product-item .recommended-product-item__details {
     width: 100%;
