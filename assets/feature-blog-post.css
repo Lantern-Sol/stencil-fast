@@ -107,7 +107,13 @@
     display: block; 
 }
 @media only screen and (max-width:1200px){
-.featured-blog-posts .featured-blog-posts-card__inner img.resource-image__image {
+.featured-blog-posts .featured-blog-posts-card__inner img.resource-image__image,
+.featured-blog-posts .resource-image {
 	max-height: 190px;
+}
+}
+@media only screen and (max-width:991px){
+.blog-main-sec {
+	max-width: 100%;
 }
 }
