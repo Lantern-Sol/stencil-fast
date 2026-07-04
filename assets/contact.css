@@ -37,4 +37,5 @@
 .contact-right-sec  .globo-form-input textarea{
     background: #F9FAF5 !important;
     padding: 10px !important;
+    font-family: var( --secondary-font);
 }
