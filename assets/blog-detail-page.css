@@ -67,3 +67,8 @@
     font-weight: 500;
     letter-spacing: 0.5px;
 }
+.recommended-widget-card .recommended-product-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
