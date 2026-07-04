@@ -138,6 +138,7 @@
     min-width: 100%;
     max-height: 400px;
     object-fit:cover;
+    object-position:top;
 }
 .blog-right-sec p {
     width: 100%;
