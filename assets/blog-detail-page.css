@@ -106,4 +106,5 @@
     letter-spacing: 0.5px;
     font-style: italic;
     width: 100%;
+    transition:ease 0.2s;
 }
