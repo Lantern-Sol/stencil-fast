@@ -31,7 +31,7 @@
             "gap": 40,
             "use_mobile_gap": false,
             "mobile_gap": 12,
-            "width": "fill",
+            "width": "custom",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
