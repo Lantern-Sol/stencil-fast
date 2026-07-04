@@ -521,6 +521,132 @@
         "custom_class": ""
       }
     },
+    "history_timeline_bwmkJC": {
+      "type": "history-timeline",
+      "blocks": {
+        "milestone_aqh9PL": {
+          "type": "milestone",
+          "settings": {
+            "year": "1990",
+            "label": "FOUNDED",
+            "text": "Paul Woods starts Pavement Stencil Company out of his garage in Roanoke, VA.",
+            "highlight": false
+          }
+        },
+        "milestone_LEDkLm": {
+          "type": "milestone",
+          "settings": {
+            "year": "2000",
+            "label": "GROWTH",
+            "text": "Commitment to quality drives a move to a larger, technology-equipped facility.",
+            "highlight": false
+          }
+        },
+        "milestone_TMpQVG": {
+          "type": "milestone",
+          "settings": {
+            "year": "2010",
+            "label": "EVOLUTION",
+            "text": "Beth and Calvin Bell guide the company through transformation and expansion.",
+            "highlight": false
+          }
+        },
+        "milestone_Q9z9HG": {
+          "type": "milestone",
+          "settings": {
+            "year": "TODAY",
+            "label": "STENCILFAST",
+            "text": "Under CEO John McNeely, StencilFast leads the SMT family of road marking companies.",
+            "highlight": true
+          }
+        },
+        "image_HLqAbc": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_6GVBqd": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_rwHgMJ": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "milestone_aqh9PL",
+        "milestone_LEDkLm",
+        "milestone_TMpQVG",
+        "milestone_Q9z9HG",
+        "image_HLqAbc",
+        "image_6GVBqd",
+        "image_rwHgMJ"
+      ],
+      "name": "History Timeline",
+      "settings": {
+        "eyebrow": "A history of",
+        "heading": "Leading the industry",
+        "description": "<p>StencilFast (formerly Pavement Stencil) began in our founder’s garage. Our commitment to quality and innovation got us into our bigger, more tech-equipped Roanoke, VA facilities a decade later. Those values continue to drive our work every single day.</p>",
+        "background_color": "#F9FAF5",
+        "heading_color": "#393E41",
+        "accent_color": "#E94F37",
+        "muted_color": "#8F969A",
+        "line_color": "#D7D9DA",
+        "text_color": "#393E41",
+        "enable_mobile_stacking": true,
+        "padding-block-start": 56,
+        "padding-block-end": 56
+      }
+    },
+    "core_values_7D9r8M": {
+      "type": "core-values",
+      "blocks": {
+        "value_AWYj4i": {
+          "type": "value",
+          "settings": {
+            "icon": "people",
+            "title": "People-Centric",
+            "text": "Our crew and customers form one extended team. Every piece of feedback drives how we evolve — because better markings start with better relationships."
+          }
+        },
+        "value_CaLJnT": {
+          "type": "value",
+          "settings": {
+            "icon": "tech",
+            "title": "Tech-Obsessed",
+            "text": "Decades of technological evolution with limitless innovation ahead. We invest in better processes, better materials, and better tools — always."
+          }
+        },
+        "value_8WQ97P": {
+          "type": "value",
+          "settings": {
+            "icon": "shield",
+            "title": "Absolutely Uncompromising",
+            "text": "Better. Faster. Stronger. We don't trade off quality for cost or speed. Every stencil that leaves our facility meets the standard. No exceptions."
+          }
+        }
+      },
+      "block_order": [
+        "value_AWYj4i",
+        "value_CaLJnT",
+        "value_8WQ97P"
+      ],
+      "name": "Core Values",
+      "settings": {
+        "eyebrow": "Three principles,",
+        "heading": "no exceptions.",
+        "description": "<p>Our core values drive us to evolve our product and customer experience. A culture of constant improvement is our day-to-day. It’s been like that since day one.</p>",
+        "background_color": "#FDFDFC",
+        "card_color": "#F9FAF5",
+        "heading_color": "#393E41",
+        "accent_color": "#E94F37",
+        "icon_color": "#FFFFFF",
+        "text_color": "#393E41",
+        "enable_mobile_stacking": true,
+        "padding-block-start": 56,
+        "padding-block-end": 56
+      }
+    },
     "section_iERgid": {
       "type": "section",
       "blocks": {
@@ -3637,6 +3763,8 @@
   "order": [
     "section_WzEgGf",
     "section_hKq7Fr",
+    "history_timeline_bwmkJC",
+    "core_values_7D9r8M",
     "section_iERgid",
     "section_Dm3GtU",
     "section_46kWT6",
