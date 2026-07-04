@@ -3,7 +3,7 @@
     render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
   endif
 %}
-
+{{ 'blog-detail-page.css' | asset_url | stylesheet_tag }}
 <div
   class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
 ></div>
