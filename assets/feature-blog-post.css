@@ -133,4 +133,7 @@
 .featured-blog-posts slideshow-arrows .slideshow-control.slideshow-control--next{
 	background-size: 18px;
 }
+.featured-blog-posts .featured-blog-posts-card__content .blog-post-card__button-wrapper .button {
+	justify-content: start;
+}
 }
