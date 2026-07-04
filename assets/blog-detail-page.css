@@ -97,3 +97,13 @@
     display: block;
      font-family: var( --secondary-font);
 }
+.recommended-widget-card .recommended-product-item a.button {
+    background: #393E41;
+    min-height: 48px;
+    max-height: 48px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    width: 100%;
+}
