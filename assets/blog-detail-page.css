@@ -144,3 +144,7 @@
 .blog-right-sec h2 {
     width: 100%;
 }
+.blog-right-sec p {
+    color: #3D3A35;
+      font-family: var( --secondary-font);
+}
