@@ -171,7 +171,7 @@
                     "type_preset_mobile": "rte",
                     "mobile_font_size": "1rem",
                     "mobile_custom_line_height": 1.5,
-                    "text_color": "#E94F37",
+                    "text_color": "#e94f37",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -433,7 +433,7 @@
           "name": "t:names.title",
           "static": true,
           "settings": {
-            "text": "<h3>Continue reading</h3>",
+            "text": "<h3>Continue</h3><h3><strong> reading</strong></h3>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
