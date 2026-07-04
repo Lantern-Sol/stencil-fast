@@ -114,8 +114,9 @@
           class="blog-post-card__tag"
           href="{{ blog.url }}/tagged/{{ first_tag | handleize }}"
         >{{ first_tag }}</a>
+          {{ details }}
       {%- endif -%}
-  {{ details }}
+
   </div>
       <h4>{{ title }}</h4>
     
