@@ -90,3 +90,9 @@
     line-height: normal;
     letter-spacing: 0.5px;
 }
+.recommended-widget-card .recommended-product-item  span.recommended-product-item__price {
+    font-size: 14px;
+    color: #393E41;
+    margin-bottom: 5px;
+    display: block;
+}
