@@ -108,6 +108,7 @@
     {% endif %}
 
     <div class="featured-blog-posts-card__content layout-panel-flex--column">
+      <div class="fe-tag">
       {%- if show_tag and first_tag != blank -%}
         <a
           class="blog-post-card__tag"
@@ -115,6 +116,7 @@
         >{{ first_tag }}</a>
       {%- endif -%}
   {{ details }}
+  </div>
       <h4>{{ title }}</h4>
     
       {{ description }}
