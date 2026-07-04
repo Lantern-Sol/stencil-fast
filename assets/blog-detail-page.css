@@ -55,3 +55,9 @@
 .blog_social button.share-btn.share-facebook svg path {
     stroke: unset; fill:#393E41;
 }
+.recommended-widget-card {
+    background: #F9FAF5;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 30px;
+}
