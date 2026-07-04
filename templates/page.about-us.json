@@ -711,6 +711,7 @@
       "block_order": [
         "group_fPk98V"
       ],
+      "disabled": true,
       "name": "t:names.rich_text_section",
       "settings": {
         "content_direction": "column",
@@ -1246,6 +1247,7 @@
         "group_zixVeG",
         "group_MDWFfw"
       ],
+      "disabled": true,
       "name": "t:names.multicolumn",
       "settings": {
         "content_direction": "row",
@@ -2967,7 +2969,7 @@
         "section_height": "small",
         "section_height_custom": 50,
         "background_media": "none",
-        "background_color": "#393E41",
+        "background_color": "#393e41",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
