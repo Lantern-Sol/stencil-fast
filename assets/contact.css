@@ -108,3 +108,12 @@
 	padding-right: 20px;
 }
 }
+@media only screen and (max-width:991px){
+.contact-left-img {
+	display: none;
+}
+.contact-right-sec {
+	padding-right: 20px;
+    padding-right: 20px;
+}
+}
