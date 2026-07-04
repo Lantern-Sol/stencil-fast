@@ -114,11 +114,10 @@
           href="{{ blog.url }}/tagged/{{ first_tag | handleize }}"
         >{{ first_tag }}</a>
       {%- endif -%}
-       {{ details }}
-      {{ description }}
-
+  {{ details }}
       <h4>{{ title }}</h4>
-     
+    
+      {{ description }}
 
       {%- if show_button -%}
         <div class="blog-post-card__button-wrapper">
