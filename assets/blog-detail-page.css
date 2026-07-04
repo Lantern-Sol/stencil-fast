@@ -125,6 +125,8 @@
 }
 .recommended-widget-card .recommended-product-item a.button,
  .recommended-widget-card .recommended-product-item .button {
+      background: #f6f7eb;
+    color: #393e41;
  }
 .recommended-widget-card .recommended-product-item .recommended-product-item__details {
     width: 100%;
