@@ -79,6 +79,10 @@
     align-items: center;
     justify-content: center;
 }
+.contact-right-sec .gfb__footer.wizard__footer .next.submit:hover {
+    background:#f6f7eb
+}
+
 .contact-right-sec .gfb__footer.wizard__footer .next.submit:after {
     content: "";
     width: 20px;
