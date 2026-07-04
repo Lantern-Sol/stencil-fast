@@ -72,3 +72,6 @@
     align-items: center;
     gap: 20px;
 }
+.recommended-widget-card .recommended-product-item .recommended-product-item__image-container {
+    width: 130px;
+}
