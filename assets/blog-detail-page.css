@@ -131,7 +131,7 @@
 .recommended-widget-card .recommended-product-item .recommended-product-item__details {
     width: 100%;
 }
-.blog-right-sec img.image-block__image {
+.blog-right-sec img {
     border-top-left-radius: 80px;
     border-bottom-right-radius: 80px;
     width: 100%;

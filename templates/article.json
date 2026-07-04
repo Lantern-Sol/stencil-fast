@@ -364,7 +364,7 @@
                     "text": "{{ closest.article.content }}",
                     "mobile_text": "",
                     "width": "fit-content",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "height_mode": "auto",
                     "desktop_height": "",
