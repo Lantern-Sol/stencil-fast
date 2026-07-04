@@ -123,6 +123,9 @@
     justify-content: center;
     color: #FDFDFC;
 }
+.recommended-widget-card .recommended-product-item a.button,
+ .recommended-widget-card .recommended-product-item .button {
+ }
 .recommended-widget-card .recommended-product-item .recommended-product-item__details {
     width: 100%;
 }
