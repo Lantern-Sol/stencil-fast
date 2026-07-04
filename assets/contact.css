@@ -8,8 +8,9 @@
     letter-spacing: 0.5px;
 }
 .contact-right-sec h5{
-   font-size:16px;
+   font-size:16px;	font-family: var( --secondary-font);
 }
 .contact-right-sec p{
    font-size:14px;
+   	font-family: var( --secondary-font);
 }
