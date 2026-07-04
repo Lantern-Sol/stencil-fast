@@ -81,7 +81,9 @@
     transition:ease 0.2s;
 }
 .contact-right-sec .gfb__footer.wizard__footer .next.submit:hover {
-    background:#f6f7eb
+    background: #f6f7eb;
+    filter: unset;  color: #393E41;
+    box-shadow: none;
 }
 
 .contact-right-sec .gfb__footer.wizard__footer .next.submit:after {
