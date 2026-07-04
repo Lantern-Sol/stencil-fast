@@ -71,27 +71,7 @@
         value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
         placeholder="{{ 'blocks.contact_form.name' | t }}"
       >
-
-      <label
-        class="visually-hidden"
-        for="ContactForm-name"
-      >
-        Phone Number
-      </label>
-      <input
-        type="text"
-        id="ContactForm-name"
-        class="contact-form__input"
-        autocomplete="name"
-        name="contact[phone]"
-        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-        placeholder="Phone Number"
-      >
-
-      
-    </div>
-
-    <label
+ <label
       class="visually-hidden"
       for="ContactForm-phone"
     >
@@ -108,6 +88,32 @@
       placeholder="{{ 'blocks.contact_form.phone' | t }}"
     >
 
+      
+    </div>
+<label
+        class="visually-hidden"
+        for="ContactForm-email"
+      >
+        {{- 'blocks.contact_form.email' | t -}}
+        <span aria-hidden="true">*</span></label
+      >
+      <input
+        type="email"
+        id="ContactForm-email"
+        class="contact-form__input"
+        autocomplete="email"
+        name="contact[email]"
+        spellcheck="false"
+        autocapitalize="off"
+        value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+        aria-required="true"
+        {% if form.errors contains 'email' and form_matches %}
+          aria-invalid="true"
+          aria-describedby="ContactForm-email-error"
+        {% endif %}
+        placeholder="{{ 'blocks.contact_form.email' | t }}"
+      >
+   
     <label
       class="visually-hidden"
       for="ContactForm-body"
