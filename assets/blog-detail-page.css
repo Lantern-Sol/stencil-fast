@@ -8,7 +8,7 @@
     align-items: center;
 }
 .article-tag a.blog-post-card__tag ,
-.article-tag a.blog-post-card__tag time{
+.article-tag .article-meta-info__date time{
     color: #8F969A;
     font-size: 14px;
     font-weight: normal;
