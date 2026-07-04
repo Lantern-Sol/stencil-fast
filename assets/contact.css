@@ -79,10 +79,12 @@
     align-items: center;
     justify-content: center;
 }
-.gfb__footer.wizard__footer .next.submit:after {
+.contact-right-sec .gfb__footer.wizard__footer .next.submit:after {
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     background: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/angle-right-solid.svg?v=1783182644');
     display: block;
+    background-repeat: no-repeat;
+    background-position: center;
 }
