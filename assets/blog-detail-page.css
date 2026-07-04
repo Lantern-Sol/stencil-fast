@@ -33,3 +33,10 @@
     font-weight: 500;
     letter-spacing: 0.5px;
 }
+.blog-left-sec .blog_social h2 {
+    margin: 0;
+    font-size: 14px;
+    color: #393E41;
+    font-family: var( --secondary-font);
+    margin-bottom: 10px;
+}
