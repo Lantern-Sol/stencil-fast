@@ -33,7 +33,8 @@
 .contact-right-sec .globo-form-control label span.text-danger.text-smaller {
     color: red;
 }
-.globo-form-input input {
+.contact-right-sec  .globo-form-input input ,
+.contact-right-sec  .globo-form-input input{
     background: #F9FAF5 !important;
     padding: 10px !important;
 }
