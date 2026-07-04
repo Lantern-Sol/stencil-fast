@@ -33,9 +33,11 @@
     font-size: 16px;
     background: none;
     padding: 0;
-    color: #E94F37;
+    color: #e94f37;
     font-weight: 500;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
+    display: flex;
+    align-items: center;
     font-style: italic;
 }
 .featured-blog-posts-card__content .blog-post-card__button-wrapper .button:after {
