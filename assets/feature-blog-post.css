@@ -30,7 +30,7 @@
     letter-spacing: 0.5px;
     color: #3D3A35;
 }
-.featured-blog-posts-card__content .blog-post-card__button-wrapper .button {
+.featured-blog-posts .featured-blog-posts-card__content .blog-post-card__button-wrapper .button {
     font-size: 16px;
     background: none;
     padding: 0;
@@ -41,7 +41,7 @@
     align-items: center;
     font-style: italic;
 }
-.featured-blog-posts-card__content .blog-post-card__button-wrapper .button:after {
+.featured-blog-posts .featured-blog-posts-card__content .blog-post-card__button-wrapper .button:after {
     content: "";
     width: 25px;
     height: 25px;
@@ -51,6 +51,40 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.featured-blog-posts-card__content .blog-post-card__button-wrapper {
+.featured-blog-posts .featured-blog-posts-card__content .blog-post-card__button-wrapper {
     margin: 0;
+}
+.featured-blog-posts slideshow-arrows .slideshow-control {
+	position: absolute;
+	top: -70px;
+	right: 0;
+	background: #e94f37;
+	width: 40px;
+	height: 40px;
+	display: block !important;
+	opacity: 1;
+	border-radius: 100%;
+	animation: unset !important;
+	box-shadow: 0px 3px 5px 0 rgba(0,0,0,0.5);
+}
+.featured-blog-posts slideshow-arrows .slideshow-control span {
+	display: none;
+}
+.featured-blog-posts slideshow-arrows .slideshow-control.slideshow-control--previous {
+	right: 100px;
+	background-image: url(/cdn/shop/files/slider-arrow.svg?v=1782477639);
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: unset;
+	scale: unset;
+}
+.featured-blog-posts slideshow-arrows .slideshow-control.slideshow-control--next {
+	right: 40px;
+	background-image: url('https://cdn.shopify.com/s/files/1/0717/5595/6469/files/slider-arrow2.svg?v=1782489726');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.featured-blog-posts slideshow-arrows {
+	mix-blend-mode: unset;
 }
