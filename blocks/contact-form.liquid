@@ -61,6 +61,7 @@
         for="ContactForm-name"
       >
         {{- 'blocks.contact_form.name' | t -}}
+        <span aria-hidden="true">*</span>
       </label>
       <input
         type="text"
@@ -76,6 +77,7 @@
       for="ContactForm-phone"
     >
       {{- 'blocks.contact_form.phone' | t -}}
+      <span aria-hidden="true">*</span>
     </label>
     <input
       type="tel"
