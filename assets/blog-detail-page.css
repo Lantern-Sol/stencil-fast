@@ -140,6 +140,7 @@
     object-fit:cover;
     object-position:top;
 }
-.blog-right-sec p {
+.blog-right-sec p,
+.blog-right-sec h2 {
     width: 100%;
 }
