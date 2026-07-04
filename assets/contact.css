@@ -35,7 +35,8 @@
     color: red;
 }
 .contact-right-sec .gfb__dropzone {
-
+    min-height: 51px !important;
+    max-height: 51px;
     background: #F9FAF5 !important;
 }
 .contact-right-sec  .globo-form-input input ,
@@ -47,7 +48,9 @@
 .contact-right-sec  .gfb-style-material_filled [data-type=file2] .globo-label{
      margin-left: -0;
 }
-
+ .contact-right-sec .gfb__dropzone--placeholder {
+    flex-direction: row !important;
+}
 .contact-right-sec  .gfb__dropzone--placeholder--title{
        font-size:14px;
    	font-family: var( --secondary-font);
