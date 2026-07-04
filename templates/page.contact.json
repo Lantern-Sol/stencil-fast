@@ -368,6 +368,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/contact-icn.svg",
                     "width": 24,
                     "width-mobile": 24,
                     "link": "",
@@ -481,6 +482,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/mail-icn1.svg",
                     "width": 24,
                     "width-mobile": 24,
                     "link": "",
