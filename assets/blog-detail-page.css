@@ -131,3 +131,10 @@
 .recommended-widget-card .recommended-product-item .recommended-product-item__details {
     width: 100%;
 }
+.blog-right-sec img.image-block__image {
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    width: 100%;
+    min-width: 100%;
+    max-height: 400px;
+}
