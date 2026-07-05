@@ -24,9 +24,8 @@ font-family: var( --secondary-font);
     justify-content: center;
     align-items: center;
     gap: 10px;
-    transition: ease .2s;
-    border: none;
-    outline: unset;
+    transition:ease 0.2s;
+    border:none;
 }
 .about-together a.size-style.button-custom:hover {
     background: #f6f7eb;
