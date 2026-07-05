@@ -2995,7 +2995,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Rectangle_10908.png",
+                    "image": "shopify://shop_images/people-img1.png",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
@@ -3170,7 +3170,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Rectangle_10908.png",
+                    "image": "shopify://shop_images/people-img2.png",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
@@ -3345,7 +3345,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Rectangle_10908.png",
+                    "image": "shopify://shop_images/people-img3.png",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
@@ -3520,7 +3520,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Rectangle_10908.png",
+                    "image": "shopify://shop_images/people-img4.png",
                     "link": "",
                     "hide_on_mobile": false,
                     "hide_on_desktop": false,
