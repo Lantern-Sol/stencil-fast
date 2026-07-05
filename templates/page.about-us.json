@@ -3203,7 +3203,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p><strong>Customer Support Specialist</strong></p>",
+                    "text": "<p><strong>Stencil Designer</strong></p>",
                     "mobile_text": "",
                     "width": "fit-content",
                     "max_width": "normal",
@@ -3244,7 +3244,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Holley</p>",
+                    "text": "<p>Zane Keener</p>",
                     "mobile_text": "",
                     "width": "fit-content",
                     "max_width": "normal",
@@ -3378,7 +3378,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p><strong>Customer Support Specialist</strong></p>",
+                    "text": "<p><strong>VP of Sales</strong></p>",
                     "mobile_text": "",
                     "width": "fit-content",
                     "max_width": "normal",
@@ -3419,7 +3419,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Holley</p>",
+                    "text": "<p>Audrey</p>",
                     "mobile_text": "",
                     "width": "fit-content",
                     "max_width": "normal",
@@ -3553,7 +3553,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p><strong>Customer Support Specialist</strong></p>",
+                    "text": "<p><strong>Accounts Receivable</strong></p>",
                     "mobile_text": "",
                     "width": "fit-content",
                     "max_width": "normal",
@@ -3594,7 +3594,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Holley</p>",
+                    "text": "<p>Jessica B.</p>",
                     "mobile_text": "",
                     "width": "fit-content",
                     "max_width": "normal",
