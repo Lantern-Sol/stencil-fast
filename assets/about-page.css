@@ -131,4 +131,25 @@ font-family: var( --secondary-font);
 .about-together a.size-style.button-custom {
 	min-width: 100%;
 }
+.collection-list slideshow-arrows .slideshow-control.slideshow-control--previous {
+	right: 70px;
+}
+.collection-list slideshow-arrows .slideshow-control.slideshow-control--next {
+	right: 20px;
+}
+.collection-list slideshow-arrows .slideshow-control {
+	width: 35px;
+	height: 35px;
+	min-width: unset;
+	min-height: unset;
+	top: -60px;
+}
+.collection-list slideshow-arrows .slideshow-control.slideshow-control--previous ,
+.collection-list slideshow-arrows .slideshow-control.slideshow-control--next{
+	background-size: 18px;
+}
+.collection-list .resource-list__carousel .resource-list__slide .collection-card__image, .collection-list .collection-card__content {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
 }
