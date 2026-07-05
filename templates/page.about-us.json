@@ -372,7 +372,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3>Crafted with Care</h3>",
+                "text": "<h2>Crafted with Care</h2>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
