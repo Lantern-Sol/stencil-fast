@@ -5,7 +5,8 @@
     letter-spacing: 0.5px;
     margin:0;
 }
-.about-together h2 {
+.about-together h2,
+.behind-sec  h2 {
     text-transform: uppercase;
     font-weight: 500;
     font-style:italic;
