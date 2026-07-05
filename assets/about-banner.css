@@ -17,3 +17,6 @@
     margin: 0;
     font-style:italic;
 }
+.about-banner .text-block p  {
+	font-family: var( --secondary-font);
+}
