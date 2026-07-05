@@ -20,7 +20,7 @@
 .about-banner .text-block p  {
 	font-family: var( --secondary-font);
 }
-deferred-media img {
+.about-banner deferred-media img {
     border-top-left-radius: 80px;
-     border-bottom-left-radius: 80px;
+     border-bottom-right-radius: 80px;
 }
