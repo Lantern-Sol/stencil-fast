@@ -29,4 +29,9 @@
 .about-banner .text-block h3 {
 	font-size: 24px;
 }
+.about-banner deferred-media img,
+.about-banner video {
+    border-top-left-radius: 60px;
+     border-bottom-right-radius: 60px;
+}
 }
