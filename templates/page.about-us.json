@@ -2190,7 +2190,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
-                "background_color": "#575B5D",
+                "background_color": "#575b5d",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "toggle_overlay": false,
@@ -2278,7 +2278,7 @@
                 "text_A4bzXB"
               ]
             },
-            "group_wjwXcq": {
+            "group_cH7dGD": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -2304,7 +2304,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
-                "background_color": "#575B5D",
+                "background_color": "#575b5d",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "toggle_overlay": false,
@@ -2331,7 +2331,7 @@
                 "custom_class": "our-re"
               },
               "blocks": {
-                "icon_r8LkQ7": {
+                "icon_7anJx4": {
                   "type": "icon",
                   "name": "t:names.icon",
                   "settings": {
@@ -2345,11 +2345,11 @@
                   },
                   "blocks": {}
                 },
-                "text_W7LN4j": {
+                "text_iti797": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>StencilFast by far makes the best quality pavement stencils we have purchased... Not only are their stencils superior in quality, they have excellent customer service and nobody can beat their pricing.<br/><br/><strong>- Danielle C.B.</strong></p>",
+                    "text": "<p>I'm glad I found StencilFast! Their product & shipping is superior and customer service is great!<br/><br/><strong>- Rob R.</strong></p>",
                     "mobile_text": "",
                     "width": "fit-content",
                     "max_width": "normal",
@@ -2388,11 +2388,11 @@
                 }
               },
               "block_order": [
-                "icon_r8LkQ7",
-                "text_W7LN4j"
+                "icon_7anJx4",
+                "text_iti797"
               ]
             },
-            "group_zbqzic": {
+            "group_zwVPyX": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -2418,7 +2418,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
-                "background_color": "#575B5D",
+                "background_color": "#575b5d",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "toggle_overlay": false,
@@ -2445,7 +2445,7 @@
                 "custom_class": "our-re"
               },
               "blocks": {
-                "icon_gxNCEi": {
+                "icon_p9pnjD": {
                   "type": "icon",
                   "name": "t:names.icon",
                   "settings": {
@@ -2459,11 +2459,11 @@
                   },
                   "blocks": {}
                 },
-                "text_XKnt78": {
+                "text_WNgyzy": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>These stencils, hands down are the coolest things you experience. I never thought we would geek out over stencils but legit... Could use a zillion times and very much easy to use.</p><p><strong>- Adira Health & Wellness</strong></p>",
+                    "text": "<p>I'm glad I found StencilFast! Their product & shipping is superior and customer service is great!<br/><br/><strong>- Rob R.</strong></p>",
                     "mobile_text": "",
                     "width": "fit-content",
                     "max_width": "normal",
@@ -2502,15 +2502,15 @@
                 }
               },
               "block_order": [
-                "icon_gxNCEi",
-                "text_XKnt78"
+                "icon_p9pnjD",
+                "text_WNgyzy"
               ]
             }
           },
           "block_order": [
             "group_8gHQTi",
-            "group_wjwXcq",
-            "group_zbqzic"
+            "group_cH7dGD",
+            "group_zwVPyX"
           ]
         }
       },
