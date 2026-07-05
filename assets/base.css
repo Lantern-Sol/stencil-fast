@@ -5572,7 +5572,7 @@ body .shopify-policy__container {
 	margin-top: 30px;
   color:#E94F37;
 }
-.shopify-policy__container h3 {
+.shopify-policy__container h3, .shopify-policy__container h2 {
 	font-size: 20px;
 	text-transform: uppercase;
 }
