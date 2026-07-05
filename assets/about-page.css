@@ -127,4 +127,7 @@ font-family: var( --secondary-font);
 .about-together h2, .behind-sec .text-block h2 {
 	font-size: 32px;
 }
+.about-together a.size-style.button-custom {
+	min-width: 100%;
+}
 }
