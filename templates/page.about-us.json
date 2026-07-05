@@ -331,7 +331,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h4>Engineered for Excellence</h4><h3><em><strong>Crafted with Care</strong></em></h3>",
+                "text": "<p>Engineered for Excellence</p><p><strong>Crafted with Care</strong><br/></p>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
