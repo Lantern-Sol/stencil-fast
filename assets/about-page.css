@@ -10,3 +10,11 @@
     font-style:italic;
     letter-spacing: 0.5px;
 }
+.about-together  a.size-style.button-custom {
+    min-height: 48px;
+    max-height: 48px;
+    min-width: 250px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    font-weight: 500;
+}
