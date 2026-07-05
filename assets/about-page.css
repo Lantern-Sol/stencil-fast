@@ -120,3 +120,11 @@ font-family: var( --secondary-font);
 .behind-sec slideshow-arrows {
 	mix-blend-mode: unset;
 }
+
+.about-together h3, .behind-sec .text-block h3 {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: .5px;
+	margin: 0;
+	font-size: 24px;
+}
