@@ -68,3 +68,9 @@ font-family: var( --secondary-font);
 .behind-sec .text-block p strong{
 	font-weight: 500;font-family:"IBM Plex Sans", sans-serif;
 }
+.marquee__wrapper p {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
