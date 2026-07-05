@@ -5586,4 +5586,8 @@ body .shopify-policy__container {
 .jm-review-widget__header-and-body p.jm-text.jm-review-widget-minimal-header__title {
     font-size: 24px;
 }
+.shopify-policy__container h1 {
+	font-size: 32px;
+
+}
 }
