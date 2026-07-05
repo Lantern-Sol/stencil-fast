@@ -2669,7 +2669,7 @@
           "name": "t:names.heading",
           "settings": {
             "text": "<h3>the people</h3>",
-            "mobile_text": "",
+            "mobile_text": "<h3>the people behind</h3>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -2710,7 +2710,7 @@
           "name": "t:names.heading",
           "settings": {
             "text": "<h2>behind the stencils </h2>",
-            "mobile_text": "",
+            "mobile_text": "<h2>the stencils </h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
