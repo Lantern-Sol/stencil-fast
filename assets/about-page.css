@@ -25,6 +25,7 @@ font-family: var( --secondary-font);
     align-items: center;
     gap: 10px;
     transition:ease 0.2s;
+    border:none;
 }
 .about-together a.size-style.button-custom:hover {
     background: #f6f7eb;
