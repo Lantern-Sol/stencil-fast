@@ -5564,6 +5564,14 @@ body .breadcrumbs__item+.breadcrumbs__item:before {
 .shopify-policy__container {
 	max-width: 95ch;
 }
+.shopify-policy__container h1 {
+	font-size: 48px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-top: 30px;
+  color:#E94F37;
+}
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
 	width: 36px;
