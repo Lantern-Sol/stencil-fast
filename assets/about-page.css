@@ -30,6 +30,7 @@ font-family: var( --secondary-font);
     background: #f6f7eb;
     color: #393e41;
 }
+
 .about-together  a.size-style.button-custom:after {
     content: "";
     background: url(/cdn/shop/files/btn-arrow-w.png?v=1782550501);
@@ -37,4 +38,9 @@ font-family: var( --secondary-font);
     height: 20px;
     background-repeat: no-repeat;
     background-size: 11px;
+}
+.about-together  a.size-style.button-custom:hover:after {
+    background: url(/cdn/shop/files/btn-arrow-b.png?v=1782550506);
+    background-size: 11px;
+    background-repeat: no-repeat;
 }
