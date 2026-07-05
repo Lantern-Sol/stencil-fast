@@ -5561,6 +5561,9 @@ body .breadcrumbs__item+.breadcrumbs__item:before {
     background: #393e41;
     border-color: #393e41;
 }
+.shopify-policy__container {
+	max-width: 95ch;
+}
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
 	width: 36px;
