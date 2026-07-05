@@ -2173,7 +2173,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
+                "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
                 "use_mobile_alignment": false,
                 "mobile_horizontal_alignment": "flex-start",
@@ -2214,7 +2214,7 @@
                 "padding-block-end-mobile": 0,
                 "padding-inline-start-mobile": 0,
                 "padding-inline-end-mobile": 0,
-                "custom_class": ""
+                "custom_class": "our-re"
               },
               "blocks": {
                 "icon_YPn6fw": {
@@ -2328,7 +2328,7 @@
                 "padding-block-end-mobile": 0,
                 "padding-inline-start-mobile": 0,
                 "padding-inline-end-mobile": 0,
-                "custom_class": ""
+                "custom_class": "our-re"
               },
               "blocks": {
                 "icon_r8LkQ7": {
@@ -2442,7 +2442,7 @@
                 "padding-block-end-mobile": 0,
                 "padding-inline-start-mobile": 0,
                 "padding-inline-end-mobile": 0,
-                "custom_class": ""
+                "custom_class": "our-re"
               },
               "blocks": {
                 "icon_gxNCEi": {
