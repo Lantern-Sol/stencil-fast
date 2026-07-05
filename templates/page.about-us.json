@@ -230,6 +230,26 @@
         "custom_class": ""
       }
     },
+    "breadcrumbs_fcgRwU": {
+      "type": "breadcrumbs",
+      "name": "Breadcrumbs",
+      "settings": {
+        "home_label": "Home",
+        "product_category_source": "auto",
+        "separator": "/",
+        "background_color": "",
+        "section_width": "page-width",
+        "padding-block-start": 16,
+        "padding-block-end": 16,
+        "padding-inline-start": 0,
+        "padding-inline-end": 0,
+        "use_mobile_padding": false,
+        "padding-block-start-mobile": 16,
+        "padding-block-end-mobile": 16,
+        "padding-inline-start-mobile": 0,
+        "padding-inline-end-mobile": 0
+      }
+    },
     "section_hKq7Fr": {
       "type": "section",
       "blocks": {
@@ -4204,6 +4224,7 @@
   },
   "order": [
     "section_WzEgGf",
+    "breadcrumbs_fcgRwU",
     "section_hKq7Fr",
     "history_timeline_bwmkJC",
     "core_values_7D9r8M",
