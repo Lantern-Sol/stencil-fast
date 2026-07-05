@@ -62,6 +62,7 @@ font-family: var( --secondary-font);
 .our-sec-main .text-block p {
 	font-family: var( --secondary-font);
 }
-.our-sec-main .text-block p strong{
+.our-sec-main .text-block p strong,
+.behind-sec .text-block p strong{
 	font-weight: 500;
 }
