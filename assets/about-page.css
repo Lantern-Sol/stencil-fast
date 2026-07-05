@@ -1,4 +1,5 @@
-.about-together h3 {
+.about-together h3,
+.behind-sec  h3{
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 0.5px;
