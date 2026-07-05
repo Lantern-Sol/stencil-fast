@@ -12,7 +12,8 @@
     font-style:italic;
     letter-spacing: 0.5px;
 }
-.about-together p {
+.about-together p,
+.behind-sec  .text-block p {
 font-family: var( --secondary-font);
 }
 .about-together a.size-style.button-custom {
