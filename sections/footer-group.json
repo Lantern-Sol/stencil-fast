@@ -292,6 +292,7 @@
         "group_F6CqYi",
         "group_g4ey6U"
       ],
+      "disabled": true,
       "name": "t:names.email_signup",
       "settings": {
         "content_direction": "row",
