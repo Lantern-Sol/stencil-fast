@@ -17,4 +17,13 @@
     letter-spacing: 0.5px;
     font-style: italic;
     font-weight: 500;
+    display:flex;
+}
+.about-together  a.size-style.button-custom:after {
+    content: "";
+    background: url(/cdn/shop/files/btn-arrow-w.png?v=1782550501);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 11px;
 }
