@@ -5561,7 +5561,7 @@ body .breadcrumbs__item+.breadcrumbs__item:before {
     background: #393e41;
     border-color: #393e41;
 }
-.shopify-policy__container {
+body .shopify-policy__container {
 	max-width: 95ch;
 }
 .shopify-policy__container h1 {
