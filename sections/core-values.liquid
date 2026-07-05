@@ -152,23 +152,23 @@
   }
 
   /* ---------- Cards ---------- */
-  .core-values__cards {
-    display: grid;
-    grid-template-columns: repeat(var(--cv-count, 3), 1fr);
-    gap: 24px;
-    align-items: stretch;
-  }
+.core-values__cards {
+	display: flex;
+	gap: 24px;
+	align-items: stretch;
+}
 
-  .core-values__card {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-    padding: 40px;
-    background-color: var(--cv-card-bg);
-    border-radius: 60px 0 60px 0;
-    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.05);
-  }
+.core-values__card {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: flex-start;
+	padding: 40px;
+	background-color: var(--cv-card-bg);
+	border-radius: 60px 0 60px 0;
+	box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.05);
+	width: 33%;
+}
 
   .core-values__badge {
     display: flex;
