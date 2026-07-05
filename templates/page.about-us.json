@@ -367,11 +367,53 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {}
+            },
+            "text_zRNwXi": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>StencilFast has been cutting pavement stencils since 1990 — precision-made in Florida, trusted by contractors, airports, and municipalities across the country. Same team. Same standards. Faster everything,</p>",
+                "mobile_text": "",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "height_mode": "auto",
+                "desktop_height": "",
+                "mobile_height": "",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "enable_custom_font_weight": false,
+                "weight": "400",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "custom_line_height": 1.5,
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "type_preset_mobile": "rte",
+                "mobile_font_size": "1rem",
+                "mobile_custom_line_height": 1.5,
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "use_mobile_padding": false,
+                "padding-block-start-mobile": 0,
+                "padding-block-end-mobile": 0,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_VJ347P",
-            "text_34gKxA"
+            "text_34gKxA",
+            "text_zRNwXi"
           ]
         },
         "group_QWrXQQ": {
