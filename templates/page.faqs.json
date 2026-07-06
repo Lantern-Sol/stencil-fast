@@ -462,6 +462,60 @@
               "block_order": [
                 "text_CUzdrP"
               ]
+            },
+            "accordion_row_zDLPR7": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Do you offer reusable stencils?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_mFLXH9": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes, all of our stencils are designed to be reusable. Whether made from <a href=\"#\" title=\"#\">polyethylene</a>, <a href=\"#\" title=\"#\">mylar</a>, or <a href=\"#\" title=\"#\">aluminum</a>, they are resistant to solvents and paint, making the stencils easy to clean and reuse multiple times without degradation.</p>",
+                    "mobile_text": "",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "height_mode": "auto",
+                    "desktop_height": "",
+                    "mobile_height": "",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "enable_custom_font_weight": false,
+                    "weight": "400",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "custom_line_height": 1.5,
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "type_preset_mobile": "rte",
+                    "mobile_font_size": "1rem",
+                    "mobile_custom_line_height": 1.5,
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "use_mobile_padding": false,
+                    "padding-block-start-mobile": 0,
+                    "padding-block-end-mobile": 0,
+                    "padding-inline-start-mobile": 0,
+                    "padding-inline-end-mobile": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_mFLXH9"
+              ]
             }
           },
           "block_order": [
@@ -470,7 +524,8 @@
             "accordion_row_c8XJX3",
             "accordion_row_zd44iG",
             "accordion_row_fk3tXW",
-            "accordion_row_8VEjiG"
+            "accordion_row_8VEjiG",
+            "accordion_row_zDLPR7"
           ]
         }
       },
