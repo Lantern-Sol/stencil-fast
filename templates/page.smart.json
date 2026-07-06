@@ -364,7 +364,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h1>Streamline your operations</h1>",
+                "text": "<h1>Streamline </h1>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -385,7 +385,48 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "",
+                "text_color": "#393E41",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "use_mobile_padding": false,
+                "padding-block-start-mobile": 0,
+                "padding-block-end-mobile": 0,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
+              },
+              "blocks": {}
+            },
+            "text_LJ4JAw": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h1>your operations</h1>",
+                "mobile_text": "",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "height_mode": "auto",
+                "desktop_height": "",
+                "mobile_height": "",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "enable_custom_font_weight": false,
+                "weight": "400",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "custom_line_height": 1.5,
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "type_preset_mobile": "rte",
+                "mobile_font_size": "1rem",
+                "mobile_custom_line_height": 1.5,
+                "text_color": "#393E41",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -403,7 +444,8 @@
             }
           },
           "block_order": [
-            "text_b6hiTD"
+            "text_b6hiTD",
+            "text_LJ4JAw"
           ]
         },
         "group_EAQTRd": {
@@ -515,7 +557,7 @@
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
+        "vertical_alignment": "flex-start",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
