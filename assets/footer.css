@@ -55,6 +55,9 @@ width:100%;
 .footer-content .social-icons__wrapper svg path {
     fill: #FDFDFC;
 }
+.footer-utilities__group-copyright span.ooter-utilities-designby a {
+    text-decoration: underline;
+}
 @media only screen and (max-width:1200px){
 .footer-content .footer-utilities__group-copyright {
     gap: 0;
