@@ -213,7 +213,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "request a quote",
-                "link": "shopify://collections/all",
+                "link": "shopify://pages/contact",
                 "open_in_new_tab": false,
                 "style_class": "button-secondary",
                 "custom_button_background": "{{ settings.color_palette.foreground }}",
