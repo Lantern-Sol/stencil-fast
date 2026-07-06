@@ -81,7 +81,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Frequently Asked Questions</p>",
+            "text": "<h1>Frequently Asked Questions</h1>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
@@ -142,7 +142,7 @@
             "accordion_row_4apFhP": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Return policy",
+                "heading": "Do your stencils meet Department of Transportation (DOT) and FAA regulations?",
                 "open_by_default": true,
                 "icon": "none",
                 "width": 20
@@ -151,7 +151,7 @@
                 "text_dq4jEH": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                    "text": "<p>Yes, our <a href=\"#\" title=\"#\">standardized stencils</a> comply with all necessary regulations set by the Department of Transportation (DOT) and the Federal Aviation Administration (FAA). We ensure that our stencils meet industry standards for roadways, parking lots, airports, and other regulated environments. If you have specific requirements, we can create <a href=\"#\" title=\"#\">custom stencils</a> tailored to your regulatory needs.</p>",
                     "mobile_text": "",
                     "width": "100%",
                     "max_width": "normal",
@@ -196,7 +196,7 @@
             "accordion_row_mhiNMH": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Shipping",
+                "heading": "What materials do you use for your stencils?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -205,7 +205,7 @@
                 "text_jJnX4g": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>We offer stencils made from high-quality LDPE (.100” & .060”), UHMW, <a href=\"https://stencilfast.com/pages/aluminum-stencils\" title=\"https://stencilfast.com/pages/aluminum-stencils\">aluminum</a>, and <a href=\"#\" title=\"#\">mylar</a>. Our .100” LDPE material is known for its durability and resistance to paints and solvents. Whether you're looking for a lightweight, flexible option like mylar or a more robust, heavy-duty choice like aluminum, we ensure our stencils can stand up to repeated use in any environment.</p>",
                     "mobile_text": "",
                     "width": "100%",
                     "max_width": "normal",
@@ -250,7 +250,7 @@
             "accordion_row_c8XJX3": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Manufacturing",
+                "heading": "How long does it take to receive my custom stencil?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -259,7 +259,7 @@
                 "text_HLdzBr": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value.</p>",
+                    "text": "<p>Turnaround time for <a href=\"/pages/custom\" title=\"Custom Stencils\">custom stencils</a> typically depends on the complexity of the design and the quantity ordered. Most orders are completed and shipped within 24 business hours. For larger or more intricate projects, the timeline may extend slightly. We always strive to deliver your stencils as quickly as possible without compromising quality. If you need it overnight, we’re happy to make it happen!</p>",
                     "mobile_text": "",
                     "width": "100%",
                     "max_width": "normal",
@@ -300,12 +300,177 @@
               "block_order": [
                 "text_HLdzBr"
               ]
+            },
+            "accordion_row_zd44iG": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Can I order large custom stencils for big projects like parking lots or runways?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_xBJ334": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Absolutely! We specialize in creating <a href=\"/pages/custom\" title=\"Custom Stencils\">large custom stencils</a> for projects like parking lots, airport runways, athletic fields and other large-scale applications. Our stencils can be produced in oversized dimensions while maintaining their durability and precision.</p>",
+                    "mobile_text": "",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "height_mode": "auto",
+                    "desktop_height": "",
+                    "mobile_height": "",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "enable_custom_font_weight": false,
+                    "weight": "400",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "custom_line_height": 1.5,
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "type_preset_mobile": "rte",
+                    "mobile_font_size": "1rem",
+                    "mobile_custom_line_height": 1.5,
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "use_mobile_padding": false,
+                    "padding-block-start-mobile": 0,
+                    "padding-block-end-mobile": 0,
+                    "padding-inline-start-mobile": 0,
+                    "padding-inline-end-mobile": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_xBJ334"
+              ]
+            },
+            "accordion_row_fk3tXW": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I submit a custom design?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_kfFQ4w": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>You can submit your custom design through our <a href=\"https://stencilfast.myshopify.com/pages/custom#quote\" title=\"https://stencilfast.myshopify.com/pages/custom#quote\">online form</a>, where you can upload your artwork and provide any specific instructions. If you're unsure about your design or need assistance, our team is here to help refine it before production begins.</p>",
+                    "mobile_text": "",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "height_mode": "auto",
+                    "desktop_height": "",
+                    "mobile_height": "",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "enable_custom_font_weight": false,
+                    "weight": "400",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "custom_line_height": 1.5,
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "type_preset_mobile": "rte",
+                    "mobile_font_size": "1rem",
+                    "mobile_custom_line_height": 1.5,
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "use_mobile_padding": false,
+                    "padding-block-start-mobile": 0,
+                    "padding-block-end-mobile": 0,
+                    "padding-inline-start-mobile": 0,
+                    "padding-inline-end-mobile": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_kfFQ4w"
+              ]
+            },
+            "accordion_row_8VEjiG": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Can you create custom logo stencils for branding purposes?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_CUzdrP": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>You can submit your custom design through our <a href=\"https://stencilfast.myshopify.com/pages/custom#quote\" title=\"https://stencilfast.myshopify.com/pages/custom#quote\">online form</a>, where you can upload your artwork and provide any specific Yes, we offer <a href=\"#\" title=\"#\">custom logo stencils</a> to help businesses create sharp, durable logos on any surface. Whether you need it for walls, parking lots, or other applications, our team ensures your logo stencil meets your exact specifications.instructions. If you're unsure about your design or need assistance, our team is here to help refine it before production begins.</p>",
+                    "mobile_text": "",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "height_mode": "auto",
+                    "desktop_height": "",
+                    "mobile_height": "",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "enable_custom_font_weight": false,
+                    "weight": "400",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "custom_line_height": 1.5,
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "type_preset_mobile": "rte",
+                    "mobile_font_size": "1rem",
+                    "mobile_custom_line_height": 1.5,
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "use_mobile_padding": false,
+                    "padding-block-start-mobile": 0,
+                    "padding-block-end-mobile": 0,
+                    "padding-inline-start-mobile": 0,
+                    "padding-inline-end-mobile": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_CUzdrP"
+              ]
             }
           },
           "block_order": [
             "accordion_row_4apFhP",
             "accordion_row_mhiNMH",
-            "accordion_row_c8XJX3"
+            "accordion_row_c8XJX3",
+            "accordion_row_zd44iG",
+            "accordion_row_fk3tXW",
+            "accordion_row_8VEjiG"
           ]
         }
       },
