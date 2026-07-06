@@ -16,4 +16,6 @@
     font-weight: 500;
     text-transform: uppercase;
 }
-.faq-page .details-content p {}
+.faq-page .details-content p {
+    	font-family: var( --secondary-font);
+}
