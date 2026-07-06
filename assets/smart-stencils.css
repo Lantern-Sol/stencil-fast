@@ -5,3 +5,7 @@
 .smart-stencil-sec .text-block p {
   	font-family: var( --secondary-font);
 }
+.smart-stencil-sec iframe {
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
