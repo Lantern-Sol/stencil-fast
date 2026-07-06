@@ -4,7 +4,7 @@
 }
 #header-component .header__column.header__column--right svg {
 	width: 19px;
-	height: 19px;
+	height: 18px;
 }
 #header-component .menu-list:not(:has(.menu-list__list-item:hover)) .menu-list__link--active,
  #header-component .menu-list .menu-list__list-item:where(:hover,:focus-within) .menu-list__link,
