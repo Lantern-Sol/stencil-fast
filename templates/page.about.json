@@ -538,7 +538,7 @@
                 "source": "uploaded",
                 "video": "shopify://files/videos/a127806326ec4ec589ed87bf14ca0e46.HD-1080p-2.5Mbps-36838239.mp4",
                 "video_url": "",
-                "video_autoplay": false,
+                "video_autoplay": true,
                 "video_loop": true,
                 "alt": "",
                 "custom_width": 100,
