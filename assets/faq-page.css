@@ -20,3 +20,8 @@
 .faq-page .details-content p {
     	font-family: var( --secondary-font);font-size: 16px;
 }
+.faq-page .accordion .details__header svg {
+	width: 20px;
+	height: 20px;
+	max-width: 20px;
+}
