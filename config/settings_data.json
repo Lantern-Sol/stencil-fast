@@ -68,6 +68,7 @@
     "button_text_case_secondary": "uppercase",
     "cart_type": "drawer",
     "cart_price_font": "subheading",
+    "auto_open_cart_drawer": true,
     "show_cart_note": false,
     "show_add_discount_code": true,
     "icon_stroke": "default",
