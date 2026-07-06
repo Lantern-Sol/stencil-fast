@@ -11,3 +11,8 @@
     display: block;
     color:#E94F37;
 }
+.faq-page .accordion .details__header {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
