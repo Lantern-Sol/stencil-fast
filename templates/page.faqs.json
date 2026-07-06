@@ -83,8 +83,8 @@
           "settings": {
             "text": "<h1>Frequently Asked Questions</h1>",
             "mobile_text": "",
-            "width": "fit-content",
-            "max_width": "normal",
+            "width": "100%",
+            "max_width": "none",
             "alignment": "left",
             "height_mode": "auto",
             "desktop_height": "",
