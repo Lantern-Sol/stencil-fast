@@ -3,5 +3,5 @@
     font-weight: 500;
 }
 .smart-stencil-sec .text-block p {
-    font-weight: 500;
+  	font-family: var( --secondary-font);
 }
