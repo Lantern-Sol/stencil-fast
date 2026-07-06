@@ -867,6 +867,17 @@
     position: relative;
   }
 
+  /* position:relative above makes this item the containing block for the
+     link's safety box (the invisible ::after that keeps the link hovered while
+     the pointer travels to the submenu), shrinking it from the full header row
+     to just this item's width. A diagonal path from the link to the panel then
+     clips the neighboring nav item and instantly switches menus (flicker).
+     Restore full-row coverage with viewport-sized insets. */
+  .menu-list__list-item--compact .menu-list__link::after {
+    left: -50vw;
+    right: -50vw;
+  }
+
   /* Override the full-width submenu positioning for the compact item only */
   .menu-list__list-item--compact:not([slot='overflow']) > .menu-list__submenu--compact {
     width: max-content;

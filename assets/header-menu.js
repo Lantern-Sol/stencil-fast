@@ -33,7 +33,7 @@ class HeaderMenu extends Component {
   #deactivateTimer = null;
 
   /** Milliseconds to wait before actually closing the submenu. */
-  static DEACTIVATE_DELAY_MS = 200;
+  static DEACTIVATE_DELAY_MS = 300;
 
   /** @type {ReturnType<typeof setTimeout> | undefined} */
   #hoverDispatchTimer;
@@ -333,6 +333,15 @@ class HeaderMenu extends Component {
 
     // Don't deactivate if the overflow menu or overflow list is still being hovered
     if (this.overflowListHovered || this.overflowMenu?.matches(':hover')) return;
+
+    // Guard against spurious `pointerleave` events (scrolling under the cursor,
+    // layout shifts, or hit-test glitches while the submenu opens). If the
+    // pointer is still over the menu item or its submenu, keep the menu open —
+    // a genuine departure fires a fresh `pointerleave` that closes it.
+    const listItem = item.closest('.menu-list__list-item');
+    if (listItem?.matches(':hover')) return;
+    const { x, y } = this.#lastPointer;
+    if ((x !== 0 || y !== 0) && listItem?.contains(document.elementFromPoint(x, y))) return;
 
     clearTimeout(this.#hoverDispatchTimer);
     this.#hoverDispatchTimer = undefined;
