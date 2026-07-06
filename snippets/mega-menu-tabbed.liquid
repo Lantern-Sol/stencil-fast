@@ -483,13 +483,21 @@
       const panels = this.querySelectorAll('.tabbed-mega-menu__panel');
 
       tabs.forEach((tab) => {
-        // Support hover/pointerenter as the primary desktop interaction
-        tab.addEventListener('pointerenter', () => this.setActiveTab(tab, tabs, panels));
-        
-        // Support click for mobile/touch devices
+        // Hover switches the panel on mouse only; on touch, pointerenter fires
+        // as part of the tap and would activate the tab before the click
+        // handler below can offer the tap-once-to-preview behavior.
+        tab.addEventListener('pointerenter', (e) => {
+          if (e.pointerType !== 'touch') this.setActiveTab(tab, tabs, panels);
+        });
+
+        // Click: if the tab is already active (mouse users hovered it first,
+        // or second tap on touch), follow the link. Otherwise (first tap on
+        // touch / keyboard Enter) show its panel instead of navigating.
         tab.addEventListener('click', (e) => {
-          e.preventDefault();
-          this.setActiveTab(tab, tabs, panels);
+          if (!tab.classList.contains('is-active')) {
+            e.preventDefault();
+            this.setActiveTab(tab, tabs, panels);
+          }
         });
       });
     }
