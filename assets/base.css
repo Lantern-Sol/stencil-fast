@@ -5583,6 +5583,9 @@ body .shopify-policy__container {
 .cart-drawer__inner .details-content input#cart-discount {
     outline: unset;
 }
+.cart-drawer__inner  .cart-discount__label {
+    font-size: 16px;   color: #393E41;
+}
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
 	width: 36px;
