@@ -5579,6 +5579,9 @@ body .shopify-policy__container {
 .shopify-policy__container p a {
 	 color:#E94F37; text-decoration:underline;
 }
+td.cart-items__quantity input[type="number"] {
+    outline: unset;
+}
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
 	width: 36px;
