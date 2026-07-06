@@ -17,5 +17,5 @@
     text-transform: uppercase;
 }
 .faq-page .details-content p {
-    	font-family: var( --secondary-font);
+    	font-family: var( --secondary-font);font-size: 14px;
 }
