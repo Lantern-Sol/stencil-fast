@@ -17,29 +17,47 @@
           "name": "Title",
           "settings": {
             "text": "<h1>{{ closest.page.title }}</h1>",
+            "mobile_text": "",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
+            "height_mode": "auto",
+            "desktop_height": "",
+            "mobile_height": "",
             "type_preset": "h2",
             "font": "var(--font-primary--family)",
+            "enable_custom_font_weight": false,
+            "weight": "400",
             "font_size": "",
             "line_height": "normal",
+            "custom_line_height": 1.5,
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "type_preset_mobile": "rte",
+            "mobile_font_size": "1rem",
+            "mobile_custom_line_height": 1.5,
+            "text_color": "",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-inline-end": 0,
+            "use_mobile_padding": false,
+            "padding-block-start-mobile": 0,
+            "padding-block-end-mobile": 0,
+            "padding-inline-start-mobile": 0,
+            "padding-inline-end-mobile": 0
           },
           "blocks": {}
         },
         "page-content": {
           "type": "page-content",
-          "settings": {},
+          "settings": {
+            "text_color": ""
+          },
           "blocks": {}
         }
       },
@@ -47,15 +65,315 @@
         "heading",
         "page-content"
       ],
+      "disabled": true,
       "settings": {
         "content_direction": "column",
         "gap": 32,
+        "background_color": "",
         "padding-block-start": 40,
         "padding-block-end": 80
+      }
+    },
+    "section_HP7tjE": {
+      "type": "section",
+      "blocks": {
+        "text_XHbKqG": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<p>Frequently Asked Questions</p>",
+            "mobile_text": "",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "height_mode": "auto",
+            "desktop_height": "",
+            "mobile_height": "",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "enable_custom_font_weight": false,
+            "weight": "400",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "custom_line_height": 1.5,
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "type_preset_mobile": "rte",
+            "mobile_font_size": "1rem",
+            "mobile_custom_line_height": 1.5,
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "use_mobile_padding": false,
+            "padding-block-start-mobile": 0,
+            "padding-block-end-mobile": 0,
+            "padding-inline-start-mobile": 0,
+            "padding-inline-end-mobile": 0
+          },
+          "blocks": {}
+        },
+        "accordion_xhUXhf": {
+          "type": "accordion",
+          "name": "t:names.accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "divider_color": "",
+            "type_preset": "h6",
+            "background_color": "",
+            "text_color": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_row_4apFhP": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Return policy",
+                "open_by_default": true,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_dq4jEH": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                    "mobile_text": "",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "height_mode": "auto",
+                    "desktop_height": "",
+                    "mobile_height": "",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "enable_custom_font_weight": false,
+                    "weight": "400",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "custom_line_height": 1.5,
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "type_preset_mobile": "rte",
+                    "mobile_font_size": "1rem",
+                    "mobile_custom_line_height": 1.5,
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "use_mobile_padding": false,
+                    "padding-block-start-mobile": 0,
+                    "padding-block-end-mobile": 0,
+                    "padding-inline-start-mobile": 0,
+                    "padding-inline-end-mobile": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_dq4jEH"
+              ]
+            },
+            "accordion_row_mhiNMH": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Shipping",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_jJnX4g": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "mobile_text": "",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "height_mode": "auto",
+                    "desktop_height": "",
+                    "mobile_height": "",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "enable_custom_font_weight": false,
+                    "weight": "400",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "custom_line_height": 1.5,
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "type_preset_mobile": "rte",
+                    "mobile_font_size": "1rem",
+                    "mobile_custom_line_height": 1.5,
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "use_mobile_padding": false,
+                    "padding-block-start-mobile": 0,
+                    "padding-block-end-mobile": 0,
+                    "padding-inline-start-mobile": 0,
+                    "padding-inline-end-mobile": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_jJnX4g"
+              ]
+            },
+            "accordion_row_c8XJX3": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Manufacturing",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_HLdzBr": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value.</p>",
+                    "mobile_text": "",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "height_mode": "auto",
+                    "desktop_height": "",
+                    "mobile_height": "",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "enable_custom_font_weight": false,
+                    "weight": "400",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "custom_line_height": 1.5,
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "type_preset_mobile": "rte",
+                    "mobile_font_size": "1rem",
+                    "mobile_custom_line_height": 1.5,
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "use_mobile_padding": false,
+                    "padding-block-start-mobile": 0,
+                    "padding-block-end-mobile": 0,
+                    "padding-inline-start-mobile": 0,
+                    "padding-inline-end-mobile": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_HLdzBr"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_row_4apFhP",
+            "accordion_row_mhiNMH",
+            "accordion_row_c8XJX3"
+          ]
+        }
+      },
+      "block_order": [
+        "text_XHbKqG",
+        "accordion_xhUXhf"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "use_mobile_gap": false,
+        "mobile_gap": 12,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "floating_media_type": "image",
+        "floating_media_text": "",
+        "floating_media_text_preset": "paragraph",
+        "floating_media_text_preset_mobile": "",
+        "floating_media_text_alignment": "center",
+        "floating_media_text_padding_y": 8,
+        "floating_media_text_padding_x": 16,
+        "floating_media_width": 120,
+        "floating_media_anchor": "top-right",
+        "floating_media_offset_x": 0,
+        "floating_media_offset_y": 0,
+        "floating_media_rotation": 0,
+        "floating_media_hide_mobile": false,
+        "use_floating_media_mobile_settings": false,
+        "floating_media_width_mobile": 120,
+        "floating_media_anchor_mobile": "",
+        "floating_media_offset_x_mobile": 0,
+        "floating_media_offset_y_mobile": 0,
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0,
+        "padding-inline-start": 0,
+        "padding-inline-end": 0,
+        "use_mobile_padding": false,
+        "padding-block-start-mobile": 0,
+        "padding-block-end-mobile": 0,
+        "padding-inline-start-mobile": 0,
+        "padding-inline-end-mobile": 0,
+        "custom_class": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_HP7tjE"
   ]
 }
