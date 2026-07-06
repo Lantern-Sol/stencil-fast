@@ -1315,7 +1315,7 @@
                   "type": "footer-copyright",
                   "settings": {
                     "show_powered_by": true,
-                    "designby": "Designed by Lantern Sol",
+                    "designby": "Designed by <a href=\"https://www.lanternsol.com/\">Lantern Sol</a>",
                     "text_color": "",
                     "font_size": "0.75rem",
                     "case": "none"
