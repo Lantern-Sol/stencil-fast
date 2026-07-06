@@ -5579,7 +5579,8 @@ body .shopify-policy__container {
 .shopify-policy__container p a {
 	 color:#E94F37; text-decoration:underline;
 }
-.cart-drawer__inner td.cart-items__quantity input[type="number"] {
+.cart-drawer__inner td.cart-items__quantity input[type="number"],
+.cart-drawer__inner .details-content input#cart-discount {
     outline: unset;
 }
 @media only screen and (max-width:767px){
