@@ -232,6 +232,7 @@
     },
     "breadcrumbs_fcgRwU": {
       "type": "breadcrumbs",
+      "disabled": true,
       "name": "Breadcrumbs",
       "settings": {
         "home_label": "Home",
