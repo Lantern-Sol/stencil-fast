@@ -2323,7 +2323,7 @@
             "mobile_slides_to_show": 1,
             "slides_to_scroll": 1,
             "mobile_slides_to_scroll": 1,
-            "show_arrows_desktop": true,
+            "show_arrows_desktop": false,
             "show_arrows_mobile": true,
             "arrows_position": "center",
             "mobile_arrows_position": "center",
