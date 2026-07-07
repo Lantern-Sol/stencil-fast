@@ -13,3 +13,7 @@
     font-weight: 500;
     letter-spacing: 0.5px;
 }
+.max-tuff-sec {
+    max-width: 80%;
+    margin: auto;
+}
