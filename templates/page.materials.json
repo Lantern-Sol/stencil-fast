@@ -826,7 +826,7 @@
         "use_mobile_gap": false,
         "mobile_gap": 12,
         "section_width": "page-width",
-        "section_height": "custom",
+        "section_height": "small",
         "section_height_custom": 29,
         "background_media": "image",
         "background_color": "",
