@@ -68,4 +68,7 @@
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 }
+.smart-stencil-sec .group-block {
+	max-height: 130px;
+}
 }
