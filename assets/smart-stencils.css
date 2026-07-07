@@ -22,7 +22,7 @@
     letter-spacing: 0.5px;
 }
 .streamline-operation .text-block p {
-    text-transform: uppercase;
+   font-family: var( --secondary-font);
 }
 .streamline-operation .text-block p strong {
     text-transform: uppercase;
