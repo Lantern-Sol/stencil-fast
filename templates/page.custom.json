@@ -270,7 +270,49 @@
             "padding-inline-end-mobile": 0,
             "custom_class": ""
           },
-          "blocks": {}
+          "blocks": {
+            "group_slider_NEhPY6": {
+              "type": "group-slider",
+              "name": "Group slider",
+              "settings": {
+                "enable_slider_desktop": false,
+                "enable_slider_mobile": true,
+                "slides_to_show_desktop": 3,
+                "slides_to_scroll_desktop": 1,
+                "mobile_slides_to_show": 1,
+                "mobile_slides_to_scroll": 1,
+                "show_dots_desktop": false,
+                "show_dots_mobile": true,
+                "show_arrows_desktop": false,
+                "show_arrows_mobile": false,
+                "content_direction": "row",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "flex-start",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 24,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "background_color": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "use_mobile_padding": false,
+                "padding-block-start-mobile": 0,
+                "padding-block-end-mobile": 0,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_slider_NEhPY6"
+          ]
         }
       },
       "block_order": [
