@@ -892,7 +892,7 @@
             "mobile_vertical_alignment": "center",
             "mobile_horizontal_alignment_flex_direction_column": "flex-start",
             "mobile_vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
+            "gap": 30,
             "use_mobile_gap": false,
             "mobile_gap": 12,
             "width": "fill",
