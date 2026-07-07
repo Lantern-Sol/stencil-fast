@@ -6,7 +6,8 @@
     margin:0;
     letter-spacing: 0.5px;
 }
-.dura-tuff-sec .text-block h2 {
+.dura-tuff-sec .text-block h2,
+.matter-sec .text-block h2 {
     text-transform: uppercase;
     font-weight: 500;
     margin:0;
