@@ -364,7 +364,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h1>Streamline </h1>",
+                "text": "<h3>Streamline </h3>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -405,7 +405,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h1>your operations</h1>",
+                "text": "<h2>your operations</h2>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
