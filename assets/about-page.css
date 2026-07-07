@@ -1,4 +1,4 @@
-.about-together h3,
+﻿.about-together h3,
 .behind-sec .text-block  h3{
     text-transform: uppercase;
     font-weight: 500;
@@ -163,4 +163,55 @@ font-family: var( --secondary-font);
    About page template (page.about). Body template class comes from theme.liquid. */
 .template--page-about .shopify-section[id$="__section_NhhAdq"] {
 	display: none;
+}
+
+/* "The People Behind the Stencils" (behind-sec) - mobile 2x2 grid.
+   The group-slider stays a horizontal scroll-snap carousel, but the slide
+   track becomes a 2-row grid so each swipe/arrow page shows 4 members.
+   nth-child row locking keeps reading order row-major (1,2 top / 3,4 bottom),
+   matching the Figma mobile design (node 5372-23907). */
+@media only screen and (max-width: 749px) {
+	.behind-sec slideshow-slides.group-slider__slides {
+		display: grid;
+		grid-auto-flow: column dense;
+		grid-template-rows: repeat(2, auto);
+		grid-auto-columns: calc(50% - 8px);
+		gap: 24px 16px;
+		height: auto;
+	}
+
+	.behind-sec slideshow-slides.group-slider__slides > slideshow-slide:nth-child(4n + 1),
+	.behind-sec slideshow-slides.group-slider__slides > slideshow-slide:nth-child(4n + 2) {
+		grid-row: 1;
+	}
+
+	.behind-sec slideshow-slides.group-slider__slides > slideshow-slide:nth-child(4n + 3),
+	.behind-sec slideshow-slides.group-slider__slides > slideshow-slide:nth-child(4n) {
+		grid-row: 2;
+	}
+}
+
+/* behind-sec mobile 2x2 grid: square photos + design-spec type sizes.
+   The desktop carousel pins member photos to 250px tall (rule above); on the
+   ~175px-wide mobile grid columns that reads as portrait. Figma mobile
+   (node 5372-23907) uses square 1:1 images with 16px radius, 16px grid gaps,
+   14px role text and 16px names. */
+@media only screen and (max-width: 749px) {
+	.behind-sec slideshow-slides.group-slider__slides {
+		gap: 16px;
+	}
+
+	.behind-sec img.image-block__image {
+		min-height: unset;
+		max-height: unset;
+		height: auto;
+		aspect-ratio: 1 / 1;
+		width: 100%;
+		border-radius: 16px;
+	}
+
+	.behind-sec slideshow-slide .text-block p strong {
+		font-size: 14px;
+		letter-spacing: 0.28px;
+	}
 }
