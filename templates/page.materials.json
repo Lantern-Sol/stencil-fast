@@ -449,7 +449,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Maxi Tuff Our Most Popular Material</h3><p>.10\" orthopedic-grade LDPE</p>",
+                "text": "<h3>Maxi Tuff Our Most Popular Material</h3><h3>.10\" orthopedic-grade LDPE</h3>",
                 "mobile_text": "",
                 "width": "100%",
                 "max_width": "none",
