@@ -2317,9 +2317,9 @@
           "type": "group-slider",
           "name": "Group slider",
           "settings": {
-            "enable_slider_desktop": false,
+            "enable_slider_desktop": true,
             "enable_slider_mobile": true,
-            "slides_to_show_desktop": 5,
+            "slides_to_show_desktop": 3,
             "slides_to_scroll_desktop": 1,
             "mobile_slides_to_show": 3,
             "mobile_slides_to_scroll": 1,
