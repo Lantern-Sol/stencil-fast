@@ -9,3 +9,13 @@
     border-top-left-radius: 80px;
     border-bottom-right-radius: 80px;
 }
+.streamline-operation .text-block h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.streamline-operation .text-block h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
