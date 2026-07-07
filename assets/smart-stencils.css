@@ -50,5 +50,15 @@
     max-height: 48px;
     font-style: italic;
     font-weight: 500;
+    margin: auto;
     letter-spacing: 0.5px;
+    min-width: 230px;
+}
+.schedule-form  .contact-form__form  button.button.submit-button:hover{
+    max-height: 48px;
+    font-style: italic;
+    font-weight: 500;
+    margin: auto;
+    letter-spacing: 0.5px;
+    min-width: 230px;
 }
