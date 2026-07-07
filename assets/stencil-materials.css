@@ -25,7 +25,8 @@
 .dura-tuff-sec .text-block li  {
     font-family: var( --secondary-font);  
 }
-.matter-sec .button {
+.matter-sec .button,
+.dura-tuff-sec .button {
     font-weight: 500;
     letter-spacing: 0.5px;
 }
