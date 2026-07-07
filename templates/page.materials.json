@@ -133,7 +133,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>The Right Material Matters</p>",
+                "text": "<h3>The Right Material Matters</h3>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
