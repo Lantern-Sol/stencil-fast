@@ -3708,7 +3708,7 @@
           "name": "Group slider",
           "settings": {
             "enable_slider_desktop": true,
-            "enable_slider_mobile": false,
+            "enable_slider_mobile": true,
             "slides_to_show_desktop": 5,
             "slides_to_scroll_desktop": 1,
             "mobile_slides_to_show": 1,
