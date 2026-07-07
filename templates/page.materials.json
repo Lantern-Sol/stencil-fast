@@ -1333,7 +1333,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>Aluminum <strong>Built for the Long Haul</strong></p>",
+                "text": "<h3>Aluminum Built for the Long Haul</h3>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -1354,7 +1354,7 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "",
+                "text_color": "#F6F7EB",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -1376,7 +1376,7 @@
                 "text": "<h2>.080” thick</h2><p>Aluminum stencils deliver strength and precision for demanding, high-traffic jobs. Each stencil is cut for sharp, clean lines and built to handle repeated use in the toughest environments. Rolled edges are available upon request for smoother handling and added safety.</p><p>Contact us to order.</p><ul><li>Extremely durable for long-term use</li><li>Ideal for thermoplastic applications</li><li>Custom sizes available up to 144 inches</li></ul>",
                 "mobile_text": "",
                 "width": "fit-content",
-                "max_width": "narrow",
+                "max_width": "none",
                 "alignment": "left",
                 "height_mode": "auto",
                 "desktop_height": "",
@@ -1394,7 +1394,7 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "",
+                "text_color": "#F6F7EB",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -1519,8 +1519,8 @@
         "border_opacity": 100,
         "border_color": "",
         "border_radius": 0,
-        "padding-block-start": 40,
-        "padding-block-end": 40,
+        "padding-block-start": 50,
+        "padding-block-end": 50,
         "padding-inline-start": 0,
         "padding-inline-end": 0,
         "use_mobile_padding": false,
@@ -1528,7 +1528,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": ""
+        "custom_class": "matter-sec"
       }
     },
     "section_TFXVbY": {
@@ -1622,7 +1622,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p><strong>UHMW Plastic </strong>Extreme Resistance for Demanding Jobs</p>",
+                "text": "<h3>UHMW Plastic Extreme Resistance for Demanding Jobs</h3>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -1643,7 +1643,7 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "",
+                "text_color": "#393E41",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -1683,7 +1683,7 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "",
+                "text_color": "#393E41",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -1785,7 +1785,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": ""
+        "custom_class": "matter-sec"
       }
     },
     "section_wbJDeT": {
