@@ -2042,7 +2042,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": "matter-sec"
+        "custom_class": "matter-sec matter-sec-invert"
       }
     }
   },
