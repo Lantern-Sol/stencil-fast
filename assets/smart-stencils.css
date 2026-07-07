@@ -26,4 +26,5 @@
 }
 .streamline-operation .text-block p strong {
     text-transform: uppercase;
+    font-family:var(--font-h3--family);
 }
