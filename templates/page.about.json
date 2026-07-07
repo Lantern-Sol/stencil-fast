@@ -2757,6 +2757,7 @@
         "group_slider_pRUeVX": {
           "type": "group-slider",
           "name": "Group slider",
+          "disabled": true,
           "settings": {
             "enable_slider_desktop": true,
             "enable_slider_mobile": true,
