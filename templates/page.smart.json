@@ -505,7 +505,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p><strong>Eliminate Stencil F.O.D.</strong><br/><br/>Smart Stencils are equipped with QR and RFID smart labeling and tracking.<br/><br/><br/><strong>Log Application Time and Location</strong><br/><br/>Automatically record critical data to meet compliance standards, improve accuracy, and maintain a detailed history for every project.<br/><br/><br/><strong>Easily Find Stencils in Storage</strong><br/><br/>Smart Stencils provide instant location details, so you never lose a stencil.<br/><br/><br/><strong>Reorder with a Click</strong><br/><br/>Your replacement stencil will be on the way within a business day.<br/><br/><br/><strong>Track Job Progress in Real Time</strong><br/><br/>Stay in control with live updates on stencil usage and job progress.</p>",
+                "text": "<p><strong>Eliminate Stencil F.O.D.</strong><br/>Smart Stencils are equipped with QR and RFID smart labeling and tracking.<br/><br/><strong>Log Application Time and Location</strong><br/>Automatically record critical data to meet compliance standards, improve accuracy, and maintain a detailed history for every project.<br/><br/><strong>Easily Find Stencils in Storage</strong><br/>Smart Stencils provide instant location details, so you never lose a stencil.<br/><br/><strong>Reorder with a Click</strong><br/>Your replacement stencil will be on the way within a business day.<br/><br/><strong>Track Job Progress in Real Time</strong><br/>Stay in control with live updates on stencil usage and job progress.</p>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
