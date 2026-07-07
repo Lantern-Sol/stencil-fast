@@ -8,6 +8,7 @@
 .matter-sec .image-block img{
     border-top-left-radius:80px;
       border-bottom-right-radius:80px;
+      max-height:400px;
 }
 .matter-sec .text-block p,
 .max-tuff-sec .text-block p  {
