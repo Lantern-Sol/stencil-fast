@@ -24,6 +24,7 @@
 .about-banner video {
     border-top-left-radius: 80px;
      border-bottom-right-radius: 80px;
+     outline:unset;
 }
 @media only screen and (max-width:767px){
 .about-banner .text-block h3 {
