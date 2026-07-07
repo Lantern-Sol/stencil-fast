@@ -38,3 +38,10 @@
     max-width: 80%;
     margin: auto;
 }
+
+@media only screen and (max-width:991px){
+    .max-tuff-sec,
+.dura-tuff-sec {
+    max-width: 100%;
+}
+}
