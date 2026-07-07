@@ -7,7 +7,7 @@
   endif
 -%}
 <div
-  class="spacing-style breadcrumbs"
+  class="spacing-style breadcrumbs {% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
   style="
     {%- render 'spacing-style', settings: block.settings -%}
     --breadcrumbs-separator: '{{ separator }}';
