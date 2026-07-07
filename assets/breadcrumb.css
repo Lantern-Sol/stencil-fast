@@ -15,3 +15,18 @@ nav.breadcrumbs__nav .breadcrumbs__item+.breadcrumbs__item:before {
     background-repeat: no-repeat;
     background-position: center;
 }
+/* Article pages: the breadcrumb sits on the plain light page background
+   (no banner behind it), so the light-on-banner colors above make it
+   invisible. Match Figma node 5253-10497: ancestor links in subtle gray,
+   current page in dark, gray chevron. Scoped via the template-article
+   body class from theme.liquid. */
+.template-article nav.breadcrumbs__nav li a,
+.template-article nav.breadcrumbs__nav li span {
+    color: #8F969A;
+}
+.template-article nav.breadcrumbs__nav li span.breadcrumbs__current {
+    color: #393E41;
+}
+.template-article nav.breadcrumbs__nav .breadcrumbs__item + .breadcrumbs__item:before {
+    filter: brightness(0) opacity(0.55);
+}
