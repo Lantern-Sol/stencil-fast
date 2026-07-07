@@ -33,3 +33,15 @@
     letter-spacing: 0.5px;
     font-weight: 500;
 }
+.schedule-form  .contact-form__form input {
+    max-height: 48px;
+    outline: unset;
+    background: #F9FAF5;
+    padding: 10px;
+}
+.schedule-form  .contact-form__form textarea {
+    max-height: 48px;
+    outline: unset;
+    background: #F9FAF5;
+    padding: 10px;
+}
