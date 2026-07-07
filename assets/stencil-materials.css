@@ -21,7 +21,8 @@
 }
 .matter-sec .text-block p,
 .max-tuff-sec .text-block p,
-.dura-tuff-sec .text-block p  {
+.dura-tuff-sec .text-block p,
+.dura-tuff-sec .text-block li  {
     font-family: var( --secondary-font);  
 }
 .matter-sec .button {
