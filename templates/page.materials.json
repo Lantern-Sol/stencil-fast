@@ -986,7 +986,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<h3>.0625\" thick LDPE</h3><h3>Dura Tuff</h3><h3><em>Dependable for Field & Light-Duty Work</em></h3><p>Dura Tuff offers the perfect balance of flexibility and strength for projects that need a reliable stencil without the weight of a heavy-duty material. It’s durable enough for repeated use and easy to handle on the job.</p><ul><li>Designed for sports fields and light-duty projects</li><li>Easy to roll, store, and clean</li><li>Reusable and cost-effective</li></ul>",
+                    "text": "<h3>.0625\" thick LDPE</h3><h2>Dura Tuff</h2><h3><em>Dependable for Field & Light-Duty Work</em></h3><p>Dura Tuff offers the perfect balance of flexibility and strength for projects that need a reliable stencil without the weight of a heavy-duty material. It’s durable enough for repeated use and easy to handle on the job.</p><ul><li>Designed for sports fields and light-duty projects</li><li>Easy to roll, store, and clean</li><li>Reusable and cost-effective</li></ul>",
                     "mobile_text": "",
                     "width": "fit-content",
                     "max_width": "normal",
@@ -1085,7 +1085,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<h3>.010\" thick</h3><h3>Mylar</h3><h3><em>Flexible and Easy to Handle</em></h3><p>Mylar stencils deliver flexibility and precision for quick, clean markings. They’re easy to position, spray, and wash, making them a practical choice for temporary or indoor projects.</p><p>When you need flexibility without sacrificing quality, Mylar gets the job done.<br/></p><ul><li>Lightweight and easy to handle</li><li>Cuts cleanly for custom designs and lettering</li><li>Perfect for fast, accurate marking without extra cleanup</li></ul>",
+                    "text": "<h3>.010\" thick</h3><h2>Mylar</h2><h3><em>Flexible and Easy to Handle</em></h3><p>Mylar stencils deliver flexibility and precision for quick, clean markings. They’re easy to position, spray, and wash, making them a practical choice for temporary or indoor projects.</p><p>When you need flexibility without sacrificing quality, Mylar gets the job done.<br/></p><ul><li>Lightweight and easy to handle</li><li>Cuts cleanly for custom designs and lettering</li><li>Perfect for fast, accurate marking without extra cleanup</li></ul>",
                     "mobile_text": "",
                     "width": "fit-content",
                     "max_width": "normal",
@@ -1271,7 +1271,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": ""
+        "custom_class": "dura-tuff-sec"
       }
     },
     "section_FmdNEE": {
