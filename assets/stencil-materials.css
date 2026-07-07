@@ -45,21 +45,14 @@
     max-width: 100%;
 }
 }
-
+@media only screen and (max-width:767px){
 .matter-sec .text-block h3,
 .max-tuff-sec  .text-block h3,
 .dura-tuff-sec .text-block h3 {
-    text-transform: uppercase;
-    font-weight: 500;
-    margin:0;
-    letter-spacing: 0.5px;
+    font-size:24px;
 }
 .dura-tuff-sec .text-block h2,
 .matter-sec .text-block h2 {
-    text-transform: uppercase;
-    font-weight: 500;
-    margin:0;
-    font-style:italic;
-    letter-spacing: 0.5px;
-    color:#E94F37;
+     font-size:24px;
+}
 }
