@@ -46,3 +46,9 @@
     max-height:150px;
      min-height:150px;
 }
+.schedule-form  .contact-form__form  button.button.submit-button {
+    max-height: 48px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
