@@ -261,6 +261,8 @@
             "home_label": "Home",
             "product_category_source": "auto",
             "separator": "/",
+            "background_color": "",
+            "color": "",
             "padding-block-start": 16,
             "padding-block-end": 16,
             "padding-inline-start": 0,
@@ -2623,10 +2625,11 @@
                 "group_LzRaJg"
               ]
             },
-            "slide_NNppYX": {
+            "slide_FJN8Ux": {
               "type": "_slide",
               "settings": {
                 "media_type_1": "image",
+                "image_1": "shopify://shop_images/about-bg.png",
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -2646,7 +2649,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_tbz8LV": {
+                "group_zkwFUi": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -2699,7 +2702,7 @@
                     "custom_class": "our-re"
                   },
                   "blocks": {
-                    "icon_KgGqbg": {
+                    "icon_gtDdhN": {
                       "type": "icon",
                       "name": "t:names.icon",
                       "settings": {
@@ -2713,7 +2716,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_xkPMQM": {
+                    "text_nf6WJx": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -2756,20 +2759,20 @@
                     }
                   },
                   "block_order": [
-                    "icon_KgGqbg",
-                    "text_xkPMQM"
+                    "icon_gtDdhN",
+                    "text_nf6WJx"
                   ]
                 }
               },
               "block_order": [
-                "group_tbz8LV"
+                "group_zkwFUi"
               ]
             }
           },
           "block_order": [
             "slide_i6Bxii",
             "slide_DfYNqV",
-            "slide_NNppYX"
+            "slide_FJN8Ux"
           ]
         },
         "group_slider_HXTwCc": {
