@@ -28,7 +28,7 @@
     text-transform: uppercase;
     font-family:var(--font-h3--family);
 }
-.schedule-form h3 {
+.schedule-form  .text-block h3 {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
