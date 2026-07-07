@@ -7,6 +7,7 @@
 }
 .smart-stencil-sec iframe {
     border-top-left-radius: 80px;
+    outline:unset;
     border-bottom-right-radius: 80px;
 }
 .streamline-operation .text-block h3 {
