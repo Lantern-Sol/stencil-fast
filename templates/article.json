@@ -19,6 +19,8 @@
             "home_label": "Home",
             "product_category_source": "auto",
             "separator": "/",
+            "background_color": "",
+            "color": "{{ settings.color_palette.color1 }}",
             "padding-block-start": 16,
             "padding-block-end": 16,
             "padding-inline-start": 0,
