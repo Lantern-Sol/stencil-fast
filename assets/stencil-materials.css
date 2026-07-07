@@ -31,7 +31,7 @@
     font-weight: 500;
     letter-spacing: 0.5px;
 }
-.matter-sec.matter-sec-invert
+.matter-sec.matter-sec-invert .button:hover{background:redl}
 .max-tuff-sec,
 .dura-tuff-sec {
     max-width: 80%;
