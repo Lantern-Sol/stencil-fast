@@ -29,6 +29,7 @@
 .matter-sec .button,
 .dura-tuff-sec .button {
     font-weight: 500;
+    font-style:italic;
     letter-spacing: 0.5px;
 }
 .matter-sec.matter-sec-invert .button:hover{background:#f6f7eb; color:#393E41;}
