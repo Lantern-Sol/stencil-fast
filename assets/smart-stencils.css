@@ -61,7 +61,7 @@
 
 @media only screen and (max-width:767px){
     .smart-stencil-sec iframe {
-	border-top-left-radius: 80px;
-	border-bottom-right-radius: 80px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
 }
 }
