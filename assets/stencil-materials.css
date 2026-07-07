@@ -5,9 +5,9 @@
     margin:0;
     letter-spacing: 0.5px;
 }
-.matter-sec .image-block{
+.matter-sec .image-block img{
     border-top-left-radius:80px;
-      border-top-left-radius:80px;
+      border-bottom-right-radius:80px;
 }
 .matter-sec .text-block p,
 .max-tuff-sec .text-block p  {
