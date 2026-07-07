@@ -1879,7 +1879,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>Get the right material. Get it fast.</p>",
+                "text": "<h3>Get the right material. Get it fast.</h3>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -1900,7 +1900,7 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "",
+                "text_color": "#FDFDFC",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -1919,7 +1919,7 @@
             "text_x7T9ip": {
               "type": "text",
               "settings": {
-                "text": "<p>Every project has its own demands, and the right material makes all the difference.</p><p>Whether you’re striping pavement, painting murals, or building signage, StencilFast has the quality, expertise, and service to keep your job moving.</p><p>If you need help figuring out which of our stencil material options is the right fit for your job, or if you have questions about placing an order, we're here to help! Just give us a call or reach out via our contact form.</p><h2>1-800-250-5547</h2>",
+                "text": "<p>Every project has its own demands, and the right material makes all the difference.</p><p>Whether you’re striping pavement, painting murals, or building signage, StencilFast has the quality, expertise, and service to keep your job moving.</p><p>If you need help figuring out which of our stencil material options is the right fit for your job, or if you have questions about placing an order, we're here to help! Just give us a call or reach out via our contact form.</p><h3>1-800-250-5547</h3>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "narrow",
@@ -1940,7 +1940,7 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "",
+                "text_color": "#FDFDFC",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -2033,8 +2033,8 @@
         "border_opacity": 100,
         "border_color": "",
         "border_radius": 0,
-        "padding-block-start": 40,
-        "padding-block-end": 40,
+        "padding-block-start": 50,
+        "padding-block-end": 50,
         "padding-inline-start": 0,
         "padding-inline-end": 0,
         "use_mobile_padding": false,
@@ -2042,7 +2042,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": ""
+        "custom_class": "matter-sec"
       }
     }
   },
