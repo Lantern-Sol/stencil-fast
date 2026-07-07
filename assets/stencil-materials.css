@@ -5,6 +5,10 @@
     margin:0;
     letter-spacing: 0.5px;
 }
+.matter-sec .image-block{
+    border-top-left-radius:80px;
+      border-top-left-radius:80px;
+}
 .matter-sec .text-block p,
 .max-tuff-sec .text-block p  {
     font-family: var( --secondary-font);  
