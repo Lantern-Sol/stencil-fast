@@ -159,3 +159,8 @@ font-family: var( --secondary-font);
 }
 
 }
+/* Hide the footer newsletter section (footer-group section_NhhAdq) on the
+   About page template (page.about). Body template class comes from theme.liquid. */
+.template--page-about .shopify-section[id$="__section_NhhAdq"] {
+	display: none;
+}

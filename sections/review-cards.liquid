@@ -1,0 +1,413 @@
+{%- liquid
+  assign background_color = section.settings.background_color | default: '#393E41'
+  assign heading_color = section.settings.heading_color | default: '#FDFDFC'
+  assign accent_color = section.settings.accent_color | default: '#E94F37'
+  assign text_color = section.settings.text_color | default: '#FDFDFC'
+  assign star_color = section.settings.star_color | default: '#E94F37'
+  assign card_opacity = section.settings.card_opacity | divided_by: 100.0
+-%}
+
+<div
+  id="ReviewCards-{{ section.id }}"
+  class="review-cards"
+  style="
+    --rc-bg: {{ background_color }};
+    --rc-heading: {{ heading_color }};
+    --rc-accent: {{ accent_color }};
+    --rc-text: {{ text_color }};
+    --rc-star: {{ star_color }};
+    --rc-card-bg: rgb({{ section.settings.card_color.rgb | default: '255 255 255' }} / {{ card_opacity }});
+    --padding-block-start: {{ section.settings.padding-block-start }}px;
+    --padding-block-end: {{ section.settings.padding-block-end }}px;
+  "
+  {% if request.visual_preview_mode %}
+    data-shopify-visual-preview
+  {% endif %}
+>
+  <div class="review-cards__container">
+    <!-- Heading -->
+    <div class="review-cards__header">
+      {% if section.settings.eyebrow != blank %}
+        <p class="review-cards__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+      {% endif %}
+      {% if section.settings.heading != blank %}
+        <h2 class="review-cards__heading">{{ section.settings.heading | escape }}</h2>
+      {% endif %}
+      {% if section.settings.description != blank %}
+        <div class="review-cards__description">{{ section.settings.description }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Review cards -->
+    {% if section.blocks.size > 0 %}
+      <div class="review-cards__list" role="list">
+        {% for block in section.blocks %}
+          <div class="review-cards__card" role="listitem" {{ block.shopify_attributes }}>
+            {% if block.settings.stars > 0 %}
+              <div class="review-cards__stars" role="img" aria-label="{{ block.settings.stars }} out of 5 stars">
+                {% for i in (1..block.settings.stars) %}
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7.01786 0.863222C7.04707 0.804196 7.0922 0.75451 7.14816 0.719772C7.20411 0.685034 7.26866 0.666626 7.33452 0.666626C7.40038 0.666626 7.46493 0.685034 7.52089 0.719772C7.57684 0.75451 7.62197 0.804196 7.65119 0.863222L9.19119 3.98256C9.29264 4.18787 9.4424 4.36549 9.62761 4.50019C9.81281 4.63489 10.0279 4.72263 10.2545 4.75589L13.6985 5.25989C13.7638 5.26934 13.8251 5.29687 13.8755 5.33935C13.9259 5.38184 13.9635 5.43759 13.9839 5.50029C14.0043 5.563 14.0067 5.63016 13.9909 5.69418C13.9751 5.7582 13.9417 5.81652 13.8945 5.86256L11.4039 8.28789C11.2396 8.44796 11.1167 8.64554 11.0457 8.86364C10.9748 9.08174 10.9579 9.31382 10.9965 9.53989L11.5845 12.9666C11.596 13.0318 11.589 13.0989 11.5642 13.1603C11.5394 13.2218 11.4978 13.275 11.4442 13.3139C11.3906 13.3528 11.3272 13.3759 11.2611 13.3805C11.195 13.3851 11.129 13.371 11.0705 13.3399L7.99186 11.7212C7.789 11.6147 7.56331 11.5591 7.33419 11.5591C7.10507 11.5591 6.87938 11.6147 6.67652 11.7212L3.59852 13.3399C3.54008 13.3708 3.47412 13.3847 3.40816 13.3801C3.34219 13.3754 3.27887 13.3523 3.22539 13.3134C3.1719 13.2745 3.13041 13.2213 3.10563 13.16C3.08084 13.0987 3.07376 13.0317 3.08519 12.9666L3.67252 9.54056C3.71132 9.31438 3.69451 9.08215 3.62355 8.86392C3.55258 8.64569 3.4296 8.44799 3.26519 8.28789L0.774523 5.86322C0.726919 5.81724 0.693185 5.75882 0.677165 5.6946C0.661144 5.63039 0.663481 5.56297 0.683909 5.50002C0.704337 5.43706 0.742034 5.38112 0.792707 5.33854C0.843381 5.29597 0.904992 5.26849 0.970523 5.25922L4.41386 4.75589C4.64069 4.72289 4.85612 4.63526 5.04158 4.50055C5.22704 4.36583 5.37699 4.18807 5.47852 3.98256L7.01786 0.863222Z" fill="currentColor" stroke="currentColor" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if block.settings.text != blank %}
+              <blockquote class="review-cards__quote">
+                {{ block.settings.text | escape }}
+              </blockquote>
+            {% endif %}
+            {% if block.settings.author != blank %}
+              <cite class="review-cards__author">- {{ block.settings.author | escape }}</cite>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .review-cards {
+    background-color: var(--rc-bg);
+    padding-block-start: var(--padding-block-start, 48px);
+    padding-block-end: var(--padding-block-end, 48px);
+    overflow: clip;
+  }
+
+  .review-cards__container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    max-width: var(--page-width, 1500px);
+    margin-inline: auto;
+    padding-inline: var(--page-margin, 40px);
+  }
+
+  /* ---------- Heading ---------- */
+  .review-cards__header {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 400px;
+  }
+
+  .review-cards__eyebrow {
+    margin: 0;
+    color: var(--rc-heading);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+  }
+
+  .review-cards__heading {
+    margin: 0;
+    color: var(--rc-accent);
+    font-size: 48px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.2;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+  }
+
+  .review-cards__description {
+    padding-block: 16px;
+    color: var(--rc-text);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .review-cards__description p {
+    margin: 0;
+  }
+
+  /* ---------- Cards ---------- */
+  .review-cards__list {
+    display: flex;
+    flex: 1 1 0;
+    gap: 24px;
+    align-items: stretch;
+    min-width: 0;
+  }
+
+  .review-cards__card {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    padding: 32px 24px;
+    background-color: var(--rc-card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .review-cards__stars {
+    display: flex;
+    gap: 6px;
+    color: var(--rc-star);
+  }
+
+  .review-cards__stars svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+  }
+
+  .review-cards__quote {
+    margin: 0;
+    color: var(--rc-text);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .review-cards__author {
+    color: var(--rc-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.32px;
+    text-align: center;
+  }
+
+  /* ---------- Tablet: heading stacks above cards ---------- */
+  @media only screen and (max-width: 1199px) {
+    .review-cards__container {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .review-cards__header {
+      width: 100%;
+      max-width: 640px;
+    }
+
+    .review-cards__list {
+      width: 100%;
+    }
+  }
+
+  /* ---------- Mobile: horizontal swipe carousel ---------- */
+  @media only screen and (max-width: 749px) {
+    .review-cards__container {
+      padding-inline: 16px;
+    }
+
+    .review-cards__eyebrow {
+      font-size: 24px;
+      letter-spacing: 0.48px;
+    }
+
+    .review-cards__heading {
+      font-size: 32px;
+      letter-spacing: 0.64px;
+    }
+
+    .review-cards__list {
+      flex: none;
+      margin-inline: -16px;
+      padding-inline: 16px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-padding-inline: 16px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .review-cards__list::-webkit-scrollbar {
+      display: none;
+    }
+
+    .review-cards__card {
+      flex: 0 0 310px;
+      gap: 16px;
+      padding: 24px;
+      scroll-snap-align: start;
+    }
+
+    .review-cards__author {
+      font-size: 14px;
+      letter-spacing: 0.28px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Review Cards",
+  "tag": "section",
+  "class": "review-cards-section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow Text",
+      "default": "It's their words,"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "not ours."
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Thousands of contractors, facilities managers, and municipalities have trusted StencilFast. Here's what a few of them had to say.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#393E41"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#FDFDFC"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#E94F37"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#FDFDFC"
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Star Color",
+      "default": "#E94F37"
+    },
+    {
+      "type": "color",
+      "id": "card_color",
+      "label": "Card Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "card_opacity",
+      "label": "Card Background Opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "range",
+          "id": "stars",
+          "label": "Star Rating",
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Review Text",
+          "default": "I'm glad I found StencilFast! Their product & shipping is superior and customer service is great!"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author",
+          "default": "Rob R.",
+          "info": "Shown below the review, prefixed with a dash."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Review Cards",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "text": "I'm glad I found StencilFast! Their product & shipping is superior and customer service is great!",
+            "author": "Rob R."
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "text": "StencilFast by far makes the best quality pavement stencils we have purchased... Not only are their stencils superior in quality, they have excellent customer service and nobody can beat their pricing.",
+            "author": "Danielle C.B."
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "text": "These stencils, hands down are the coolest things you experience. I never thought we would geek out over stencils but legit... Could use a zillion times and very much easy to use.",
+            "author": "Adira Health & Wellness"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
