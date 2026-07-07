@@ -307,6 +307,25 @@
             "custom_class": ""
           },
           "blocks": {
+            "breadcrumbs_f6Yfpj": {
+              "type": "breadcrumbs",
+              "name": "Breadcrumbs",
+              "settings": {
+                "home_label": "Home",
+                "product_category_source": "auto",
+                "separator": "/",
+                "padding-block-start": 16,
+                "padding-block-end": 16,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "use_mobile_padding": false,
+                "padding-block-start-mobile": 16,
+                "padding-block-end-mobile": 16,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
+              },
+              "blocks": {}
+            },
             "text_VJ347P": {
               "type": "text",
               "name": "t:names.heading",
@@ -473,6 +492,7 @@
             }
           },
           "block_order": [
+            "breadcrumbs_f6Yfpj",
             "text_VJ347P",
             "text_34gKxA",
             "text_Gb7Nea",
