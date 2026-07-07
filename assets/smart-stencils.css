@@ -21,3 +21,9 @@
     font-style:italic;
     letter-spacing: 0.5px;
 }
+.streamline-operation .text-block p {
+    text-transform: uppercase;
+}
+.streamline-operation .text-block p strong {
+    text-transform: uppercase;
+}
