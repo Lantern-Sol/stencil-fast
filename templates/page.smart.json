@@ -616,7 +616,7 @@
         "text_grttFg": {
           "type": "text",
           "settings": {
-            "text": "<h2>Schedule a Smart Stencil Demo:</h2>",
+            "text": "<h3>Schedule a Smart Stencil Demo:</h3>",
             "mobile_text": "",
             "width": "100%",
             "max_width": "normal",
@@ -624,7 +624,7 @@
             "height_mode": "auto",
             "desktop_height": "",
             "mobile_height": "",
-            "type_preset": "rte",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "enable_custom_font_weight": false,
             "weight": "400",
