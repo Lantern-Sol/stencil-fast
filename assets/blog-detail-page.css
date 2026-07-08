@@ -180,4 +180,7 @@
 .blog-right-sec h2 {
 	font-size: 24px;
 }
+.template-article .breadcrumbs {
+    padding-bottom: 0;
+}
 }
