@@ -19,6 +19,6 @@ body.template-page button#pc--opt-out-button {
     min-height: 48px;
     transition:ease 0.2s;
 }
-body.template-page button#pc--opt-out-button {
+body.template-page button#pc--opt-out-button:hover {
       background: #393E41;
 }
