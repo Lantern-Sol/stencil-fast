@@ -50,8 +50,8 @@
             "mobile_horizontal_alignment_flex_direction_column": "flex-start",
             "mobile_vertical_alignment_flex_direction_column": "center",
             "gap": 40,
-            "use_mobile_gap": false,
-            "mobile_gap": 12,
+            "use_mobile_gap": true,
+            "mobile_gap": 0,
             "width": "custom",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -282,6 +282,7 @@
                       "name": "t:names.product_buy_buttons",
                       "settings": {
                         "stacking": false,
+                        "show_price": false,
                         "text_color": "",
                         "show_pickup_availability": false,
                         "gift_card_form": false,
