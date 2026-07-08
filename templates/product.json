@@ -699,6 +699,7 @@
               "type": "buy-buttons",
               "settings": {
                 "stacking": true,
+                "show_price": true,
                 "text_color": "",
                 "show_pickup_availability": false,
                 "gift_card_form": true,

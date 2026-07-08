@@ -251,7 +251,7 @@
             id: 'add-to-cart',
             can_add_to_cart: can_add_to_cart,
             add_to_cart_text: add_to_cart_text,
-            show_price: true
+            show_price: block_settings.show_price
           %}
 
           {% content_for 'block',
@@ -419,6 +419,13 @@
       "type": "checkbox",
       "id": "stacking",
       "label": "t:settings.always_stack_buttons",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_price",
+      "label": "Show price in Add to cart button",
+      "info": "Only intended for the main product page button.",
       "default": false
     },
     {
