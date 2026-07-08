@@ -845,7 +845,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p><strong>Which Material Is Right for Your Project? Just Ask.</strong></p>",
+            "text": "<h3>Which Material Is Right for Your Project? Just Ask.</h3>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
@@ -889,7 +889,7 @@
             "text": "<p>We’re here to help you find the ideal stencil for your project. If you need a specific design or have questions about our materials, please <a href=\"/pages/contact\" title=\"Contact\"><strong>contact us</strong></a>.</p>",
             "mobile_text": "",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "left",
             "height_mode": "auto",
             "desktop_height": "",
@@ -1004,7 +1004,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": ""
+        "custom_class": "text-sec"
       }
     }
   },
