@@ -5490,6 +5490,7 @@ body .on-hover-yellow:hover {
     background: #f6f7eb;
     color: #393e41;
 }
+body  .metal-stencil-sec button{}
 .pagination li.pagination__item span,
 .pagination li.pagination__item a {
     border: 1px solid #D7D9DA;
@@ -5592,6 +5593,7 @@ body .shopify-policy__container {
 .cart-drawer__inner  .cart-discount__label {
     font-size: 16px;   color: #393E41;
 }
+
 .text-sec{max-width:80%; margin:auto;}
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
