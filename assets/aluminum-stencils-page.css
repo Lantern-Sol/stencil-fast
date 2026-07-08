@@ -1,4 +1,5 @@
-.precision-sec  .text-block  h3{
+.precision-sec  .text-block  h3,
+.text-sec  .text-block  h3{
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -11,7 +12,8 @@
     margin:0;
     font-style:italic;
 }
-.precision-sec  .text-block   p{
+.precision-sec  .text-block   p,
+.text-sec  .text-block  h3{
   	font-family: var( --secondary-font);
 }
 .precision-sec  .group-block-content   .button{
