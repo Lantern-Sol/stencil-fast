@@ -161,7 +161,7 @@ font-family: var( --secondary-font);
     display: none;
 }
 body .future-sec .button-custom{display:none !important;}
-
+.ours-sec .button-custom{margin-top:10px;}
 }
 /* Hide the footer newsletter section (footer-group section_NhhAdq) on the
    About page template (page.about). Body template class comes from theme.liquid. */
