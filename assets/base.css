@@ -44,8 +44,8 @@ html[scroll-lock],
 html[scroll-lock] .page-wrapper {
   overflow: hidden;
 }
-.test-custom-class{
-  /* display : none; */
+.test-custom-class a:hover{
+  background : yelllow;
 }
 .page-wrapper {
   display: flex;
