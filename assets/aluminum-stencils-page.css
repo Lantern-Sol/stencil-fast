@@ -17,7 +17,6 @@
   	font-family: var( --secondary-font); 
 }
 .precision-sec  .group-block-content   .button,
-.text-sec   .text-block   .button,
 .text-sec  .text-block .button {
   	font-weight:500;
     letter-spacing:0.5px;
