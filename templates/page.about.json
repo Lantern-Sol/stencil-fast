@@ -2194,6 +2194,55 @@
         "padding-block-end": 80
       }
     },
+    "review_cards_ExB3xd": {
+      "type": "review-cards",
+      "blocks": {
+        "review_wfrLb9": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "text": "I'm glad I found StencilFast! Their product & shipping is superior and customer service is great!",
+            "author": "Rob R."
+          }
+        },
+        "review_gCAQ3W": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "text": "StencilFast by far makes the best quality pavement stencils we have purchased... Not only are their stencils superior in quality, they have excellent customer service and nobody can beat their pricing.",
+            "author": "Danielle C.B."
+          }
+        },
+        "review_EQ4aPz": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "text": "These stencils, hands down are the coolest things you experience. I never thought we would geek out over stencils but legit... Could use a zillion times and very much easy to use.",
+            "author": "Adira Health & Wellness"
+          }
+        }
+      },
+      "block_order": [
+        "review_wfrLb9",
+        "review_gCAQ3W",
+        "review_EQ4aPz"
+      ],
+      "name": "Review Cards",
+      "settings": {
+        "eyebrow": "It's their words,",
+        "heading": "not ours.",
+        "description": "<p>Thousands of contractors, facilities managers, and municipalities have trusted StencilFast. Here's what a few of them had to say.</p>",
+        "background_color": "#393e41",
+        "heading_color": "#fdfdfc",
+        "accent_color": "#e94f37",
+        "text_color": "#fdfdfc",
+        "star_color": "#e94f37",
+        "card_color": "#ffffff",
+        "card_opacity": 15,
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
     "section_46kWT6": {
       "type": "section",
       "blocks": {
@@ -2287,12 +2336,12 @@
             "enable_slider_mobile": true,
             "slides_to_show_desktop": 5,
             "slides_to_scroll_desktop": 1,
-            "mobile_slides_to_show": 2,
-            "mobile_slides_to_scroll": 4,
+            "mobile_slides_to_show": 1,
+            "mobile_slides_to_scroll": 1,
             "show_dots_desktop": false,
-            "show_dots_mobile": false,
+            "show_dots_mobile": true,
             "show_arrows_desktop": true,
-            "show_arrows_mobile": true,
+            "show_arrows_mobile": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -4808,55 +4857,6 @@
         "padding-block-start": 24,
         "padding-block-end": 24,
         "gap_between_elements": 24
-      }
-    },
-    "review_cards_ExB3xd": {
-      "type": "review-cards",
-      "blocks": {
-        "review_wfrLb9": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "text": "I'm glad I found StencilFast! Their product & shipping is superior and customer service is great!",
-            "author": "Rob R."
-          }
-        },
-        "review_gCAQ3W": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "text": "StencilFast by far makes the best quality pavement stencils we have purchased... Not only are their stencils superior in quality, they have excellent customer service and nobody can beat their pricing.",
-            "author": "Danielle C.B."
-          }
-        },
-        "review_EQ4aPz": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "text": "These stencils, hands down are the coolest things you experience. I never thought we would geek out over stencils but legit... Could use a zillion times and very much easy to use.",
-            "author": "Adira Health & Wellness"
-          }
-        }
-      },
-      "block_order": [
-        "review_wfrLb9",
-        "review_gCAQ3W",
-        "review_EQ4aPz"
-      ],
-      "name": "Review Cards",
-      "settings": {
-        "eyebrow": "It's their words,",
-        "heading": "not ours.",
-        "description": "<p>Thousands of contractors, facilities managers, and municipalities have trusted StencilFast. Here's what a few of them had to say.</p>",
-        "background_color": "#393E41",
-        "heading_color": "#FDFDFC",
-        "accent_color": "#E94F37",
-        "text_color": "#FDFDFC",
-        "star_color": "#E94F37",
-        "card_color": "#FFFFFF",
-        "card_opacity": 15,
-        "padding-block-start": 48,
-        "padding-block-end": 48
       }
     }
   },
