@@ -7,3 +7,14 @@ body.template-page .text-block  h1{
 body.template-page .text-block  p{
   	font-family: var( --secondary-font);
 }
+body.template-page button#pc--opt-out-button {
+    background: #E94F37;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    font-weight: 500;
+    border-radius: 8px;
+    min-height: 48px;
+}
