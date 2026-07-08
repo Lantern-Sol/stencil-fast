@@ -219,3 +219,7 @@ body .future-sec .button-custom{display:none !important;}
 		letter-spacing: 0.28px;
 	}
 }
+@media obly screen and (min-width:768px){
+.ours-sec .button-custom{display:none !important;}
+
+}
