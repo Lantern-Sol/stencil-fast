@@ -22,3 +22,7 @@ body.template-page button#pc--opt-out-button {
 body.template-page button#pc--opt-out-button:hover {
       background: #393E41;
 }
+
+body.template-page .text-block  h1{
+  font-size:24px;
+}
