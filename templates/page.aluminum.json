@@ -338,7 +338,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Metal Stencils Built to Handle Any Project</p>",
+            "text": "<h3>Metal Stencils Built to Handle Any Project</h3>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
@@ -346,7 +346,7 @@
             "height_mode": "auto",
             "desktop_height": "",
             "mobile_height": "",
-            "type_preset": "rte",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "enable_custom_font_weight": false,
             "weight": "400",
@@ -382,7 +382,7 @@
             "text": "<p>Our metal stencils are crafted from premium-grade aluminum, ensuring they remain flat, sturdy, and easy to work with. Aluminum stencils are designed to handle repeated use, making them a top choice for professional-grade projects. Whether you’re marking parking lots, roads, residential or industrial areas, these metal stencils maintain their integrity and precision. For a versatile material choice, simply select aluminum when browsing our range of stencils.</p>",
             "mobile_text": "",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "left",
             "height_mode": "auto",
             "desktop_height": "",
@@ -497,7 +497,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": ""
+        "custom_class": "text-sec"
       }
     },
     "section_bEtgfe": {
