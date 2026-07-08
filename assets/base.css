@@ -5497,6 +5497,12 @@ body .metal-stencil-two a.button-custom {
     letter-spacing:0.5px;
     font-style:italic;
 }
+body .metal-stencil-two a.button-custom:hover {
+    font-weight: 500;
+    border:none;
+    letter-spacing:0.5px;
+    font-style:italic;
+}
 .pagination li.pagination__item span,
 .pagination li.pagination__item a {
     border: 1px solid #D7D9DA;
