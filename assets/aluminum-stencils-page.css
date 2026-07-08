@@ -27,3 +27,8 @@
     min-height:400px;
     object-fit:contain;
 }
+@media only screen and (max-width:767px){
+.precision-sec .text-block h3, .text-sec .text-block h3 {
+	font-size: 24px;
+}
+}
