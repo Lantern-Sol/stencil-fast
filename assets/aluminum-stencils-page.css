@@ -14,7 +14,7 @@
 .precision-sec  .text-block   p{
   	font-family: var( --secondary-font);
 }
-.precision-sec  .text-block   .button{
+.precision-sec  .group-block-content   .button{
   	font-weight:500;
     font-style:italic; 
 }
