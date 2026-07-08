@@ -26,4 +26,8 @@
   	max-height:300px;
     min-height:300px;
 }
-body .on-hover{}
+
+body .on-hover:hover {
+    background: #f6f7eb;
+    color: #393e41;
+}
