@@ -65,7 +65,7 @@ html[scroll-lock] .page-wrapper {
 }
 
 .precision-sec .button:hover{
-   background : none;
+   background : !yellow;
 }
 
 .page-wrapper--drawer-open {
