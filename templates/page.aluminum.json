@@ -679,7 +679,7 @@
             "text": "<h3>Aluminum Stencils and More:</h3><h3>Choose the Right Material</h3>",
             "mobile_text": "",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "left",
             "height_mode": "auto",
             "desktop_height": "",
