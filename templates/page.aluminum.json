@@ -432,7 +432,7 @@
             "custom_width": 100,
             "width_mobile": "fit-content",
             "custom_width_mobile": 100,
-            "custom_class": "on-hover"
+            "custom_class": "on-hover-yellow"
           },
           "blocks": {}
         }
