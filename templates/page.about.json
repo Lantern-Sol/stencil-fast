@@ -1763,7 +1763,7 @@
             "padding-block-end-mobile": 0,
             "padding-inline-start-mobile": 0,
             "padding-inline-end-mobile": 0,
-            "custom_class": ""
+            "custom_class": "future-sec"
           },
           "blocks": {
             "text_macQ6H": {
@@ -2059,10 +2059,31 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {}
+            },
+            "button_iR4y7w": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "learn more",
+                "link": "https://www.smartmarkings.com/",
+                "open_in_new_tab": true,
+                "style_class": "button-custom",
+                "custom_button_background": "#393e41",
+                "custom_button_text": "#fdfdfc",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100,
+                "custom_class": ""
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "image_4E4qVY"
+            "image_4E4qVY",
+            "button_iR4y7w"
           ]
         }
       },
