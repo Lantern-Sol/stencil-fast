@@ -424,7 +424,7 @@
             "text": "<p>Our metal stencils are crafted from premium-grade aluminum, ensuring they remain flat, sturdy, and easy to work with. Aluminum stencils are designed to handle repeated use, making them a top choice for professional-grade projects. Whether you’re marking parking lots, roads, residential or industrial areas, these metal stencils maintain their integrity and precision. For a versatile material choice, simply select aluminum when browsing our range of stencils.</p>",
             "mobile_text": "",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "left",
             "height_mode": "auto",
             "desktop_height": "",
