@@ -5494,6 +5494,8 @@ body  .metal-stencil-sec .button:hover{
 body .metal-stencil-two a.button-custom {
     font-weight: 500;
     border:none;
+    letter-spacing:0.5px;
+    font-style:italic;
 }
 .pagination li.pagination__item span,
 .pagination li.pagination__item a {
