@@ -5503,6 +5503,9 @@ body .metal-stencil-two a.button-custom:hover,
  background: #f6f7eb; color: #393e41;
   
 }
+.precision-sec a.button{
+   background: #f6f7eb; color: #393e41;
+}
 .pagination li.pagination__item span,
 .pagination li.pagination__item a {
     border: 1px solid #D7D9DA;
