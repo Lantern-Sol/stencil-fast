@@ -5474,6 +5474,10 @@ body .button:hover,
   background:#393e41;
   color:#fff;
 }
+body .on-hover:hover {
+    background: #f6f7eb;
+    color: #393e41;
+}
 body .button-secondary {
     color: #FDFDFC;
     outline:unset;
