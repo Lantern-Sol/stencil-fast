@@ -56,7 +56,7 @@
         "page-content": {
           "type": "page-content",
           "settings": {
-            "text_color": ""
+            "text_color": "#393E41"
           },
           "blocks": {}
         }
@@ -68,7 +68,7 @@
       "settings": {
         "content_direction": "column",
         "gap": 32,
-        "background_color": "#FDFDFC",
+        "background_color": "#fdfdfc",
         "padding-block-start": 40,
         "padding-block-end": 80
       }
