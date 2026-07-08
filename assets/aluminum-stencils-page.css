@@ -11,3 +11,6 @@
     margin:0;
     font-style:italic;
 }
+.precision-sec  .text-block   p{
+  	font-family: var( --secondary-font);
+}
