@@ -507,7 +507,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p><strong>Metal Stencils Built to Handle Any Project</strong></p>",
+            "text": "<h3>Metal Stencils Built to Handle Any Project</h3>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
@@ -551,7 +551,7 @@
             "text": "<p>If you require specific sizes or designs, we specialize in custom metal stencils that meet your unique specifications. Our custom stencils are crafted to your exact requirements, providing the perfect tool for branding, specialized signage, or any marking need. Each custom order reflects our commitment to quality and attention to detail. Contact our team to order a custom design, and we’ll ensure your stencil is made to exact standards.</p>",
             "mobile_text": "",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "left",
             "height_mode": "auto",
             "desktop_height": "",
@@ -666,7 +666,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": ""
+        "custom_class": "text-sec"
       }
     },
     "section_MKiWVg": {
