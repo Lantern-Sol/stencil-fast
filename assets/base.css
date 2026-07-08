@@ -5499,7 +5499,7 @@ body .metal-stencil-two a.button-custom {
     outline:unset;
 }
 body .metal-stencil-two a.button-custom:hover,
-.just-ask a.button{
+.just-ask a.button:hover{
  background: #f6f7eb; color: #393e41;
   
 }
