@@ -380,7 +380,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p><strong>Metal Stencils Built to Handle Any Project</strong></p>",
+            "text": "<h3><strong>Metal Stencils Built to Handle Any Project</strong></h3>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
@@ -388,7 +388,7 @@
             "height_mode": "auto",
             "desktop_height": "",
             "mobile_height": "",
-            "type_preset": "rte",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "enable_custom_font_weight": false,
             "weight": "400",
