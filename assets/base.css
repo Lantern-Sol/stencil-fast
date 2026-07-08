@@ -5474,10 +5474,7 @@ body .button:hover,
   background:#393e41;
   color:#fff;
 }
-body .on-hover-yellow:hover {
-    background: #f6f7eb;
-    color: #393e41;
-}
+
 body .button-secondary {
     color: #FDFDFC;
     outline:unset;
@@ -5487,7 +5484,10 @@ body .button-secondary:hover {
     background:#fff;
     color:#393E41;
 }
-
+body .on-hover-yellow:hover {
+    background: #f6f7eb;
+    color: #393e41;
+}
 .pagination li.pagination__item span,
 .pagination li.pagination__item a {
     border: 1px solid #D7D9DA;
