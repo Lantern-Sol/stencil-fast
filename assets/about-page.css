@@ -160,7 +160,7 @@ font-family: var( --secondary-font);
 .behind-sec ol.slideshow-controls__dots {
     display: none;
 }
-.future-sec .button{display:none;}
+.future-sec .button-custom{display:none;}
 
 }
 /* Hide the footer newsletter section (footer-group section_NhhAdq) on the
