@@ -39,9 +39,6 @@ html {
     overflow: hidden;
   }
 }
-.precision-sec a:hover{
-   background : red;
-}
 html[scroll-lock],
 html[scroll-lock] .page-wrapper {
   overflow: hidden;
