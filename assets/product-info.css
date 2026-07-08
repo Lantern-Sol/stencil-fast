@@ -184,6 +184,10 @@
 .product-details .classfication-bx .group-block p {
 	white-space: unset;
 }
+.classfication-bx .group-block {
+	min-height: 35px;
+	max-height: 35px;
+}
 }
 @media only screen and (max-width:991px){
 .product-information .product-information__media .product-media img {
@@ -192,10 +196,7 @@
 .product-details .text-block h1 {
 	font-size: 24px;
 }
-.classfication-bx .group-block {
-	min-height: 35px;
-	max-height: 35px;
-}
+
 }
 @media only screen and (max-width:767px){
 .product-details .mw-apo-container .mw-stack__item span.mw-text {
