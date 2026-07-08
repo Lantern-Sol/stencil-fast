@@ -17,4 +17,8 @@ body.template-page button#pc--opt-out-button {
     font-weight: 500;
     border-radius: 8px;
     min-height: 48px;
+    transition:ease 0.2s;
+}
+body.template-page button#pc--opt-out-button {
+      background: #E94F37;
 }
