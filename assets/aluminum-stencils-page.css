@@ -15,5 +15,6 @@
   	font-family: var( --secondary-font);
 }
 .precision-sec  .text-block   .button{
-  	font-family: var( --secondary-font);
+  	font-weight:500;
+    font-style:italic;
 }
