@@ -44,7 +44,9 @@ html[scroll-lock],
 html[scroll-lock] .page-wrapper {
   overflow: hidden;
 }
-
+.test-custom-class{
+  display : none;
+}
 .page-wrapper {
   display: flex;
   flex-direction: column;
