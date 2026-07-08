@@ -5486,10 +5486,7 @@ body .button-secondary:hover {
     background:#fff;
     color:#393E41;
 }
-body .on-hover-yellow:hover {
-    background: #f6f7eb;
-    color: #393e41;
-}
+
 body  .metal-stencil-sec button:hover{
    background: #f6f7eb;
     color: #393e41;
