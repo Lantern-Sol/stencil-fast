@@ -5503,7 +5503,7 @@ body .metal-stencil-two a.button-custom:hover,
  background: #f6f7eb; color: #393e41;
   
 }
-.precision-sec a.button{
+.precision-sec a.button:hover{
    background: #393e41; color: #393e41;
 }
 .pagination li.pagination__item span,
