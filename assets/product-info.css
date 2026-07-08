@@ -16,11 +16,13 @@
     white-space: nowrap;
 }
 .classfication-bx .group-block {
-    border: 1px solid #E94F37;
-    border-radius: 4px;
-    padding: 5px;
-    width: auto;
-    flex: unset;
+	border: 1px solid #E94F37;
+	border-radius: 4px;
+	padding: 5px;
+	width: auto;
+	flex: unset;
+	min-height: 30px;
+	max-height: 30px;
 }
 .product-details .classfication-bx .group-block p {
 	margin: 0;
