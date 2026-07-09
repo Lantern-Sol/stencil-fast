@@ -526,7 +526,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3>Smart Stencils: The Next Generation in Pavement Marking</h3>",
+                "text": "<h3>Smart Stencils: </h3><h3>The Next Generation in Pavement Marking</h3>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
