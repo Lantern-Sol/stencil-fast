@@ -60,7 +60,7 @@
             "text": "{{ closest.page.content }}",
             "mobile_text": "",
             "width": "100%",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "center",
             "height_mode": "auto",
             "desktop_height": "",
