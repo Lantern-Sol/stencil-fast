@@ -15,4 +15,5 @@ body.template-page .custom-accordion .text-block h3 {
 .custom-accordion summary.details__header {
     font-size: 16px;
 }
+.call-stencil .image-block img{border-top-left-radius:50px;border-bottom-right-radius:50px;} 
 }
