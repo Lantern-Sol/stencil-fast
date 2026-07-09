@@ -19,6 +19,8 @@
             "home_label": "Home",
             "product_category_source": "auto",
             "separator": "/",
+            "background_color": "",
+            "color": "",
             "padding-block-start": 16,
             "padding-block-end": 16,
             "padding-inline-start": 0,
@@ -181,6 +183,19 @@
     "main": {
       "type": "main-blog",
       "blocks": {
+        "blog_sort_bar": {
+          "type": "blog-posts-sort",
+          "settings": {
+            "show_count": true,
+            "label": "Sort By:",
+            "default_sort": "most-recent",
+            "padding-block-start": 0,
+            "padding-block-end": 30,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "static-blog-post-card": {
           "type": "_blog-post-card",
           "static": true,
@@ -275,18 +290,6 @@
             }
           },
           "block_order": []
-        },
-        "blog_sort_bar": {
-          "type": "blog-posts-sort",
-          "settings": {
-            "show_count": true,
-            "label": "Sort By:",
-            "default_sort": "most-recent",
-            "padding-block-start": 16,
-            "padding-block-end": 16,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          }
         }
       },
       "block_order": [
