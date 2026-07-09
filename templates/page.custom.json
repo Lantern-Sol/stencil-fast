@@ -1202,7 +1202,7 @@
                 "text": "<p><strong>Submit Your Design or Idea</strong><br/>Upload your logo, drawing, or idea through the form above. Be sure to <br/>include stencil sizing (height, width, stroke) and the size of the <br/>application area.<br/><br/><strong>Get a Quote</strong><br/>We quote you a price for your custom project. With your approval, our design team will begin on the proof.<br/><br/><strong>Review & Finalize</strong><br/>Our in-house design team will work with you to fine-tune your stencil to<br/> make sure it perfectly fits your needs and specifications.<br/><br/><strong>Quick Turnaround</strong><br/>Once approved, we’ll produce your custom stencil, typically within 24 <br/>hours, ensuring you get the highest quality stencil on the market when <br/>you need it. Our business hours are Mon-Fri, 8:30am-4:30pm eastern.<br/></p>",
                 "mobile_text": "",
                 "width": "fit-content",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "height_mode": "auto",
                 "desktop_height": "",
