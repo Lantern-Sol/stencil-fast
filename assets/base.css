@@ -5500,7 +5500,8 @@ body .metal-stencil-two a.button-custom ,
     outline:unset;
 }
 body .metal-stencil-two a.button-custom:hover,
-.just-ask a.button:hover{
+.just-ask a.button:hover,
+.smart-router .text-block a.button{
  background: #f6f7eb; color: #393e41;
   
 }
