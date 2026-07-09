@@ -196,6 +196,10 @@
       "other": "{{ count }} items"
     },
     "item_count_cutoff": "More than {{ count }} items",
+    "article_count": {
+      "one": "{{ count }} article",
+      "other": "{{ count }} articles"
+    },
     "language": "Language",
     "localization_region_and_language": "Region and language",
     "no_products_found": "No products found.",

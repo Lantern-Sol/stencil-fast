@@ -171,6 +171,8 @@
               "
               data-testid="blog-post-item"
               data-blog-index="{{ section.id }}-{{ forloop.index }}"
+              data-article-date="{{ article.published_at | date: '%s' }}"
+              data-article-title="{{ article.title | escape }}"
               {% if is_featured and featured_inline_style != blank %}style="{{ featured_inline_style }}"{% endif %}
             >
               {% content_for 'block', id: 'static-blog-post-card', type: '_blog-post-card', article: article %}
@@ -265,6 +267,8 @@
             "
             data-testid="blog-post-item"
             data-blog-index="{{ section.id }}-{{ forloop.index }}"
+            data-article-date="{{ article.published_at | date: '%s' }}"
+            data-article-title="{{ article.title | escape }}"
             {% if is_featured and featured_inline_style != blank %}style="{{ featured_inline_style }}"{% endif %}
           >
             {% content_for 'block', id: 'static-blog-post-card', type: '_blog-post-card', article: article %}
@@ -501,6 +505,9 @@
     },
     {
       "type": "@app"
+    },
+    {
+      "type": "blog-posts-sort"
     },
     {
       "type": "text"
