@@ -275,8 +275,23 @@
             }
           },
           "block_order": []
+        },
+        "blog_sort_bar": {
+          "type": "blog-posts-sort",
+          "settings": {
+            "show_count": true,
+            "label": "Sort By:",
+            "default_sort": "most-recent",
+            "padding-block-start": 16,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          }
         }
       },
+      "block_order": [
+        "blog_sort_bar"
+      ],
       "settings": {
         "layout_type": "grid",
         "columns": 3,

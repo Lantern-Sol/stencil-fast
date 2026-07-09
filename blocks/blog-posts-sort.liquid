@@ -1,0 +1,215 @@
+{%- liquid
+  assign block_settings = block.settings
+  assign default_sort = block_settings.default_sort | default: 'most-recent'
+  assign show_count = block_settings.show_count
+  assign sort_label = block_settings.label | default: 'Sort By:'
+  assign article_count = blog.articles.size
+-%}
+
+{%- if article_count > 0 -%}
+  <script
+    src="{{ 'blog-posts-sort.js' | asset_url }}"
+    type="module"
+    fetchpriority="low"
+  ></script>
+
+  <blog-posts-sort
+    class="blog-posts-sort spacing-style"
+    section-id="{{ section.id }}"
+    style="{% render 'spacing-style', settings: block_settings %}"
+    {{ block.shopify_attributes }}
+  >
+    {%- if show_count -%}
+      <p
+        class="blog-posts-sort__count"
+        data-testid="blog-articles-count"
+      >
+        {{- 'content.article_count' | t: count: article_count -}}
+      </p>
+    {%- else -%}
+      <span aria-hidden="true"></span>
+    {%- endif -%}
+
+    <div class="blog-posts-sort__control">
+      <label
+        class="blog-posts-sort__label"
+        for="BlogSort-{{ block.id }}"
+      >
+        {{- sort_label -}}
+      </label>
+
+      <div class="blog-posts-sort__select-wrapper">
+        <select
+          id="BlogSort-{{ block.id }}"
+          class="blog-posts-sort__select"
+          data-default-sort="{{ default_sort }}"
+        >
+          <option value="most-recent" {% if default_sort == 'most-recent' %}selected{% endif %}>Most Recent</option>
+          <option value="oldest" {% if default_sort == 'oldest' %}selected{% endif %}>Oldest</option>
+          <option value="title-ascending" {% if default_sort == 'title-ascending' %}selected{% endif %}>Title A–Z</option>
+          <option value="title-descending" {% if default_sort == 'title-descending' %}selected{% endif %}>Title Z–A</option>
+        </select>
+
+        <span class="blog-posts-sort__caret" aria-hidden="true">
+          <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+            <path d="M1 1L4.5 4.5L8 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </blog-posts-sort>
+{%- endif -%}
+
+{% stylesheet %}
+  .blog-posts-sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-md, 1rem);
+    font-size: var(--font-size--sm);
+    line-height: 1.2;
+  }
+
+  .blog-posts-sort__count {
+    margin: 0;
+    color: var(--color-foreground-subdued);
+  }
+
+  .blog-posts-sort__control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .blog-posts-sort__label {
+    color: var(--color-foreground);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .blog-posts-sort__select-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .blog-posts-sort__select {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    margin: 0;
+    padding: 0 20px 0 0;
+    background: transparent;
+    color: var(--color-foreground);
+    font: inherit;
+    line-height: 1.2;
+    cursor: pointer;
+    text-align: left;
+    text-align-last: left;
+    outline: none;
+  }
+
+  .blog-posts-sort__select option {
+    text-align: left;
+  }
+
+  .blog-posts-sort__caret {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    pointer-events: none;
+    color: var(--color-foreground);
+  }
+
+  .blog-posts-sort__caret svg {
+    display: block;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Blog sort bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_count",
+      "label": "Show article count",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Sort label",
+      "default": "Sort By:"
+    },
+    {
+      "type": "select",
+      "id": "default_sort",
+      "label": "Default sort",
+      "options": [
+        { "value": "most-recent", "label": "Most Recent" },
+        { "value": "oldest", "label": "Oldest" },
+        { "value": "title-ascending", "label": "Title A–Z" },
+        { "value": "title-descending", "label": "Title Z–A" }
+      ],
+      "default": "most-recent"
+    },
+    {
+      "type": "paragraph",
+      "content": "Sorting reorders the articles shown on the page. Turn off pagination in the section settings to sort the entire blog at once."
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start",
+      "label": "t:settings.left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end",
+      "label": "t:settings.right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog sort bar"
+    }
+  ]
+}
+{% endschema %}
