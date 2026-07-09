@@ -2,3 +2,9 @@
 .ups-sec .text-block p{
     text-transform:uppercase;
 letter-spacing:0.5px; font-size:20px;}
+.infinity-stencil-two .image-block img.image-block__image.border-style {
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    max-height: 400px;
+    object-position: top;
+}
