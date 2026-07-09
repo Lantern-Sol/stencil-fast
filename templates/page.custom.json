@@ -175,7 +175,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>On Call</h2>",
+                "text": "<h2><em>On Call</em></h2>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
