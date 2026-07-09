@@ -1393,7 +1393,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Shop now",
+            "label": "Get A Quote Now",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button",
@@ -1470,7 +1470,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": ""
+        "custom_class": "text-sec just-ask"
       }
     }
   },
