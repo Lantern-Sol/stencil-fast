@@ -715,7 +715,7 @@
                     "column_gap_mobile": 15
                   },
                   "blocks": {
-                    "image_YJE4bW": {
+                    "image_TRcBff": {
                       "type": "image",
                       "name": "t:names.image",
                       "settings": {
@@ -726,40 +726,7 @@
                         "image_ratio": "adapt",
                         "custom_ratio": "1 / 1",
                         "image_fit": "cover",
-                        "width": "fit-content",
-                        "custom_width": 33,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
-                        "height": "fit",
-                        "border": "none",
-                        "border_width": 1,
-                        "border_opacity": 100,
-                        "border_color": "",
-                        "border_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "use_mobile_padding": false,
-                        "padding-block-start-mobile": 0,
-                        "padding-block-end-mobile": 0,
-                        "padding-inline-start-mobile": 0,
-                        "padding-inline-end-mobile": 0
-                      },
-                      "blocks": {}
-                    },
-                    "image_DBk3A6": {
-                      "type": "image",
-                      "name": "t:names.image",
-                      "settings": {
-                        "image": "shopify://shop_images/infinity-3-2_700x.progressive_5c205355-7fbd-4d14-bed5-ea9c26dd2ac7.webp",
-                        "link": "",
-                        "hide_on_mobile": false,
-                        "hide_on_desktop": false,
-                        "image_ratio": "adapt",
-                        "custom_ratio": "1 / 1",
-                        "image_fit": "cover",
-                        "width": "fit-content",
+                        "width": "fill",
                         "custom_width": 100,
                         "width_mobile": "fill",
                         "custom_width_mobile": 100,
@@ -781,7 +748,40 @@
                       },
                       "blocks": {}
                     },
-                    "image_x38kM9": {
+                    "image_EBqJqP": {
+                      "type": "image",
+                      "name": "t:names.image",
+                      "settings": {
+                        "image": "shopify://shop_images/infinity-3-2_700x.progressive_5c205355-7fbd-4d14-bed5-ea9c26dd2ac7.webp",
+                        "link": "",
+                        "hide_on_mobile": false,
+                        "hide_on_desktop": false,
+                        "image_ratio": "adapt",
+                        "custom_ratio": "1 / 1",
+                        "image_fit": "cover",
+                        "width": "custom",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fit",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_color": "",
+                        "border_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "use_mobile_padding": false,
+                        "padding-block-start-mobile": 0,
+                        "padding-block-end-mobile": 0,
+                        "padding-inline-start-mobile": 0,
+                        "padding-inline-end-mobile": 0
+                      },
+                      "blocks": {}
+                    },
+                    "image_MAPYpK": {
                       "type": "image",
                       "name": "t:names.image",
                       "settings": {
@@ -816,9 +816,9 @@
                     }
                   },
                   "block_order": [
-                    "image_YJE4bW",
-                    "image_DBk3A6",
-                    "image_x38kM9"
+                    "image_TRcBff",
+                    "image_EBqJqP",
+                    "image_MAPYpK"
                   ]
                 },
                 "text_zTMDqr": {
@@ -1244,7 +1244,7 @@
             "type_preset_mobile": "rte",
             "mobile_font_size": "1rem",
             "mobile_custom_line_height": 1.5,
-            "text_color": "#393E41",
+            "text_color": "#393e41",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
