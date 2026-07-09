@@ -133,7 +133,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h1>Infinity Stencils: The Bridgeless Breakthrough</h1>",
+                "text": "<h3>Infinity Stencils: The Bridgeless Breakthrough</h3>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -154,7 +154,7 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "",
+                "text_color": "#393E41",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -194,7 +194,7 @@
                 "type_preset_mobile": "rte",
                 "mobile_font_size": "1rem",
                 "mobile_custom_line_height": 1.5,
-                "text_color": "",
+                "text_color": "#393E41",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -328,7 +328,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": ""
+        "custom_class": "pavement-stencil"
       }
     },
     "section_ExX6hy": {
