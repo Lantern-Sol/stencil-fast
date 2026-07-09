@@ -1093,11 +1093,53 @@
                 "padding-inline-end-mobile": 0
               },
               "blocks": {}
+            },
+            "text_V8WwBq": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Our technology, our team, and our techniques help you make your mark on the world.</p><p><strong>You can call us at any time for assistance: </strong><a href=\"tel:+18002505547\"><strong>(800) 250-5547<br/></strong></a><em>Mon – Fri: 8:30 am – 4:30 pm EST</em></p>",
+                "mobile_text": "",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "height_mode": "auto",
+                "desktop_height": "",
+                "mobile_height": "",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "enable_custom_font_weight": false,
+                "weight": "400",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "custom_line_height": 1.5,
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "type_preset_mobile": "rte",
+                "mobile_font_size": "1rem",
+                "mobile_custom_line_height": 1.5,
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "use_mobile_padding": false,
+                "padding-block-start-mobile": 0,
+                "padding-block-end-mobile": 0,
+                "padding-inline-start-mobile": 0,
+                "padding-inline-end-mobile": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_jJkRPe",
-            "text_ezCLGa"
+            "text_ezCLGa",
+            "text_V8WwBq"
           ]
         },
         "group_BcyV6K": {
