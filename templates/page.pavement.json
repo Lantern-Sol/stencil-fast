@@ -567,7 +567,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3>The Next Generation in Pavement Marking</h3>",
+                "text": "<h3><em>The Next Generation in Pavement Marking</em></h3>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
