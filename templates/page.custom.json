@@ -134,7 +134,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3>Custom Stencils </h3>",
+                "text": "<h2>Custom Stencils </h2>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
@@ -175,7 +175,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3>On Call</h3>",
+                "text": "<h2>On Call</h2>",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "normal",
