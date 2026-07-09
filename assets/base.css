@@ -5492,7 +5492,8 @@ body  .metal-stencil-sec .button:hover{
     color: #393e41;
 }
 body .metal-stencil-two a.button-custom ,
-.smart-router a.button{
+.smart-router a.button,
+.infinity-stencil a.button{
     font-weight: 500;
     border:none;
     letter-spacing:0.5px;
