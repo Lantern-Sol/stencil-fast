@@ -143,7 +143,7 @@
                     "type_preset_mobile": "rte",
                     "mobile_font_size": "1rem",
                     "mobile_custom_line_height": 1.5,
-                    "text_color": "#393E41",
+                    "text_color": "#FDFDFC",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -242,7 +242,7 @@
                     "type_preset_mobile": "rte",
                     "mobile_font_size": "1rem",
                     "mobile_custom_line_height": 1.5,
-                    "text_color": "#393E41",
+                    "text_color": "#FDFDFC",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -297,7 +297,7 @@
       "settings": {
         "content_direction": "column",
         "gap": 32,
-        "background_color": "#fdfdfc",
+        "background_color": "#393E41",
         "padding-block-start": 48,
         "padding-block-end": 50
       }
