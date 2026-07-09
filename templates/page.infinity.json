@@ -947,7 +947,7 @@
             "link": "",
             "hide_on_mobile": false,
             "hide_on_desktop": false,
-            "image_ratio": "square",
+            "image_ratio": "adapt",
             "custom_ratio": "1 / 1",
             "image_fit": "cover",
             "width": "fill",
