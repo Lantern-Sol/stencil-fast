@@ -25,7 +25,9 @@ body.template-page button#pc--opt-out-button:hover {
       background: #393E41;
 }
 @media only screen and (max-width:767px){
-body.template-page .text-block  h1{
+body.template-page .text-block  h1,
+body.template-page .text-block h1, body.template-page .text-block h2, body.template-page .text-block h3{
   font-size:24px;
 }
+
 }
