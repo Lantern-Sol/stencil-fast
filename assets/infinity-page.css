@@ -8,6 +8,7 @@ letter-spacing:0.5px; font-size:20px;}
     max-height: 400px;
     object-position: top;
 }
+.infinity-stencil  .image-block img{border-top-left-radius:80px;border-bottom-right-radius:80px; }
 @media only screen and (max-width:991px){
 .infinity-stencil .layout-panel-flex,
 .infinity-stencil-two .layout-panel-flex,
@@ -15,4 +16,5 @@ letter-spacing:0.5px; font-size:20px;}
 	padding-left: 0;
 	padding-right: 0;
 }
+.infinity-stencil  .image-block img{border-top-left-radius:80px;border-bottom-right-radius:80px; }
 }
