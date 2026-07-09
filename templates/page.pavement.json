@@ -652,7 +652,7 @@
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "button-custom",
-                "custom_button_background": "#E94F37",
+                "custom_button_background": "#393E41",
                 "custom_button_text": "#FDFDFC",
                 "custom_button_border": "{{ settings.color_palette.background }}",
                 "link_text_color": "",
