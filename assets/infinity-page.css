@@ -9,7 +9,8 @@ letter-spacing:0.5px; font-size:20px;}
     object-position: top;
 }
 @media only screen and (max-width:991px){
-.infinity-stencil .layout-panel-flex {
+.infinity-stencil .layout-panel-flex,
+.ups-sec .layout-panel-flex{
 	padding-left: 0;
 	padding-right: 0;
 }
