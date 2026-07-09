@@ -26,7 +26,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3><strong>Mylar Stencils for Flexible and Reliable Marking</strong></h3>",
+            "text": "<h3>Mylar Stencils for Flexible and Reliable Marking</h3>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
@@ -195,7 +195,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3><strong>Mylar Stencils for Flexible and Reliable Marking</strong></h3>",
+            "text": "<h3>Mylar Stencils for Flexible and Reliable Marking</h3>",
             "mobile_text": "",
             "width": "fit-content",
             "max_width": "normal",
