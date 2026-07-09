@@ -16,5 +16,5 @@ letter-spacing:0.5px; font-size:20px;}
 	padding-left: 0;
 	padding-right: 0;
 }
-.infinity-stencil  .image-block img{border-top-left-radius:80px;border-bottom-right-radius:80px; }
+.infinity-stencil  .image-block img{border-top-left-radius:50px;border-bottom-right-radius:50px; }
 }
