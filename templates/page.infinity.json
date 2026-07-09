@@ -943,11 +943,11 @@
         "image_GfPCeE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/infinity-1_b623eece-86aa-435b-90f8-01962d5a2688.jpg",
+            "image": "shopify://shop_images/infinity-4_1000x.progressive_648a0d22-114b-4d78-ad9f-ab614da82abc.webp",
             "link": "",
             "hide_on_mobile": false,
             "hide_on_desktop": false,
-            "image_ratio": "landscape",
+            "image_ratio": "portrait",
             "custom_ratio": "1 / 1",
             "image_fit": "cover",
             "width": "fill",
