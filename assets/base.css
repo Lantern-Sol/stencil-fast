@@ -5501,7 +5501,7 @@ body .metal-stencil-two a.button-custom ,
 }
 body .metal-stencil-two a.button-custom:hover,
 .just-ask a.button:hover,
-.smart-router .text-block a.button{
+.smart-router  a.button{
  background: #f6f7eb; color: #393e41;
   
 }
