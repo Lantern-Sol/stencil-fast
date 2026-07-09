@@ -210,7 +210,7 @@
             "link": "",
             "hide_on_mobile": false,
             "hide_on_desktop": false,
-            "image_ratio": "landscape",
+            "image_ratio": "square",
             "custom_ratio": "1 / 1",
             "image_fit": "cover",
             "width": "fill",
@@ -295,7 +295,7 @@
         "padding-block-end-mobile": 0,
         "padding-inline-start-mobile": 0,
         "padding-inline-end-mobile": 0,
-        "custom_class": "precision-sec"
+        "custom_class": ""
       }
     }
   },
