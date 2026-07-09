@@ -825,7 +825,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>With Infinity Stencils, <br/>every letter and number sprays clean in one shot. You get complete <br/>coverage, perfect lines, and no need to circle back for touch-ups.</p>",
+                    "text": "<p>With Infinity Stencils, every letter and number sprays clean in one shot. You get complete <br/>coverage, perfect lines, and no need to circle back for touch-ups.</p>",
                     "mobile_text": "",
                     "width": "100%",
                     "max_width": "normal",
@@ -846,7 +846,7 @@
                     "type_preset_mobile": "rte",
                     "mobile_font_size": "1rem",
                     "mobile_custom_line_height": 1.5,
-                    "text_color": "",
+                    "text_color": "#393E41",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
