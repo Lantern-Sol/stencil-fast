@@ -2068,10 +2068,10 @@
                 "text_qq8LkY": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Most custom stencils are produced and shipped <br/>within a single business days. Depending on the size and complexity of <br/>the order, we may require more time.</p>",
+                    "text": "<p>Most custom stencils are produced and shipped within a single business days. Depending on the size and complexity of the order, we may require more time.</p>",
                     "mobile_text": "",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "height_mode": "auto",
                     "desktop_height": "",
@@ -2125,7 +2125,7 @@
                     "text": "<p>Yes! We specialize in<strong> large custom stencils a</strong>nd complex designs. Just let us know your requirements in the quote form.</p>",
                     "mobile_text": "",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "height_mode": "auto",
                     "desktop_height": "",
@@ -2176,10 +2176,10 @@
                 "text_pELKzD": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We use a proprietary 1/10\" orthopedic grade <br/>low-density polyethylene plastic that is superior in use and durability <br/>to our competitors' 1/8\" Maxi. Stencils are also available in 1/16” <br/>LDPE, Aluminum, UHMW, Mylar, and Wood.</p>",
+                    "text": "<p>We use a proprietary 1/10\" orthopedic grade low-density polyethylene plastic that is superior in use and durability <br/>to our competitors' 1/8\" Maxi. Stencils are also available in 1/16” LDPE, Aluminum, UHMW, Mylar, and Wood.</p>",
                     "mobile_text": "",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "height_mode": "auto",
                     "desktop_height": "",
