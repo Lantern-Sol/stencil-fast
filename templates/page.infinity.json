@@ -709,7 +709,7 @@
                     "custom_width": 100,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
-                    "mobile_display": "flex",
+                    "mobile_display": "grid",
                     "columns_mobile": 1,
                     "flex_wrap": true,
                     "column_gap_mobile": 15

@@ -23,4 +23,7 @@ letter-spacing:0.5px; font-size:20px;}
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 }
+.ups-sec .image-block {
+	margin-bottom: 40px;
+}
 }
