@@ -12,4 +12,7 @@ body.template-page .custom-accordion .text-block h3 {
 .call-stencil .layout-panel-flex,
 .streamline-operation .layout-panel-flex,
 .custom-section-content .layout-panel-flex{padding-left:0; padding-right:0;}
+.custom-accordion summary.details__header {
+    font-size: 16px;
+}
 }
