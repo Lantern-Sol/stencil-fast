@@ -825,7 +825,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>With Infinity Stencils, every letter and number sprays clean in one shot. You get complete coverage, perfect lines, and no need to circle back for touch-ups.</p>",
+                    "text": "<p>With Infinity Stencils, every letter and number sprays   </p><p>clean in one shot. You get complete coverage, perfect lines, and no need to circle back for touch-ups.</p>",
                     "mobile_text": "",
                     "width": "100%",
                     "max_width": "none",
