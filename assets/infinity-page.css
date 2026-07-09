@@ -8,3 +8,8 @@ letter-spacing:0.5px; font-size:20px;}
     max-height: 400px;
     object-position: top;
 }
+
+.infinity-stencil .layout-panel-flex {
+	padding-left: 0;
+	padding-right: 0;
+}
