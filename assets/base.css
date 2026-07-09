@@ -5610,7 +5610,7 @@ body .shopify-policy__container {
 .cart-drawer__inner  .cart-discount__label {
     font-size: 16px;   color: #393E41;
 }
-.pavement-stencil .image-block img{border-top-left-radius:80px;border-bottom-right-radius:80px; max-height:400px; object-fit:contain;}
+.pavement-stencil .image-block img{border-top-left-radius:80px;border-bottom-right-radius:80px; }
 .text-sec{max-width:800px; margin:auto;}
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
