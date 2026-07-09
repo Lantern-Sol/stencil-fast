@@ -6,7 +6,8 @@
     letter-spacing: 0.5px;
     margin:0;
 }
-.precision-sec  .text-block  h2{
+.precision-sec  .text-block  h2,
+.pavement .text-block  h2{
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -14,7 +15,8 @@
     font-style:italic;
 }
 .precision-sec  .text-block   p,
-.text-sec  .text-block  p{
+.text-sec  .text-block  p,
+.pavement .text-block  p{
   	font-family: var( --secondary-font); 
 }
 .precision-sec  .group-block-content   .button,
