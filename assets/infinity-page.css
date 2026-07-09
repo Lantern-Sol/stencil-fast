@@ -18,7 +18,8 @@ letter-spacing:0.5px; font-size:20px;}
 }
 .infinity-stencil  .image-block img{border-top-left-radius:50px;border-bottom-right-radius:50px; }
 .infinity-stencil-two .image-block img.image-block__image.border-stylem,
-.ups-sec .image-block img {
+.ups-sec .image-block img ,
+.infinity-stencil-two .image-block img.image-block__image.border-style{
 	border-top-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 }
