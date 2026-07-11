@@ -60,6 +60,7 @@ body .quick-form .globo-form-id-62465 .globo-form-app .globo-form-control.has-er
 	animation: unset !important;
 	box-shadow: 0px 3px 5px 0 rgba(0,0,0,0.5);
 }
+.call-stencil .slideshow-controls{display:none;}
 .call-stencil slideshow-arrows .slideshow-control span {
 	display: none;
 }
