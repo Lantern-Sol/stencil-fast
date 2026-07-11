@@ -8,7 +8,7 @@
 body.template-page .custom-accordion .text-block h3 {
     margin: auto;
 }
-.quick-form .globo-form-app {
+.quick-form .globo-form-id-62465  .globo-form-app {
     width: 100%;
     max-width: 900px;
     background: transparent !important;
@@ -16,6 +16,9 @@ body.template-page .custom-accordion .text-block h3 {
 .quick-form .globo-form-app .globo-form-input input, .quick-form .globo-form-app .globo-form-input select,
 .quick-form .globo-form-app .globo-form-input textarea {
     background-color: #f9faf5 !important;
+}
+body .quick-form .globo-form-id-62465 .globo-form-app small.help-text.globo-description {
+    color: red;
 }
 @media only screen and (max-width:991px){
 .call-stencil .layout-panel-flex,
