@@ -25,6 +25,15 @@ body .quick-form .globo-form-id-62465 .globo-form-app .globo-form-input {
     background: #f9faf5;
     border-radius: 8px;
 }
+body .quick-form .globo-form-id-62465 .globo-form-app .gfb__footer.wizard__footer button.action.next.submit {
+    min-width: 230px;
+    min-height: 48px;
+    background: #E94F37;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-style: italic;
+}
 @media only screen and (max-width:991px){
 .call-stencil .layout-panel-flex,
 .streamline-operation .layout-panel-flex,
