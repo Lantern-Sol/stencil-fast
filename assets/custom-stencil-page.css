@@ -47,6 +47,9 @@ body .quick-form .globo-form-id-62465 .globo-form-app label.material_filled-labe
 body .quick-form .globo-form-id-62465 .globo-form-app .globo-g-recaptcha div {
     margin: auto;
 }
+body .quick-form .globo-form-id-62465 .globo-form-app .globo-form-control.has-error .globo-g-recaptcha + input + .messages {
+	text-align: center;
+}
 @media only screen and (max-width:991px){
 .call-stencil .layout-panel-flex,
 .streamline-operation .layout-panel-flex,
