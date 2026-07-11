@@ -102,7 +102,7 @@
       "settings": {
         "content_direction": "column",
         "gap": 32,
-        "background_color": "#fdfdfc",
+        "background_color": "#F6F7EB",
         "padding-block-start": 48,
         "padding-block-end": 50
       }
