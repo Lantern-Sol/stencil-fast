@@ -10,7 +10,7 @@ body.template-page .custom-accordion .text-block h3 {
 }
 .quick-form .globo-form-app {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
 }
 @media only screen and (max-width:991px){
 .call-stencil .layout-panel-flex,
