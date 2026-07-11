@@ -93,3 +93,15 @@ body .quick-form .globo-form-id-62465 .globo-form-app .globo-form-control.has-er
 }
 .call-stencil .image-block img{border-top-left-radius:50px;border-bottom-right-radius:50px;} 
 }
+@media only screen and (max-width:991px){
+.call-stencil  slideshow-arrows .slideshow-control {
+	background: #e94f37;
+	width: 30px;
+	height: 30px;
+	display: block !important;
+	opacity: 1;
+	border-radius: 100%;
+	animation: unset !important;
+	box-shadow: 0px 3px 5px 0 rgba(0,0,0,0.5);
+}
+}
