@@ -13,7 +13,8 @@ body.template-page .custom-accordion .text-block h3 {
     max-width: 900px;
     background: transparent !important;
 }
-.quick-form .globo-form-app .globo-form-input input, .quick-form .globo-form-app .globo-form-input select {
+.quick-form .globo-form-app .globo-form-input input, .quick-form .globo-form-app .globo-form-input select,
+.quick-form .globo-form-app .globo-form-input textarea {
     background-color: #f9faf5 !important;
 }
 @media only screen and (max-width:991px){
