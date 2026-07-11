@@ -11,11 +11,11 @@ body.template-page .custom-accordion .text-block h3 {
 .quick-form .globo-form-id-62465  .globo-form-app {
     width: 100%;
     max-width: 900px;
-    background: transparent !important;
+    background: transparent ;
 }
-.quick-form .globo-form-app .globo-form-input input, .quick-form .globo-form-app .globo-form-input select,
-.quick-form .globo-form-app .globo-form-input textarea {
-    background-color: #f9faf5 !important;
+.quick-form .globo-form-id-62465  .globo-form-app .globo-form-input input, .quick-form .globo-form-id-62465  .globo-form-app .globo-form-input select,
+.quick-form .globo-form-id-62465  .globo-form-app .globo-form-input textarea {
+    background-color: #f9faf5 ;
 }
 body .quick-form .globo-form-id-62465 .globo-form-app small.help-text.globo-description {
     color: red;
