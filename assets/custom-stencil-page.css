@@ -35,7 +35,10 @@ body .quick-form .globo-form-id-62465 .globo-form-app .gfb__footer.wizard__foote
     font-style: italic;
     font-family: var(--font-h2--family);
 }
-
+body .quick-form .globo-form-id-62465 .globo-form-app .gfb__footer.wizard__footer button.action.next.submit:hover {
+    background: #f6f7eb;
+    color: #393e41;
+}
 @media only screen and (max-width:991px){
 .call-stencil .layout-panel-flex,
 .streamline-operation .layout-panel-flex,
