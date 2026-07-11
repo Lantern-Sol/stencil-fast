@@ -44,6 +44,9 @@ body .quick-form .globo-form-id-62465 .globo-form-app label.material_filled-labe
     color: #393e41 !important;
     letter-spacing: 0.5px;
 }
+body .quick-form .globo-form-id-62465 .globo-form-app .globo-g-recaptcha div {
+    margin: auto;
+}
 @media only screen and (max-width:991px){
 .call-stencil .layout-panel-flex,
 .streamline-operation .layout-panel-flex,
