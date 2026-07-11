@@ -33,7 +33,9 @@ body .quick-form .globo-form-id-62465 .globo-form-app .gfb__footer.wizard__foote
     font-weight: 500;
     letter-spacing: 0.5px;
     font-style: italic;
+    font-family: var(--font-h2--family);
 }
+
 @media only screen and (max-width:991px){
 .call-stencil .layout-panel-flex,
 .streamline-operation .layout-panel-flex,
