@@ -91,6 +91,8 @@
     "variant_button_border_width": 1,
     "variant_button_radius": 14,
     "variant_button_width": "equal-width-buttons",
+    "default_collection_banner": "shopify://shop_images/collection-banner-default.svg",
+    "default_collection_banner_mobile": "shopify://shop_images/collection-banner-default-mobile.svg",
     "popover_border": "none",
     "content_for_index": [],
     "blocks": {
