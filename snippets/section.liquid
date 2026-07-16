@@ -26,6 +26,16 @@
   if section.settings.background_media != blank and section.settings.background_media != 'none'
     assign skip_contrast = true
   endif
+
+  # On collection pages, when the collection has no banner image of its own
+  # (custom.banner metafield empty -> background_image blank), fall back to the
+  # theme's default collection banner (Theme settings > Collection).
+  assign default_collection_banner = ''
+  assign default_collection_banner_mobile = ''
+  if request.page_type == 'collection' and section.settings.background_media == 'image' and section.settings.background_image == blank and section.settings.custom_class contains 'inner-banner'
+    assign default_collection_banner = settings.default_collection_banner
+    assign default_collection_banner_mobile = settings.default_collection_banner_mobile
+  endif
 -%}
 {% render 'contrast-override',
   background_color: background_color,
@@ -57,14 +67,23 @@
   "
 >
   <div class="custom-section-background">
-    {% render 'background-media',
-      background_media: section.settings.background_media,
-      background_video: section.settings.video,
-      background_video_position: section.settings.video_position,
-      background_image: section.settings.background_image,
-      background_image_mobile: section.settings.background_image_mobile,
-      background_image_position: section.settings.background_image_position
-    %}
+    {% if default_collection_banner != blank %}
+      {% render 'background-media',
+        background_media: 'image',
+        background_image: default_collection_banner,
+        background_image_mobile: default_collection_banner_mobile,
+        background_image_position: section.settings.background_image_position
+      %}
+    {% else %}
+      {% render 'background-media',
+        background_media: section.settings.background_media,
+        background_video: section.settings.video,
+        background_video_position: section.settings.video_position,
+        background_image: section.settings.background_image,
+        background_image_mobile: section.settings.background_image_mobile,
+        background_image_position: section.settings.background_image_position
+      %}
+    {% endif %}
   </div>
 
   {%- if has_floating_media -%}

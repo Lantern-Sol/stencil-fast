@@ -2653,5 +2653,25 @@
         "default": "equal-width-buttons"
       }
     ]
+  },
+  {
+    "name": "Collection",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Fallback banner shown on collection pages that don't have their own banner image set. Individual collections can still override this with the \"banner\" / \"mobile_banner\" metafields."
+      },
+      {
+        "type": "image_picker",
+        "id": "default_collection_banner",
+        "label": "Default collection banner"
+      },
+      {
+        "type": "image_picker",
+        "id": "default_collection_banner_mobile",
+        "label": "Default collection banner (mobile)",
+        "info": "Optional. Falls back to the desktop image on small screens when empty."
+      }
+    ]
   }
 ]
