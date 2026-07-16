@@ -189,6 +189,6 @@
     padding-bottom: 0;
 }
 .blog-left-sec {
-	position: relative;
+	position: static;
 }
 }
