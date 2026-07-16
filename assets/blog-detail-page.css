@@ -188,4 +188,7 @@
 .template-article .breadcrumbs {
     padding-bottom: 0;
 }
+.blog-left-sec {
+	position: relative;
+}
 }
