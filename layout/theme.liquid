@@ -122,10 +122,11 @@
         (function setHeaderMenuStyle() {
           const headerComponent = document.querySelector('#header-component');
           if (headerComponent) {
-            const isTouchDevice = 'ontouchstart' in window && navigator.maxTouchPoints > 0;
+            // Keep in sync with setHeaderMenuStyle()/isTouchPrimary() in assets/utilities.js.
+            const isTouchPrimary = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
             const overflowList = headerComponent?.querySelector('overflow-list');
             const hasReachedMinimum = overflowList && overflowList.hasAttribute('minimum-reached');
-            headerComponent.dataset.menuStyle = isTouchDevice || hasReachedMinimum ? 'drawer' : 'menu';
+            headerComponent.dataset.menuStyle = isTouchPrimary || hasReachedMinimum ? 'drawer' : 'menu';
           }
         })();
       </script>

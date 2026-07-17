@@ -88,6 +88,8 @@ upstream release changes any of these, expect a conflict to resolve.
 | --------------------------------------- | ---------------------------------------------------- |
 | `config/settings_schema.json`           | Branded as "Horizon: LS Mod" by Lantern Sol          |
 | `assets/base.css`                       | Responsive mobile font-size for primary button       |
+| `assets/utilities.js`                   | `isTouchPrimary()`; header drawer gated on it        |
+| `layout/theme.liquid`                   | Inline `setHeaderMenuStyle` mirrors `isTouchPrimary` |
 | `sections/hero.liquid`                  | `parallax` + `hidden--mobile` modifier classes       |
 | `snippets/text.liquid`                  | `mobile_text` support + ® superscript replacement    |
 | `snippets/slideshow.liquid`             | Expanded timeline scope, slides-to-scroll, auto-hide |

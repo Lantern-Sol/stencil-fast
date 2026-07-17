@@ -415,6 +415,16 @@ export function isTouchDevice() {
 }
 
 /**
+ * Check if touch is the device's primary input, i.e. it cannot hover and its pointer is coarse.
+ * True for phones and tablets; false for touchscreen laptops, which report a touch digitizer
+ * via `isTouchDevice()` but still drive a fine, hovering pointer.
+ * @returns {boolean} True if the device is touch-primary, false otherwise
+ */
+export function isTouchPrimary() {
+  return matchMedia('(hover: none) and (pointer: coarse)').matches;
+}
+
+/**
  * Clamps a number between a minimum and maximum value.
  * @param {number} value - The input number to clamp.
  * @param {number} min - The minimum value.
@@ -761,7 +771,9 @@ export function setHeaderMenuStyle() {
     window.requestAnimationFrame(() => {
       const overflowList = headerComponent?.querySelector('overflow-list');
       const hasReachedMinimum = overflowList && overflowList.hasAttribute('minimum-reached');
-      headerComponent.dataset.menuStyle = isTouchDevice() || hasReachedMinimum ? 'drawer' : 'menu';
+      // Gate on touch-primary, not merely touch-capable: the mega menu opens on pointerenter,
+      // so the drawer fallback is only needed where hover is unavailable.
+      headerComponent.dataset.menuStyle = isTouchPrimary() || hasReachedMinimum ? 'drawer' : 'menu';
     });
   }
 }
