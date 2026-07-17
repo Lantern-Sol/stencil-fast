@@ -761,7 +761,13 @@ export function setHeaderMenuStyle() {
     window.requestAnimationFrame(() => {
       const overflowList = headerComponent?.querySelector('overflow-list');
       const hasReachedMinimum = overflowList && overflowList.hasAttribute('minimum-reached');
-      headerComponent.dataset.menuStyle = isTouchDevice() || hasReachedMinimum ? 'drawer' : 'menu';
+      // On large screens the inline menu should be used even on touch devices
+      // (e.g. touch laptops, or DevTools touch emulation), so the hamburger only
+      // appears when the menu genuinely overflows. Touch forces the drawer solely
+      // on small screens where there is no room for the inline menu.
+      const isSmallScreen = window.matchMedia('(max-width: 749px)').matches;
+      headerComponent.dataset.menuStyle =
+        (isTouchDevice() && isSmallScreen) || hasReachedMinimum ? 'drawer' : 'menu';
     });
   }
 }
