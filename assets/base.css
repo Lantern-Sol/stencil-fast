@@ -5638,7 +5638,9 @@ body .tabbed-mega-menu__card-button {
 }
 }
 @media only screen and (min-width:992px){
-
+search-button.search-action {
+    min-width: 50px;
+}
 } 
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
