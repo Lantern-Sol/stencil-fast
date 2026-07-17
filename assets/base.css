@@ -5620,7 +5620,7 @@ body .theme-drawer__badge {
     font-size: 13px;
 }
 body .header__column--right {
-    gap: 25px;
+    gap: 22px;
 }
 @media only screen and (min-width:768px) and (max-width:991px){
 body .tabbed-mega-menu__panel {
