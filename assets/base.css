@@ -5641,7 +5641,7 @@ body .tabbed-mega-menu__card-button {
 body .header__column--right header-actions {
 	margin-inline-start: -15px;
 }
-}
+} 
 @media only screen and (max-width:767px){
 .pagination__list li.pagination__item {
 	width: 36px;
