@@ -5648,4 +5648,11 @@ body .tabbed-mega-menu__card-button {
 	font-size: 32px;
 
 }
+.header-actions__cart-icon .cart-bubble {
+    position: absolute;
+    width: 20px;
+    top: var(--cart-bubble-top);
+    right: 20px;
+    height: 20px;
+}
 }
