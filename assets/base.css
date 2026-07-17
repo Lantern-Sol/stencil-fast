@@ -5655,4 +5655,7 @@ body .tabbed-mega-menu__card-button {
 .header-actions__cart-icon .cart-bubble span.cart-bubble__text-count {
     font-size: 14px;
 }
+body .menu-drawer-container .header__icon--summary {
+	padding-left: 0;
+}
 }
