@@ -5637,7 +5637,7 @@ body .tabbed-mega-menu__card-button {
 	font-size: 14px;
 }
 }
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:768px){
 body .header__column--right header-actions {
 	margin-inline-start: -15px;
 }
