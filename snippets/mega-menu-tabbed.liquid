@@ -435,9 +435,17 @@
 }
 
 @media only screen and (min-width:768px) and (max-width:991px){
-.tabbed-mega-menu__panel.is-active {
+.tabbed-mega-menu__panel {
 	display: flex;
 	align-items: start;
+}
+.tabbed-mega-menu__subcategories {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 32px;
+	align-content: start;
+	flex-direction: column;
+	width: 50%;
 }
   }
 @media only screen and (max-width:991px){
