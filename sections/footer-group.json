@@ -718,7 +718,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>stencils@stencilfast.com</p>",
+                        "text": "<p><a href=\"mailto:stencils@stencilfast.com\" title=\"mailto:stencils@stencilfast.com\">stencils@stencilfast.com</a></p>",
                         "mobile_text": "",
                         "width": "fit-content",
                         "max_width": "normal",
