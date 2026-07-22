@@ -29,7 +29,7 @@
       >
         {%- if hover_icon != blank -%}
           <div class="card-hover-panel__icon">
-            {{ hover_icon | image_url: width: 160 | image_tag: loading: 'lazy', width: 80, height: 80, alt: '' }}
+            {{ hover_icon | image_url: width: 80 | image_tag: loading: 'lazy', width: 40, height: 40, alt: '' }}
           </div>
         {%- endif -%}
         <p class="card-hover-panel__tagline">{{ hover_tagline }}</p>
