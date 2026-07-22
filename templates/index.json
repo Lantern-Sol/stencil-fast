@@ -1852,6 +1852,7 @@
               "name": "t:names.product_buy_buttons",
               "settings": {
                 "stacking": false,
+                "show_price": false,
                 "text_color": "",
                 "show_pickup_availability": false,
                 "gift_card_form": false,
@@ -2026,7 +2027,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/McDonalds-logo_300x_png.png",
+                "image": "shopify://shop_images/Frame_2147228039_1.png",
                 "link": "",
                 "hide_on_mobile": false,
                 "hide_on_desktop": false,
