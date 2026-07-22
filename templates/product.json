@@ -984,6 +984,7 @@
                 },
                 "accordion_row_BPcVyC": {
                   "type": "_accordion-row",
+                  "disabled": true,
                   "settings": {
                     "heading": "Material Guide",
                     "open_by_default": false,
@@ -1038,6 +1039,7 @@
                 },
                 "accordion_row_rCDaWq": {
                   "type": "_accordion-row",
+                  "disabled": true,
                   "settings": {
                     "heading": "Shipping & Returns",
                     "open_by_default": false,
@@ -1324,6 +1326,7 @@
               "name": "t:names.product_buy_buttons",
               "settings": {
                 "stacking": false,
+                "show_price": false,
                 "text_color": "",
                 "show_pickup_availability": true,
                 "gift_card_form": false,
@@ -1757,6 +1760,7 @@
               "name": "t:names.product_buy_buttons",
               "settings": {
                 "stacking": false,
+                "show_price": false,
                 "text_color": "",
                 "show_pickup_availability": false,
                 "gift_card_form": false,
