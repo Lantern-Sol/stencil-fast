@@ -631,7 +631,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "{{ closest.product.metafields.custom.short_description | metafield_tag }}",
+                "text": "{{ closest.product.description }}",
                 "mobile_text": "",
                 "width": "fit-content",
                 "max_width": "none",
