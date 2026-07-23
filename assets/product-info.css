@@ -165,6 +165,12 @@
 .product-details .interlock-option-box .mw-stack>.mw-stack__item .mw-option__value.mw-option__value--selected {
     border-color: #393E41;
 }
+form.variant-picker__form fieldset.variant-option.variant-option--buttons label.variant-option__button-label {
+    width: 70px;
+    min-width: unset;
+    min-height: 53px;
+    text-align: left;
+}
 @media only screen and (min-width:768px){
 .product__media-wrapper,
  .product-information__media {
