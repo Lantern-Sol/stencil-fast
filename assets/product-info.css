@@ -289,3 +289,12 @@ form.variant-picker__form {
     counter-reset: option-step;
 }
 
+/* Hide all fieldsets after the first one by default */
+.variant-picker__form fieldset:not(:first-of-type) {
+  display: none !important;
+}
+
+/* Show fieldset when JS marks it as visible */
+.variant-picker__form fieldset.is-step-visible {
+  display: flex !important;
+}
