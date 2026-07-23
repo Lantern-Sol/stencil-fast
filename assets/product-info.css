@@ -197,6 +197,11 @@
     min-width: 90px;
     min-height: unset;
 }
+.product-details form.variant-picker__form fieldset.variant-option.variant-option--buttons:nth-child(3) label.variant-option__button-label {
+    width: auto;
+    min-width: 100px;
+    min-height: unset;
+}
 @media only screen and (min-width:768px){
 .product__media-wrapper,
  .product-information__media {
