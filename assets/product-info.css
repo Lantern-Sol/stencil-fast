@@ -209,3 +209,23 @@
     margin-bottom: 20px;
 }
 }
+
+.variant-picker__form fieldset legend::before {
+    counter-increment: option-step;
+    content: counter(option-step);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: #e33b2b;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+form.variant-picker__form {
+    counter-reset: option-step;
+}
