@@ -171,6 +171,9 @@
     min-height: 53px;
     text-align: left;
 }
+.product-details .variant-option {
+    display: flex;
+}
 @media only screen and (min-width:768px){
 .product__media-wrapper,
  .product-information__media {
