@@ -189,6 +189,9 @@
  .product-details .variant-option__button-label:has(:checked):hover .variant-option__button-label__pill {
     background-color:transparent;
 }
+.product-details  .variant-option__button-label:has(input:checked) {
+    border: 2px solid #121212 !important;
+}
 @media only screen and (min-width:768px){
 .product__media-wrapper,
  .product-information__media {
