@@ -129,5 +129,10 @@
         "foreground": "#000000"
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".announcement-bar__text {padding-bottom: 2px;}"
+    ]
   }
 }
