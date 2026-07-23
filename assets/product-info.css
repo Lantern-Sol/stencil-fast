@@ -180,6 +180,8 @@
 .product-details form.variant-picker__form fieldset.variant-option.variant-option--buttons label.variant-option__button-label span.variant-option__button-label__text {
     text-align: left;
     line-height: normal;
+    color: #393e41;
+    font-size: 14px;
 }
 .product-details  .variant-option__button-label__pill {
     background: transparent;
