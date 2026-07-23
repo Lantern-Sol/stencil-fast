@@ -192,6 +192,9 @@
 .product-details  .variant-option__button-label:has(input:checked) {
     border: 2px solid #121212 !important;
 }
+.product-details form.variant-picker__form fieldset.variant-option.variant-option--buttons label.variant-option__button-label{
+    
+}
 @media only screen and (min-width:768px){
 .product__media-wrapper,
  .product-information__media {
