@@ -218,6 +218,21 @@
     margin: auto;
     border: 2px solid #d1d5db;
 }
+.product-details form.variant-picker__form fieldset.variant-option.variant-option--buttons:nth-child(3) label.variant-option__button-label:after {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    content: "";
+    left: 5px;
+    top: 0;
+    z-index: 999;
+    transform: unset;
+    position: absolute;
+    border-radius: 100%;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid #d1d5db;
+}
 @media only screen and (min-width:768px){
 .product__media-wrapper,
  .product-information__media {
