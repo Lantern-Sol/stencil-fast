@@ -267,7 +267,7 @@ form.variant-picker__form {
     counter-reset: option-step;
 }
 
-/* Target the specific option group */
+/* Container column layout */
 fieldset[data-option-id*="stencil-fast-interlock"] {
   display: flex !important;
   flex-direction: column !important;
@@ -275,43 +275,56 @@ fieldset[data-option-id*="stencil-fast-interlock"] {
   width: auto !important;
 }
 
-/* Reset the label box styling into inline radio rows */
+/* Reset the label into a horizontal inline-flex row */
+fieldset[data-option-id*="stencil-fast-interlock"] label,
 fieldset[data-option-id*="stencil-fast-interlock"] .variant-option__button-label {
   display: inline-flex !important;
+  flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-start !important;
-  width: auto !important;
-  max-width: max-content !important;
-  min-height: unset !important;
-  padding: 4px 8px !important;
+  width: max-content !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 4px 0 !important;
   margin: 0 !important;
   background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
+  outline: none !important;
   box-shadow: none !important;
+  border-radius: 0 !important;
   cursor: pointer !important;
 }
 
-/* Hide theme borders / active background states on the label */
-fieldset[data-option-id*="stencil-fast-interlock"] input + .variant-option__button-label {
+/* Ensure selected/hover states don't re-apply borders or backgrounds */
+fieldset[data-option-id*="stencil-fast-interlock"] input:checked + label,
+fieldset[data-option-id*="stencil-fast-interlock"] input:checked + .variant-option__button-label,
+fieldset[data-option-id*="stencil-fast-interlock"] label:hover,
+fieldset[data-option-id*="stencil-fast-interlock"] .variant-option__button-label:hover {
   border: none !important;
+  background: transparent !important;
   background-color: transparent !important;
+  box-shadow: none !important;
 }
 
-/* Create the radio circle */
+/* Create the radio circle directly inline */
 fieldset[data-option-id*="stencil-fast-interlock"] .variant-option__button-label::before {
   content: "" !important;
   display: inline-block !important;
   width: 18px !important;
   height: 18px !important;
   min-width: 18px !important;
+  min-height: 18px !important;
   border: 2px solid #666 !important;
   border-radius: 50% !important;
   margin-right: 10px !important;
   box-sizing: border-box !important;
   background-color: #fff !important;
+  flex-shrink: 0 !important;
 }
 
-/* Radio Checked State */
+/* Checked state - outer ring and inner dot */
 fieldset[data-option-id*="stencil-fast-interlock"] input:checked + .variant-option__button-label::before {
   border-color: #000 !important;
   background-color: #000 !important;
