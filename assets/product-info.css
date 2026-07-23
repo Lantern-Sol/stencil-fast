@@ -218,10 +218,10 @@
     margin: auto;
     border: 2px solid #d1d5db;
 }
-.product-details form.variant-picker__form fieldset.variant-option.variant-option--buttons:nth-child(3) label.variant-option__button-label:after {
+.product-details form.variant-picker__form fieldset.variant-option.variant-option--buttons:nth-child(3) .variant-option__button-label:has(input:checked):after {
     width: 12px;
     height: 12px;
-    background: #fff;
+    background: red;
     content: "";
     left: 5px;
     top: 0;
