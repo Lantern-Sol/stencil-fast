@@ -288,26 +288,4 @@
 form.variant-picker__form {
     counter-reset: option-step;
 }
-/* Hide step 2, step 3, etc. by default */
-.variant-picker__form fieldset[data-fieldset-index]:not([data-fieldset-index="0"]) {
-  display: none !important;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
 
-/* Class to reveal a step */
-.variant-picker__form fieldset[data-fieldset-index].is-visible {
-  display: flex !important;
-  opacity: 1;
-}
-
-/* Optionally hide the quantity and Add to Cart until all steps are chosen */
-.variant-picker__form ~ .product-form__buttons,
-.variant-picker__form ~ .buy-buttons {
-  display: none !important;
-}
-
-.variant-picker__form ~ .product-form__buttons.is-visible,
-.variant-picker__form ~ .buy-buttons.is-visible {
-  display: flex !important;
-}
