@@ -267,27 +267,39 @@ form.variant-picker__form {
     counter-reset: option-step;
 }
 
-/* Container column layout */
+/* 1. Force fieldset to act as a standard vertical block */
 fieldset[data-option-id*="stencil-fast-interlock"] {
   display: flex !important;
   flex-direction: column !important;
+  align-items: flex-start !important;
   gap: 12px !important;
-  width: auto !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
 }
 
-/* Reset the label into a horizontal inline-flex row */
+/* 2. Target ALL child elements (inputs, labels, spans) to strip box styling */
+fieldset[data-option-id*="stencil-fast-interlock"] * {
+  box-sizing: border-box !important;
+}
+
 fieldset[data-option-id*="stencil-fast-interlock"] label,
 fieldset[data-option-id*="stencil-fast-interlock"] .variant-option__button-label {
   display: inline-flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-start !important;
-  width: max-content !important;
-  min-width: 0 !important;
+  
+  /* Reset rigid button box sizing */
+  width: auto !important;
+  max-width: none !important;
   height: auto !important;
   min-height: 0 !important;
   padding: 4px 0 !important;
   margin: 0 !important;
+  
+  /* Strip theme backgrounds, borders, and shadows */
   background: transparent !important;
   background-color: transparent !important;
   border: none !important;
@@ -297,19 +309,27 @@ fieldset[data-option-id*="stencil-fast-interlock"] .variant-option__button-label
   cursor: pointer !important;
 }
 
-/* Ensure selected/hover states don't re-apply borders or backgrounds */
+/* 3. Disable hover and active state borders from the theme */
+fieldset[data-option-id*="stencil-fast-interlock"] input + label,
 fieldset[data-option-id*="stencil-fast-interlock"] input:checked + label,
-fieldset[data-option-id*="stencil-fast-interlock"] input:checked + .variant-option__button-label,
 fieldset[data-option-id*="stencil-fast-interlock"] label:hover,
-fieldset[data-option-id*="stencil-fast-interlock"] .variant-option__button-label:hover {
-  border: none !important;
+fieldset[data-option-id*="stencil-fast-interlock"] label:focus,
+fieldset[data-option-id*="stencil-fast-interlock"] label:active {
   background: transparent !important;
   background-color: transparent !important;
+  border: none !important;
   box-shadow: none !important;
+  outline: none !important;
 }
 
-/* Create the radio circle directly inline */
-fieldset[data-option-id*="stencil-fast-interlock"] .variant-option__button-label::before {
+/* 4. Remove any theme-generated pseudo-elements (like active outline borders) */
+fieldset[data-option-id*="stencil-fast-interlock"] label::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* 5. Create the inline radio circle indicator */
+fieldset[data-option-id*="stencil-fast-interlock"] label::before {
   content: "" !important;
   display: inline-block !important;
   width: 18px !important;
@@ -319,13 +339,12 @@ fieldset[data-option-id*="stencil-fast-interlock"] .variant-option__button-label
   border: 2px solid #666 !important;
   border-radius: 50% !important;
   margin-right: 10px !important;
-  box-sizing: border-box !important;
   background-color: #fff !important;
   flex-shrink: 0 !important;
 }
 
-/* Checked state - outer ring and inner dot */
-fieldset[data-option-id*="stencil-fast-interlock"] input:checked + .variant-option__button-label::before {
+/* 6. Checked State for the radio circle */
+fieldset[data-option-id*="stencil-fast-interlock"] input:checked + label::before {
   border-color: #000 !important;
   background-color: #000 !important;
   box-shadow: inset 0 0 0 3px #fff !important;
