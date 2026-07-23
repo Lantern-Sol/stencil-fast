@@ -201,6 +201,7 @@
     width: auto;
     min-width: 120px;
     min-height: unset;
+    padding-left: 25px;
 }
 .product-details form.variant-picker__form fieldset.variant-option.variant-option--buttons:nth-child(3) label.variant-option__button-label:after {
     width: 12px;
