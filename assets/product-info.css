@@ -170,6 +170,9 @@
     min-width: unset;
     min-height: 53px;
     text-align: left;
+    border-color: #C9CCCF;
+    border-radius: 4px;
+    background: #f9faf5;
 }
 .product-details .variant-option {
     display: flex;
