@@ -40,7 +40,6 @@
     /** option name -> value the customer explicitly chose */
     this.chosen = new Map();
     this.suppress = false;
-    this._raf = null;
 
     this._bootstrapFromDeepLink();
 
@@ -96,12 +95,10 @@
 
   VariantStepController.prototype._onMutations = function () {
     if (this.suppress) return;
-    var self = this;
-    if (this._raf) cancelAnimationFrame(this._raf);
-    this._raf = requestAnimationFrame(function () {
-      self._raf = null;
-      self.enforce();
-    });
+    // Run synchronously in the observer's microtask — the native picker's morph
+    // has already finished and the browser hasn't painted yet, so re-applying the
+    // reveal/selection state here avoids any flicker of stripped classes.
+    this.enforce();
   };
 
   /**
@@ -126,6 +123,20 @@
         if (input.hasAttribute('checked')) input.removeAttribute('checked');
         if (input.dataset.currentChecked !== 'false') input.dataset.currentChecked = 'false';
       });
+    });
+
+    // Progressive step reveal: each option group stays hidden until the previous
+    // one has been chosen (the first is always shown). Guard each class write so
+    // re-writing an unchanged class can't re-trigger the observer.
+    fieldsets.forEach(function (fs, index) {
+      var revealed = true;
+      if (index > 0) {
+        var prevName = self._optionName(fieldsets[index - 1]);
+        revealed = !!(prevName && self.chosen.has(prevName));
+      }
+      if (fs.classList.contains('is-step-revealed') !== revealed) {
+        fs.classList.toggle('is-step-revealed', revealed);
+      }
     });
 
     var allChosen =

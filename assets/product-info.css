@@ -324,3 +324,12 @@ form.variant-picker__form {
   .accelerated-checkout-block {
   display: none !important;
 }
+
+/* Progressive step reveal: on the main product picker, keep each option group
+ * hidden until the previous one has been chosen. The first option always shows;
+ * JS (variant-step-selection.js) adds .is-step-revealed as steps unlock. */
+variant-picker[data-template-product-match="true"]
+  .variant-picker__form
+  fieldset.variant-option:not(:first-of-type):not(.is-step-revealed) {
+  display: none !important;
+}
