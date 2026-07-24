@@ -333,3 +333,41 @@ variant-picker[data-template-product-match="true"]
   fieldset.variant-option:not(:first-of-type):not(.is-step-revealed) {
   display: none !important;
 }
+
+/* Loading spinner shown on the buy buttons while a variant/price update is in
+ * flight (toggled by variant-step-selection.js). The button keeps its size (its
+ * children are hidden, not removed) so there is no layout shift. */
+.add-to-cart-button.add-to-cart--loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.add-to-cart-button.add-to-cart--loading > * {
+  visibility: hidden;
+}
+
+.add-to-cart-button.add-to-cart--loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.1em;
+  height: 1.1em;
+  margin: -0.55em 0 0 -0.55em;
+  border: 2px solid currentColor;
+  border-inline-end-color: transparent;
+  border-radius: 50%;
+  animation: variant-loading-spin 0.6s linear infinite;
+}
+
+@keyframes variant-loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .add-to-cart-button.add-to-cart--loading::after {
+    animation-duration: 1.5s;
+  }
+}

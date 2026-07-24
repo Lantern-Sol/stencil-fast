@@ -40,6 +40,7 @@
     /** option name -> value the customer explicitly chose */
     this.chosen = new Map();
     this.suppress = false;
+    this._pendingSelects = 0;
 
     this._bootstrapFromDeepLink();
 
@@ -57,6 +58,11 @@
 
     // Hard-block the add paths (covers keyboard / Enter, not just clicks).
     this._installGuards();
+
+    // Show a loader on the buy buttons while a variant/price update is in flight.
+    // `shopify:product:select` fires when a selection starts; its promise resolves
+    // once the fetched section (variant + price) has been applied.
+    this.section.addEventListener('shopify:product:select', this._onProductSelectLoading.bind(this));
 
     this.enforce();
   }
@@ -195,6 +201,35 @@
 
   VariantStepController.prototype._isIncomplete = function () {
     return !this.section.classList.contains(COMPLETE_CLASS);
+  };
+
+  /**
+   * Toggle a spinner on the buy buttons for the duration of a variant/price
+   * fetch. Uses a counter so rapid selections (each with its own promise, the
+   * earlier ones aborted) only clear the loader once the last one settles.
+   * @param {Event & { promise?: Promise<any> }} event
+   */
+  VariantStepController.prototype._onProductSelectLoading = function (event) {
+    if (!(event.target instanceof Element) || event.target.closest('product-card')) return;
+
+    var self = this;
+    this._pendingSelects += 1;
+    this._setLoading(true);
+
+    var settle = function () {
+      self._pendingSelects = Math.max(0, self._pendingSelects - 1);
+      if (self._pendingSelects === 0) self._setLoading(false);
+    };
+    Promise.resolve(event.promise).then(settle, settle);
+  };
+
+  VariantStepController.prototype._setLoading = function (loading) {
+    var buttons = this.section.querySelectorAll(
+      'product-form-component button[name="add"], .sticky-add-to-cart__button'
+    );
+    buttons.forEach(function (button) {
+      button.classList.toggle('add-to-cart--loading', loading);
+    });
   };
 
   /**
