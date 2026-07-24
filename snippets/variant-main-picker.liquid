@@ -27,6 +27,17 @@
 {% unless product_resource.has_only_default_variant %}
   {% liquid
     assign default_variant = product_resource.selected_or_first_available_variant
+
+    # Step selection: on the main product page picker, start with NO option
+    # selected so the customer chooses every option in steps (each option group is
+    # revealed once the previous one is chosen). Skipped when the visitor arrives
+    # with an explicit ?variant (deep link) — then all options keep their selection.
+    # Other contexts (product cards, quick-add, featured product) keep their normal
+    # first-available preselection.
+    assign force_no_default = false
+    if product.id == product_resource.id and product_resource.selected_variant == blank
+      assign force_no_default = true
+    endif
   %}
   {% if has_custom_variant_buttons %}
     {% render 'variant-button-custom-styles', block_settings: block_settings, block_id: block.id %}
@@ -111,7 +122,9 @@
                 {% assign longest_value = product_option_value.size %}
               {% endif %}
               {%- liquid
-                if product_option_value.name == default_value_at_position
+                if force_no_default
+                  assign is_selected_default = false
+                elsif product_option_value.name == default_value_at_position
                   assign is_selected_default = true
                 else
                   assign is_selected_default = false
@@ -224,7 +237,9 @@
               >
                 {%- for product_option_value in product_option.values -%}
                   {%- liquid
-                    if product_option_value.name == default_value_at_position
+                    if force_no_default
+                      assign is_selected_default = false
+                    elsif product_option_value.name == default_value_at_position
                       assign is_selected_default = true
                     else
                       assign is_selected_default = false
