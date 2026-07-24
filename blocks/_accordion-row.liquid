@@ -1,40 +1,53 @@
 {% assign block_settings = block.settings %}
 
-{% capture accordion_row_children %}
-  <details
-    class="details"
-    data-testid="accordion-details"
-    {% if block_settings.open_by_default %}
-      open
-    {% endif %}
-    {{ block.shopify_attributes }}
-  >
-    <summary class="details__header">
-      {% render 'icon-or-image',
-        icon: block_settings.icon,
-        image_upload: block_settings.image_upload,
-        width: block_settings.width,
-        class_name: 'details__icon'
-      %}
-      {{ block_settings.heading }}
-      <span class="svg-wrapper icon-caret icon-animated">
-        {{- 'icon-caret.svg' | inline_asset_content -}}
-      </span>
-      <span class="svg-wrapper icon-plus">
-        {{- 'icon-plus.svg' | inline_asset_content -}}
-      </span>
-    </summary>
+{%- comment -%}
+  Capture the row's content once so we can hide the whole row (heading included)
+  when it renders empty — e.g. a text block bound to a product metafield that has
+  no value. Kept visible in the theme editor so merchants can still configure it.
+{%- endcomment -%}
+{%- capture accordion_row_content -%}
+  {% content_for 'blocks' %}
+{%- endcapture -%}
 
-    <div class="details-content">
-      {% content_for 'blocks' %}
-    </div>
-  </details>
-{% endcapture %}
-{% render 'accordion-custom-component',
-  children: accordion_row_children,
-  open_by_default_on_desktop: block_settings.open_by_default,
-  open_by_default_on_mobile: block_settings.open_by_default
-%}
+{%- assign accordion_row_has_content = accordion_row_content | strip -%}
+
+{%- if accordion_row_has_content != blank or request.design_mode -%}
+  {% capture accordion_row_children %}
+    <details
+      class="details"
+      data-testid="accordion-details"
+      {% if block_settings.open_by_default %}
+        open
+      {% endif %}
+      {{ block.shopify_attributes }}
+    >
+      <summary class="details__header">
+        {% render 'icon-or-image',
+          icon: block_settings.icon,
+          image_upload: block_settings.image_upload,
+          width: block_settings.width,
+          class_name: 'details__icon'
+        %}
+        {{ block_settings.heading }}
+        <span class="svg-wrapper icon-caret icon-animated">
+          {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
+        <span class="svg-wrapper icon-plus">
+          {{- 'icon-plus.svg' | inline_asset_content -}}
+        </span>
+      </summary>
+
+      <div class="details-content">
+        {{ accordion_row_content }}
+      </div>
+    </details>
+  {% endcapture %}
+  {% render 'accordion-custom-component',
+    children: accordion_row_children,
+    open_by_default_on_desktop: block_settings.open_by_default,
+    open_by_default_on_mobile: block_settings.open_by_default
+  %}
+{%- endif -%}
 
 {% schema %}
 {

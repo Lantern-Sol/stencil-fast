@@ -2,6 +2,10 @@
   {{ closest.product | structured_data }}
 </script>
 {{ 'product-info.css' | asset_url | stylesheet_tag }}
+<script
+  src="{{ 'variant-step-selection.js' | asset_url }}"
+  defer
+></script>
 {% capture media_gallery %}
   {%- content_for 'block',
     type: '_product-media-gallery',

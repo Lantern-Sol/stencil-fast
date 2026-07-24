@@ -289,12 +289,38 @@ form.variant-picker__form {
     counter-reset: option-step;
 }
 
-/* Hide all fieldsets after the first one by default */
-.variant-picker__form fieldset:not(:first-of-type) {
-  display: none !important;
+/* ------------------------------------------------------------------
+ * Variant step selection (driven by assets/variant-step-selection.js)
+ *
+ * All option groups stay visible; the customer must actively choose every
+ * option before they can purchase. The purchase controls are gated until JS
+ * marks the section complete (all options chosen + variant available).
+ *
+ * Scoped to the main product picker via :has(). Single-variant products render
+ * no <variant-picker>, so nothing is gated and add-to-cart works normally.
+ * ------------------------------------------------------------------ */
+/* Give the add-to-cart wrapper a block box (constant in both states, so lifting
+ * the gate causes no layout shift) — it's what carries the not-allowed cursor. */
+.shopify-section:has(variant-picker[data-template-product-match="true"] .variant-picker__form fieldset)
+  add-to-cart-component {
+  display: block;
 }
 
-/* Show fieldset when JS marks it as visible */
-.variant-picker__form fieldset.is-step-visible {
-  display: flex !important;
+/* Dim the purchase buttons and block their clicks while options remain unchosen. */
+.shopify-section:has(variant-picker[data-template-product-match="true"] .variant-picker__form fieldset):not(.variant-steps--complete)
+  :is(product-form-component button[name="add"], .sticky-add-to-cart__button) {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* The button has pointer-events:none, so the "not-allowed" cursor goes on the
+ * wrapper around it — it still receives hover and shows the warning symbol. */
+.shopify-section:has(variant-picker[data-template-product-match="true"] .variant-picker__form fieldset):not(.variant-steps--complete)
+  add-to-cart-component {
+  cursor: not-allowed;
+}
+
+.shopify-section:has(variant-picker[data-template-product-match="true"] .variant-picker__form fieldset):not(.variant-steps--complete)
+  .accelerated-checkout-block {
+  display: none !important;
 }
